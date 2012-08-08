@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox_Okl_Przod = new System.Windows.Forms.PictureBox();
+            this.filmBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.defaultDataSet = new MK_Film_DB_NET.defaultDataSet();
             this.pictureBox_Okl_Tyl = new System.Windows.Forms.PictureBox();
             this.button_LoadPicFront = new System.Windows.Forms.Button();
             this.button_DelPicFront = new System.Windows.Forms.Button();
@@ -53,8 +55,6 @@
             this.label52 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.textBox_OP_Opis = new System.Windows.Forms.TextBox();
-            this.filmBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.defaultDataSet = new MK_Film_DB_NET.defaultDataSet();
             this.tabPage_Ocena = new System.Windows.Forms.TabPage();
             this.groupBox_OC_OW = new System.Windows.Forms.GroupBox();
             this.textBox_OC_OW_WA = new System.Windows.Forms.TextBox();
@@ -228,6 +228,7 @@
             this.otwórzUtwórzBazęDanychToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eksportujToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wyszukajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ustawieniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.koniecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pomocToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -241,14 +242,13 @@
             this.lokZdjTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.LokZdjTableAdapter();
             this.wYPINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPINTableAdapter();
             this.wYPODINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPODINTableAdapter();
-            this.ustawieniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Okl_Przod)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Okl_Tyl)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage_Opis.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_OP_Nagrody)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).BeginInit();
             this.tabPage_Ocena.SuspendLayout();
             this.groupBox_OC_OW.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_OC_Ocena)).BeginInit();
@@ -281,18 +281,33 @@
             // pictureBox_Okl_Przod
             // 
             this.pictureBox_Okl_Przod.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_Okl_Przod.DataBindings.Add(new System.Windows.Forms.Binding("ImageLocation", this.filmBindingSource, "pathtofront", true));
             this.pictureBox_Okl_Przod.Location = new System.Drawing.Point(6, 30);
             this.pictureBox_Okl_Przod.Name = "pictureBox_Okl_Przod";
             this.pictureBox_Okl_Przod.Size = new System.Drawing.Size(168, 210);
+            this.pictureBox_Okl_Przod.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Okl_Przod.TabIndex = 0;
             this.pictureBox_Okl_Przod.TabStop = false;
             // 
+            // filmBindingSource
+            // 
+            this.filmBindingSource.DataMember = "Film";
+            this.filmBindingSource.DataSource = this.defaultDataSet;
+            // 
+            // defaultDataSet
+            // 
+            this.defaultDataSet.DataSetName = "defaultDataSet";
+            this.defaultDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // pictureBox_Okl_Tyl
             // 
+            this.pictureBox_Okl_Tyl.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox_Okl_Tyl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_Okl_Tyl.DataBindings.Add(new System.Windows.Forms.Binding("ImageLocation", this.filmBindingSource, "pathtoback", true));
             this.pictureBox_Okl_Tyl.Location = new System.Drawing.Point(6, 282);
             this.pictureBox_Okl_Tyl.Name = "pictureBox_Okl_Tyl";
             this.pictureBox_Okl_Tyl.Size = new System.Drawing.Size(168, 210);
+            this.pictureBox_Okl_Tyl.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox_Okl_Tyl.TabIndex = 1;
             this.pictureBox_Okl_Tyl.TabStop = false;
             // 
@@ -508,16 +523,6 @@
             this.textBox_OP_Opis.Name = "textBox_OP_Opis";
             this.textBox_OP_Opis.Size = new System.Drawing.Size(684, 216);
             this.textBox_OP_Opis.TabIndex = 0;
-            // 
-            // filmBindingSource
-            // 
-            this.filmBindingSource.DataMember = "Film";
-            this.filmBindingSource.DataSource = this.defaultDataSet;
-            // 
-            // defaultDataSet
-            // 
-            this.defaultDataSet.DataSetName = "defaultDataSet";
-            this.defaultDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tabPage_Ocena
             // 
@@ -2024,6 +2029,13 @@
             this.wyszukajToolStripMenuItem.Text = "Wyszukaj";
             this.wyszukajToolStripMenuItem.Click += new System.EventHandler(this.wyszukajToolStripMenuItem_Click);
             // 
+            // ustawieniaToolStripMenuItem
+            // 
+            this.ustawieniaToolStripMenuItem.Name = "ustawieniaToolStripMenuItem";
+            this.ustawieniaToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.ustawieniaToolStripMenuItem.Text = "Ustawienia";
+            this.ustawieniaToolStripMenuItem.Click += new System.EventHandler(this.ustawieniaToolStripMenuItem_Click);
+            // 
             // koniecToolStripMenuItem
             // 
             this.koniecToolStripMenuItem.Name = "koniecToolStripMenuItem";
@@ -2091,13 +2103,6 @@
             // 
             this.wYPODINTableAdapter.ClearBeforeFill = true;
             // 
-            // ustawieniaToolStripMenuItem
-            // 
-            this.ustawieniaToolStripMenuItem.Name = "ustawieniaToolStripMenuItem";
-            this.ustawieniaToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.ustawieniaToolStripMenuItem.Text = "Ustawienia";
-            this.ustawieniaToolStripMenuItem.Click += new System.EventHandler(this.ustawieniaToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2138,13 +2143,13 @@
             this.Text = "MK Film DB NET";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Okl_Przod)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Okl_Tyl)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage_Opis.ResumeLayout(false);
             this.tabPage_Opis.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_OP_Nagrody)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).EndInit();
             this.tabPage_Ocena.ResumeLayout(false);
             this.tabPage_Ocena.PerformLayout();
             this.groupBox_OC_OW.ResumeLayout(false);
