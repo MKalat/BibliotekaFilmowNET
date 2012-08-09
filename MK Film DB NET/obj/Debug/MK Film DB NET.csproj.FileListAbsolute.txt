@@ -1,1 +1,14 @@
 E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\bin\Debug\MK Film DB NET.exe.config
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\bin\Debug\default.sdf
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\bin\Debug\MK Film DB NET.exe
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\bin\Debug\MK Film DB NET.pdb
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\ResolveAssemblyReference.cache
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\MK_Film_DB_NET.AboutBox1.resources
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\MK_Film_DB_NET.EkspWiz.resources
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\MK_Film_DB_NET.Form1.resources
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\MK_Film_DB_NET.Properties.Resources.resources
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\MK_Film_DB_NET.Settings.resources
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\MK_Film_DB_NET.Wyszukaj.resources
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\MK Film DB NET.csproj.GenerateResource.Cache
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\MK Film DB NET.exe
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\MK Film DB NET.pdb

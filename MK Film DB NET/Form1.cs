@@ -48,7 +48,7 @@ namespace MK_Film_DB_NET
 
             String path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             String db_path = path;
-            db_path = db_path + "\\MKGamesCatalogue\\";
+            db_path = db_path + "\\MKFilmDBNET\\";
             cur_db_path = db_path + "MKFDB.sdf";
 
             Read_settings();
@@ -556,17 +556,36 @@ namespace MK_Film_DB_NET
 
         private void ustawieniaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-        
+            Settings frm_sett = new Settings();
+            frm_sett.ShowDialog(this);
         }
 
         private void wyszukajToolStripMenuItem_Click(object sender, EventArgs e)
         {
-        
+            Wyszukaj frm_wysz = new Wyszukaj();
+            frm_wysz.Show(this);
         }
 
         private void eksportujToolStripMenuItem_Click(object sender, EventArgs e)
         {
-        
+            EkspWiz frm_Eksp = new EkspWiz();
+            frm_Eksp.Show(this);
+        }
+
+        private void oProgramieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 frm_about = new AboutBox1();
+            frm_about.ShowDialog(this);
+        }
+
+        private void sprzwdźAktualizacjeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Start_AU();
+        }
+
+        private void drukujToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //TODO: Napsiac wywołanie kreatora drukowania
         }
 
     }

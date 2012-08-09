@@ -242,6 +242,7 @@
             this.lokZdjTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.LokZdjTableAdapter();
             this.wYPINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPINTableAdapter();
             this.wYPODINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPODINTableAdapter();
+            this.drukujToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Okl_Przod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).BeginInit();
@@ -2001,6 +2002,7 @@
             this.plikToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.otwórzUtwórzBazęDanychToolStripMenuItem,
             this.eksportujToolStripMenuItem,
+            this.drukujToolStripMenuItem,
             this.wyszukajToolStripMenuItem,
             this.ustawieniaToolStripMenuItem,
             this.koniecToolStripMenuItem});
@@ -2064,12 +2066,14 @@
             this.sprzwdźAktualizacjeToolStripMenuItem.Name = "sprzwdźAktualizacjeToolStripMenuItem";
             this.sprzwdźAktualizacjeToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.sprzwdźAktualizacjeToolStripMenuItem.Text = "Sprawdź aktualizacje";
+            this.sprzwdźAktualizacjeToolStripMenuItem.Click += new System.EventHandler(this.sprzwdźAktualizacjeToolStripMenuItem_Click);
             // 
             // oProgramieToolStripMenuItem
             // 
             this.oProgramieToolStripMenuItem.Name = "oProgramieToolStripMenuItem";
             this.oProgramieToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.oProgramieToolStripMenuItem.Text = "O programie";
+            this.oProgramieToolStripMenuItem.Click += new System.EventHandler(this.oProgramieToolStripMenuItem_Click);
             // 
             // filmTableAdapter
             // 
@@ -2102,6 +2106,13 @@
             // wYPODINTableAdapter
             // 
             this.wYPODINTableAdapter.ClearBeforeFill = true;
+            // 
+            // drukujToolStripMenuItem
+            // 
+            this.drukujToolStripMenuItem.Name = "drukujToolStripMenuItem";
+            this.drukujToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.drukujToolStripMenuItem.Text = "Drukuj";
+            this.drukujToolStripMenuItem.Click += new System.EventHandler(this.drukujToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -2409,6 +2420,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn stanPWypDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn stanPOddDataGridViewTextBoxColumn1;
         private System.Windows.Forms.ToolStripMenuItem ustawieniaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem drukujToolStripMenuItem;
     }
 }
 
