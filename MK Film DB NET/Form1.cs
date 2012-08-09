@@ -83,6 +83,10 @@ namespace MK_Film_DB_NET
             this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
             this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
             this.filmTableAdapter.Fill(this.defaultDataSet.Film);
+            if (this.filmBindingSource.Count == 0)
+            {
+                this.button_GetDataInt.Enabled = false;
+            }
         }
         private void Read_settings()
         {
@@ -171,6 +175,7 @@ namespace MK_Film_DB_NET
         {
             this.filmBindingSource.AddNew();
             this.filmBindingSource.EndEdit();
+            this.button_GetDataInt.Enabled = false;
             LiczRec();
 
         }
@@ -196,6 +201,12 @@ namespace MK_Film_DB_NET
             this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
             this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
             this.filmTableAdapter.Fill(this.defaultDataSet.Film);
+
+            if (this.textBox_Tytul.TextLength > 0)
+            {
+                this.button_GetDataInt.Enabled = true;
+            }
+
             LiczRec();
         }
 
@@ -586,6 +597,11 @@ namespace MK_Film_DB_NET
         private void drukujToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //TODO: Napsiac wywołanie kreatora drukowania
+        }
+
+        private void button_GetDataInt_Click(object sender, EventArgs e)
+        {
+            //TODO: Napisać kreatora pobierania danych z internetu
         }
 
     }

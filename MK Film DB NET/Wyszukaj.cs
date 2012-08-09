@@ -32,6 +32,11 @@ namespace MK_Film_DB_NET
             this.obsadaTableAdapter.Connection.Open();
             this.ocenaTableAdapter.Connection.Open();
             this.filmTableAdapter.Connection.Open();
+
+            for (Int32 i = 0; i < this.defaultDataSet.Film.Columns.Count ; i++)
+            {
+                this.comboBox_Field.Items.Add(this.defaultDataSet.Film.Columns[i].Caption);
+            }
         }
         Int32[] pos_arr = new Int32[1];
         private void button_Search_Click(object sender, EventArgs e)
@@ -90,51 +95,6 @@ namespace MK_Film_DB_NET
                     else if (this.radioButton_Ends.Checked == true)
                     {
                         if (FVal.EndsWith(this.textBox_Pharse.Text))
-                        {
-                            ListViewItem lv_itm = new ListViewItem(defaultDataSet.Film[filmBindingSource.Position].Tytul);
-
-
-                            lv_itm.SubItems.Add(defaultDataSet.Film[filmBindingSource.Position].Gatunek);
-                            lv_itm.SubItems.Add(defaultDataSet.Film[filmBindingSource.Position].IOF_DataPrem);
-
-                            this.listView_Results.Items.Add(lv_itm);
-                            Array.Resize(ref pos_arr, pos_arr.Length + 1);
-                            pos_arr[pos_arr.GetUpperBound(0)] = i;
-                        }
-                    }
-                    else if (this.radioButton_Greater.Checked == true)
-                    {
-                        if (Convert.ToInt32(FVal) > Convert.ToInt32(this.textBox_Pharse.Text))
-                        {
-                            ListViewItem lv_itm = new ListViewItem(defaultDataSet.Film[filmBindingSource.Position].Tytul);
-
-
-                            lv_itm.SubItems.Add(defaultDataSet.Film[filmBindingSource.Position].Gatunek);
-                            lv_itm.SubItems.Add(defaultDataSet.Film[filmBindingSource.Position].IOF_DataPrem);
-
-                            this.listView_Results.Items.Add(lv_itm);
-                            Array.Resize(ref pos_arr, pos_arr.Length + 1);
-                            pos_arr[pos_arr.GetUpperBound(0)] = i;
-                        }
-                    }
-                    else if (this.radioButton_IsEqual.Checked == true)
-                    {
-                        if (Convert.ToInt32(FVal) == Convert.ToInt32(this.textBox_Pharse.Text))
-                        {
-                            ListViewItem lv_itm = new ListViewItem(defaultDataSet.Film[filmBindingSource.Position].Tytul);
-
-
-                            lv_itm.SubItems.Add(defaultDataSet.Film[filmBindingSource.Position].Gatunek);
-                            lv_itm.SubItems.Add(defaultDataSet.Film[filmBindingSource.Position].IOF_DataPrem);
-
-                            this.listView_Results.Items.Add(lv_itm);
-                            Array.Resize(ref pos_arr, pos_arr.Length + 1);
-                            pos_arr[pos_arr.GetUpperBound(0)] = i;
-                        }
-                    }
-                    else if (this.radioButton_Lesser.Checked == true)
-                    {
-                        if (Convert.ToInt32(FVal) < Convert.ToInt32(this.textBox_Pharse.Text))
                         {
                             ListViewItem lv_itm = new ListViewItem(defaultDataSet.Film[filmBindingSource.Position].Tytul);
 

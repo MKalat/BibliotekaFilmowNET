@@ -2083,6 +2083,7 @@ namespace MK_Film_DB_NET {
                 this.columnID.ReadOnly = true;
                 this.columnID.Unique = true;
                 this.columnIDPDB.AllowDBNull = false;
+                this.columnNazwaObiektu.Caption = "Nazwa Obiektu";
                 this.columnNazwaObiektu.MaxLength = 100;
                 this.columnKraj.MaxLength = 100;
                 this.columnMiejscowość.MaxLength = 100;
@@ -2368,6 +2369,7 @@ namespace MK_Film_DB_NET {
                 this.columnID.AllowDBNull = false;
                 this.columnID.ReadOnly = true;
                 this.columnID.Unique = true;
+                this.columnImieNazw.Caption = "Imię i Nazwisko";
                 this.columnImieNazw.MaxLength = 200;
                 this.columnRola.MaxLength = 200;
                 this.columnIDPDB.AllowDBNull = false;
@@ -3366,10 +3368,14 @@ namespace MK_Film_DB_NET {
                 this.columnID.ReadOnly = true;
                 this.columnID.Unique = true;
                 this.columnIDPDB.AllowDBNull = false;
+                this.columnDataWyp.Caption = "Data Wypożyczenia";
                 this.columnDataWyp.MaxLength = 100;
+                this.columnDataOdd.Caption = "Data Oddania";
                 this.columnDataOdd.MaxLength = 100;
                 this.columnOsoba.MaxLength = 100;
+                this.columnStanPWyp.Caption = "Stan przed wypożyczeniem";
                 this.columnStanPWyp.MaxLength = 100;
+                this.columnStanPOdd.Caption = "Stan po oddaniu";
                 this.columnStanPOdd.MaxLength = 100;
             }
             
@@ -3690,10 +3696,14 @@ namespace MK_Film_DB_NET {
                 this.columnID.ReadOnly = true;
                 this.columnID.Unique = true;
                 this.columnIDPDB.AllowDBNull = false;
+                this.columnDataWyp.Caption = "Data Wypożyczenia";
                 this.columnDataWyp.MaxLength = 100;
+                this.columnDataOdd.Caption = "Data oddania";
                 this.columnDataOdd.MaxLength = 100;
                 this.columnOsoba.MaxLength = 100;
+                this.columnStanPWyp.Caption = "Stan przed wypożyczeniem";
                 this.columnStanPWyp.MaxLength = 100;
+                this.columnStanPOdd.Caption = "Stan po oddaniu";
                 this.columnStanPOdd.MaxLength = 100;
             }
             
