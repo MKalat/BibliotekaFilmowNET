@@ -51,8 +51,6 @@
             this.button_DEL = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage_Opis = new System.Windows.Forms.TabPage();
-            this.dataGridView_OP_Nagrody = new System.Windows.Forms.DataGridView();
-            this.label52 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.textBox_OP_Opis = new System.Windows.Forms.TextBox();
             this.tabPage_Ocena = new System.Windows.Forms.TabPage();
@@ -68,16 +66,45 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.dataGridView_OC_Ocena = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nazwaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tytulDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.autorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wWWDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ocenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDPDBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKFilmOcenaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage_Obsada = new System.Windows.Forms.TabPage();
             this.label13 = new System.Windows.Forms.Label();
             this.dataGridView_OB_Obsada = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.imieNazwDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rolaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDPDBDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKFilmObsadaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage_Produkcja = new System.Windows.Forms.TabPage();
             this.dataGridView_PROD_Dystr = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDPDBDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nazwaDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.faxDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wWWDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.narodowośćDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKFilmDystrybucjaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView_PROD_prod = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDPDBDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nazwaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.faxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.wWWDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.narodowośćDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKFilmProdukcjaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -118,6 +145,14 @@
             this.label16 = new System.Windows.Forms.Label();
             this.tabPage_IOF = new System.Windows.Forms.TabPage();
             this.dataGridView_IOF_LokZdj = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDPDBDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nazwaObiektuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.krajDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.miejscowośćDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.regionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.poraRokuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKFilmLokZdjBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label48 = new System.Windows.Forms.Label();
             this.textBox_IOF_KrajProd = new System.Windows.Forms.TextBox();
@@ -161,8 +196,22 @@
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.dataGridView_BIBLIO_WYPODIN = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDPDBDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataWypDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataOddDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.osobaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stanPWypDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stanPOddDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKFilmWYPODINBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView_BIBLIO_WYPIN = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDPDBDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataWypDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataOddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.osobaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stanPWypDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.stanPOddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fKFilmWYPINBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -193,64 +242,14 @@
             this.wYPINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPINTableAdapter();
             this.wYPODINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPODINTableAdapter();
             this.button_GetDataInt = new System.Windows.Forms.Button();
-            this.iDDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDPDBDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nazwaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.faxDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wWWDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.narodowośćDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDPDBDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nazwaDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adresDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.faxDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wWWDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.narodowośćDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDPDBDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataWypDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataOddDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.osobaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stanPWypDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stanPOddDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDPDBDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataWypDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataOddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.osobaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stanPWypDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.stanPOddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDPDBDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nazwaObiektuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.krajDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.miejscowośćDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.regionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.poraRokuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.imieNazwDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rolaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDPDBDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nazwaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tytulDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.autorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wWWDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ocenaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDPDBDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bibliotekaFilmówMKFilmDBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Okl_Przod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Okl_Tyl)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage_Opis.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_OP_Nagrody)).BeginInit();
             this.tabPage_Ocena.SuspendLayout();
             this.groupBox_OC_OW.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_OC_Ocena)).BeginInit();
@@ -437,9 +436,11 @@
             // button_NEW
             // 
             this.button_NEW.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_NEW.Image = global::MK_Film_DB_NET.Properties.Resources.new_ico24x24;
+            this.button_NEW.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_NEW.Location = new System.Drawing.Point(276, 630);
             this.button_NEW.Name = "button_NEW";
-            this.button_NEW.Size = new System.Drawing.Size(84, 36);
+            this.button_NEW.Size = new System.Drawing.Size(96, 36);
             this.button_NEW.TabIndex = 14;
             this.button_NEW.Text = "Nowy";
             this.button_NEW.UseVisualStyleBackColor = true;
@@ -448,9 +449,11 @@
             // button_SAVE
             // 
             this.button_SAVE.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_SAVE.Location = new System.Drawing.Point(366, 630);
+            this.button_SAVE.Image = global::MK_Film_DB_NET.Properties.Resources.save_ico24x24;
+            this.button_SAVE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_SAVE.Location = new System.Drawing.Point(384, 630);
             this.button_SAVE.Name = "button_SAVE";
-            this.button_SAVE.Size = new System.Drawing.Size(84, 36);
+            this.button_SAVE.Size = new System.Drawing.Size(96, 36);
             this.button_SAVE.TabIndex = 15;
             this.button_SAVE.Text = "Zapisz";
             this.button_SAVE.UseVisualStyleBackColor = true;
@@ -459,9 +462,11 @@
             // button_DEL
             // 
             this.button_DEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_DEL.Location = new System.Drawing.Point(498, 630);
+            this.button_DEL.Image = global::MK_Film_DB_NET.Properties.Resources.del_ico24x24_2;
+            this.button_DEL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_DEL.Location = new System.Drawing.Point(510, 630);
             this.button_DEL.Name = "button_DEL";
-            this.button_DEL.Size = new System.Drawing.Size(90, 36);
+            this.button_DEL.Size = new System.Drawing.Size(102, 36);
             this.button_DEL.TabIndex = 16;
             this.button_DEL.Text = "Usuń";
             this.button_DEL.UseVisualStyleBackColor = true;
@@ -484,8 +489,6 @@
             // 
             // tabPage_Opis
             // 
-            this.tabPage_Opis.Controls.Add(this.dataGridView_OP_Nagrody);
-            this.tabPage_Opis.Controls.Add(this.label52);
             this.tabPage_Opis.Controls.Add(this.label51);
             this.tabPage_Opis.Controls.Add(this.textBox_OP_Opis);
             this.tabPage_Opis.Location = new System.Drawing.Point(4, 22);
@@ -495,23 +498,6 @@
             this.tabPage_Opis.TabIndex = 0;
             this.tabPage_Opis.Text = "Opis";
             this.tabPage_Opis.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView_OP_Nagrody
-            // 
-            this.dataGridView_OP_Nagrody.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_OP_Nagrody.Location = new System.Drawing.Point(12, 264);
-            this.dataGridView_OP_Nagrody.Name = "dataGridView_OP_Nagrody";
-            this.dataGridView_OP_Nagrody.Size = new System.Drawing.Size(684, 216);
-            this.dataGridView_OP_Nagrody.TabIndex = 3;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(12, 246);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(47, 13);
-            this.label52.TabIndex = 2;
-            this.label52.Text = "Nagrody";
             // 
             // label51
             // 
@@ -524,11 +510,14 @@
             // 
             // textBox_OP_Opis
             // 
+            this.textBox_OP_Opis.AcceptsReturn = true;
+            this.textBox_OP_Opis.AcceptsTab = true;
             this.textBox_OP_Opis.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.filmBindingSource, "Opis", true));
             this.textBox_OP_Opis.Location = new System.Drawing.Point(12, 24);
             this.textBox_OP_Opis.Multiline = true;
             this.textBox_OP_Opis.Name = "textBox_OP_Opis";
-            this.textBox_OP_Opis.Size = new System.Drawing.Size(684, 216);
+            this.textBox_OP_Opis.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox_OP_Opis.Size = new System.Drawing.Size(684, 456);
             this.textBox_OP_Opis.TabIndex = 0;
             // 
             // tabPage_Ocena
@@ -666,6 +655,55 @@
             this.dataGridView_OC_Ocena.Size = new System.Drawing.Size(684, 282);
             this.dataGridView_OC_Ocena.TabIndex = 1;
             // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // nazwaDataGridViewTextBoxColumn
+            // 
+            this.nazwaDataGridViewTextBoxColumn.DataPropertyName = "Nazwa";
+            this.nazwaDataGridViewTextBoxColumn.HeaderText = "Nazwa";
+            this.nazwaDataGridViewTextBoxColumn.Name = "nazwaDataGridViewTextBoxColumn";
+            this.nazwaDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // tytulDataGridViewTextBoxColumn
+            // 
+            this.tytulDataGridViewTextBoxColumn.DataPropertyName = "Tytul";
+            this.tytulDataGridViewTextBoxColumn.HeaderText = "Tytul";
+            this.tytulDataGridViewTextBoxColumn.Name = "tytulDataGridViewTextBoxColumn";
+            this.tytulDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // autorDataGridViewTextBoxColumn
+            // 
+            this.autorDataGridViewTextBoxColumn.DataPropertyName = "Autor";
+            this.autorDataGridViewTextBoxColumn.HeaderText = "Autor";
+            this.autorDataGridViewTextBoxColumn.Name = "autorDataGridViewTextBoxColumn";
+            // 
+            // wWWDataGridViewTextBoxColumn
+            // 
+            this.wWWDataGridViewTextBoxColumn.DataPropertyName = "WWW";
+            this.wWWDataGridViewTextBoxColumn.HeaderText = "WWW";
+            this.wWWDataGridViewTextBoxColumn.Name = "wWWDataGridViewTextBoxColumn";
+            this.wWWDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // ocenaDataGridViewTextBoxColumn
+            // 
+            this.ocenaDataGridViewTextBoxColumn.DataPropertyName = "Ocena";
+            this.ocenaDataGridViewTextBoxColumn.HeaderText = "Ocena";
+            this.ocenaDataGridViewTextBoxColumn.Name = "ocenaDataGridViewTextBoxColumn";
+            // 
+            // iDPDBDataGridViewTextBoxColumn
+            // 
+            this.iDPDBDataGridViewTextBoxColumn.DataPropertyName = "IDPDB";
+            this.iDPDBDataGridViewTextBoxColumn.HeaderText = "IDPDB";
+            this.iDPDBDataGridViewTextBoxColumn.Name = "iDPDBDataGridViewTextBoxColumn";
+            this.iDPDBDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDPDBDataGridViewTextBoxColumn.Visible = false;
+            // 
             // fKFilmOcenaBindingSource
             // 
             this.fKFilmOcenaBindingSource.DataMember = "FK_Film_Ocena";
@@ -715,6 +753,36 @@
             this.dataGridView_OB_Obsada.Size = new System.Drawing.Size(684, 258);
             this.dataGridView_OB_Obsada.TabIndex = 0;
             // 
+            // iDDataGridViewTextBoxColumn1
+            // 
+            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
+            this.iDDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // imieNazwDataGridViewTextBoxColumn
+            // 
+            this.imieNazwDataGridViewTextBoxColumn.DataPropertyName = "ImieNazw";
+            this.imieNazwDataGridViewTextBoxColumn.HeaderText = "Imię i Nazwisko";
+            this.imieNazwDataGridViewTextBoxColumn.Name = "imieNazwDataGridViewTextBoxColumn";
+            this.imieNazwDataGridViewTextBoxColumn.Width = 250;
+            // 
+            // rolaDataGridViewTextBoxColumn
+            // 
+            this.rolaDataGridViewTextBoxColumn.DataPropertyName = "Rola";
+            this.rolaDataGridViewTextBoxColumn.HeaderText = "Rola";
+            this.rolaDataGridViewTextBoxColumn.Name = "rolaDataGridViewTextBoxColumn";
+            this.rolaDataGridViewTextBoxColumn.Width = 250;
+            // 
+            // iDPDBDataGridViewTextBoxColumn1
+            // 
+            this.iDPDBDataGridViewTextBoxColumn1.DataPropertyName = "IDPDB";
+            this.iDPDBDataGridViewTextBoxColumn1.HeaderText = "IDPDB";
+            this.iDPDBDataGridViewTextBoxColumn1.Name = "iDPDBDataGridViewTextBoxColumn1";
+            this.iDPDBDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.iDPDBDataGridViewTextBoxColumn1.Visible = false;
+            // 
             // fKFilmObsadaBindingSource
             // 
             this.fKFilmObsadaBindingSource.DataMember = "FK_Film_Obsada";
@@ -754,6 +822,64 @@
             this.dataGridView_PROD_Dystr.Size = new System.Drawing.Size(684, 228);
             this.dataGridView_PROD_Dystr.TabIndex = 3;
             // 
+            // iDDataGridViewTextBoxColumn3
+            // 
+            this.iDDataGridViewTextBoxColumn3.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn3.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn3.Name = "iDDataGridViewTextBoxColumn3";
+            this.iDDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // iDPDBDataGridViewTextBoxColumn3
+            // 
+            this.iDPDBDataGridViewTextBoxColumn3.DataPropertyName = "IDPDB";
+            this.iDPDBDataGridViewTextBoxColumn3.HeaderText = "IDPDB";
+            this.iDPDBDataGridViewTextBoxColumn3.Name = "iDPDBDataGridViewTextBoxColumn3";
+            this.iDPDBDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.iDPDBDataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // nazwaDataGridViewTextBoxColumn2
+            // 
+            this.nazwaDataGridViewTextBoxColumn2.DataPropertyName = "Nazwa";
+            this.nazwaDataGridViewTextBoxColumn2.HeaderText = "Nazwa";
+            this.nazwaDataGridViewTextBoxColumn2.Name = "nazwaDataGridViewTextBoxColumn2";
+            // 
+            // adresDataGridViewTextBoxColumn1
+            // 
+            this.adresDataGridViewTextBoxColumn1.DataPropertyName = "Adres";
+            this.adresDataGridViewTextBoxColumn1.HeaderText = "Adres";
+            this.adresDataGridViewTextBoxColumn1.Name = "adresDataGridViewTextBoxColumn1";
+            // 
+            // telDataGridViewTextBoxColumn1
+            // 
+            this.telDataGridViewTextBoxColumn1.DataPropertyName = "Tel";
+            this.telDataGridViewTextBoxColumn1.HeaderText = "Tel";
+            this.telDataGridViewTextBoxColumn1.Name = "telDataGridViewTextBoxColumn1";
+            // 
+            // faxDataGridViewTextBoxColumn1
+            // 
+            this.faxDataGridViewTextBoxColumn1.DataPropertyName = "Fax";
+            this.faxDataGridViewTextBoxColumn1.HeaderText = "Fax";
+            this.faxDataGridViewTextBoxColumn1.Name = "faxDataGridViewTextBoxColumn1";
+            // 
+            // emailDataGridViewTextBoxColumn1
+            // 
+            this.emailDataGridViewTextBoxColumn1.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn1.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn1.Name = "emailDataGridViewTextBoxColumn1";
+            // 
+            // wWWDataGridViewTextBoxColumn2
+            // 
+            this.wWWDataGridViewTextBoxColumn2.DataPropertyName = "WWW";
+            this.wWWDataGridViewTextBoxColumn2.HeaderText = "WWW";
+            this.wWWDataGridViewTextBoxColumn2.Name = "wWWDataGridViewTextBoxColumn2";
+            // 
+            // narodowośćDataGridViewTextBoxColumn1
+            // 
+            this.narodowośćDataGridViewTextBoxColumn1.DataPropertyName = "Narodowość";
+            this.narodowośćDataGridViewTextBoxColumn1.HeaderText = "Narodowość";
+            this.narodowośćDataGridViewTextBoxColumn1.Name = "narodowośćDataGridViewTextBoxColumn1";
+            // 
             // fKFilmDystrybucjaBindingSource
             // 
             this.fKFilmDystrybucjaBindingSource.DataMember = "FK_Film_Dystrybucja";
@@ -778,6 +904,64 @@
             this.dataGridView_PROD_prod.Name = "dataGridView_PROD_prod";
             this.dataGridView_PROD_prod.Size = new System.Drawing.Size(684, 192);
             this.dataGridView_PROD_prod.TabIndex = 2;
+            // 
+            // iDDataGridViewTextBoxColumn2
+            // 
+            this.iDDataGridViewTextBoxColumn2.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn2.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn2.Name = "iDDataGridViewTextBoxColumn2";
+            this.iDDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // iDPDBDataGridViewTextBoxColumn2
+            // 
+            this.iDPDBDataGridViewTextBoxColumn2.DataPropertyName = "IDPDB";
+            this.iDPDBDataGridViewTextBoxColumn2.HeaderText = "IDPDB";
+            this.iDPDBDataGridViewTextBoxColumn2.Name = "iDPDBDataGridViewTextBoxColumn2";
+            this.iDPDBDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.iDPDBDataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // nazwaDataGridViewTextBoxColumn1
+            // 
+            this.nazwaDataGridViewTextBoxColumn1.DataPropertyName = "Nazwa";
+            this.nazwaDataGridViewTextBoxColumn1.HeaderText = "Nazwa";
+            this.nazwaDataGridViewTextBoxColumn1.Name = "nazwaDataGridViewTextBoxColumn1";
+            // 
+            // adresDataGridViewTextBoxColumn
+            // 
+            this.adresDataGridViewTextBoxColumn.DataPropertyName = "Adres";
+            this.adresDataGridViewTextBoxColumn.HeaderText = "Adres";
+            this.adresDataGridViewTextBoxColumn.Name = "adresDataGridViewTextBoxColumn";
+            // 
+            // telDataGridViewTextBoxColumn
+            // 
+            this.telDataGridViewTextBoxColumn.DataPropertyName = "Tel";
+            this.telDataGridViewTextBoxColumn.HeaderText = "Tel";
+            this.telDataGridViewTextBoxColumn.Name = "telDataGridViewTextBoxColumn";
+            // 
+            // faxDataGridViewTextBoxColumn
+            // 
+            this.faxDataGridViewTextBoxColumn.DataPropertyName = "Fax";
+            this.faxDataGridViewTextBoxColumn.HeaderText = "Fax";
+            this.faxDataGridViewTextBoxColumn.Name = "faxDataGridViewTextBoxColumn";
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            // 
+            // wWWDataGridViewTextBoxColumn1
+            // 
+            this.wWWDataGridViewTextBoxColumn1.DataPropertyName = "WWW";
+            this.wWWDataGridViewTextBoxColumn1.HeaderText = "WWW";
+            this.wWWDataGridViewTextBoxColumn1.Name = "wWWDataGridViewTextBoxColumn1";
+            // 
+            // narodowośćDataGridViewTextBoxColumn
+            // 
+            this.narodowośćDataGridViewTextBoxColumn.DataPropertyName = "Narodowość";
+            this.narodowośćDataGridViewTextBoxColumn.HeaderText = "Narodowość";
+            this.narodowośćDataGridViewTextBoxColumn.Name = "narodowośćDataGridViewTextBoxColumn";
             // 
             // fKFilmProdukcjaBindingSource
             // 
@@ -1185,6 +1369,59 @@
             this.dataGridView_IOF_LokZdj.Size = new System.Drawing.Size(672, 240);
             this.dataGridView_IOF_LokZdj.TabIndex = 20;
             // 
+            // iDDataGridViewTextBoxColumn4
+            // 
+            this.iDDataGridViewTextBoxColumn4.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn4.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn4.Name = "iDDataGridViewTextBoxColumn4";
+            this.iDDataGridViewTextBoxColumn4.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn4.Visible = false;
+            // 
+            // iDPDBDataGridViewTextBoxColumn4
+            // 
+            this.iDPDBDataGridViewTextBoxColumn4.DataPropertyName = "IDPDB";
+            this.iDPDBDataGridViewTextBoxColumn4.HeaderText = "IDPDB";
+            this.iDPDBDataGridViewTextBoxColumn4.Name = "iDPDBDataGridViewTextBoxColumn4";
+            this.iDPDBDataGridViewTextBoxColumn4.ReadOnly = true;
+            this.iDPDBDataGridViewTextBoxColumn4.Visible = false;
+            // 
+            // nazwaObiektuDataGridViewTextBoxColumn
+            // 
+            this.nazwaObiektuDataGridViewTextBoxColumn.DataPropertyName = "NazwaObiektu";
+            this.nazwaObiektuDataGridViewTextBoxColumn.HeaderText = "Nazwa obiektu";
+            this.nazwaObiektuDataGridViewTextBoxColumn.Name = "nazwaObiektuDataGridViewTextBoxColumn";
+            this.nazwaObiektuDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // krajDataGridViewTextBoxColumn
+            // 
+            this.krajDataGridViewTextBoxColumn.DataPropertyName = "Kraj";
+            this.krajDataGridViewTextBoxColumn.HeaderText = "Kraj";
+            this.krajDataGridViewTextBoxColumn.Name = "krajDataGridViewTextBoxColumn";
+            // 
+            // miejscowośćDataGridViewTextBoxColumn
+            // 
+            this.miejscowośćDataGridViewTextBoxColumn.DataPropertyName = "Miejscowość";
+            this.miejscowośćDataGridViewTextBoxColumn.HeaderText = "Miejscowość";
+            this.miejscowośćDataGridViewTextBoxColumn.Name = "miejscowośćDataGridViewTextBoxColumn";
+            // 
+            // regionDataGridViewTextBoxColumn
+            // 
+            this.regionDataGridViewTextBoxColumn.DataPropertyName = "Region";
+            this.regionDataGridViewTextBoxColumn.HeaderText = "Region";
+            this.regionDataGridViewTextBoxColumn.Name = "regionDataGridViewTextBoxColumn";
+            // 
+            // poraRokuDataGridViewTextBoxColumn
+            // 
+            this.poraRokuDataGridViewTextBoxColumn.DataPropertyName = "Pora roku";
+            this.poraRokuDataGridViewTextBoxColumn.HeaderText = "Pora roku";
+            this.poraRokuDataGridViewTextBoxColumn.Name = "poraRokuDataGridViewTextBoxColumn";
+            // 
+            // dataDataGridViewTextBoxColumn
+            // 
+            this.dataDataGridViewTextBoxColumn.DataPropertyName = "Data";
+            this.dataDataGridViewTextBoxColumn.HeaderText = "Data";
+            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
+            // 
             // fKFilmLokZdjBindingSource
             // 
             this.fKFilmLokZdjBindingSource.DataMember = "FK_Film_LokZdj";
@@ -1583,6 +1820,55 @@
             this.dataGridView_BIBLIO_WYPODIN.Size = new System.Drawing.Size(684, 228);
             this.dataGridView_BIBLIO_WYPODIN.TabIndex = 1;
             // 
+            // iDDataGridViewTextBoxColumn6
+            // 
+            this.iDDataGridViewTextBoxColumn6.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn6.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn6.Name = "iDDataGridViewTextBoxColumn6";
+            this.iDDataGridViewTextBoxColumn6.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn6.Visible = false;
+            // 
+            // iDPDBDataGridViewTextBoxColumn6
+            // 
+            this.iDPDBDataGridViewTextBoxColumn6.DataPropertyName = "IDPDB";
+            this.iDPDBDataGridViewTextBoxColumn6.HeaderText = "IDPDB";
+            this.iDPDBDataGridViewTextBoxColumn6.Name = "iDPDBDataGridViewTextBoxColumn6";
+            this.iDPDBDataGridViewTextBoxColumn6.ReadOnly = true;
+            this.iDPDBDataGridViewTextBoxColumn6.Visible = false;
+            // 
+            // dataWypDataGridViewTextBoxColumn1
+            // 
+            this.dataWypDataGridViewTextBoxColumn1.DataPropertyName = "DataWyp";
+            this.dataWypDataGridViewTextBoxColumn1.HeaderText = "Data wypożyczenia";
+            this.dataWypDataGridViewTextBoxColumn1.Name = "dataWypDataGridViewTextBoxColumn1";
+            // 
+            // dataOddDataGridViewTextBoxColumn1
+            // 
+            this.dataOddDataGridViewTextBoxColumn1.DataPropertyName = "DataOdd";
+            this.dataOddDataGridViewTextBoxColumn1.HeaderText = "Data oddania";
+            this.dataOddDataGridViewTextBoxColumn1.Name = "dataOddDataGridViewTextBoxColumn1";
+            // 
+            // osobaDataGridViewTextBoxColumn1
+            // 
+            this.osobaDataGridViewTextBoxColumn1.DataPropertyName = "Osoba";
+            this.osobaDataGridViewTextBoxColumn1.HeaderText = "Osoba";
+            this.osobaDataGridViewTextBoxColumn1.Name = "osobaDataGridViewTextBoxColumn1";
+            this.osobaDataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // stanPWypDataGridViewTextBoxColumn1
+            // 
+            this.stanPWypDataGridViewTextBoxColumn1.DataPropertyName = "StanPWyp";
+            this.stanPWypDataGridViewTextBoxColumn1.HeaderText = "Stan przed wypożyczeniem";
+            this.stanPWypDataGridViewTextBoxColumn1.Name = "stanPWypDataGridViewTextBoxColumn1";
+            this.stanPWypDataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // stanPOddDataGridViewTextBoxColumn1
+            // 
+            this.stanPOddDataGridViewTextBoxColumn1.DataPropertyName = "StanPOdd";
+            this.stanPOddDataGridViewTextBoxColumn1.HeaderText = "Stan po oddaniu";
+            this.stanPOddDataGridViewTextBoxColumn1.Name = "stanPOddDataGridViewTextBoxColumn1";
+            this.stanPOddDataGridViewTextBoxColumn1.Width = 150;
+            // 
             // fKFilmWYPODINBindingSource
             // 
             this.fKFilmWYPODINBindingSource.DataMember = "FK_Film_WYPODIN";
@@ -1605,6 +1891,55 @@
             this.dataGridView_BIBLIO_WYPIN.Name = "dataGridView_BIBLIO_WYPIN";
             this.dataGridView_BIBLIO_WYPIN.Size = new System.Drawing.Size(684, 204);
             this.dataGridView_BIBLIO_WYPIN.TabIndex = 0;
+            // 
+            // iDDataGridViewTextBoxColumn5
+            // 
+            this.iDDataGridViewTextBoxColumn5.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn5.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn5.Name = "iDDataGridViewTextBoxColumn5";
+            this.iDDataGridViewTextBoxColumn5.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn5.Visible = false;
+            // 
+            // iDPDBDataGridViewTextBoxColumn5
+            // 
+            this.iDPDBDataGridViewTextBoxColumn5.DataPropertyName = "IDPDB";
+            this.iDPDBDataGridViewTextBoxColumn5.HeaderText = "IDPDB";
+            this.iDPDBDataGridViewTextBoxColumn5.Name = "iDPDBDataGridViewTextBoxColumn5";
+            this.iDPDBDataGridViewTextBoxColumn5.ReadOnly = true;
+            this.iDPDBDataGridViewTextBoxColumn5.Visible = false;
+            // 
+            // dataWypDataGridViewTextBoxColumn
+            // 
+            this.dataWypDataGridViewTextBoxColumn.DataPropertyName = "DataWyp";
+            this.dataWypDataGridViewTextBoxColumn.HeaderText = "Data wypożyczenia";
+            this.dataWypDataGridViewTextBoxColumn.Name = "dataWypDataGridViewTextBoxColumn";
+            // 
+            // dataOddDataGridViewTextBoxColumn
+            // 
+            this.dataOddDataGridViewTextBoxColumn.DataPropertyName = "DataOdd";
+            this.dataOddDataGridViewTextBoxColumn.HeaderText = "Data oddania";
+            this.dataOddDataGridViewTextBoxColumn.Name = "dataOddDataGridViewTextBoxColumn";
+            // 
+            // osobaDataGridViewTextBoxColumn
+            // 
+            this.osobaDataGridViewTextBoxColumn.DataPropertyName = "Osoba";
+            this.osobaDataGridViewTextBoxColumn.HeaderText = "Osoba";
+            this.osobaDataGridViewTextBoxColumn.Name = "osobaDataGridViewTextBoxColumn";
+            this.osobaDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // stanPWypDataGridViewTextBoxColumn
+            // 
+            this.stanPWypDataGridViewTextBoxColumn.DataPropertyName = "StanPWyp";
+            this.stanPWypDataGridViewTextBoxColumn.HeaderText = "Stan przed wypożyczeniem";
+            this.stanPWypDataGridViewTextBoxColumn.Name = "stanPWypDataGridViewTextBoxColumn";
+            this.stanPWypDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // stanPOddDataGridViewTextBoxColumn
+            // 
+            this.stanPOddDataGridViewTextBoxColumn.DataPropertyName = "StanPOdd";
+            this.stanPOddDataGridViewTextBoxColumn.HeaderText = "Stan po oddaniu";
+            this.stanPOddDataGridViewTextBoxColumn.Name = "stanPOddDataGridViewTextBoxColumn";
+            this.stanPOddDataGridViewTextBoxColumn.Width = 150;
             // 
             // fKFilmWYPINBindingSource
             // 
@@ -1658,6 +1993,28 @@
             // 
             this.comboBox_Gatunek.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.filmBindingSource, "Gatunek", true));
             this.comboBox_Gatunek.FormattingEnabled = true;
+            this.comboBox_Gatunek.Items.AddRange(new object[] {
+            "Dramat",
+            "Komedia",
+            "Akcja",
+            "Sensacyjny",
+            "Dokument",
+            "Paradokument",
+            "Fabularny",
+            "Horror",
+            "Thriller",
+            "Fantastyka",
+            "Science-Fiction",
+            "Kryminał",
+            "Serial",
+            "Musical",
+            "Bajka",
+            "Animowany",
+            "Reportaż",
+            "Kabaret",
+            "Porno",
+            "Erotyka",
+            "Amatorski"});
             this.comboBox_Gatunek.Location = new System.Drawing.Point(270, 72);
             this.comboBox_Gatunek.Name = "comboBox_Gatunek";
             this.comboBox_Gatunek.Size = new System.Drawing.Size(288, 21);
@@ -1698,6 +2055,7 @@
             this.plikToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.otwórzUtwórzBazęDanychToolStripMenuItem,
             this.eksportujToolStripMenuItem,
+            this.importToolStripMenuItem,
             this.drukujToolStripMenuItem,
             this.wyszukajToolStripMenuItem,
             this.ustawieniaToolStripMenuItem,
@@ -1813,359 +2171,30 @@
             // button_GetDataInt
             // 
             this.button_GetDataInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button_GetDataInt.Image = global::MK_Film_DB_NET.Properties.Resources.upload_ico24x24;
+            this.button_GetDataInt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_GetDataInt.Location = new System.Drawing.Point(636, 630);
             this.button_GetDataInt.Name = "button_GetDataInt";
-            this.button_GetDataInt.Size = new System.Drawing.Size(258, 24);
+            this.button_GetDataInt.Size = new System.Drawing.Size(258, 36);
             this.button_GetDataInt.TabIndex = 27;
             this.button_GetDataInt.Text = "Pobierz dane o filmie z Internetu";
             this.button_GetDataInt.UseVisualStyleBackColor = true;
             this.button_GetDataInt.Click += new System.EventHandler(this.button_GetDataInt_Click);
             // 
-            // iDDataGridViewTextBoxColumn2
-            // 
-            this.iDDataGridViewTextBoxColumn2.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn2.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn2.Name = "iDDataGridViewTextBoxColumn2";
-            this.iDDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.iDDataGridViewTextBoxColumn2.Visible = false;
-            // 
-            // iDPDBDataGridViewTextBoxColumn2
-            // 
-            this.iDPDBDataGridViewTextBoxColumn2.DataPropertyName = "IDPDB";
-            this.iDPDBDataGridViewTextBoxColumn2.HeaderText = "IDPDB";
-            this.iDPDBDataGridViewTextBoxColumn2.Name = "iDPDBDataGridViewTextBoxColumn2";
-            this.iDPDBDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.iDPDBDataGridViewTextBoxColumn2.Visible = false;
-            // 
-            // nazwaDataGridViewTextBoxColumn1
-            // 
-            this.nazwaDataGridViewTextBoxColumn1.DataPropertyName = "Nazwa";
-            this.nazwaDataGridViewTextBoxColumn1.HeaderText = "Nazwa";
-            this.nazwaDataGridViewTextBoxColumn1.Name = "nazwaDataGridViewTextBoxColumn1";
-            // 
-            // adresDataGridViewTextBoxColumn
-            // 
-            this.adresDataGridViewTextBoxColumn.DataPropertyName = "Adres";
-            this.adresDataGridViewTextBoxColumn.HeaderText = "Adres";
-            this.adresDataGridViewTextBoxColumn.Name = "adresDataGridViewTextBoxColumn";
-            // 
-            // telDataGridViewTextBoxColumn
-            // 
-            this.telDataGridViewTextBoxColumn.DataPropertyName = "Tel";
-            this.telDataGridViewTextBoxColumn.HeaderText = "Tel";
-            this.telDataGridViewTextBoxColumn.Name = "telDataGridViewTextBoxColumn";
-            // 
-            // faxDataGridViewTextBoxColumn
-            // 
-            this.faxDataGridViewTextBoxColumn.DataPropertyName = "Fax";
-            this.faxDataGridViewTextBoxColumn.HeaderText = "Fax";
-            this.faxDataGridViewTextBoxColumn.Name = "faxDataGridViewTextBoxColumn";
-            // 
-            // emailDataGridViewTextBoxColumn
-            // 
-            this.emailDataGridViewTextBoxColumn.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
-            // 
-            // wWWDataGridViewTextBoxColumn1
-            // 
-            this.wWWDataGridViewTextBoxColumn1.DataPropertyName = "WWW";
-            this.wWWDataGridViewTextBoxColumn1.HeaderText = "WWW";
-            this.wWWDataGridViewTextBoxColumn1.Name = "wWWDataGridViewTextBoxColumn1";
-            // 
-            // narodowośćDataGridViewTextBoxColumn
-            // 
-            this.narodowośćDataGridViewTextBoxColumn.DataPropertyName = "Narodowość";
-            this.narodowośćDataGridViewTextBoxColumn.HeaderText = "Narodowość";
-            this.narodowośćDataGridViewTextBoxColumn.Name = "narodowośćDataGridViewTextBoxColumn";
-            // 
-            // iDDataGridViewTextBoxColumn3
-            // 
-            this.iDDataGridViewTextBoxColumn3.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn3.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn3.Name = "iDDataGridViewTextBoxColumn3";
-            this.iDDataGridViewTextBoxColumn3.ReadOnly = true;
-            this.iDDataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // iDPDBDataGridViewTextBoxColumn3
-            // 
-            this.iDPDBDataGridViewTextBoxColumn3.DataPropertyName = "IDPDB";
-            this.iDPDBDataGridViewTextBoxColumn3.HeaderText = "IDPDB";
-            this.iDPDBDataGridViewTextBoxColumn3.Name = "iDPDBDataGridViewTextBoxColumn3";
-            this.iDPDBDataGridViewTextBoxColumn3.ReadOnly = true;
-            this.iDPDBDataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // nazwaDataGridViewTextBoxColumn2
-            // 
-            this.nazwaDataGridViewTextBoxColumn2.DataPropertyName = "Nazwa";
-            this.nazwaDataGridViewTextBoxColumn2.HeaderText = "Nazwa";
-            this.nazwaDataGridViewTextBoxColumn2.Name = "nazwaDataGridViewTextBoxColumn2";
-            // 
-            // adresDataGridViewTextBoxColumn1
-            // 
-            this.adresDataGridViewTextBoxColumn1.DataPropertyName = "Adres";
-            this.adresDataGridViewTextBoxColumn1.HeaderText = "Adres";
-            this.adresDataGridViewTextBoxColumn1.Name = "adresDataGridViewTextBoxColumn1";
-            // 
-            // telDataGridViewTextBoxColumn1
-            // 
-            this.telDataGridViewTextBoxColumn1.DataPropertyName = "Tel";
-            this.telDataGridViewTextBoxColumn1.HeaderText = "Tel";
-            this.telDataGridViewTextBoxColumn1.Name = "telDataGridViewTextBoxColumn1";
-            // 
-            // faxDataGridViewTextBoxColumn1
-            // 
-            this.faxDataGridViewTextBoxColumn1.DataPropertyName = "Fax";
-            this.faxDataGridViewTextBoxColumn1.HeaderText = "Fax";
-            this.faxDataGridViewTextBoxColumn1.Name = "faxDataGridViewTextBoxColumn1";
-            // 
-            // emailDataGridViewTextBoxColumn1
-            // 
-            this.emailDataGridViewTextBoxColumn1.DataPropertyName = "Email";
-            this.emailDataGridViewTextBoxColumn1.HeaderText = "Email";
-            this.emailDataGridViewTextBoxColumn1.Name = "emailDataGridViewTextBoxColumn1";
-            // 
-            // wWWDataGridViewTextBoxColumn2
-            // 
-            this.wWWDataGridViewTextBoxColumn2.DataPropertyName = "WWW";
-            this.wWWDataGridViewTextBoxColumn2.HeaderText = "WWW";
-            this.wWWDataGridViewTextBoxColumn2.Name = "wWWDataGridViewTextBoxColumn2";
-            // 
-            // narodowośćDataGridViewTextBoxColumn1
-            // 
-            this.narodowośćDataGridViewTextBoxColumn1.DataPropertyName = "Narodowość";
-            this.narodowośćDataGridViewTextBoxColumn1.HeaderText = "Narodowość";
-            this.narodowośćDataGridViewTextBoxColumn1.Name = "narodowośćDataGridViewTextBoxColumn1";
-            // 
-            // iDDataGridViewTextBoxColumn6
-            // 
-            this.iDDataGridViewTextBoxColumn6.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn6.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn6.Name = "iDDataGridViewTextBoxColumn6";
-            this.iDDataGridViewTextBoxColumn6.ReadOnly = true;
-            this.iDDataGridViewTextBoxColumn6.Visible = false;
-            // 
-            // iDPDBDataGridViewTextBoxColumn6
-            // 
-            this.iDPDBDataGridViewTextBoxColumn6.DataPropertyName = "IDPDB";
-            this.iDPDBDataGridViewTextBoxColumn6.HeaderText = "IDPDB";
-            this.iDPDBDataGridViewTextBoxColumn6.Name = "iDPDBDataGridViewTextBoxColumn6";
-            this.iDPDBDataGridViewTextBoxColumn6.ReadOnly = true;
-            this.iDPDBDataGridViewTextBoxColumn6.Visible = false;
-            // 
-            // dataWypDataGridViewTextBoxColumn1
-            // 
-            this.dataWypDataGridViewTextBoxColumn1.DataPropertyName = "DataWyp";
-            this.dataWypDataGridViewTextBoxColumn1.HeaderText = "Data wypożyczenia";
-            this.dataWypDataGridViewTextBoxColumn1.Name = "dataWypDataGridViewTextBoxColumn1";
-            // 
-            // dataOddDataGridViewTextBoxColumn1
-            // 
-            this.dataOddDataGridViewTextBoxColumn1.DataPropertyName = "DataOdd";
-            this.dataOddDataGridViewTextBoxColumn1.HeaderText = "Data oddania";
-            this.dataOddDataGridViewTextBoxColumn1.Name = "dataOddDataGridViewTextBoxColumn1";
-            // 
-            // osobaDataGridViewTextBoxColumn1
-            // 
-            this.osobaDataGridViewTextBoxColumn1.DataPropertyName = "Osoba";
-            this.osobaDataGridViewTextBoxColumn1.HeaderText = "Osoba";
-            this.osobaDataGridViewTextBoxColumn1.Name = "osobaDataGridViewTextBoxColumn1";
-            this.osobaDataGridViewTextBoxColumn1.Width = 150;
-            // 
-            // stanPWypDataGridViewTextBoxColumn1
-            // 
-            this.stanPWypDataGridViewTextBoxColumn1.DataPropertyName = "StanPWyp";
-            this.stanPWypDataGridViewTextBoxColumn1.HeaderText = "Stan przed wypożyczeniem";
-            this.stanPWypDataGridViewTextBoxColumn1.Name = "stanPWypDataGridViewTextBoxColumn1";
-            this.stanPWypDataGridViewTextBoxColumn1.Width = 150;
-            // 
-            // stanPOddDataGridViewTextBoxColumn1
-            // 
-            this.stanPOddDataGridViewTextBoxColumn1.DataPropertyName = "StanPOdd";
-            this.stanPOddDataGridViewTextBoxColumn1.HeaderText = "Stan po oddaniu";
-            this.stanPOddDataGridViewTextBoxColumn1.Name = "stanPOddDataGridViewTextBoxColumn1";
-            this.stanPOddDataGridViewTextBoxColumn1.Width = 150;
-            // 
-            // iDDataGridViewTextBoxColumn5
-            // 
-            this.iDDataGridViewTextBoxColumn5.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn5.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn5.Name = "iDDataGridViewTextBoxColumn5";
-            this.iDDataGridViewTextBoxColumn5.ReadOnly = true;
-            this.iDDataGridViewTextBoxColumn5.Visible = false;
-            // 
-            // iDPDBDataGridViewTextBoxColumn5
-            // 
-            this.iDPDBDataGridViewTextBoxColumn5.DataPropertyName = "IDPDB";
-            this.iDPDBDataGridViewTextBoxColumn5.HeaderText = "IDPDB";
-            this.iDPDBDataGridViewTextBoxColumn5.Name = "iDPDBDataGridViewTextBoxColumn5";
-            this.iDPDBDataGridViewTextBoxColumn5.ReadOnly = true;
-            this.iDPDBDataGridViewTextBoxColumn5.Visible = false;
-            // 
-            // dataWypDataGridViewTextBoxColumn
-            // 
-            this.dataWypDataGridViewTextBoxColumn.DataPropertyName = "DataWyp";
-            this.dataWypDataGridViewTextBoxColumn.HeaderText = "Data wypożyczenia";
-            this.dataWypDataGridViewTextBoxColumn.Name = "dataWypDataGridViewTextBoxColumn";
-            // 
-            // dataOddDataGridViewTextBoxColumn
-            // 
-            this.dataOddDataGridViewTextBoxColumn.DataPropertyName = "DataOdd";
-            this.dataOddDataGridViewTextBoxColumn.HeaderText = "Data oddania";
-            this.dataOddDataGridViewTextBoxColumn.Name = "dataOddDataGridViewTextBoxColumn";
-            // 
-            // osobaDataGridViewTextBoxColumn
-            // 
-            this.osobaDataGridViewTextBoxColumn.DataPropertyName = "Osoba";
-            this.osobaDataGridViewTextBoxColumn.HeaderText = "Osoba";
-            this.osobaDataGridViewTextBoxColumn.Name = "osobaDataGridViewTextBoxColumn";
-            this.osobaDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // stanPWypDataGridViewTextBoxColumn
-            // 
-            this.stanPWypDataGridViewTextBoxColumn.DataPropertyName = "StanPWyp";
-            this.stanPWypDataGridViewTextBoxColumn.HeaderText = "Stan przed wypożyczeniem";
-            this.stanPWypDataGridViewTextBoxColumn.Name = "stanPWypDataGridViewTextBoxColumn";
-            this.stanPWypDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // stanPOddDataGridViewTextBoxColumn
-            // 
-            this.stanPOddDataGridViewTextBoxColumn.DataPropertyName = "StanPOdd";
-            this.stanPOddDataGridViewTextBoxColumn.HeaderText = "Stan po oddaniu";
-            this.stanPOddDataGridViewTextBoxColumn.Name = "stanPOddDataGridViewTextBoxColumn";
-            this.stanPOddDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // iDDataGridViewTextBoxColumn4
-            // 
-            this.iDDataGridViewTextBoxColumn4.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn4.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn4.Name = "iDDataGridViewTextBoxColumn4";
-            this.iDDataGridViewTextBoxColumn4.ReadOnly = true;
-            this.iDDataGridViewTextBoxColumn4.Visible = false;
-            // 
-            // iDPDBDataGridViewTextBoxColumn4
-            // 
-            this.iDPDBDataGridViewTextBoxColumn4.DataPropertyName = "IDPDB";
-            this.iDPDBDataGridViewTextBoxColumn4.HeaderText = "IDPDB";
-            this.iDPDBDataGridViewTextBoxColumn4.Name = "iDPDBDataGridViewTextBoxColumn4";
-            this.iDPDBDataGridViewTextBoxColumn4.ReadOnly = true;
-            this.iDPDBDataGridViewTextBoxColumn4.Visible = false;
-            // 
-            // nazwaObiektuDataGridViewTextBoxColumn
-            // 
-            this.nazwaObiektuDataGridViewTextBoxColumn.DataPropertyName = "NazwaObiektu";
-            this.nazwaObiektuDataGridViewTextBoxColumn.HeaderText = "Nazwa obiektu";
-            this.nazwaObiektuDataGridViewTextBoxColumn.Name = "nazwaObiektuDataGridViewTextBoxColumn";
-            this.nazwaObiektuDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // krajDataGridViewTextBoxColumn
-            // 
-            this.krajDataGridViewTextBoxColumn.DataPropertyName = "Kraj";
-            this.krajDataGridViewTextBoxColumn.HeaderText = "Kraj";
-            this.krajDataGridViewTextBoxColumn.Name = "krajDataGridViewTextBoxColumn";
-            // 
-            // miejscowośćDataGridViewTextBoxColumn
-            // 
-            this.miejscowośćDataGridViewTextBoxColumn.DataPropertyName = "Miejscowość";
-            this.miejscowośćDataGridViewTextBoxColumn.HeaderText = "Miejscowość";
-            this.miejscowośćDataGridViewTextBoxColumn.Name = "miejscowośćDataGridViewTextBoxColumn";
-            // 
-            // regionDataGridViewTextBoxColumn
-            // 
-            this.regionDataGridViewTextBoxColumn.DataPropertyName = "Region";
-            this.regionDataGridViewTextBoxColumn.HeaderText = "Region";
-            this.regionDataGridViewTextBoxColumn.Name = "regionDataGridViewTextBoxColumn";
-            // 
-            // poraRokuDataGridViewTextBoxColumn
-            // 
-            this.poraRokuDataGridViewTextBoxColumn.DataPropertyName = "Pora roku";
-            this.poraRokuDataGridViewTextBoxColumn.HeaderText = "Pora roku";
-            this.poraRokuDataGridViewTextBoxColumn.Name = "poraRokuDataGridViewTextBoxColumn";
-            // 
-            // dataDataGridViewTextBoxColumn
-            // 
-            this.dataDataGridViewTextBoxColumn.DataPropertyName = "Data";
-            this.dataDataGridViewTextBoxColumn.HeaderText = "Data";
-            this.dataDataGridViewTextBoxColumn.Name = "dataDataGridViewTextBoxColumn";
-            // 
-            // iDDataGridViewTextBoxColumn1
-            // 
-            this.iDDataGridViewTextBoxColumn1.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn1.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn1.Name = "iDDataGridViewTextBoxColumn1";
-            this.iDDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.iDDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // imieNazwDataGridViewTextBoxColumn
-            // 
-            this.imieNazwDataGridViewTextBoxColumn.DataPropertyName = "ImieNazw";
-            this.imieNazwDataGridViewTextBoxColumn.HeaderText = "Imię i Nazwisko";
-            this.imieNazwDataGridViewTextBoxColumn.Name = "imieNazwDataGridViewTextBoxColumn";
-            this.imieNazwDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // rolaDataGridViewTextBoxColumn
-            // 
-            this.rolaDataGridViewTextBoxColumn.DataPropertyName = "Rola";
-            this.rolaDataGridViewTextBoxColumn.HeaderText = "Rola";
-            this.rolaDataGridViewTextBoxColumn.Name = "rolaDataGridViewTextBoxColumn";
-            this.rolaDataGridViewTextBoxColumn.Width = 250;
-            // 
-            // iDPDBDataGridViewTextBoxColumn1
-            // 
-            this.iDPDBDataGridViewTextBoxColumn1.DataPropertyName = "IDPDB";
-            this.iDPDBDataGridViewTextBoxColumn1.HeaderText = "IDPDB";
-            this.iDPDBDataGridViewTextBoxColumn1.Name = "iDPDBDataGridViewTextBoxColumn1";
-            this.iDPDBDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.iDPDBDataGridViewTextBoxColumn1.Visible = false;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // nazwaDataGridViewTextBoxColumn
-            // 
-            this.nazwaDataGridViewTextBoxColumn.DataPropertyName = "Nazwa";
-            this.nazwaDataGridViewTextBoxColumn.HeaderText = "Nazwa";
-            this.nazwaDataGridViewTextBoxColumn.Name = "nazwaDataGridViewTextBoxColumn";
-            this.nazwaDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // tytulDataGridViewTextBoxColumn
-            // 
-            this.tytulDataGridViewTextBoxColumn.DataPropertyName = "Tytul";
-            this.tytulDataGridViewTextBoxColumn.HeaderText = "Tytul";
-            this.tytulDataGridViewTextBoxColumn.Name = "tytulDataGridViewTextBoxColumn";
-            this.tytulDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // autorDataGridViewTextBoxColumn
-            // 
-            this.autorDataGridViewTextBoxColumn.DataPropertyName = "Autor";
-            this.autorDataGridViewTextBoxColumn.HeaderText = "Autor";
-            this.autorDataGridViewTextBoxColumn.Name = "autorDataGridViewTextBoxColumn";
-            // 
-            // wWWDataGridViewTextBoxColumn
-            // 
-            this.wWWDataGridViewTextBoxColumn.DataPropertyName = "WWW";
-            this.wWWDataGridViewTextBoxColumn.HeaderText = "WWW";
-            this.wWWDataGridViewTextBoxColumn.Name = "wWWDataGridViewTextBoxColumn";
-            this.wWWDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // ocenaDataGridViewTextBoxColumn
-            // 
-            this.ocenaDataGridViewTextBoxColumn.DataPropertyName = "Ocena";
-            this.ocenaDataGridViewTextBoxColumn.HeaderText = "Ocena";
-            this.ocenaDataGridViewTextBoxColumn.Name = "ocenaDataGridViewTextBoxColumn";
-            // 
-            // iDPDBDataGridViewTextBoxColumn
-            // 
-            this.iDPDBDataGridViewTextBoxColumn.DataPropertyName = "IDPDB";
-            this.iDPDBDataGridViewTextBoxColumn.HeaderText = "IDPDB";
-            this.iDPDBDataGridViewTextBoxColumn.Name = "iDPDBDataGridViewTextBoxColumn";
-            this.iDPDBDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDPDBDataGridViewTextBoxColumn.Visible = false;
+            // importToolStripMenuItem
+            // 
+            this.importToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bibliotekaFilmówMKFilmDBToolStripMenuItem});
+            this.importToolStripMenuItem.Name = "importToolStripMenuItem";
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.importToolStripMenuItem.Text = "Import";
+            // 
+            // bibliotekaFilmówMKFilmDBToolStripMenuItem
+            // 
+            this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Name = "bibliotekaFilmówMKFilmDBToolStripMenuItem";
+            this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
+            this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Text = "Biblioteka filmów - MK Film DB";
+            this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Click += new System.EventHandler(this.bibliotekaFilmówMKFilmDBToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -2214,7 +2243,6 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage_Opis.ResumeLayout(false);
             this.tabPage_Opis.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_OP_Nagrody)).EndInit();
             this.tabPage_Ocena.ResumeLayout(false);
             this.tabPage_Ocena.PerformLayout();
             this.groupBox_OC_OW.ResumeLayout(false);
@@ -2401,8 +2429,6 @@
         private System.Windows.Forms.ToolStripMenuItem pomocToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem sprzwdźAktualizacjeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem oProgramieToolStripMenuItem;
-        private System.Windows.Forms.DataGridView dataGridView_OP_Nagrody;
-        private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.TextBox textBox_OP_Opis;
         private defaultDataSet defaultDataSet;
@@ -2476,6 +2502,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn osobaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn stanPWypDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn stanPOddDataGridViewTextBoxColumn;
+        private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bibliotekaFilmówMKFilmDBToolStripMenuItem;
     }
 }
 

@@ -28,21 +28,21 @@ namespace MK_Film_DB_NET
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'defaultDataSet.WYPODIN' table. You can move, or remove it, as needed.
-            this.wYPODINTableAdapter.Fill(this.defaultDataSet.WYPODIN);
+            //this.wYPODINTableAdapter.Fill(this.defaultDataSet.WYPODIN);
             // TODO: This line of code loads data into the 'defaultDataSet.WYPIN' table. You can move, or remove it, as needed.
-            this.wYPINTableAdapter.Fill(this.defaultDataSet.WYPIN);
+            //this.wYPINTableAdapter.Fill(this.defaultDataSet.WYPIN);
             // TODO: This line of code loads data into the 'defaultDataSet.LokZdj' table. You can move, or remove it, as needed.
-            this.lokZdjTableAdapter.Fill(this.defaultDataSet.LokZdj);
+            //this.lokZdjTableAdapter.Fill(this.defaultDataSet.LokZdj);
             // TODO: This line of code loads data into the 'defaultDataSet.Dystrybucja' table. You can move, or remove it, as needed.
-            this.dystrybucjaTableAdapter.Fill(this.defaultDataSet.Dystrybucja);
+            //this.dystrybucjaTableAdapter.Fill(this.defaultDataSet.Dystrybucja);
             // TODO: This line of code loads data into the 'defaultDataSet.Produkcja' table. You can move, or remove it, as needed.
-            this.produkcjaTableAdapter.Fill(this.defaultDataSet.Produkcja);
+            //this.produkcjaTableAdapter.Fill(this.defaultDataSet.Produkcja);
             // TODO: This line of code loads data into the 'defaultDataSet.Obsada' table. You can move, or remove it, as needed.
-            this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
+            //this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
             // TODO: This line of code loads data into the 'defaultDataSet.Ocena' table. You can move, or remove it, as needed.
-            this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
+            //this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
             // TODO: This line of code loads data into the 'defaultDataSet.Film' table. You can move, or remove it, as needed.
-            this.filmTableAdapter.Fill(this.defaultDataSet.Film);
+            //this.filmTableAdapter.Fill(this.defaultDataSet.Film);
             
             Start_AU();
 
@@ -596,12 +596,18 @@ namespace MK_Film_DB_NET
 
         private void drukujToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //TODO: Napsiac wywołanie kreatora drukowania
+            DrukWiz frmdruk = new DrukWiz();
+            frmdruk.Show(this);
         }
 
         private void button_GetDataInt_Click(object sender, EventArgs e)
         {
             //TODO: Napisać kreatora pobierania danych z internetu
+        }
+
+        private void bibliotekaFilmówMKFilmDBToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //TODO: Dodac wywołanie wizarda importu z DB BF 1.0.2.0 - MK Film DB 1.0.5.2
         }
 
     }
