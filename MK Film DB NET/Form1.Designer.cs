@@ -225,6 +225,8 @@
             this.plikToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otwórzUtwórzBazęDanychToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eksportujToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bibliotekaFilmówMKFilmDBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.drukujToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wyszukajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ustawieniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -242,8 +244,8 @@
             this.wYPINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPINTableAdapter();
             this.wYPODINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPODINTableAdapter();
             this.button_GetDataInt = new System.Windows.Forms.Button();
-            this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bibliotekaFilmówMKFilmDBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Okl_Przod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).BeginInit();
@@ -2078,6 +2080,24 @@
             this.eksportujToolStripMenuItem.Text = "Eksportuj";
             this.eksportujToolStripMenuItem.Click += new System.EventHandler(this.eksportujToolStripMenuItem_Click);
             // 
+            // importToolStripMenuItem
+            // 
+            this.importToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bibliotekaFilmówMKFilmDBToolStripMenuItem});
+            this.importToolStripMenuItem.Name = "importToolStripMenuItem";
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.importToolStripMenuItem.Text = "Import";
+            // 
+            // bibliotekaFilmówMKFilmDBToolStripMenuItem
+            // 
+            this.bibliotekaFilmówMKFilmDBToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3});
+            this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Name = "bibliotekaFilmówMKFilmDBToolStripMenuItem";
+            this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
+            this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Text = "Biblioteka filmów - MK Film DB";
+            this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Click += new System.EventHandler(this.bibliotekaFilmówMKFilmDBToolStripMenuItem_Click);
+            // 
             // drukujToolStripMenuItem
             // 
             this.drukujToolStripMenuItem.Name = "drukujToolStripMenuItem";
@@ -2181,20 +2201,17 @@
             this.button_GetDataInt.UseVisualStyleBackColor = true;
             this.button_GetDataInt.Click += new System.EventHandler(this.button_GetDataInt_Click);
             // 
-            // importToolStripMenuItem
+            // toolStripMenuItem2
             // 
-            this.importToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bibliotekaFilmówMKFilmDBToolStripMenuItem});
-            this.importToolStripMenuItem.Name = "importToolStripMenuItem";
-            this.importToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.importToolStripMenuItem.Text = "Import";
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem2.Text = "1.0.2.0 - 1.0.5.2";
             // 
-            // bibliotekaFilmówMKFilmDBToolStripMenuItem
+            // toolStripMenuItem3
             // 
-            this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Name = "bibliotekaFilmówMKFilmDBToolStripMenuItem";
-            this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
-            this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Text = "Biblioteka filmów - MK Film DB";
-            this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Click += new System.EventHandler(this.bibliotekaFilmówMKFilmDBToolStripMenuItem_Click);
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem3.Text = "1.0 - 1.0.1.19";
             // 
             // Form1
             // 
@@ -2504,6 +2521,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn stanPOddDataGridViewTextBoxColumn;
         private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bibliotekaFilmówMKFilmDBToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
     }
 }
 
