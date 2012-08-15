@@ -227,6 +227,8 @@
             this.eksportujToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bibliotekaFilmówMKFilmDBToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.drukujToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wyszukajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ustawieniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -244,8 +246,6 @@
             this.wYPINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPINTableAdapter();
             this.wYPODINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPODINTableAdapter();
             this.button_GetDataInt = new System.Windows.Forms.Button();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Okl_Przod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).BeginInit();
@@ -2096,7 +2096,18 @@
             this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Name = "bibliotekaFilmówMKFilmDBToolStripMenuItem";
             this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Text = "Biblioteka filmów - MK Film DB";
-            
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(151, 22);
+            this.toolStripMenuItem2.Text = "1.0.2.0 - 1.0.5.2";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(151, 22);
+            this.toolStripMenuItem3.Text = "1.0 - 1.0.1.19";
             // 
             // drukujToolStripMenuItem
             // 
@@ -2200,18 +2211,6 @@
             this.button_GetDataInt.Text = "Pobierz dane o filmie z Internetu";
             this.button_GetDataInt.UseVisualStyleBackColor = true;
             this.button_GetDataInt.Click += new System.EventHandler(this.button_GetDataInt_Click);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem2.Text = "1.0.2.0 - 1.0.5.2";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem3.Text = "1.0 - 1.0.1.19";
             // 
             // Form1
             // 
@@ -2330,7 +2329,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox_Tytul;
         private System.Windows.Forms.TextBox textBox_TytulOrig;
         private System.Windows.Forms.ComboBox comboBox_Gatunek;
         private System.Windows.Forms.Label label6;
@@ -2523,6 +2521,7 @@
         private System.Windows.Forms.ToolStripMenuItem bibliotekaFilmówMKFilmDBToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        protected System.Windows.Forms.TextBox textBox_Tytul;
     }
 }
 
