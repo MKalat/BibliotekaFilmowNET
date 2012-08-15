@@ -140,31 +140,7 @@ namespace MK_Film_DB_NET
                                 this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KrajProd = ele.OuterText;
                             }
                         }
-                        if (this.checkBox_DL_OB.Checked == true)
-                        {
-                            if (ele.FirstChild.OuterHtml.Contains("reżyseria"))
-                            {
-                                HtmlElement ele2 = ele.FirstChild.NextSibling;
-                                foreach (HtmlElement ele3 in ele2.Children)
-                                {
-                                    if (!(ele.OuterText.Contains("więcej")))
-                                    {
-                                        this.defaultDataSet.Obsada.AddObsadaRow(ele3.OuterText, "Reżyser", defaultDataSet.Film[this.fKFilmObsadaBindingSource.Position]);
-                                    }
-                                }
-                            }
-                            if (ele.FirstChild.OuterHtml.Contains("scenariusz"))
-                            {
-                                HtmlElement ele2 = ele.FirstChild.NextSibling;
-                                foreach (HtmlElement ele3 in ele2.Children)
-                                {
-                                    if (!(ele.OuterText.Contains("więcej")))
-                                    {
-                                        this.defaultDataSet.Obsada.AddObsadaRow(ele3.OuterText, "Scenariusz", defaultDataSet.Film[this.fKFilmObsadaBindingSource.Position]);
-                                    }
-                                }
-                            }
-                        }
+                        
 
 
 
@@ -193,14 +169,8 @@ namespace MK_Film_DB_NET
                         }
 
                     }
-                    else
-                    {
-                        if (this.checkBox_DL_FILM.Checked == true)
-                        {
-                            SaveDS();
-                        }
-
-                    }
+                    SaveDS();
+                    
 
 
                     visited2 = true;
@@ -209,8 +179,37 @@ namespace MK_Film_DB_NET
             }
             else if (doc.Url.ToString().Contains(ctrl3_uri))
             {
+                foreach (HtmlElement ele in doc.GetElementsByTagName("dt"))
+                {
 
+                    if (ele.OuterHtml.Contains("reżyser"))
+                    {
+                        foreach (HtmlElement ele2 in ele.NextSibling.FirstChild.Children)
+                        {
+                            this.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Reżyser", defaultDataSet.Film[this.fKFilmObsadaBindingSource.Position]);
+                            
+                            
+                        }
+                    }
+                    if (ele.OuterHtml.Contains("scenarzysta"))
+                    {
+                        foreach (HtmlElement ele2 in ele.NextSibling.FirstChild.Children)
+                        {
+                            this.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Scenariusz", defaultDataSet.Film[this.fKFilmObsadaBindingSource.Position]);
+                            
+                        }
+                    }
+                    if (ele.OuterHtml.Contains("aktor"))
+                    {
+                        foreach (HtmlElement ele2 in ele.NextSibling.FirstChild.Children)
+                        {
+                            this.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Scenariusz", defaultDataSet.Film[this.fKFilmObsadaBindingSource.Position]);
+                            
+                        
 
+                    }
+                }
+                       
 
             }
             else
