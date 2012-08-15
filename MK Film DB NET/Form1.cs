@@ -604,6 +604,7 @@ namespace MK_Film_DB_NET
 
         private void button_GetDataInt_Click(object sender, EventArgs e)
         {
+            ctrl_Title = this.textBox_Tytul.Text;
             IntWiz frmInt = new IntWiz();
             frmInt.Show(this);
         }

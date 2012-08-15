@@ -297,13 +297,12 @@
             // 
             this.webBrowser_GetDataInt.AllowWebBrowserDrop = false;
             this.webBrowser_GetDataInt.IsWebBrowserContextMenuEnabled = false;
-            this.webBrowser_GetDataInt.Location = new System.Drawing.Point(348, 234);
+            this.webBrowser_GetDataInt.Location = new System.Drawing.Point(414, 18);
             this.webBrowser_GetDataInt.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser_GetDataInt.Name = "webBrowser_GetDataInt";
             this.webBrowser_GetDataInt.ScriptErrorsSuppressed = true;
-            this.webBrowser_GetDataInt.Size = new System.Drawing.Size(42, 30);
+            this.webBrowser_GetDataInt.Size = new System.Drawing.Size(294, 666);
             this.webBrowser_GetDataInt.TabIndex = 6;
-            this.webBrowser_GetDataInt.Visible = false;
             this.webBrowser_GetDataInt.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser_GetDataInt_DocumentCompleted);
             // 
             // label2
@@ -357,7 +356,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 702);
+            this.ClientSize = new System.Drawing.Size(722, 702);
             this.Controls.Add(this.listView_Results);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.webBrowser_GetDataInt);

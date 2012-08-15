@@ -44,11 +44,11 @@ namespace MK_Film_DB_NET
 
             if (doc.Title.Contains("Filmweb - filmy takie jak Ty!"))
             {
-                element = doc.GetElementById("mainSearchInputText");
+                element = doc.GetElementById("mainSearchInput");
                 element.SetAttribute("value", Form1.ctrl_Title);
                 foreach (HtmlElement ele in doc.GetElementsByTagName("input"))
                 {
-                    if (ele.OuterHtml.Contains("type=submit>"))
+                    if (ele.OuterHtml.Contains("type=submit"))
                     {
                         ele.InvokeMember("Click");
                         break;
@@ -61,9 +61,9 @@ namespace MK_Film_DB_NET
             }
             else if (doc.Url.ToString().Contains("http://www.filmweb.pl/search?"))
             {
-                foreach (HtmlElement ele in doc.GetElementsByTagName("A"))
+                foreach (HtmlElement ele in doc.GetElementsByTagName("a"))
                 {
-                    if (ele.OuterHtml.Contains("Filmy"))
+                    if (ele.InnerText == "Filmy")
                     {
                         ctrl_uri = ele.GetAttribute("href");
                         ele.InvokeMember("Click");
@@ -77,28 +77,34 @@ namespace MK_Film_DB_NET
             }
             else if (doc.Url.ToString().Contains(ctrl_uri))
             {
-                foreach (HtmlElement ele in doc.GetElementsByTagName("LI"))
+                foreach (HtmlElement ele in doc.GetElementsByTagName("DIV"))
                 {
-                    if (ele.GetAttribute("class") == "searchResult")
+
+                    if (ele.GetAttribute("class") == "searchResultCol_2_wrapper")
                     {
                         foreach (HtmlElement ele2 in ele.Children)
                         {
                             if (ele2.GetAttribute("class") == "searchResultTitle")
                             {
-                                ctrl2_uri = ele2.GetAttribute("href");
+                                ctrl2_uri = ele.GetAttribute("href");
                                 res_uri = ctrl2_uri;
-                                res_title = ele2.InnerText;
-                            }
-                            if (ele2.GetAttribute("class") == "searchResultDetails")
-                            {
-                                res_details = ele2.InnerText;
+                                res_title = ele.InnerText;
+                                if (ele.GetAttribute("class") == "searchResultDetails")
+                                {
+                                    res_details = ele.InnerText;
+                                }
+
+                                ListViewItem lvi = new ListViewItem(res_title);
+                                lvi.SubItems.Add(res_details);
+                                lvi.SubItems.Add(res_uri);
+                                this.listView_Results.Items.Add(lvi);
                             }
                         }
-                        ListViewItem lvi = new ListViewItem(res_title);
-                        lvi.SubItems.Add(res_details);
-                        lvi.SubItems.Add(res_uri);
-                        this.listView_Results.Items.Add(lvi);
                     }
+                    
+                        
+                        
+                    
 
 
                 }
