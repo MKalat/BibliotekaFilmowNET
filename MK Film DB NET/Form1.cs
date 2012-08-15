@@ -19,6 +19,7 @@ namespace MK_Film_DB_NET
         }
         public static String cur_db_path;
         public static Int32 s_pos;
+        public static String db_path, ctrl_Title;
 
         public SETT_REC sett = new SETT_REC();
 
@@ -44,14 +45,15 @@ namespace MK_Film_DB_NET
             // TODO: This line of code loads data into the 'defaultDataSet.Film' table. You can move, or remove it, as needed.
             //this.filmTableAdapter.Fill(this.defaultDataSet.Film);
             
-            Start_AU();
+            
 
             String path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            String db_path = path;
+            db_path = path;
             db_path = db_path + "\\MKFilmDBNET\\";
             cur_db_path = db_path + "MKFDB.sdf";
 
             Read_settings();
+            Start_AU();
             if (CheckDBExist(cur_db_path) == 0)
             {
                 Utworz_DB(db_path);
@@ -602,13 +604,11 @@ namespace MK_Film_DB_NET
 
         private void button_GetDataInt_Click(object sender, EventArgs e)
         {
-            //TODO: Napisać kreatora pobierania danych z internetu
+            IntWiz frmInt = new IntWiz();
+            frmInt.Show(this);
         }
 
-        private void bibliotekaFilmówMKFilmDBToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //TODO: Dodac wywołanie wizarda importu z DB BF 1.0.2.0 - MK Film DB 1.0.5.2
-        }
+        
 
     }
     public class SETT_REC // ustawienia profilu - w lokalizacji profili - po jednym na profil

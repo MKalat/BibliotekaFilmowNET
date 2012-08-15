@@ -60,9 +60,9 @@ namespace MK_Film_DB_NET.Properties {
             }
         }
         
-        internal static System.Drawing.Bitmap del_ico24x24_2 {
+        internal static System.Drawing.Bitmap del_ico24x242 {
             get {
-                object obj = ResourceManager.GetObject("del_ico24x24-2", resourceCulture);
+                object obj = ResourceManager.GetObject("del_ico24x242", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

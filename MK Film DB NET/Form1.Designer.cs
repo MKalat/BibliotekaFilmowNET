@@ -464,7 +464,7 @@
             // button_DEL
             // 
             this.button_DEL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_DEL.Image = global::MK_Film_DB_NET.Properties.Resources.del_ico24x24_2;
+            this.button_DEL.Image = global::MK_Film_DB_NET.Properties.Resources.del_ico24x242;
             this.button_DEL.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_DEL.Location = new System.Drawing.Point(510, 630);
             this.button_DEL.Name = "button_DEL";
@@ -2096,7 +2096,7 @@
             this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Name = "bibliotekaFilmówMKFilmDBToolStripMenuItem";
             this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
             this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Text = "Biblioteka filmów - MK Film DB";
-            this.bibliotekaFilmówMKFilmDBToolStripMenuItem.Click += new System.EventHandler(this.bibliotekaFilmówMKFilmDBToolStripMenuItem_Click);
+            
             // 
             // drukujToolStripMenuItem
             // 

@@ -1255,33 +1255,16 @@
       <xs:selector xpath=".//mstns:WYPODIN" />
       <xs:field xpath="mstns:ID" />
     </xs:unique>
-    <xs:keyref name="FK_Film_WYPODIN" refer="Film_Constraint1" msprop:rel_Generator_UserRelationName="FK_Film_WYPODIN" msprop:rel_Generator_RelationVarName="relationFK_Film_WYPODIN" msprop:rel_Generator_UserChildTable="WYPODIN" msprop:rel_Generator_UserParentTable="Film" msprop:rel_Generator_ParentPropName="FilmRow" msprop:rel_Generator_ChildPropName="GetWYPODINRows">
-      <xs:selector xpath=".//mstns:WYPODIN" />
-      <xs:field xpath="mstns:IDPDB" />
-    </xs:keyref>
-    <xs:keyref name="FK_Film_WYPIN" refer="Film_Constraint1" msprop:rel_Generator_UserRelationName="FK_Film_WYPIN" msprop:rel_Generator_RelationVarName="relationFK_Film_WYPIN" msprop:rel_Generator_UserChildTable="WYPIN" msprop:rel_Generator_UserParentTable="Film" msprop:rel_Generator_ParentPropName="FilmRow" msprop:rel_Generator_ChildPropName="GetWYPINRows">
-      <xs:selector xpath=".//mstns:WYPIN" />
-      <xs:field xpath="mstns:IDPDB" />
-    </xs:keyref>
-    <xs:keyref name="FK_Film_Produkcja" refer="Film_Constraint1" msprop:rel_Generator_UserRelationName="FK_Film_Produkcja" msprop:rel_Generator_RelationVarName="relationFK_Film_Produkcja" msprop:rel_Generator_UserChildTable="Produkcja" msprop:rel_Generator_UserParentTable="Film" msprop:rel_Generator_ParentPropName="FilmRow" msprop:rel_Generator_ChildPropName="GetProdukcjaRows">
-      <xs:selector xpath=".//mstns:Produkcja" />
-      <xs:field xpath="mstns:IDPDB" />
-    </xs:keyref>
-    <xs:keyref name="FK_Film_Ocena" refer="Film_Constraint1" msprop:rel_Generator_UserRelationName="FK_Film_Ocena" msprop:rel_Generator_RelationVarName="relationFK_Film_Ocena" msprop:rel_Generator_UserChildTable="Ocena" msprop:rel_Generator_UserParentTable="Film" msprop:rel_Generator_ParentPropName="FilmRow" msprop:rel_Generator_ChildPropName="GetOcenaRows">
-      <xs:selector xpath=".//mstns:Ocena" />
-      <xs:field xpath="mstns:IDPDB" />
-    </xs:keyref>
-    <xs:keyref name="FK_Film_Obsada" refer="Film_Constraint1" msprop:rel_Generator_UserRelationName="FK_Film_Obsada" msprop:rel_Generator_RelationVarName="relationFK_Film_Obsada" msprop:rel_Generator_UserChildTable="Obsada" msprop:rel_Generator_UserParentTable="Film" msprop:rel_Generator_ParentPropName="FilmRow" msprop:rel_Generator_ChildPropName="GetObsadaRows">
-      <xs:selector xpath=".//mstns:Obsada" />
-      <xs:field xpath="mstns:IDPDB" />
-    </xs:keyref>
-    <xs:keyref name="FK_Film_LokZdj" refer="Film_Constraint1" msprop:rel_Generator_UserRelationName="FK_Film_LokZdj" msprop:rel_Generator_RelationVarName="relationFK_Film_LokZdj" msprop:rel_Generator_UserChildTable="LokZdj" msprop:rel_Generator_UserParentTable="Film" msprop:rel_Generator_ParentPropName="FilmRow" msprop:rel_Generator_ChildPropName="GetLokZdjRows">
-      <xs:selector xpath=".//mstns:LokZdj" />
-      <xs:field xpath="mstns:IDPDB" />
-    </xs:keyref>
-    <xs:keyref name="FK_Film_Dystrybucja" refer="Film_Constraint1" msprop:rel_Generator_UserRelationName="FK_Film_Dystrybucja" msprop:rel_Generator_RelationVarName="relationFK_Film_Dystrybucja" msprop:rel_Generator_UserChildTable="Dystrybucja" msprop:rel_Generator_UserParentTable="Film" msprop:rel_Generator_ParentPropName="FilmRow" msprop:rel_Generator_ChildPropName="GetDystrybucjaRows">
-      <xs:selector xpath=".//mstns:Dystrybucja" />
-      <xs:field xpath="mstns:IDPDB" />
-    </xs:keyref>
   </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_Film_Dystrybucja" msdata:parent="Film" msdata:child="Dystrybucja" msdata:parentkey="ID" msdata:childkey="IDPDB" msprop:Generator_UserRelationName="FK_Film_Dystrybucja" msprop:Generator_RelationVarName="relationFK_Film_Dystrybucja" msprop:Generator_UserChildTable="Dystrybucja" msprop:Generator_UserParentTable="Film" msprop:Generator_ParentPropName="FilmRow" msprop:Generator_ChildPropName="GetDystrybucjaRows" />
+      <msdata:Relationship name="FK_Film_WYPODIN" msdata:parent="Film" msdata:child="WYPODIN" msdata:parentkey="ID" msdata:childkey="IDPDB" msprop:Generator_UserRelationName="FK_Film_WYPODIN" msprop:Generator_RelationVarName="relationFK_Film_WYPODIN" msprop:Generator_UserChildTable="WYPODIN" msprop:Generator_UserParentTable="Film" msprop:Generator_ParentPropName="FilmRow" msprop:Generator_ChildPropName="GetWYPODINRows" />
+      <msdata:Relationship name="FK_Film_Obsada" msdata:parent="Film" msdata:child="Obsada" msdata:parentkey="ID" msdata:childkey="IDPDB" msprop:Generator_UserRelationName="FK_Film_Obsada" msprop:Generator_RelationVarName="relationFK_Film_Obsada" msprop:Generator_UserChildTable="Obsada" msprop:Generator_UserParentTable="Film" msprop:Generator_ParentPropName="FilmRow" msprop:Generator_ChildPropName="GetObsadaRows" />
+      <msdata:Relationship name="FK_Film_WYPIN" msdata:parent="Film" msdata:child="WYPIN" msdata:parentkey="ID" msdata:childkey="IDPDB" msprop:Generator_UserRelationName="FK_Film_WYPIN" msprop:Generator_RelationVarName="relationFK_Film_WYPIN" msprop:Generator_UserChildTable="WYPIN" msprop:Generator_UserParentTable="Film" msprop:Generator_ParentPropName="FilmRow" msprop:Generator_ChildPropName="GetWYPINRows" />
+      <msdata:Relationship name="FK_Film_Produkcja" msdata:parent="Film" msdata:child="Produkcja" msdata:parentkey="ID" msdata:childkey="IDPDB" msprop:Generator_UserRelationName="FK_Film_Produkcja" msprop:Generator_RelationVarName="relationFK_Film_Produkcja" msprop:Generator_UserChildTable="Produkcja" msprop:Generator_UserParentTable="Film" msprop:Generator_ParentPropName="FilmRow" msprop:Generator_ChildPropName="GetProdukcjaRows" />
+      <msdata:Relationship name="FK_Film_Ocena" msdata:parent="Film" msdata:child="Ocena" msdata:parentkey="ID" msdata:childkey="IDPDB" msprop:Generator_UserRelationName="FK_Film_Ocena" msprop:Generator_RelationVarName="relationFK_Film_Ocena" msprop:Generator_UserChildTable="Ocena" msprop:Generator_UserParentTable="Film" msprop:Generator_ParentPropName="FilmRow" msprop:Generator_ChildPropName="GetOcenaRows" />
+      <msdata:Relationship name="FK_Film_LokZdj" msdata:parent="Film" msdata:child="LokZdj" msdata:parentkey="ID" msdata:childkey="IDPDB" msprop:Generator_UserRelationName="FK_Film_LokZdj" msprop:Generator_RelationVarName="relationFK_Film_LokZdj" msprop:Generator_UserChildTable="LokZdj" msprop:Generator_UserParentTable="Film" msprop:Generator_ParentPropName="FilmRow" msprop:Generator_ChildPropName="GetLokZdjRows" />
+    </xs:appinfo>
+  </xs:annotation>
 </xs:schema>

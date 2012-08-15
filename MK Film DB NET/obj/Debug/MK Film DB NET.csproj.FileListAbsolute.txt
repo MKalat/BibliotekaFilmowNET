@@ -12,3 +12,5 @@ E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\
 E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\MK Film DB NET.csproj.GenerateResource.Cache
 E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\MK Film DB NET.exe
 E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\MK Film DB NET.pdb
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\MK_Film_DB_NET.DrukWiz.resources
+E:\Moje dokumenty\Visual Studio 2008\Projects\MK Film DB NET\MK Film DB NET\obj\Debug\MK_Film_DB_NET.IntWiz.resources
