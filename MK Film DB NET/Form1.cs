@@ -609,6 +609,18 @@ namespace MK_Film_DB_NET
             frmInt.Show(this);
         }
 
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            //TODO: Napisać import z BF 1020 - 1052
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ImpOldBF frm_impOldbf = new ImpOldBF();
+            frm_impOldbf.Show(this);
+
+        }
+
         
 
     }

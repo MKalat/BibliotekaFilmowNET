@@ -204,8 +204,8 @@ namespace MK_Film_DB_NET
                         foreach (HtmlElement ele2 in ele.NextSibling.FirstChild.Children)
                         {
                             this.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Scenariusz", defaultDataSet.Film[this.fKFilmObsadaBindingSource.Position]);
-                            
-                        
+
+                        }
 
                     }
                 }
