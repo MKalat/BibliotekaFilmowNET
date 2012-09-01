@@ -57,6 +57,7 @@ namespace MK_Film_DB_NET
             if (CheckDBExist(cur_db_path) == 0)
             {
                 Utworz_DB(db_path);
+                ImpStartWiz();
 
             }
             this.wYPODINTableAdapter.Connection.ConnectionString = "Data Source=" + cur_db_path + ";Max Database Size=4091";
@@ -618,6 +619,14 @@ namespace MK_Film_DB_NET
         {
             ImpOldBF frm_impOldbf = new ImpOldBF();
             frm_impOldbf.Show(this);
+
+        }
+
+        private void ImpStartWiz()
+        {
+            // kreator importu ze starego formatu podczas pierwszego muruchomienia
+            FStartWiz frm_startWiz = new FStartWiz();
+            frm_startWiz.Show();
 
         }
 
