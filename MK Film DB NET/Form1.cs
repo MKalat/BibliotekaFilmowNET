@@ -49,15 +49,15 @@ namespace MK_Film_DB_NET
 
             String path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             db_path = path;
-            db_path = db_path + "\\MKFilmDBNET\\";
-            cur_db_path = db_path + "MKFDB.sdf";
+            db_path = db_path + "\\BFNET\\";
+            cur_db_path = db_path + "BFDB.sdf";
 
             Read_settings();
             Start_AU();
             if (CheckDBExist(cur_db_path) == 0)
             {
                 Utworz_DB(db_path);
-                ImpStartWiz();
+                //ImpStartWiz();
 
             }
             this.wYPODINTableAdapter.Connection.ConnectionString = "Data Source=" + cur_db_path + ";Max Database Size=4091";
@@ -90,6 +90,7 @@ namespace MK_Film_DB_NET
             {
                 this.button_GetDataInt.Enabled = false;
             }
+            LiczRec();
         }
         private void Read_settings()
         {
@@ -185,6 +186,7 @@ namespace MK_Film_DB_NET
 
         private void button_SAVE_Click(object sender, EventArgs e)
         {
+            int pos = this.filmBindingSource.Position;
             this.filmBindingSource.EndEdit();
 
             this.wYPODINTableAdapter.Update(this.defaultDataSet.WYPODIN);
@@ -209,7 +211,7 @@ namespace MK_Film_DB_NET
             {
                 this.button_GetDataInt.Enabled = true;
             }
-
+            
             LiczRec();
         }
 
@@ -280,6 +282,7 @@ namespace MK_Film_DB_NET
             DialogResult res = ofd.ShowDialog(this);
             if (res == DialogResult.OK)
             {
+                this.pictureBox_Okl_Przod.ImageLocation = ofd.FileName;
                 defaultDataSet.Film[filmBindingSource.Position].pathtofront = ofd.FileName;
                 this.wYPODINTableAdapter.Update(this.defaultDataSet.WYPODIN);
                 this.wYPINTableAdapter.Update(this.defaultDataSet.WYPIN);
@@ -305,6 +308,7 @@ namespace MK_Film_DB_NET
 
         private void button_DelPicFront_Click(object sender, EventArgs e)
         {
+            this.pictureBox_Okl_Przod.ImageLocation = "";
             defaultDataSet.Film[filmBindingSource.Position].pathtofront = "";
             this.wYPODINTableAdapter.Update(this.defaultDataSet.WYPODIN);
             this.wYPINTableAdapter.Update(this.defaultDataSet.WYPIN);
@@ -336,6 +340,7 @@ namespace MK_Film_DB_NET
             DialogResult res = ofd.ShowDialog(this);
             if (res == DialogResult.OK)
             {
+                this.pictureBox_Okl_Tyl.ImageLocation = ofd.FileName;
                 defaultDataSet.Film[filmBindingSource.Position].pathtoback = ofd.FileName;
                 this.wYPODINTableAdapter.Update(this.defaultDataSet.WYPODIN);
                 this.wYPINTableAdapter.Update(this.defaultDataSet.WYPIN);
@@ -360,6 +365,7 @@ namespace MK_Film_DB_NET
 
         private void button_DelPicBack_Click(object sender, EventArgs e)
         {
+            this.pictureBox_Okl_Tyl.ImageLocation = "";
             defaultDataSet.Film[filmBindingSource.Position].pathtoback = "";
             this.wYPODINTableAdapter.Update(this.defaultDataSet.WYPODIN);
             this.wYPINTableAdapter.Update(this.defaultDataSet.WYPIN);
@@ -415,13 +421,13 @@ namespace MK_Film_DB_NET
                 {
                     if (ex.NativeErrorCode == ERROR_FILE_NOT_FOUND)
                     {
-                        MessageBox.Show(ex.Message + ". Sprawdź ścieżkę.", "MK Film DB NET", MessageBoxButtons.OK);
+                        MessageBox.Show(ex.Message + ". Sprawdź ścieżkę.", "Biblioteka Filmów NET", MessageBoxButtons.OK);
                     }
 
                     else if (ex.NativeErrorCode == ERROR_ACCESS_DENIED)
                     {
 
-                        MessageBox.Show(ex.Message + ". Nie masz uprawnień aby uruchomić updatera.", "MK Film DB NET", MessageBoxButtons.OK);
+                        MessageBox.Show(ex.Message + ". Nie masz uprawnień aby uruchomić updatera.", "Biblioteka Filmów NET", MessageBoxButtons.OK);
                     }
                 }
             }
@@ -448,7 +454,7 @@ namespace MK_Film_DB_NET
         {
             if (SETT_REC.ask_on_exit == true)
             {
-                if (MessageBox.Show("Czy napewno zamknąć program MK Film DB NET ?", "MK Film DB NET", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Czy napewno zamknąć program MK Film Library NET ?", "MK Film Library NET", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     if (SETT_REC.save_on_exit == true)
                     {
@@ -514,12 +520,12 @@ namespace MK_Film_DB_NET
         private void otwórzUtwórzBazęDanychToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fbd = new FolderBrowserDialog();
-            fbd.Description = "Podaj katalog, gdzie MKFDB NET ma przechowywac baze danych";
+            fbd.Description = "Podaj katalog, gdzie Biblioteka Filmów NET ma przechowywac baze danych";
             fbd.ShowNewFolderButton = true;
             DialogResult res = fbd.ShowDialog(this);
             if (res == DialogResult.OK)
             {
-                cur_db_path = fbd.SelectedPath + "\\MKFDB.sdf";
+                cur_db_path = fbd.SelectedPath + "\\BFDB.sdf";
                 if (CheckDBExist(cur_db_path) == 0)
                 {
                     Utworz_DB(fbd.SelectedPath);
@@ -607,7 +613,8 @@ namespace MK_Film_DB_NET
         {
             ctrl_Title = this.textBox_Tytul.Text;
             IntWiz frmInt = new IntWiz();
-            frmInt.Show(this);
+            frmInt.ShowDialog(this);
+            button_SAVE_Click(null, null);
         }
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
@@ -629,6 +636,8 @@ namespace MK_Film_DB_NET
             frm_startWiz.Show();
 
         }
+        
+
 
         
 

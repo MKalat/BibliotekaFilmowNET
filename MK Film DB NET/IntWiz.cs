@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Net;
 
 namespace MK_Film_DB_NET
 {
@@ -16,7 +17,7 @@ namespace MK_Film_DB_NET
             InitializeComponent();
         }
         public static String ctrl_uri, ctrl2_uri, ctrl3_uri;
-        public static Boolean visited = false, visited2 = false; 
+        public static Boolean visited = false, visited2 = false, visited3 = false, stage3 = false, stage4 = false, stage5 = false; 
         private void button_DOWNLOAD_Click(object sender, EventArgs e)
         {
             if (this.comboBox_DataSRC.SelectedIndex == 0)
@@ -28,7 +29,7 @@ namespace MK_Film_DB_NET
             }
             else
             {
-                MessageBox.Show("Wybierz źródło danych do pobrania.", "MK Film DB NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Wybierz źródło danych do pobrania.", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -49,7 +50,7 @@ namespace MK_Film_DB_NET
             if (doc.Title.Contains("Filmweb - filmy takie jak Ty!"))
             {
                 element = doc.GetElementById("mainSearchInput");
-                element.SetAttribute("value", Form1.ctrl_Title);
+                element.SetAttribute("value", this.textBox_FlmSrch.Text);
                 foreach (HtmlElement ele in doc.GetElementsByTagName("input"))
                 {
                     if (ele.OuterHtml.Contains("type=submit"))
@@ -71,6 +72,8 @@ namespace MK_Film_DB_NET
                     {
                         ctrl_uri = ele.GetAttribute("href");
                         ele.InvokeMember("Click");
+                        visited = false;
+                        stage3 = true;
                         break;
 
                     }
@@ -79,7 +82,7 @@ namespace MK_Film_DB_NET
 
 
             }
-            else if (doc.Url.ToString().Contains(ctrl_uri))
+            else if (stage3 == true)
             {
                 if (visited != true)
                 {
@@ -105,112 +108,146 @@ namespace MK_Film_DB_NET
                       
                     }
                     visited = true;
+                    stage3 = false;
+                    
                 }
 
 
             }
-            else if (doc.Url.ToString().Contains(ctrl2_uri))
+            else if (stage4 == true)
             {
                 if (visited2 != true)
                 {
-                    foreach (HtmlElement ele in doc.GetElementsByTagName("tr"))
+                    this.filmBindingSource.AddNew();
+                    this.filmBindingSource.EndEdit();
+                    if (this.checkBox_OKLADKA.Checked == true)
                     {
-                        if (this.checkBox_DL_FILM.Checked == true)
+                        foreach (HtmlElement ele in doc.GetElementsByTagName("A"))
                         {
-                            if (ele.FirstChild.OuterHtml.Contains("czas trwania"))
+                            if (ele.OuterHtml.Contains("class=film_mini"))
                             {
-                                HtmlElement ele2 = ele.FirstChild.NextSibling;
-                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_CzasProj = ele2.OuterText;
+                                String link = ele.GetAttribute("href");
+                                String file_name_okl = this.textBox_FlmSrch.Text + ".jpg";
+                                WebClient WC = new WebClient();
+                                WC.DownloadFile(link, Form1.db_path + "\\covers\\" + file_name_okl);
+
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].pathtofront = Form1.db_path + "\\covers\\" + file_name_okl;
+
 
                             }
-                            if (ele.FirstChild.OuterHtml.Contains("gatunek"))
-                            {
-                                HtmlElement ele2 = ele.FirstChild.NextSibling;
-                                this.defaultDataSet.Film[this.filmBindingSource.Position].Gatunek = ele2.OuterText;
-                            }
-                            if (ele.FirstChild.OuterHtml.Contains("premiera"))
-                            {
-                                HtmlElement ele2 = ele.FirstChild.NextSibling;
-                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_DataPrem = ele2.OuterText;
 
-                            }
-                            if (ele.FirstChild.OuterHtml.Contains("produkcja"))
-                            {
-                                HtmlElement ele2 = ele.FirstChild.NextSibling;
-                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KrajProd = ele.OuterText;
-                            }
                         }
-                        
-
 
 
                     }
                     if (this.checkBox_DL_FILM.Checked == true)
                     {
+                        foreach (HtmlElement ele in doc.GetElementsByTagName("tr"))
+                        {
+
+                            if (ele.FirstChild.OuterHtml.Contains("czas trwania"))
+                            {
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].Tytul = this.textBox_FlmSrch.Text;
+
+                                HtmlElement ele2 = ele.FirstChild.NextSibling;
+                                //frm1.Controls["textBox_IOF_CzasProj"].Text = ele2.OuterText;
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_CzasProj = ele2.OuterText;
+
+                                HtmlElement ele3 = ele.NextSibling;
+                                HtmlElement ele4 = ele3.FirstChild.NextSibling;
+                                //frm1.Controls["comboBox_Gatunek"].Text = ele2.OuterText;
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].Gatunek = ele4.OuterText;
+
+                                HtmlElement ele5 = ele3.NextSibling;
+                                HtmlElement ele6 = ele5.FirstChild.NextSibling;
+                                //frm1.Controls["textBox_IOF_DataPrem"].Text = ele2.OuterText;
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_DataPrem = ele6.OuterText;
+
+                                HtmlElement ele7 = ele5.NextSibling;
+                                HtmlElement ele8 = ele7.FirstChild.NextSibling;
+                                //frm1.Controls["textBox_IOF_KrajProd"].Text = ele2.OuterText;
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KrajProd = ele7.OuterText;
+                            }
+                        }
+
                         foreach (HtmlElement ele in doc.GetElementsByTagName("SPAN"))
                         {
                             if (ele.OuterHtml.Contains("class=filmDescrBg"))
                             {
+                                //frm1.Controls["textBox_OP_Opis"].Text = ele.OuterText;
                                 this.defaultDataSet.Film[this.filmBindingSource.Position].Opis = ele.OuterText;
                             }
 
                         }
-                    }
-                    if (this.checkBox_DL_OB.Checked == true)
-                    {
-                        foreach (HtmlElement ele in doc.GetElementsByTagName("a"))
+                        if (this.checkBox_DL_OB.Checked == true)
                         {
-                            if (ele.OuterHtml.Contains("zobacz więcej"))
+                            foreach (HtmlElement ele in doc.GetElementsByTagName("a"))
                             {
-                                ctrl3_uri = ele.GetAttribute("href");
-                                ele.InvokeMember("Click");
+                                if (ele.OuterHtml.Contains("zobacz więcej"))
+                                {
+                                    ctrl3_uri = ele.GetAttribute("href");
+                                    ele.InvokeMember("Click");
+                                    stage5 = true;
+                                }
+
                             }
 
                         }
-
+                        else
+                        {
+                            SaveDS();
+                            MessageBox.Show("Rekord został dodany zgodnie z ustawieniami", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            
+                        }
                     }
-                    SaveDS();
-                    
 
 
+
+                    stage4 = false;
                     visited2 = true;
                 }
 
             }
-            else if (doc.Url.ToString().Contains(ctrl3_uri))
+            else if (stage5 == true)
             {
-                foreach (HtmlElement ele in doc.GetElementsByTagName("dt"))
+                if (visited3 != true)
                 {
+                    foreach (HtmlElement ele in doc.GetElementsByTagName("dt"))
+                    {
 
-                    if (ele.OuterHtml.Contains("reżyser"))
-                    {
-                        foreach (HtmlElement ele2 in ele.NextSibling.FirstChild.Children)
+                        if (ele.OuterHtml.Contains("reżyser"))
                         {
-                            this.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Reżyser", defaultDataSet.Film[this.fKFilmObsadaBindingSource.Position]);
-                            
-                            
-                        }
-                    }
-                    if (ele.OuterHtml.Contains("scenarzysta"))
-                    {
-                        foreach (HtmlElement ele2 in ele.NextSibling.FirstChild.Children)
-                        {
-                            this.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Scenariusz", defaultDataSet.Film[this.fKFilmObsadaBindingSource.Position]);
-                            
-                        }
-                    }
-                    if (ele.OuterHtml.Contains("aktor"))
-                    {
-                        foreach (HtmlElement ele2 in ele.NextSibling.FirstChild.Children)
-                        {
-                            this.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Scenariusz", defaultDataSet.Film[this.fKFilmObsadaBindingSource.Position]);
+                            foreach (HtmlElement ele2 in ele.NextSibling.FirstChild.Children)
+                            {
+                                this.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Reżyser", defaultDataSet.Film[this.fKFilmObsadaBindingSource.Position]);
 
+
+                            }
+                        }
+                        if (ele.OuterHtml.Contains("scenarzysta"))
+                        {
+                            foreach (HtmlElement ele2 in ele.NextSibling.FirstChild.Children)
+                            {
+                                this.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Scenariusz", defaultDataSet.Film[this.fKFilmObsadaBindingSource.Position]);
+
+                            }
                         }
 
                     }
+                    foreach (HtmlElement ele in doc.GetElementsByTagName("LI"))
+                    {
+                        if (ele.Id.Contains("roleLine"))
+                        {
+                            this.defaultDataSet.Obsada.AddObsadaRow(ele.OuterText, "Aktor", defaultDataSet.Film[this.fKFilmObsadaBindingSource.Position]);
+                        }
+
+
+                    }
+                    MessageBox.Show("Rekord został dodany zgodnie z ustawieniami", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    SaveDS();
+                    visited3 = true;
+                    stage5 = false;
                 }
-                       
-
             }
             else
             {
@@ -223,6 +260,9 @@ namespace MK_Film_DB_NET
 
         private void listView_Results_SelectedIndexChanged(object sender, EventArgs e)
         {
+            visited2 = false;
+            visited3 = false;
+            stage4 = true;
             ctrl2_uri = this.listView_Results.SelectedItems[0].SubItems[2].Text;
             this.webBrowser_GetDataInt.Navigate(this.listView_Results.SelectedItems[0].SubItems[2].Text);
         }

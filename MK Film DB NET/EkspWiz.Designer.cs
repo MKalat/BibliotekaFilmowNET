@@ -309,7 +309,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "EkspWiz";
-            this.Text = "MK Film DB NET - Kreator Eksportu";
+            this.Text = "Biblioteka Filmów NET - Kreator Eksportu";
             this.Load += new System.EventHandler(this.EkspWiz_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

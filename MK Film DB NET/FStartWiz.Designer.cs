@@ -32,9 +32,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton_ImpOldBF = new System.Windows.Forms.RadioButton();
-            this.radioButton_ImpNewBF = new System.Windows.Forms.RadioButton();
             this.radioButton_NOImp = new System.Windows.Forms.RadioButton();
+            this.radioButton_ImpNewBF = new System.Windows.Forms.RadioButton();
+            this.radioButton_ImpOldBF = new System.Windows.Forms.RadioButton();
             this.button_OK = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -73,18 +73,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Wybierz co chcesz zrobić";
             // 
-            // radioButton_ImpOldBF
+            // radioButton_NOImp
             // 
-            this.radioButton_ImpOldBF.AutoSize = true;
-            this.radioButton_ImpOldBF.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.radioButton_ImpOldBF.Location = new System.Drawing.Point(12, 24);
-            this.radioButton_ImpOldBF.Name = "radioButton_ImpOldBF";
-            this.radioButton_ImpOldBF.Size = new System.Drawing.Size(553, 30);
-            this.radioButton_ImpOldBF.TabIndex = 0;
-            this.radioButton_ImpOldBF.TabStop = true;
-            this.radioButton_ImpOldBF.Text = "Mam bazę danych w formacie Biblioteka Filmów 1.0.0.0 - 1.0.1.19 i chcę ją zaimpor" +
-                "tować do \r\nprogramu";
-            this.radioButton_ImpOldBF.UseVisualStyleBackColor = true;
+            this.radioButton_NOImp.AutoSize = true;
+            this.radioButton_NOImp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioButton_NOImp.Location = new System.Drawing.Point(12, 120);
+            this.radioButton_NOImp.Name = "radioButton_NOImp";
+            this.radioButton_NOImp.Size = new System.Drawing.Size(332, 17);
+            this.radioButton_NOImp.TabIndex = 2;
+            this.radioButton_NOImp.TabStop = true;
+            this.radioButton_NOImp.Text = "Niczego nie chcę zaimportować - lub zrobię to ręcznie";
+            this.radioButton_NOImp.UseVisualStyleBackColor = true;
             // 
             // radioButton_ImpNewBF
             // 
@@ -99,17 +98,18 @@
                 "ę ją \r\nzaimportować do programu";
             this.radioButton_ImpNewBF.UseVisualStyleBackColor = true;
             // 
-            // radioButton_NOImp
+            // radioButton_ImpOldBF
             // 
-            this.radioButton_NOImp.AutoSize = true;
-            this.radioButton_NOImp.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.radioButton_NOImp.Location = new System.Drawing.Point(12, 120);
-            this.radioButton_NOImp.Name = "radioButton_NOImp";
-            this.radioButton_NOImp.Size = new System.Drawing.Size(332, 17);
-            this.radioButton_NOImp.TabIndex = 2;
-            this.radioButton_NOImp.TabStop = true;
-            this.radioButton_NOImp.Text = "Niczego nie chcę zaimportować - lub zrobię to ręcznie";
-            this.radioButton_NOImp.UseVisualStyleBackColor = true;
+            this.radioButton_ImpOldBF.AutoSize = true;
+            this.radioButton_ImpOldBF.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.radioButton_ImpOldBF.Location = new System.Drawing.Point(12, 24);
+            this.radioButton_ImpOldBF.Name = "radioButton_ImpOldBF";
+            this.radioButton_ImpOldBF.Size = new System.Drawing.Size(553, 30);
+            this.radioButton_ImpOldBF.TabIndex = 0;
+            this.radioButton_ImpOldBF.TabStop = true;
+            this.radioButton_ImpOldBF.Text = "Mam bazę danych w formacie Biblioteka Filmów 1.0.0.0 - 1.0.1.19 i chcę ją zaimpor" +
+                "tować do \r\nprogramu";
+            this.radioButton_ImpOldBF.UseVisualStyleBackColor = true;
             // 
             // button_OK
             // 
@@ -133,7 +133,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FStartWiz";
-            this.Text = "MK Film DB NET - Kreator pierwszego uruchomienia";
+            this.Text = "Biblioteka Filmów NET - Kreator pierwszego uruchomienia";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

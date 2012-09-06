@@ -295,7 +295,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Wyszukaj";
-            this.Text = "MK Film DB NET - Wyszukaj";
+            this.Text = "Biblioteka Filmów NET - Wyszukaj";
             ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);

@@ -277,7 +277,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "DrukWiz";
-            this.Text = "MK Film DB NET - Kreator Wydruku";
+            this.Text = "Biblioteka Filmów NET - Kreator Wydruku";
             this.Load += new System.EventHandler(this.DrukWiz_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

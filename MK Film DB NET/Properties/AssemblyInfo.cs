@@ -9,8 +9,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyDescription("Program do katallogowania filmów - strona autora http://mkalat.pl")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Marcin Kałat")]
-[assembly: AssemblyProduct("MK Film DB NET")]
-[assembly: AssemblyCopyright("Copyright ©  Marcin Kałat 2012")]
+[assembly: AssemblyProduct("Biblioteka Filmów NET")]
+[assembly: AssemblyCopyright("Copyright ©  Marcin Kałat 2005 - 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.10")]
-[assembly: AssemblyFileVersion("1.0.0.10")]
+[assembly: AssemblyVersion("1.0.0.30")]
+[assembly: AssemblyFileVersion("1.0.0.30")]

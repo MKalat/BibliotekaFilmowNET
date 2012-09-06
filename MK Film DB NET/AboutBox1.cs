@@ -13,9 +13,9 @@ namespace MK_Film_DB_NET
         public AboutBox1()
         {
             InitializeComponent();
-            this.Text = String.Format("{0}", AssemblyTitle);
+            this.Text = String.Format("Biblioteka Filomów NET");
             this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = String.Format("Version {0} {0}", AssemblyVersion);
+            this.labelVersion.Text = String.Format("Version {0} ", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelCompanyName.Text = AssemblyCompany;
             this.textBoxDescription.Text = AssemblyDescription;

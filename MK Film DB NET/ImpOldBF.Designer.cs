@@ -35,14 +35,14 @@
             this.textBox_DBPath = new System.Windows.Forms.TextBox();
             this.button_SelPath = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox_Film = new System.Windows.Forms.CheckBox();
-            this.checkBox_OC = new System.Windows.Forms.CheckBox();
-            this.checkBox_OB = new System.Windows.Forms.CheckBox();
-            this.checkBox_LZ = new System.Windows.Forms.CheckBox();
-            this.checkBox_PP = new System.Windows.Forms.CheckBox();
-            this.checkBox_PD = new System.Windows.Forms.CheckBox();
-            this.checkBox_WI = new System.Windows.Forms.CheckBox();
             this.checkBox_WOI = new System.Windows.Forms.CheckBox();
+            this.checkBox_WI = new System.Windows.Forms.CheckBox();
+            this.checkBox_PD = new System.Windows.Forms.CheckBox();
+            this.checkBox_PP = new System.Windows.Forms.CheckBox();
+            this.checkBox_LZ = new System.Windows.Forms.CheckBox();
+            this.checkBox_OB = new System.Windows.Forms.CheckBox();
+            this.checkBox_OC = new System.Windows.Forms.CheckBox();
+            this.checkBox_Film = new System.Windows.Forms.CheckBox();
             this.button_IMP = new System.Windows.Forms.Button();
             this.button_Cancel = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -111,65 +111,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Zaznacz tabele do zaimportowania";
             // 
-            // checkBox_Film
+            // checkBox_WOI
             // 
-            this.checkBox_Film.AutoSize = true;
-            this.checkBox_Film.Location = new System.Drawing.Point(12, 24);
-            this.checkBox_Film.Name = "checkBox_Film";
-            this.checkBox_Film.Size = new System.Drawing.Size(44, 17);
-            this.checkBox_Film.TabIndex = 0;
-            this.checkBox_Film.Text = "Film";
-            this.checkBox_Film.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_OC
-            // 
-            this.checkBox_OC.AutoSize = true;
-            this.checkBox_OC.Location = new System.Drawing.Point(12, 48);
-            this.checkBox_OC.Name = "checkBox_OC";
-            this.checkBox_OC.Size = new System.Drawing.Size(58, 17);
-            this.checkBox_OC.TabIndex = 1;
-            this.checkBox_OC.Text = "Ocena";
-            this.checkBox_OC.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_OB
-            // 
-            this.checkBox_OB.AutoSize = true;
-            this.checkBox_OB.Location = new System.Drawing.Point(12, 72);
-            this.checkBox_OB.Name = "checkBox_OB";
-            this.checkBox_OB.Size = new System.Drawing.Size(63, 17);
-            this.checkBox_OB.TabIndex = 2;
-            this.checkBox_OB.Text = "Obsada";
-            this.checkBox_OB.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_LZ
-            // 
-            this.checkBox_LZ.AutoSize = true;
-            this.checkBox_LZ.Location = new System.Drawing.Point(12, 96);
-            this.checkBox_LZ.Name = "checkBox_LZ";
-            this.checkBox_LZ.Size = new System.Drawing.Size(129, 17);
-            this.checkBox_LZ.TabIndex = 3;
-            this.checkBox_LZ.Text = "Lokalizacje zdjęciowe";
-            this.checkBox_LZ.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_PP
-            // 
-            this.checkBox_PP.AutoSize = true;
-            this.checkBox_PP.Location = new System.Drawing.Point(180, 24);
-            this.checkBox_PP.Name = "checkBox_PP";
-            this.checkBox_PP.Size = new System.Drawing.Size(80, 17);
-            this.checkBox_PP.TabIndex = 4;
-            this.checkBox_PP.Text = "Producenci";
-            this.checkBox_PP.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_PD
-            // 
-            this.checkBox_PD.AutoSize = true;
-            this.checkBox_PD.Location = new System.Drawing.Point(180, 48);
-            this.checkBox_PD.Name = "checkBox_PD";
-            this.checkBox_PD.Size = new System.Drawing.Size(89, 17);
-            this.checkBox_PD.TabIndex = 5;
-            this.checkBox_PD.Text = "Dystrybutorzy";
-            this.checkBox_PD.UseVisualStyleBackColor = true;
+            this.checkBox_WOI.AutoSize = true;
+            this.checkBox_WOI.Location = new System.Drawing.Point(180, 96);
+            this.checkBox_WOI.Name = "checkBox_WOI";
+            this.checkBox_WOI.Size = new System.Drawing.Size(170, 17);
+            this.checkBox_WOI.TabIndex = 7;
+            this.checkBox_WOI.Text = "Wypozyczenia od innych osób";
+            this.checkBox_WOI.UseVisualStyleBackColor = true;
             // 
             // checkBox_WI
             // 
@@ -181,15 +131,65 @@
             this.checkBox_WI.Text = "Wypożyczenia innym osobom";
             this.checkBox_WI.UseVisualStyleBackColor = true;
             // 
-            // checkBox_WOI
+            // checkBox_PD
             // 
-            this.checkBox_WOI.AutoSize = true;
-            this.checkBox_WOI.Location = new System.Drawing.Point(180, 96);
-            this.checkBox_WOI.Name = "checkBox_WOI";
-            this.checkBox_WOI.Size = new System.Drawing.Size(170, 17);
-            this.checkBox_WOI.TabIndex = 7;
-            this.checkBox_WOI.Text = "Wypozyczenia od innych osób";
-            this.checkBox_WOI.UseVisualStyleBackColor = true;
+            this.checkBox_PD.AutoSize = true;
+            this.checkBox_PD.Location = new System.Drawing.Point(180, 48);
+            this.checkBox_PD.Name = "checkBox_PD";
+            this.checkBox_PD.Size = new System.Drawing.Size(89, 17);
+            this.checkBox_PD.TabIndex = 5;
+            this.checkBox_PD.Text = "Dystrybutorzy";
+            this.checkBox_PD.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_PP
+            // 
+            this.checkBox_PP.AutoSize = true;
+            this.checkBox_PP.Location = new System.Drawing.Point(180, 24);
+            this.checkBox_PP.Name = "checkBox_PP";
+            this.checkBox_PP.Size = new System.Drawing.Size(80, 17);
+            this.checkBox_PP.TabIndex = 4;
+            this.checkBox_PP.Text = "Producenci";
+            this.checkBox_PP.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_LZ
+            // 
+            this.checkBox_LZ.AutoSize = true;
+            this.checkBox_LZ.Location = new System.Drawing.Point(12, 96);
+            this.checkBox_LZ.Name = "checkBox_LZ";
+            this.checkBox_LZ.Size = new System.Drawing.Size(129, 17);
+            this.checkBox_LZ.TabIndex = 3;
+            this.checkBox_LZ.Text = "Lokalizacje zdjęciowe";
+            this.checkBox_LZ.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_OB
+            // 
+            this.checkBox_OB.AutoSize = true;
+            this.checkBox_OB.Location = new System.Drawing.Point(12, 72);
+            this.checkBox_OB.Name = "checkBox_OB";
+            this.checkBox_OB.Size = new System.Drawing.Size(63, 17);
+            this.checkBox_OB.TabIndex = 2;
+            this.checkBox_OB.Text = "Obsada";
+            this.checkBox_OB.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_OC
+            // 
+            this.checkBox_OC.AutoSize = true;
+            this.checkBox_OC.Location = new System.Drawing.Point(12, 48);
+            this.checkBox_OC.Name = "checkBox_OC";
+            this.checkBox_OC.Size = new System.Drawing.Size(58, 17);
+            this.checkBox_OC.TabIndex = 1;
+            this.checkBox_OC.Text = "Ocena";
+            this.checkBox_OC.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_Film
+            // 
+            this.checkBox_Film.AutoSize = true;
+            this.checkBox_Film.Location = new System.Drawing.Point(12, 24);
+            this.checkBox_Film.Name = "checkBox_Film";
+            this.checkBox_Film.Size = new System.Drawing.Size(44, 17);
+            this.checkBox_Film.TabIndex = 0;
+            this.checkBox_Film.Text = "Film";
+            this.checkBox_Film.UseVisualStyleBackColor = true;
             // 
             // button_IMP
             // 
@@ -226,7 +226,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ImpOldBF";
-            this.Text = "MK Film DB NET - Import bazy danych BF 1.0";
+            this.Text = "Biblioteka Filmów NET - Import bazy danych BF 1.0";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

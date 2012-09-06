@@ -33,14 +33,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox_DataSRC = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox_OKLADKA = new System.Windows.Forms.CheckBox();
             this.checkBox_DL_LZ = new System.Windows.Forms.CheckBox();
             this.checkBox_DL_D = new System.Windows.Forms.CheckBox();
             this.checkBox_DL_P = new System.Windows.Forms.CheckBox();
             this.checkBox_DL_OB = new System.Windows.Forms.CheckBox();
             this.checkBox_DL_OC = new System.Windows.Forms.CheckBox();
             this.checkBox_DL_FILM = new System.Windows.Forms.CheckBox();
-            this.checkBox_DL_Overwrite = new System.Windows.Forms.CheckBox();
             this.button_DOWNLOAD = new System.Windows.Forms.Button();
             this.button_Cancel = new System.Windows.Forms.Button();
             this.defaultDataSet = new MK_Film_DB_NET.defaultDataSet();
@@ -66,6 +65,9 @@
             this.columnHeader_Tytul = new System.Windows.Forms.ColumnHeader();
             this.columnHeader_Details = new System.Windows.Forms.ColumnHeader();
             this.columnHeader_URL = new System.Windows.Forms.ColumnHeader();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox_FlmSrch = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).BeginInit();
@@ -99,7 +101,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBox7);
+            this.groupBox1.Controls.Add(this.checkBox_OKLADKA);
             this.groupBox1.Controls.Add(this.checkBox_DL_LZ);
             this.groupBox1.Controls.Add(this.checkBox_DL_D);
             this.groupBox1.Controls.Add(this.checkBox_DL_P);
@@ -113,15 +115,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Zakres danych do pobrania";
             // 
-            // checkBox7
+            // checkBox_OKLADKA
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(186, 24);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(68, 17);
-            this.checkBox7.TabIndex = 6;
-            this.checkBox7.Text = "Okładka";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox_OKLADKA.AutoSize = true;
+            this.checkBox_OKLADKA.Location = new System.Drawing.Point(186, 24);
+            this.checkBox_OKLADKA.Name = "checkBox_OKLADKA";
+            this.checkBox_OKLADKA.Size = new System.Drawing.Size(68, 17);
+            this.checkBox_OKLADKA.TabIndex = 6;
+            this.checkBox_OKLADKA.Text = "Okładka";
+            this.checkBox_OKLADKA.UseVisualStyleBackColor = true;
             // 
             // checkBox_DL_LZ
             // 
@@ -183,16 +185,6 @@
             this.checkBox_DL_FILM.Text = "Podstawowe dane o Filmie";
             this.checkBox_DL_FILM.UseVisualStyleBackColor = true;
             // 
-            // checkBox_DL_Overwrite
-            // 
-            this.checkBox_DL_Overwrite.AutoSize = true;
-            this.checkBox_DL_Overwrite.Location = new System.Drawing.Point(24, 228);
-            this.checkBox_DL_Overwrite.Name = "checkBox_DL_Overwrite";
-            this.checkBox_DL_Overwrite.Size = new System.Drawing.Size(257, 17);
-            this.checkBox_DL_Overwrite.TabIndex = 3;
-            this.checkBox_DL_Overwrite.Text = "Pobranymi danymi NADPISUJ zawartość rekordu";
-            this.checkBox_DL_Overwrite.UseVisualStyleBackColor = true;
-            // 
             // button_DOWNLOAD
             // 
             this.button_DOWNLOAD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
@@ -200,7 +192,7 @@
             this.button_DOWNLOAD.Name = "button_DOWNLOAD";
             this.button_DOWNLOAD.Size = new System.Drawing.Size(144, 30);
             this.button_DOWNLOAD.TabIndex = 4;
-            this.button_DOWNLOAD.Text = "Pobierz";
+            this.button_DOWNLOAD.Text = "Wyszukaj";
             this.button_DOWNLOAD.UseVisualStyleBackColor = true;
             this.button_DOWNLOAD.Click += new System.EventHandler(this.button_DOWNLOAD_Click);
             // 
@@ -299,8 +291,9 @@
             this.webBrowser_GetDataInt.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser_GetDataInt.Name = "webBrowser_GetDataInt";
             this.webBrowser_GetDataInt.ScriptErrorsSuppressed = true;
-            this.webBrowser_GetDataInt.Size = new System.Drawing.Size(252, 648);
+            this.webBrowser_GetDataInt.Size = new System.Drawing.Size(42, 648);
             this.webBrowser_GetDataInt.TabIndex = 6;
+            this.webBrowser_GetDataInt.Visible = false;
             this.webBrowser_GetDataInt.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser_GetDataInt_DocumentCompleted);
             // 
             // label2
@@ -344,17 +337,45 @@
             this.columnHeader_URL.Text = "URL";
             this.columnHeader_URL.Width = 156;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(12, 672);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(443, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Podwójnie kliknij na wybranej pozycji w tabeli, aby dodać ją do bazy danych.";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(258, 18);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Szukany tytuł";
+            // 
+            // textBox_FlmSrch
+            // 
+            this.textBox_FlmSrch.Location = new System.Drawing.Point(342, 12);
+            this.textBox_FlmSrch.Name = "textBox_FlmSrch";
+            this.textBox_FlmSrch.Size = new System.Drawing.Size(330, 20);
+            this.textBox_FlmSrch.TabIndex = 11;
+            // 
             // IntWiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(969, 702);
+            this.ClientSize = new System.Drawing.Size(772, 722);
+            this.Controls.Add(this.textBox_FlmSrch);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.listView_Results);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.webBrowser_GetDataInt);
             this.Controls.Add(this.button_Cancel);
             this.Controls.Add(this.button_DOWNLOAD);
-            this.Controls.Add(this.checkBox_DL_Overwrite);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.comboBox_DataSRC);
             this.Controls.Add(this.label1);
@@ -362,7 +383,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "IntWiz";
-            this.Text = "MK Film DB NET - Kreator pobierania z Internetu";
+            this.Text = "Bibliotekla Filmów NET - Kreator pobierania z Internetu";
             this.Load += new System.EventHandler(this.IntWiz_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -390,9 +411,8 @@
         private System.Windows.Forms.CheckBox checkBox_DL_OB;
         private System.Windows.Forms.CheckBox checkBox_DL_OC;
         private System.Windows.Forms.CheckBox checkBox_DL_FILM;
-        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBox_OKLADKA;
         private System.Windows.Forms.CheckBox checkBox_DL_LZ;
-        private System.Windows.Forms.CheckBox checkBox_DL_Overwrite;
         private System.Windows.Forms.Button button_DOWNLOAD;
         private System.Windows.Forms.Button button_Cancel;
         private defaultDataSet defaultDataSet;
@@ -418,5 +438,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader_Tytul;
         private System.Windows.Forms.ColumnHeader columnHeader_Details;
         private System.Windows.Forms.ColumnHeader columnHeader_URL;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox_FlmSrch;
     }
 }

@@ -28,7 +28,7 @@ namespace MK_Film_DB_NET
                 String fn_buff;
                 String FVal;
                 String CVal;
-                fn_buff = "MK Film DB NET Exported data http://mkalat.pl \n\r";
+                fn_buff = "Biblioteka Filmów NET Exported data http://mkalat.pl \n\r";
                 sw.WriteLine(fn_buff);
                 // Eksportuj cała baz edanych
                 if (this.checkBox_PrintFilm.Checked == true)
@@ -185,7 +185,7 @@ namespace MK_Film_DB_NET
                 String fn_buff;
                 String FVal;
                 String CVal;
-                fn_buff = "MK Film DB NET Exported data http://mkalat.pl \n\r";
+                fn_buff = "Biblioteka Filmów NET Exported data http://mkalat.pl \n\r";
                 sw.WriteLine(fn_buff);
                 // Eksportuj cała baz edanych
                 if (this.checkBox_PrintFilm.Checked == true)

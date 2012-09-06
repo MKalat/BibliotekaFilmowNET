@@ -135,7 +135,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Settings";
-            this.Text = "MK Film DB NET - Ustawienia";
+            this.Text = "Biblioteka Filmów NET - Ustawienia";
             this.ResumeLayout(false);
             this.PerformLayout();
 

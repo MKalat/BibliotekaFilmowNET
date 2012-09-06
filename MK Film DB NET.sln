@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MK Film DB NET", "MK Film DB NET\MK Film DB NET.csproj", "{E091C308-0551-4D31-B83C-122E601D389A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotekaFilmowNET", "MK Film DB NET\BibliotekaFilmowNET.csproj", "{E091C308-0551-4D31-B83C-122E601D389A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
