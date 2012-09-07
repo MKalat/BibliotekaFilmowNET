@@ -13,7 +13,7 @@ namespace MK_Film_DB_NET
         public AboutBox1()
         {
             InitializeComponent();
-            this.Text = String.Format("Biblioteka Filomów NET");
+            this.Text = String.Format("Biblioteka Filmów NET");
             this.labelProductName.Text = AssemblyProduct;
             this.labelVersion.Text = String.Format("Version {0} ", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
