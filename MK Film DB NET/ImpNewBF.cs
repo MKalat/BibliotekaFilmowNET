@@ -84,7 +84,7 @@ namespace MK_Film_DB_NET
                         BinaryReader br = new BinaryReader(fn_film, Encoding.Unicode);
                         for (Int32 i = 0; i < fn_film.Length; )
                         {
-                            br.ReadInt32();
+                            int flm_id = br.ReadInt32();
                             flm_row.Tytul = Convert.ToString(br.ReadChars(501));
                             flm_row.TytulOrig = Convert.ToString(br.ReadChars(501));
                             flm_row.Gatunek = Convert.ToString(br.ReadChars(201));
@@ -129,14 +129,127 @@ namespace MK_Film_DB_NET
                             flm_row.IOF_KA_Typ = Convert.ToString(br.ReadChars(201));
                             flm_row.IOF_KA_Wersja = Convert.ToString(br.ReadChars(201));
 
+                            if (this.checkBox_OC.Checked == true)
+                            {
+                                if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_OC.bf"))
+                                {
+                                    FileStream fn_OC;
+                                    fn_OC = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_OC.bf");
+                                    BinaryReader br_oc = new BinaryReader(fn_OC, Encoding.Unicode);
+                                    for (Int32 oc_i = 0; oc_i < fn_OC.Length; )
+                                    {
+                                        br_oc.ReadInt32();
+                                        int oc_idpdb = br_oc.ReadInt32();
+                                        if (oc_idpdb == flm_id)
+                                        {
+                                            defaultDataSet.OcenaRow oc_row = defaultDataSet.Ocena.NewOcenaRow();
+                                            oc_row.IDPDB = oc_idpdb;
+                                            oc_row.Nazwa = Convert.ToString(br_oc.ReadChars(201));
+                                            oc_row.Tytul = Convert.ToString(br_oc.ReadChars(201));
+                                            oc_row.Autor = Convert.ToString(br_oc.ReadChars(201));
+                                            oc_row.WWW = Convert.ToString(br_oc.ReadChars(501));
+                                            oc_row.Ocena = Convert.ToString(br_oc.ReadChars(201));
 
+                                        }
+                                        oc_i = oc_i + 4 + 4 + 2 * (201 + 201 + 201 + 501 + 201);
+                                    }
+                                }
 
+                            }
+
+                            if (this.checkBox_OB.Checked == true)
+                            {
+                                if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_OB.bf"))
+                                {
+                                    FileStream fn_OB;
+                                    fn_OB = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_OB.bf");
+                                    BinaryReader br_ob = new BinaryReader(fn_OB, Encoding.Unicode);
+                                    for (Int32 ob_i = 0; ob_i < fn_OB.Length; )
+                                    {
+                                        br_ob.ReadInt32();
+                                        int ob_idpdb = br_ob.ReadInt32();
+                                        if (ob_idpdb == flm_id)
+                                        {
+                                            defaultDataSet.ObsadaRow ob_row = defaultDataSet.Obsada.NewObsadaRow();
+                                            ob_row.IDPDB = ob_idpdb;
+                                            ob_row.ImieNazw = Convert.ToString(br_ob.ReadChars(501));
+                                            ob_row.Rola = Convert.ToString(br_ob.ReadChars(201));
+                                            
+                                        }
+                                        ob_i = ob_i + 4 + 4 + 2 * (501 + 201);
+                                    }
+                                }
+
+                            }
+
+                            if (this.checkBox_PP.Checked == true)
+                            {
+                                if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_PRP.bf"))
+                                {
+                                    FileStream fn_PP;
+                                    fn_PP = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_PRP.bf");
+                                    BinaryReader br_pp = new BinaryReader(fn_PP, Encoding.Unicode);
+                                    for (Int32 pp_i = 0; pp_i < fn_PP.Length; )
+                                    {
+                                        br_pp.ReadInt32();
+                                        int pp_idpdb = br_pp.ReadInt32();
+                                        if (pp_idpdb == flm_id)
+                                        {
+                                            defaultDataSet.ProdukcjaRow pp_row = defaultDataSet.Produkcja.NewProdukcjaRow();
+                                            pp_row.IDPDB = pp_idpdb;
+                                            pp_row.Nazwa = Convert.ToString(br_pp.ReadChars(501));
+                                            pp_row.Adres = Convert.ToString(br_pp.ReadChars(501));
+                                            pp_row.Tel = Convert.ToString(br_pp.ReadChars(31));
+                                            pp_row.Fax = Convert.ToString(br_pp.ReadChars(31));
+                                            pp_row.Email = Convert.ToString(br_pp.ReadChars(201));
+                                            pp_row.WWW = Convert.ToString(br_pp.ReadChars(501));
+                                            pp_row.Narodowość = Convert.ToString(br_pp.ReadChars(201));
+
+                                        }
+                                        pp_i = pp_i + 4 + 4 + 2 * (501 + 501 + 31 + 31 + 201 + 501 + 201);
+                                    }
+                                }
+
+                            }
+
+                            if (this.checkBox_PD.Checked == true)
+                            {
+                                if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_PRD.bf"))
+                                {
+                                    FileStream fn_PD;
+                                    fn_PD = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_PRD.bf");
+                                    BinaryReader br_pd = new BinaryReader(fn_PD, Encoding.Unicode);
+                                    for (Int32 pd_i = 0; pd_i < fn_PD.Length; )
+                                    {
+                                        br_pd.ReadInt32();
+                                        int pd_idpdb = br_pd.ReadInt32();
+                                        if (pd_idpdb == flm_id)
+                                        {
+                                            defaultDataSet.DystrybucjaRow pd_row = defaultDataSet.Dystrybucja.NewDystrybucjaRow();
+                                            pd_row.IDPDB = pd_idpdb;
+                                            pd_row.Nazwa = Convert.ToString(br_pd.ReadChars(501));
+                                            pd_row.Adres = Convert.ToString(br_pd.ReadChars(501));
+                                            pd_row.Tel = Convert.ToString(br_pd.ReadChars(31));
+                                            pd_row.Fax = Convert.ToString(br_pd.ReadChars(31));
+                                            pd_row.Email = Convert.ToString(br_pd.ReadChars(201));
+                                            pd_row.WWW = Convert.ToString(br_pd.ReadChars(501));
+                                            pd_row.Narodowość = Convert.ToString(br_pd.ReadChars(201));
+
+                                        }
+                                        pd_i = pd_i + 4 + 4 + 2 * (501 + 501 + 31 + 31 + 201 + 501 + 201);
+                                    }
+                                }
+
+                            }
 
                             i = i + 4 + (2 *(501 + 501 + 201 + 241 + 241 + 201 + 201 + 201 + 201 + 201 + 501 + 501 + 501 + 501 + 501 + 501 +
                                 501 + 501 + 101 + 101 + 21 + 21 + 21 + 201 + 501 + 501 + 501 + 501 + 501 + 501 +
                                 31 + 201 + 501 + 31 + 21 + 21 + 51 + 1001 + 1001 + 51 + 51 + 1001 + 201 + 201 + 
                                 201 + 201 + 201 + 201 + 201 + 201 + 201));
                         }
+                        fn_film.Close();
+
+                        
                     }
 
 
