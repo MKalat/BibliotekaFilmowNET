@@ -620,14 +620,14 @@ namespace MK_Film_DB_NET
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
             ImpNewBF frm_impNewbf = new ImpNewBF();
-            frm_impNewbf.Show(this);
+            frm_impNewbf.ShowDialog(this);
             button_SAVE_Click(null, null);
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
             ImpOldBF frm_impOldbf = new ImpOldBF();
-            frm_impOldbf.Show(this);
+            frm_impOldbf.ShowDialog(this);
             button_SAVE_Click(null, null);
 
         }
@@ -636,7 +636,7 @@ namespace MK_Film_DB_NET
         {
             // kreator importu ze starego formatu podczas pierwszego muruchomienia
             FStartWiz frm_startWiz = new FStartWiz();
-            frm_startWiz.Show();
+            frm_startWiz.ShowDialog(this);
             button_SAVE_Click(null, null);
 
         }

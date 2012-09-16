@@ -83,279 +83,308 @@ namespace MK_Film_DB_NET
 
                         fn_film = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_PDB.bf");
                         BinaryReader br = new BinaryReader(fn_film, Encoding.Unicode);
-                        for (Int32 i = 0; i < fn_film.Length; )
+                        if (fn_film.Length > 0)
                         {
-                            fn_film.Seek(i, SeekOrigin.Begin);
-                            int flm_id = br.ReadInt32();
-                            this.filmBindingSource.AddNew();
-                            this.filmBindingSource.EndEdit();
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].Tytul = Encoding.Unicode.GetString(br.ReadBytes(2 * 501)).TrimEnd('\0');
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].TytulOrig = Encoding.Unicode.GetString(br.ReadBytes(2 * 501));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].Gatunek = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].pathtofront = Encoding.Unicode.GetString(br.ReadBytes(2 * 241));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].pathtoback = Encoding.Unicode.GetString(br.ReadBytes(2 * 241));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].OW_SD = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].OW_Obs = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].OW_Zdj = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].OW_Wart = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].OW_ALL = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            br.ReadBytes(2 * (8 * 501));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_Cena = Encoding.Unicode.GetString(br.ReadBytes(2 * 101));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_WartAkt = Encoding.Unicode.GetString(br.ReadBytes(2 * 101));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_DataZak = Encoding.Unicode.GetString(br.ReadBytes(2 * 21));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_DataUtr = Encoding.Unicode.GetString(br.ReadBytes(2 * 21));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_DataSkat = Encoding.Unicode.GetString(br.ReadBytes(2 * 21));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_Nośnik = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_NrKat = Encoding.Unicode.GetString(br.ReadBytes(2 * 501));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_Imie = Encoding.Unicode.GetString(br.ReadBytes(2 * 501));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_Nazw = Encoding.Unicode.GetString(br.ReadBytes(2 * 501));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_Adres = Encoding.Unicode.GetString(br.ReadBytes(2 * 501));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_MN_Nazwa = Encoding.Unicode.GetString(br.ReadBytes(2 * 501));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_MN_Adres = Encoding.Unicode.GetString(br.ReadBytes(2 * 501));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_MN_Tel = Encoding.Unicode.GetString(br.ReadBytes(2 * 31));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_MN_Email = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_MN_WWW = Encoding.Unicode.GetString(br.ReadBytes(2 * 501));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_MN_Fax = Encoding.Unicode.GetString(br.ReadBytes(2 * 31));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_RokProd = Encoding.Unicode.GetString(br.ReadBytes(2 * 21));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_DataPrem = Encoding.Unicode.GetString(br.ReadBytes(2 * 21));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_CzasProj = Encoding.Unicode.GetString(br.ReadBytes(2 * 51));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_JezykLekt = Encoding.Unicode.GetString(br.ReadBytes(2 * 1001));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_JezykNap = Encoding.Unicode.GetString(br.ReadBytes(2 * 1001));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_FormWysw = Encoding.Unicode.GetString(br.ReadBytes(2 * 51));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_SysKodObr = Encoding.Unicode.GetString(br.ReadBytes(2 * 51));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KrajProd = Encoding.Unicode.GetString(br.ReadBytes(2 * 1001));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KW_Nazwa = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KW_Typ = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KW_Wersja = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_ZAB_Nazwa = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_ZAB_Typ = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_ZAB_Wersja = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KA_Nazwa = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KA_Typ = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-                            this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KA_Wersja = Encoding.Unicode.GetString(br.ReadBytes(2 * 201));
-
-                            if (this.checkBox_OC.Checked == true)
+                            do
                             {
-                                if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_OC.bf"))
-                                {
-                                    FileStream fn_OC;
-                                    fn_OC = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_OC.bf");
-                                    BinaryReader br_oc = new BinaryReader(fn_OC, Encoding.Unicode);
-                                    for (Int32 oc_i = 0; oc_i < fn_OC.Length; )
-                                    {
-                                        fn_OC.Seek(oc_i, SeekOrigin.Begin);
-                                        br_oc.ReadInt32();
-                                        int oc_idpdb = br_oc.ReadInt32();
-                                        if (oc_idpdb == flm_id)
-                                        {
-                                            this.fKFilmOcenaBindingSource.AddNew();
-                                            this.fKFilmOcenaBindingSource.EndEdit(); 
-                                            this.defaultDataSet.Ocena[this.fKFilmOcenaBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
-                                            this.defaultDataSet.Ocena[this.fKFilmOcenaBindingSource.Position].Nazwa = Encoding.Unicode.GetString(br_oc.ReadBytes(2 * 201));
-                                            this.defaultDataSet.Ocena[this.fKFilmOcenaBindingSource.Position].Tytul = Encoding.Unicode.GetString(br_oc.ReadBytes(2 * 201));
-                                            this.defaultDataSet.Ocena[this.fKFilmOcenaBindingSource.Position].Autor = Encoding.Unicode.GetString(br_oc.ReadBytes(2 * 201));
-                                            this.defaultDataSet.Ocena[this.fKFilmOcenaBindingSource.Position].WWW = Encoding.Unicode.GetString(br_oc.ReadBytes(2 * 501));
-                                            this.defaultDataSet.Ocena[this.fKFilmOcenaBindingSource.Position].Ocena = Encoding.Unicode.GetString(br_oc.ReadBytes(2 * 201));
 
+                                int flm_id = br.ReadInt32();
+                                this.filmBindingSource.AddNew();
+                                this.filmBindingSource.EndEdit();
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].Tytul = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 501)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].TytulOrig = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 501)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].Gatunek = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].pathtofront = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 241)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].pathtoback = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 241)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].OW_SD = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].OW_Obs = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].OW_Zdj = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].OW_Wart = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].OW_ALL = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                br.ReadBytes((8 * 2 * 501));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_Cena = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 101)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_WartAkt = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 101)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_DataZak = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 21)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_DataUtr = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 21)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_DataSkat = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 21)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_Nośnik = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_NrKat = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 501)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_Imie = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 501)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_Nazw = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 501)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_Adres = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 501)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_MN_Nazwa = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 501)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_MN_Adres = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 501)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_MN_Tel = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 31)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_MN_Email = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_MN_WWW = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 501)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].DOE_MN_Fax = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 31)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_RokProd = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 21)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_DataPrem = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 21)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_CzasProj = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 51)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_JezykLekt = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 1001)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_JezykNap = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 1001)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_FormWysw = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 51)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_SysKodObr = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 51)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KrajProd = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 1001)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KW_Nazwa = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KW_Typ = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KW_Wersja = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_ZAB_Nazwa = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_ZAB_Typ = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_ZAB_Wersja = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KA_Nazwa = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KA_Typ = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KA_Wersja = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
+                                br.ReadBytes(2);
+
+                                if (this.checkBox_OC.Checked == true)
+                                {
+                                    if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_OC.bf"))
+                                    {
+                                        FileStream fn_OC;
+                                        fn_OC = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_OC.bf");
+                                        BinaryReader br_oc = new BinaryReader(fn_OC, Encoding.Unicode);
+                                        if (fn_OC.Length > 0)
+                                        {
+                                            do
+                                            {
+
+                                                br_oc.ReadInt32();
+                                                int oc_idpdb = br_oc.ReadInt32();
+                                                if (oc_idpdb == flm_id)
+                                                {
+                                                    this.fKFilmOcenaBindingSource.AddNew();
+                                                    this.fKFilmOcenaBindingSource.EndEdit();
+                                                    this.defaultDataSet.Ocena[this.fKFilmOcenaBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
+                                                    this.defaultDataSet.Ocena[this.fKFilmOcenaBindingSource.Position].Nazwa = Strymuj(Encoding.Unicode.GetString(br_oc.ReadBytes(2 * 201)));
+                                                    this.defaultDataSet.Ocena[this.fKFilmOcenaBindingSource.Position].Tytul = Strymuj(Encoding.Unicode.GetString(br_oc.ReadBytes(2 * 201)));
+                                                    this.defaultDataSet.Ocena[this.fKFilmOcenaBindingSource.Position].Autor = Strymuj(Encoding.Unicode.GetString(br_oc.ReadBytes(2 * 201)));
+                                                    this.defaultDataSet.Ocena[this.fKFilmOcenaBindingSource.Position].WWW = Strymuj(Encoding.Unicode.GetString(br_oc.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.Ocena[this.fKFilmOcenaBindingSource.Position].Ocena = Strymuj(Encoding.Unicode.GetString(br_oc.ReadBytes(2 * 201)));
+                                                    br_oc.ReadBytes(2);
+                                                }
+
+                                            } while (fn_OC.Position < fn_OC.Length);
                                         }
-                                        oc_i = oc_i + 4 + 4 + 2 * (201 + 201 + 201 + 501 + 201);
+                                        fn_OC.Close();
                                     }
+
                                 }
 
-                            }
-
-                            if (this.checkBox_OB.Checked == true)
-                            {
-                                if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_OB.bf"))
+                                if (this.checkBox_OB.Checked == true)
                                 {
-                                    FileStream fn_OB;
-                                    fn_OB = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_OB.bf");
-                                    BinaryReader br_ob = new BinaryReader(fn_OB, Encoding.Unicode);
-                                    for (Int32 ob_i = 0; ob_i < fn_OB.Length; )
+                                    if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_OB.bf"))
                                     {
-                                        fn_OB.Seek(ob_i, SeekOrigin.Begin);
-                                        br_ob.ReadInt32();
-                                        int ob_idpdb = br_ob.ReadInt32();
-                                        if (ob_idpdb == flm_id)
+                                        FileStream fn_OB;
+                                        fn_OB = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_OB.bf");
+                                        BinaryReader br_ob = new BinaryReader(fn_OB, Encoding.Unicode);
+                                        if (fn_OB.Length > 0)
                                         {
-                                            this.fKFilmObsadaBindingSource.AddNew();
-                                            this.fKFilmObsadaBindingSource.EndEdit();
-                                            this.defaultDataSet.Obsada[this.fKFilmObsadaBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
-                                            this.defaultDataSet.Obsada[this.fKFilmObsadaBindingSource.Position].ImieNazw = Encoding.Unicode.GetString(br_ob.ReadBytes(2 * 501));
-                                            this.defaultDataSet.Obsada[this.fKFilmObsadaBindingSource.Position].Rola = Encoding.Unicode.GetString(br_ob.ReadBytes(2 * 201));
-                                            
+                                            do
+                                            {
+
+                                                br_ob.ReadInt32();
+                                                int ob_idpdb = br_ob.ReadInt32();
+                                                if (ob_idpdb == flm_id)
+                                                {
+                                                    this.fKFilmObsadaBindingSource.AddNew();
+                                                    this.fKFilmObsadaBindingSource.EndEdit();
+                                                    this.defaultDataSet.Obsada[this.fKFilmObsadaBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
+                                                    this.defaultDataSet.Obsada[this.fKFilmObsadaBindingSource.Position].ImieNazw = Strymuj(Encoding.Unicode.GetString(br_ob.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.Obsada[this.fKFilmObsadaBindingSource.Position].Rola = Strymuj(Encoding.Unicode.GetString(br_ob.ReadBytes(2 * 201)));
+                                                    br_ob.ReadBytes(4);
+                                                }
+
+                                            } while (fn_OB.Position < fn_OB.Length);
                                         }
-                                        ob_i = ob_i + 4 + 4 + 2 * (501 + 201);
+                                        fn_OB.Close();
                                     }
+
                                 }
 
-                            }
-
-                            if (this.checkBox_PP.Checked == true)
-                            {
-                                if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_PRP.bf"))
+                                if (this.checkBox_PP.Checked == true)
                                 {
-                                    FileStream fn_PP;
-                                    fn_PP = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_PRP.bf");
-                                    BinaryReader br_pp = new BinaryReader(fn_PP, Encoding.Unicode);
-                                    for (Int32 pp_i = 0; pp_i < fn_PP.Length; )
+                                    if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_PRP.bf"))
                                     {
-                                        fn_PP.Seek(pp_i, SeekOrigin.Begin);
-                                        br_pp.ReadInt32();
-                                        int pp_idpdb = br_pp.ReadInt32();
-                                        if (pp_idpdb == flm_id)
+                                        FileStream fn_PP;
+                                        fn_PP = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_PRP.bf");
+                                        BinaryReader br_pp = new BinaryReader(fn_PP, Encoding.Unicode);
+                                        if (fn_PP.Length > 0)
                                         {
-                                            this.fKFilmProdukcjaBindingSource.AddNew();
-                                            this.fKFilmProdukcjaBindingSource.EndEdit();
-                                            this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
-                                            this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].Nazwa = Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 501));
-                                            this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].Adres = Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 501));
-                                            this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].Tel = Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 31));
-                                            this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].Fax = Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 31));
-                                            this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].Email = Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 201));
-                                            this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].WWW = Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 501));
-                                            this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].Narodowość = Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 201));
+                                            do
+                                            {
 
+                                                br_pp.ReadInt32();
+                                                int pp_idpdb = br_pp.ReadInt32();
+                                                if (pp_idpdb == flm_id)
+                                                {
+                                                    this.fKFilmProdukcjaBindingSource.AddNew();
+                                                    this.fKFilmProdukcjaBindingSource.EndEdit();
+                                                    this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
+                                                    this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].Nazwa = Strymuj(Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].Adres = Strymuj(Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].Tel = Strymuj(Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 31)));
+                                                    this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].Fax = Strymuj(Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 31)));
+                                                    this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].Email = Strymuj(Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 201)));
+                                                    this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].WWW = Strymuj(Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].Narodowość = Strymuj(Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 201)));
+                                                    br_pp.ReadBytes(2);
+                                                }
+                                            } while (fn_PP.Position < fn_PP.Length);
                                         }
-                                        pp_i = pp_i + 4 + 4 + (2 * 501 + 501 + 31 + 31 + 201 + 501 + 201);
+                                        fn_PP.Close();
                                     }
+
                                 }
 
-                            }
-
-                            if (this.checkBox_PD.Checked == true)
-                            {
-                                if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_PRD.bf"))
+                                if (this.checkBox_PD.Checked == true)
                                 {
-                                    FileStream fn_PD;
-                                    fn_PD = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_PRD.bf");
-                                    BinaryReader br_pd = new BinaryReader(fn_PD, Encoding.Unicode);
-                                    for (Int32 pd_i = 0; pd_i < fn_PD.Length; )
+                                    if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_PRD.bf"))
                                     {
-                                        fn_PD.Seek(pd_i, SeekOrigin.Begin);
-                                        br_pd.ReadInt32();
-                                        int pd_idpdb = br_pd.ReadInt32();
-                                        if (pd_idpdb == flm_id)
+                                        FileStream fn_PD;
+                                        fn_PD = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_PRD.bf");
+                                        BinaryReader br_pd = new BinaryReader(fn_PD, Encoding.Unicode);
+                                        if (fn_PD.Length > 0)
                                         {
-                                            this.fKFilmDystrybucjaBindingSource.AddNew();
-                                            this.fKFilmDystrybucjaBindingSource.EndEdit(); 
-                                            this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
-                                            this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].Nazwa = Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 501));
-                                            this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].Adres = Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 501));
-                                            this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].Tel = Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 31));
-                                            this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].Fax = Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 31));
-                                            this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].Email = Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 201));
-                                            this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].WWW = Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 501));
-                                            this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].Narodowość = Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 201));
+                                            do
+                                            {
 
+                                                br_pd.ReadInt32();
+                                                int pd_idpdb = br_pd.ReadInt32();
+                                                if (pd_idpdb == flm_id)
+                                                {
+                                                    this.fKFilmDystrybucjaBindingSource.AddNew();
+                                                    this.fKFilmDystrybucjaBindingSource.EndEdit();
+                                                    this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
+                                                    this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].Nazwa = Strymuj(Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].Adres = Strymuj(Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].Tel = Strymuj(Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 31)));
+                                                    this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].Fax = Strymuj(Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 31)));
+                                                    this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].Email = Strymuj(Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 201)));
+                                                    this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].WWW = Strymuj(Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].Narodowość = Strymuj(Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 201)));
+                                                    br_pd.ReadBytes(2);
+                                                }
+
+                                            } while (fn_PD.Position < fn_PD.Length);
                                         }
-                                        pd_i = pd_i + 4 + 4 + 2 * (501 + 501 + 31 + 31 + 201 + 501 + 201);
+                                        fn_PD.Close();
                                     }
+
                                 }
 
-                            }
-
-                            if (this.checkBox_LZ.Checked == true)
-                            {
-                                if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_LZ.bf"))
+                                if (this.checkBox_LZ.Checked == true)
                                 {
-                                    FileStream fn_LZ;
-                                    fn_LZ = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_LZ.bf");
-                                    BinaryReader br_lz = new BinaryReader(fn_LZ, Encoding.Unicode);
-                                    for (Int32 lz_i = 0; lz_i < fn_LZ.Length; )
+                                    if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_LZ.bf"))
                                     {
-                                        fn_LZ.Seek(lz_i, SeekOrigin.Begin);
-                                        br_lz.ReadInt32();
-                                        int lz_idpdb = br_lz.ReadInt32();
-                                        if (lz_idpdb == flm_id)
+                                        FileStream fn_LZ;
+                                        fn_LZ = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_LZ.bf");
+                                        BinaryReader br_lz = new BinaryReader(fn_LZ, Encoding.Unicode);
+                                        if (fn_LZ.Length > 0)
                                         {
-                                            this.fKFilmLokZdjBindingSource.AddNew();
-                                            this.fKFilmLokZdjBindingSource.EndEdit(); 
-                                            this.defaultDataSet.LokZdj[this.fKFilmLokZdjBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
-                                            this.defaultDataSet.LokZdj[this.fKFilmLokZdjBindingSource.Position].NazwaObiektu = Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 501));
-                                            this.defaultDataSet.LokZdj[this.fKFilmLokZdjBindingSource.Position].Kraj = Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 501));
-                                            this.defaultDataSet.LokZdj[this.fKFilmLokZdjBindingSource.Position].Miejscowość = Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 501));
-                                            this.defaultDataSet.LokZdj[this.fKFilmLokZdjBindingSource.Position].Region = Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 501));
-                                            this.defaultDataSet.LokZdj[this.fKFilmLokZdjBindingSource.Position].Pora_roku = Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 501));
-                                            this.defaultDataSet.LokZdj[this.fKFilmLokZdjBindingSource.Position].Data = Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 21));
-                                            
+                                            do
+                                            {
 
+                                                br_lz.ReadInt32();
+                                                int lz_idpdb = br_lz.ReadInt32();
+                                                if (lz_idpdb == flm_id)
+                                                {
+                                                    this.fKFilmLokZdjBindingSource.AddNew();
+                                                    this.fKFilmLokZdjBindingSource.EndEdit();
+                                                    this.defaultDataSet.LokZdj[this.fKFilmLokZdjBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
+                                                    this.defaultDataSet.LokZdj[this.fKFilmLokZdjBindingSource.Position].NazwaObiektu = Strymuj(Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.LokZdj[this.fKFilmLokZdjBindingSource.Position].Kraj = Strymuj(Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.LokZdj[this.fKFilmLokZdjBindingSource.Position].Miejscowość = Strymuj(Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.LokZdj[this.fKFilmLokZdjBindingSource.Position].Region = Strymuj(Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.LokZdj[this.fKFilmLokZdjBindingSource.Position].Pora_roku = Strymuj(Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.LokZdj[this.fKFilmLokZdjBindingSource.Position].Data = Strymuj(Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 21)));
+                                                    br_lz.ReadBytes(2);
+
+                                                }
+
+                                            } while (fn_LZ.Position < fn_LZ.Length);
                                         }
-                                        lz_i = lz_i + 4 + 4 + 2 * (501 + 501 + 501 + 501 + 501 + 21);
+                                        fn_LZ.Close();
                                     }
+
                                 }
 
-                            }
-
-                            if (this.checkBox_WIO.Checked == true)
-                            {
-                                if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_WI.bf"))
+                                if (this.checkBox_WIO.Checked == true)
                                 {
-                                    FileStream fn_WI;
-                                    fn_WI = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_WI.bf");
-                                    BinaryReader br_wi = new BinaryReader(fn_WI, Encoding.Unicode);
-                                    for (Int32 wi_i = 0; wi_i < fn_WI.Length; )
+                                    if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_WI.bf"))
                                     {
-                                        fn_WI.Seek(wi_i, SeekOrigin.Begin);
-                                        br_wi.ReadInt32();
-                                        int wi_idpdb = br_wi.ReadInt32();
-                                        if (wi_idpdb == flm_id)
+                                        FileStream fn_WI;
+                                        fn_WI = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_WI.bf");
+                                        BinaryReader br_wi = new BinaryReader(fn_WI, Encoding.Unicode);
+                                        if (fn_WI.Length > 0)
                                         {
-                                            this.fKFilmWYPINBindingSource.AddNew();
-                                            this.fKFilmWYPINBindingSource.EndEdit();
-                                            this.defaultDataSet.WYPIN[this.fKFilmWYPINBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
-                                            this.defaultDataSet.WYPIN[this.fKFilmWYPINBindingSource.Position].DataWyp = Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 21));
-                                            this.defaultDataSet.WYPIN[this.fKFilmWYPINBindingSource.Position].DataOdd = Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 21));
-                                            this.defaultDataSet.WYPIN[this.fKFilmWYPINBindingSource.Position].StanPWyp = Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 501));
-                                            this.defaultDataSet.WYPIN[this.fKFilmWYPINBindingSource.Position].StanPOdd = Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 501));
-                                            this.defaultDataSet.WYPIN[this.fKFilmWYPINBindingSource.Position].Osoba = Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 501));
-                                            Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 501));
-                                            
+                                            do
+                                            {
 
+                                                br_wi.ReadInt32();
+                                                int wi_idpdb = br_wi.ReadInt32();
+                                                if (wi_idpdb == flm_id)
+                                                {
+                                                    this.fKFilmWYPINBindingSource.AddNew();
+                                                    this.fKFilmWYPINBindingSource.EndEdit();
+                                                    this.defaultDataSet.WYPIN[this.fKFilmWYPINBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
+                                                    this.defaultDataSet.WYPIN[this.fKFilmWYPINBindingSource.Position].DataWyp = Strymuj(Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 21)));
+                                                    this.defaultDataSet.WYPIN[this.fKFilmWYPINBindingSource.Position].DataOdd = Strymuj(Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 21)));
+                                                    this.defaultDataSet.WYPIN[this.fKFilmWYPINBindingSource.Position].StanPWyp = Strymuj(Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.WYPIN[this.fKFilmWYPINBindingSource.Position].StanPOdd = Strymuj(Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.WYPIN[this.fKFilmWYPINBindingSource.Position].Osoba = Strymuj(Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 501)));
+                                                    Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 501));
+                                                    br_wi.ReadBytes(2);
+
+                                                }
+
+                                            } while (fn_WI.Position < fn_WI.Length);
                                         }
-                                        wi_i = wi_i + 4 + 4 + 2 * (21 + 21 + 501 + 501 + 501 + 501);
+                                        fn_WI.Close();
                                     }
+
                                 }
 
-                            }
-
-                            if (this.checkBox_WOI.Checked == true)
-                            {
-                                if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_WO.bf"))
+                                if (this.checkBox_WOI.Checked == true)
                                 {
-                                    FileStream fn_WO;
-                                    fn_WO = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_WO.bf");
-                                    BinaryReader br_wo = new BinaryReader(fn_WO, Encoding.Unicode);
-                                    for (Int32 wo_i = 0; wo_i < fn_WO.Length; )
+                                    if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_WO.bf"))
                                     {
-                                        fn_WO.Seek(wo_i, SeekOrigin.Begin);
-                                        br_wo.ReadInt32();
-                                        int wo_idpdb = br_wo.ReadInt32();
-                                        if (wo_idpdb == flm_id)
+                                        FileStream fn_WO;
+                                        fn_WO = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_WO.bf");
+                                        BinaryReader br_wo = new BinaryReader(fn_WO, Encoding.Unicode);
+                                        if (fn_WO.Length > 0)
                                         {
-                                            this.fKFilmWYPODINBindingSource.AddNew();
-                                            this.fKFilmWYPODINBindingSource.EndEdit(); 
-                                            this.defaultDataSet.WYPODIN[this.fKFilmWYPODINBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
-                                            this.defaultDataSet.WYPODIN[this.fKFilmWYPODINBindingSource.Position].DataWyp = Encoding.Unicode.GetString(br_wo.ReadBytes(2 * 21));
-                                            this.defaultDataSet.WYPODIN[this.fKFilmWYPODINBindingSource.Position].DataOdd = Encoding.Unicode.GetString(br_wo.ReadBytes(2 * 21));
-                                            this.defaultDataSet.WYPODIN[this.fKFilmWYPODINBindingSource.Position].StanPWyp = Encoding.Unicode.GetString(br_wo.ReadBytes(2 * 501));
-                                            this.defaultDataSet.WYPODIN[this.fKFilmWYPODINBindingSource.Position].StanPOdd = Encoding.Unicode.GetString(br_wo.ReadBytes(2 * 501));
-                                            this.defaultDataSet.WYPODIN[this.fKFilmWYPODINBindingSource.Position].Osoba = Encoding.Unicode.GetString(br_wo.ReadBytes(2 * 501));
-                                            Encoding.Unicode.GetString(br_wo.ReadBytes(2 * 501));
+                                            do
+                                            {
 
+                                                br_wo.ReadInt32();
+                                                int wo_idpdb = br_wo.ReadInt32();
+                                                if (wo_idpdb == flm_id)
+                                                {
+                                                    this.fKFilmWYPODINBindingSource.AddNew();
+                                                    this.fKFilmWYPODINBindingSource.EndEdit();
+                                                    this.defaultDataSet.WYPODIN[this.fKFilmWYPODINBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
+                                                    this.defaultDataSet.WYPODIN[this.fKFilmWYPODINBindingSource.Position].DataWyp = Strymuj(Encoding.Unicode.GetString(br_wo.ReadBytes(2 * 21)));
+                                                    this.defaultDataSet.WYPODIN[this.fKFilmWYPODINBindingSource.Position].DataOdd = Strymuj(Encoding.Unicode.GetString(br_wo.ReadBytes(2 * 21)));
+                                                    this.defaultDataSet.WYPODIN[this.fKFilmWYPODINBindingSource.Position].StanPWyp = Strymuj(Encoding.Unicode.GetString(br_wo.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.WYPODIN[this.fKFilmWYPODINBindingSource.Position].StanPOdd = Strymuj(Encoding.Unicode.GetString(br_wo.ReadBytes(2 * 501)));
+                                                    this.defaultDataSet.WYPODIN[this.fKFilmWYPODINBindingSource.Position].Osoba = Strymuj(Encoding.Unicode.GetString(br_wo.ReadBytes(2 * 501)));
+                                                    Encoding.Unicode.GetString(br_wo.ReadBytes(2 * 501));
+                                                    br_wo.ReadBytes(2);
 
+                                                }
+
+                                            } while (fn_WO.Position < fn_WO.Length);
                                         }
-                                        wo_i = wo_i + 4 + 4 + 2*(21 + 21 + 501 + 501 + 501 + 501);
+                                        fn_WO.Close();
                                     }
+
                                 }
 
-                            }
 
-                            i = i + 4 + (2 * (501 + 501 + 201 + 241 + 241 + 201 + 201 + 201 + 201 + 201 + 501 + 501 + 501 + 501 + 501 + 501 +
-                                501 + 501 + 101 + 101 + 21 + 21 + 21 + 201 + 501 + 501 + 501 + 501 + 501 + 501 +
-                                31 + 201 + 501 + 31 + 21 + 21 + 51 + 1001 + 1001 + 51 + 51 + 1001 + 201 + 201 + 
-                                201 + 201 + 201 + 201 + 201 + 201 + 201));
+                            } while (fn_film.Position < fn_film.Length);
                         }
+                    
                         fn_film.Close();
 
                         
@@ -368,7 +397,7 @@ namespace MK_Film_DB_NET
                     this.fKFilmObsadaBindingSource.EndEdit();
                     this.fKFilmProdukcjaBindingSource.EndEdit();
                     this.fKFilmDystrybucjaBindingSource.EndEdit();
-                    this.fKFilmLokZdjBindingSource.EndEdit(); 
+                    this.fKFilmLokZdjBindingSource.EndEdit();
                     this.fKFilmWYPINBindingSource.EndEdit();
                     this.fKFilmWYPODINBindingSource.EndEdit();
 
@@ -395,5 +424,19 @@ namespace MK_Film_DB_NET
             }
             
             }
+        private String Strymuj(String tekst)
+        {
+            if (tekst[0] == '\0')
+            {
+                return "";
+            }
+            else
+            {
+                return tekst.Trim('\0');
+            }
+
+
+
+        }
     }
 }
