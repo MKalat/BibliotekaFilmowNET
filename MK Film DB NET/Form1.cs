@@ -619,13 +619,16 @@ namespace MK_Film_DB_NET
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            //TODO: Napisać import z BF 1020 - 1052
+            ImpNewBF frm_impNewbf = new ImpNewBF();
+            frm_impNewbf.Show(this);
+            button_SAVE_Click(null, null);
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
             ImpOldBF frm_impOldbf = new ImpOldBF();
             frm_impOldbf.Show(this);
+            button_SAVE_Click(null, null);
 
         }
 
@@ -634,6 +637,7 @@ namespace MK_Film_DB_NET
             // kreator importu ze starego formatu podczas pierwszego muruchomienia
             FStartWiz frm_startWiz = new FStartWiz();
             frm_startWiz.Show();
+            button_SAVE_Click(null, null);
 
         }
         
