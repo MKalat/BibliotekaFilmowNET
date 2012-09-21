@@ -163,7 +163,10 @@ namespace MK_Film_DB_NET
                                                     this.defaultDataSet.Ocena[this.fKFilmOcenaBindingSource.Position].Ocena = Strymuj(Encoding.Unicode.GetString(br_oc.ReadBytes(2 * 201)));
                                                     br_oc.ReadBytes(2);
                                                 }
-
+                                                else
+                                                {
+                                                    br_oc.ReadBytes((2 * 501) + (2 * 201));
+                                                }
                                             } while (fn_OC.Position < fn_OC.Length);
                                         }
                                         fn_OC.Close();
@@ -187,12 +190,23 @@ namespace MK_Film_DB_NET
                                                 int ob_idpdb = br_ob.ReadInt32();
                                                 if (ob_idpdb == flm_id)
                                                 {
-                                                    this.fKFilmObsadaBindingSource.AddNew();
-                                                    this.fKFilmObsadaBindingSource.EndEdit();
-                                                    this.defaultDataSet.Obsada[this.fKFilmObsadaBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
-                                                    this.defaultDataSet.Obsada[this.fKFilmObsadaBindingSource.Position].ImieNazw = Strymuj(Encoding.Unicode.GetString(br_ob.ReadBytes(2 * 501)));
-                                                    this.defaultDataSet.Obsada[this.fKFilmObsadaBindingSource.Position].Rola = Strymuj(Encoding.Unicode.GetString(br_ob.ReadBytes(2 * 201)));
-                                                    br_ob.ReadBytes(4);
+                                                    
+                                                    //defaultDataSet.ObsadaRow ob_r = defaultDataSet.Obsada.NewObsadaRow();
+                                                    //ob_r.ImieNazw = Strymuj(Encoding.Unicode.GetString(br_ob.ReadBytes(2 * 501)));
+                                                    //ob_r.Rola = Strymuj(Encoding.Unicode.GetString(br_ob.ReadBytes(2 * 201)));
+                                                    //ob_r.SetParentRow(this.defaultDataSet.Film.Rows[this.filmBindingSource.Position]);
+                                                    //defaultDataSet.Obsada.Rows.Add(ob_r);
+                                                    //Alternatywa :
+                                                    //this.fKFilmObsadaBindingSource.AddNew();
+                                                    //this.fKFilmObsadaBindingSource.EndEdit();
+                                                    //this.defaultDataSet.Obsada[this.fKFilmObsadaBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
+                                                    //this.defaultDataSet.Obsada[this.fKFilmObsadaBindingSource.Position].ImieNazw = Strymuj(Encoding.Unicode.GetString(br_ob.ReadBytes(2 * 501)));
+                                                    //this.defaultDataSet.Obsada[this.fKFilmObsadaBindingSource.Position].Rola = Strymuj(Encoding.Unicode.GetString(br_ob.ReadBytes(2 * 201)));
+                                                    
+                                                }
+                                                else
+                                                {
+                                                    br_ob.ReadBytes((2 * 501) + (2 * 201));
                                                 }
 
                                             } while (fn_OB.Position < fn_OB.Length);
@@ -230,6 +244,10 @@ namespace MK_Film_DB_NET
                                                     this.defaultDataSet.Produkcja[this.fKFilmProdukcjaBindingSource.Position].Narodowość = Strymuj(Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 201)));
                                                     br_pp.ReadBytes(2);
                                                 }
+                                                else
+                                                {
+                                                    br_pp.ReadBytes((2 * 501) + (2 * 201));
+                                                }
                                             } while (fn_PP.Position < fn_PP.Length);
                                         }
                                         fn_PP.Close();
@@ -265,7 +283,10 @@ namespace MK_Film_DB_NET
                                                     this.defaultDataSet.Dystrybucja[this.fKFilmDystrybucjaBindingSource.Position].Narodowość = Strymuj(Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 201)));
                                                     br_pd.ReadBytes(2);
                                                 }
-
+                                                else
+                                                {
+                                                    br_pd.ReadBytes((2 * 501) + (2 * 201));
+                                                }
                                             } while (fn_PD.Position < fn_PD.Length);
                                         }
                                         fn_PD.Close();
@@ -301,7 +322,10 @@ namespace MK_Film_DB_NET
                                                     br_lz.ReadBytes(2);
 
                                                 }
-
+                                                else
+                                                {
+                                                    br_lz.ReadBytes((2 * 501) + (2 * 201));
+                                                }
                                             } while (fn_LZ.Position < fn_LZ.Length);
                                         }
                                         fn_LZ.Close();
@@ -337,7 +361,10 @@ namespace MK_Film_DB_NET
                                                     br_wi.ReadBytes(2);
 
                                                 }
-
+                                                else
+                                                {
+                                                    br_wi.ReadBytes((2 * 501) + (2 * 201));
+                                                }
                                             } while (fn_WI.Position < fn_WI.Length);
                                         }
                                         fn_WI.Close();
@@ -373,7 +400,10 @@ namespace MK_Film_DB_NET
                                                     br_wo.ReadBytes(2);
 
                                                 }
-
+                                                else
+                                                {
+                                                    br_wo.ReadBytes((2 * 501) + (2 * 201));
+                                                }
                                             } while (fn_WO.Position < fn_WO.Length);
                                         }
                                         fn_WO.Close();
