@@ -128,6 +128,7 @@
             // checkBox_DL_LZ
             // 
             this.checkBox_DL_LZ.AutoSize = true;
+            this.checkBox_DL_LZ.Enabled = false;
             this.checkBox_DL_LZ.Location = new System.Drawing.Point(12, 144);
             this.checkBox_DL_LZ.Name = "checkBox_DL_LZ";
             this.checkBox_DL_LZ.Size = new System.Drawing.Size(167, 17);
@@ -138,6 +139,7 @@
             // checkBox_DL_D
             // 
             this.checkBox_DL_D.AutoSize = true;
+            this.checkBox_DL_D.Enabled = false;
             this.checkBox_DL_D.Location = new System.Drawing.Point(12, 120);
             this.checkBox_DL_D.Name = "checkBox_DL_D";
             this.checkBox_DL_D.Size = new System.Drawing.Size(117, 17);
@@ -148,6 +150,7 @@
             // checkBox_DL_P
             // 
             this.checkBox_DL_P.AutoSize = true;
+            this.checkBox_DL_P.Enabled = false;
             this.checkBox_DL_P.Location = new System.Drawing.Point(12, 96);
             this.checkBox_DL_P.Name = "checkBox_DL_P";
             this.checkBox_DL_P.Size = new System.Drawing.Size(110, 17);
@@ -158,6 +161,7 @@
             // checkBox_DL_OB
             // 
             this.checkBox_DL_OB.AutoSize = true;
+            this.checkBox_DL_OB.Enabled = false;
             this.checkBox_DL_OB.Location = new System.Drawing.Point(12, 72);
             this.checkBox_DL_OB.Name = "checkBox_DL_OB";
             this.checkBox_DL_OB.Size = new System.Drawing.Size(99, 17);
@@ -168,6 +172,7 @@
             // checkBox_DL_OC
             // 
             this.checkBox_DL_OC.AutoSize = true;
+            this.checkBox_DL_OC.Enabled = false;
             this.checkBox_DL_OC.Location = new System.Drawing.Point(12, 48);
             this.checkBox_DL_OC.Name = "checkBox_DL_OC";
             this.checkBox_DL_OC.Size = new System.Drawing.Size(94, 17);
