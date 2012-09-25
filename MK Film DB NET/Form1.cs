@@ -139,7 +139,6 @@ namespace MK_Film_DB_NET
         }
         private void Utworz_DB(String path)
         {
-
             Directory.CreateDirectory(path);
             Directory.CreateDirectory(path + "\\covers");
             File.Copy("default.sdf", cur_db_path, true);

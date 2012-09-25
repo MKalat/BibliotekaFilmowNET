@@ -137,6 +137,26 @@ namespace MK_Film_DB_NET
                                 this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KA_Wersja = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
                                 br.ReadBytes(2);
 
+                                if (this.checkBox_Okl.Checked == true)
+                                {
+                                    if (this.defaultDataSet.Film[this.filmBindingSource.Position].pathtofront == "")
+                                    {
+                                        String fn_pic;
+                                        fn_pic = GetFileName(this.defaultDataSet.Film[this.filmBindingSource.Position].pathtofront);
+                                        File.Copy(this.textBox_SelPath.Text + "\\covers\\" + fn_pic, Form1.db_path + "\\covers\\" + fn_pic, true);
+                                    
+
+                                    }
+                                    if (this.defaultDataSet.Film[this.filmBindingSource.Position].pathtoback == "")
+                                    {
+                                        String fn_pic;
+                                        fn_pic = GetFileName(this.defaultDataSet.Film[this.filmBindingSource.Position].pathtoback);
+                                        File.Copy(this.textBox_SelPath.Text + "\\covers\\" + fn_pic, Form1.db_path + "\\covers\\" + fn_pic, true);
+                                    }
+
+
+                                }
+
                                 if (this.checkBox_OC.Checked == true)
                                 {
                                     if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_OC.bf"))
@@ -197,6 +217,7 @@ namespace MK_Film_DB_NET
                                                     //ob_r.SetParentRow(this.defaultDataSet.Film.Rows[this.filmBindingSource.Position]);
                                                     //defaultDataSet.Obsada.Rows.Add(ob_r);
                                                     //Alternatywa :
+                                                    
                                                     //this.fKFilmObsadaBindingSource.AddNew();
                                                     //this.fKFilmObsadaBindingSource.EndEdit();
                                                     //this.defaultDataSet.Obsada[this.fKFilmObsadaBindingSource.Position].IDPDB = this.defaultDataSet.Film[this.filmBindingSource.Position].ID;
@@ -466,6 +487,14 @@ namespace MK_Film_DB_NET
             }
 
 
+
+        }
+
+        private String GetFileName(String fn)
+        {
+            int beg = fn.LastIndexOf('\\');
+            int end = fn.Length;
+            return fn.Substring(beg, end - beg);
 
         }
     }
