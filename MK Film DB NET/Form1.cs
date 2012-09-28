@@ -86,10 +86,10 @@ namespace MK_Film_DB_NET
             this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
             this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
             this.filmTableAdapter.Fill(this.defaultDataSet.Film);
-            if (this.filmBindingSource.Count == 0)
-            {
-                this.button_GetDataInt.Enabled = false;
-            }
+            //if (this.filmBindingSource.Count == 0)
+            //{
+            //    this.button_GetDataInt.Enabled = false;
+            //}
             LiczRec();
         }
         private void Read_settings()
