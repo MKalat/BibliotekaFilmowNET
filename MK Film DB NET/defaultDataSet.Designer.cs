@@ -41,11 +41,11 @@ namespace MK_Film_DB_NET {
         
         private WYPODINDataTable tableWYPODIN;
         
+        private global::System.Data.DataRelation relationFK_Film_Obsada;
+        
         private global::System.Data.DataRelation relationFK_Film_Dystrybucja;
         
         private global::System.Data.DataRelation relationFK_Film_WYPODIN;
-        
-        private global::System.Data.DataRelation relationFK_Film_Obsada;
         
         private global::System.Data.DataRelation relationFK_Film_WYPIN;
         
@@ -356,9 +356,9 @@ namespace MK_Film_DB_NET {
                     this.tableWYPODIN.InitVars();
                 }
             }
+            this.relationFK_Film_Obsada = this.Relations["FK_Film_Obsada"];
             this.relationFK_Film_Dystrybucja = this.Relations["FK_Film_Dystrybucja"];
             this.relationFK_Film_WYPODIN = this.Relations["FK_Film_WYPODIN"];
-            this.relationFK_Film_Obsada = this.Relations["FK_Film_Obsada"];
             this.relationFK_Film_WYPIN = this.Relations["FK_Film_WYPIN"];
             this.relationFK_Film_Produkcja = this.Relations["FK_Film_Produkcja"];
             this.relationFK_Film_Ocena = this.Relations["FK_Film_Ocena"];
@@ -388,6 +388,18 @@ namespace MK_Film_DB_NET {
             base.Tables.Add(this.tableWYPIN);
             this.tableWYPODIN = new WYPODINDataTable();
             base.Tables.Add(this.tableWYPODIN);
+            global::System.Data.ForeignKeyConstraint fkc;
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_Film_Obsada", new global::System.Data.DataColumn[] {
+                        this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableObsada.IDPDBColumn});
+            this.tableObsada.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.None;
+            fkc.UpdateRule = global::System.Data.Rule.Cascade;
+            this.relationFK_Film_Obsada = new global::System.Data.DataRelation("FK_Film_Obsada", new global::System.Data.DataColumn[] {
+                        this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableObsada.IDPDBColumn}, false);
+            this.Relations.Add(this.relationFK_Film_Obsada);
             this.relationFK_Film_Dystrybucja = new global::System.Data.DataRelation("FK_Film_Dystrybucja", new global::System.Data.DataColumn[] {
                         this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableDystrybucja.IDPDBColumn}, false);
@@ -396,10 +408,6 @@ namespace MK_Film_DB_NET {
                         this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableWYPODIN.IDPDBColumn}, false);
             this.Relations.Add(this.relationFK_Film_WYPODIN);
-            this.relationFK_Film_Obsada = new global::System.Data.DataRelation("FK_Film_Obsada", new global::System.Data.DataColumn[] {
-                        this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableObsada.IDPDBColumn}, false);
-            this.Relations.Add(this.relationFK_Film_Obsada);
             this.relationFK_Film_WYPIN = new global::System.Data.DataRelation("FK_Film_WYPIN", new global::System.Data.DataColumn[] {
                         this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableWYPIN.IDPDBColumn}, false);
@@ -5117,6 +5125,16 @@ namespace MK_Film_DB_NET {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public ObsadaRow[] GetObsadaRows() {
+                if ((this.Table.ChildRelations["FK_Film_Obsada"] == null)) {
+                    return new ObsadaRow[0];
+                }
+                else {
+                    return ((ObsadaRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Film_Obsada"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public DystrybucjaRow[] GetDystrybucjaRows() {
                 if ((this.Table.ChildRelations["FK_Film_Dystrybucja"] == null)) {
                     return new DystrybucjaRow[0];
@@ -5133,16 +5151,6 @@ namespace MK_Film_DB_NET {
                 }
                 else {
                     return ((WYPODINRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Film_WYPODIN"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public ObsadaRow[] GetObsadaRows() {
-                if ((this.Table.ChildRelations["FK_Film_Obsada"] == null)) {
-                    return new ObsadaRow[0];
-                }
-                else {
-                    return ((ObsadaRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Film_Obsada"])));
                 }
             }
             

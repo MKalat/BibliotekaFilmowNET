@@ -20,7 +20,7 @@ namespace MK_Film_DB_NET
         public static String cur_db_path;
         public static Int32 s_pos;
         public static String db_path, ctrl_Title;
-
+        
         public SETT_REC sett = new SETT_REC();
 
         // definicje naz plików profili i baz danych
