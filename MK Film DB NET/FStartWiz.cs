@@ -11,8 +11,10 @@ namespace MK_Film_DB_NET
 {
     public partial class FStartWiz : Form
     {
-        public FStartWiz()
+        Form1 frm1;
+        public FStartWiz(Form1 frm1_inst)
         {
+            frm1 = frm1_inst;
             InitializeComponent();
         }
 
@@ -27,7 +29,7 @@ namespace MK_Film_DB_NET
             }
             else if (this.radioButton_ImpNewBF.Checked == true)
             {
-                ImpNewBF frm_impnewbf = new ImpNewBF();
+                ImpNewBF frm_impnewbf = new ImpNewBF(frm1);
                 frm_impnewbf.Show();
                 this.Close();
             }

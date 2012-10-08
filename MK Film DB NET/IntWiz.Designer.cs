@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IntWiz));
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox_DataSRC = new System.Windows.Forms.ComboBox();
@@ -42,13 +41,6 @@
             this.checkBox_DL_FILM = new System.Windows.Forms.CheckBox();
             this.button_DOWNLOAD = new System.Windows.Forms.Button();
             this.button_Cancel = new System.Windows.Forms.Button();
-            this.fKFilmOcenaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fKFilmObsadaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fKFilmProdukcjaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fKFilmDystrybucjaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fKFilmLokZdjBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fKFilmWYPINBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.fKFilmWYPODINBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.webBrowser_GetDataInt = new System.Windows.Forms.WebBrowser();
             this.label2 = new System.Windows.Forms.Label();
             this.listView_Results = new System.Windows.Forms.ListView();
@@ -58,26 +50,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox_FlmSrch = new System.Windows.Forms.TextBox();
-            this.defaultDataSet = new MK_Film_DB_NET.defaultDataSet();
-            this.filmBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.filmTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.FilmTableAdapter();
-            this.ocenaTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.OcenaTableAdapter();
-            this.obsadaTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.ObsadaTableAdapter();
-            this.produkcjaTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.ProdukcjaTableAdapter();
-            this.dystrybucjaTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.DystrybucjaTableAdapter();
-            this.lokZdjTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.LokZdjTableAdapter();
-            this.wYPINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPINTableAdapter();
-            this.wYPODINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPODINTableAdapter();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fKFilmOcenaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKFilmObsadaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKFilmProdukcjaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKFilmDystrybucjaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKFilmLokZdjBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKFilmWYPINBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKFilmWYPODINBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -212,41 +185,6 @@
             this.button_Cancel.UseVisualStyleBackColor = true;
             this.button_Cancel.Click += new System.EventHandler(this.button_Cancel_Click);
             // 
-            // fKFilmOcenaBindingSource
-            // 
-            this.fKFilmOcenaBindingSource.DataMember = "FK_Film_Ocena";
-            this.fKFilmOcenaBindingSource.DataSource = this.filmBindingSource;
-            // 
-            // fKFilmObsadaBindingSource
-            // 
-            this.fKFilmObsadaBindingSource.DataMember = "FK_Film_Obsada";
-            this.fKFilmObsadaBindingSource.DataSource = this.filmBindingSource;
-            // 
-            // fKFilmProdukcjaBindingSource
-            // 
-            this.fKFilmProdukcjaBindingSource.DataMember = "FK_Film_Produkcja";
-            this.fKFilmProdukcjaBindingSource.DataSource = this.filmBindingSource;
-            // 
-            // fKFilmDystrybucjaBindingSource
-            // 
-            this.fKFilmDystrybucjaBindingSource.DataMember = "FK_Film_Dystrybucja";
-            this.fKFilmDystrybucjaBindingSource.DataSource = this.filmBindingSource;
-            // 
-            // fKFilmLokZdjBindingSource
-            // 
-            this.fKFilmLokZdjBindingSource.DataMember = "FK_Film_LokZdj";
-            this.fKFilmLokZdjBindingSource.DataSource = this.filmBindingSource;
-            // 
-            // fKFilmWYPINBindingSource
-            // 
-            this.fKFilmWYPINBindingSource.DataMember = "FK_Film_WYPIN";
-            this.fKFilmWYPINBindingSource.DataSource = this.filmBindingSource;
-            // 
-            // fKFilmWYPODINBindingSource
-            // 
-            this.fKFilmWYPODINBindingSource.DataMember = "FK_Film_WYPODIN";
-            this.fKFilmWYPODINBindingSource.DataSource = this.filmBindingSource;
-            // 
             // webBrowser_GetDataInt
             // 
             this.webBrowser_GetDataInt.AllowWebBrowserDrop = false;
@@ -326,48 +264,6 @@
             this.textBox_FlmSrch.Size = new System.Drawing.Size(330, 20);
             this.textBox_FlmSrch.TabIndex = 11;
             // 
-            // defaultDataSet
-            // 
-            this.defaultDataSet.DataSetName = "defaultDataSet";
-            this.defaultDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // filmBindingSource
-            // 
-            this.filmBindingSource.DataMember = "Film";
-            this.filmBindingSource.DataSource = this.defaultDataSet;
-            // 
-            // filmTableAdapter
-            // 
-            this.filmTableAdapter.ClearBeforeFill = true;
-            // 
-            // ocenaTableAdapter
-            // 
-            this.ocenaTableAdapter.ClearBeforeFill = true;
-            // 
-            // obsadaTableAdapter
-            // 
-            this.obsadaTableAdapter.ClearBeforeFill = true;
-            // 
-            // produkcjaTableAdapter
-            // 
-            this.produkcjaTableAdapter.ClearBeforeFill = true;
-            // 
-            // dystrybucjaTableAdapter
-            // 
-            this.dystrybucjaTableAdapter.ClearBeforeFill = true;
-            // 
-            // lokZdjTableAdapter
-            // 
-            this.lokZdjTableAdapter.ClearBeforeFill = true;
-            // 
-            // wYPINTableAdapter
-            // 
-            this.wYPINTableAdapter.ClearBeforeFill = true;
-            // 
-            // wYPODINTableAdapter
-            // 
-            this.wYPODINTableAdapter.ClearBeforeFill = true;
-            // 
             // IntWiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -392,15 +288,6 @@
             this.Load += new System.EventHandler(this.IntWiz_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fKFilmOcenaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKFilmObsadaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKFilmProdukcjaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKFilmDystrybucjaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKFilmLokZdjBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKFilmWYPINBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fKFilmWYPODINBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -420,23 +307,6 @@
         private System.Windows.Forms.CheckBox checkBox_DL_LZ;
         private System.Windows.Forms.Button button_DOWNLOAD;
         private System.Windows.Forms.Button button_Cancel;
-        private defaultDataSet defaultDataSet;
-        private System.Windows.Forms.BindingSource filmBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.FilmTableAdapter filmTableAdapter;
-        private System.Windows.Forms.BindingSource fKFilmOcenaBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.OcenaTableAdapter ocenaTableAdapter;
-        private System.Windows.Forms.BindingSource fKFilmObsadaBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.ObsadaTableAdapter obsadaTableAdapter;
-        private System.Windows.Forms.BindingSource fKFilmProdukcjaBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.ProdukcjaTableAdapter produkcjaTableAdapter;
-        private System.Windows.Forms.BindingSource fKFilmDystrybucjaBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.DystrybucjaTableAdapter dystrybucjaTableAdapter;
-        private System.Windows.Forms.BindingSource fKFilmLokZdjBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.LokZdjTableAdapter lokZdjTableAdapter;
-        private System.Windows.Forms.BindingSource fKFilmWYPINBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.WYPINTableAdapter wYPINTableAdapter;
-        private System.Windows.Forms.BindingSource fKFilmWYPODINBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.WYPODINTableAdapter wYPODINTableAdapter;
         private System.Windows.Forms.WebBrowser webBrowser_GetDataInt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListView listView_Results;
