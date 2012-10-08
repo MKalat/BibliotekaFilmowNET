@@ -396,7 +396,7 @@ namespace MK_Film_DB_NET
             bw.Write(SETT_REC.save_on_exit);
             bw.Close();
         }
-        private void LiczRec()
+        public void LiczRec()
         {
             int pos = filmBindingSource.Position + 1;
             this.textBox_RecNo.Text = pos.ToString();
@@ -613,8 +613,8 @@ namespace MK_Film_DB_NET
             ctrl_Title = this.textBox_Tytul.Text;
             IntWiz frmInt = new IntWiz(this);
             frmInt.Show(this);
-            button_SAVE_Click(null, null);
-            button_SAVE_Click(null, null);
+            //button_SAVE_Click(null, null);
+            //button_SAVE_Click(null, null);
         }
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)

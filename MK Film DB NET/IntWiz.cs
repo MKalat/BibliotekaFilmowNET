@@ -13,7 +13,7 @@ namespace MK_Film_DB_NET
     public partial class IntWiz : Form
     {
         Form1 frm1;
-        defaultDataSet.FilmRow flm_row;
+        //defaultDataSet.FilmRow flm_row;
         public IntWiz(Form1 frm1inst)
         {
             frm1 = frm1inst;
@@ -247,7 +247,7 @@ namespace MK_Film_DB_NET
                                     //newObRow.Rola = "Reżyser";
                                     //frm1.defaultDataSet.Obsada.AddObsadaRow(newObRow);
 
-                                    frm1.dataGridView_OB_Obsada.Rows.Add(null,ele2.OuterText, "Reżyser");
+                                    //frm1.dataGridView_OB_Obsada.Rows.Add(null,ele2.OuterText, "Reżyser");
                                 }
                             }
 
@@ -257,7 +257,7 @@ namespace MK_Film_DB_NET
                                 {
                                     //frm1.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Scenariusz", defaultDataSet.Film[frm1.filmBindingSource.Position]);
 
-                                    frm1.dataGridView_OB_Obsada.Rows.Add(null,ele2.OuterText, "Scenariusz");
+                                    //frm1.dataGridView_OB_Obsada.Rows.Add(null,ele2.OuterText, "Scenariusz");
                                 }
                             }
 
@@ -269,7 +269,7 @@ namespace MK_Film_DB_NET
                                     {
                                         //frm1.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, ele.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.OuterText, defaultDataSet.Film[frm1.filmBindingSource.Position]);
 
-                                        frm1.dataGridView_OB_Obsada.Rows.Add(null,ele2.OuterText, ele.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.OuterText);
+                                        //frm1.dataGridView_OB_Obsada.Rows.Add(null,ele2.OuterText, ele.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.OuterText);
                                     }
 
 
@@ -355,6 +355,8 @@ namespace MK_Film_DB_NET
             frm1.obsadaTableAdapter.Fill(frm1.defaultDataSet.Obsada);
             frm1.ocenaTableAdapter.Fill(frm1.defaultDataSet.Ocena);
             frm1.filmTableAdapter.Fill(frm1.defaultDataSet.Film);
+
+            frm1.LiczRec();
 
         }
 
