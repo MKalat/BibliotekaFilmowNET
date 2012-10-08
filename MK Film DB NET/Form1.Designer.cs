@@ -2448,23 +2448,6 @@
         private System.Windows.Forms.ToolStripMenuItem oProgramieToolStripMenuItem;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.TextBox textBox_OP_Opis;
-        private defaultDataSet defaultDataSet;
-        private System.Windows.Forms.BindingSource filmBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.FilmTableAdapter filmTableAdapter;
-        private System.Windows.Forms.BindingSource fKFilmOcenaBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.OcenaTableAdapter ocenaTableAdapter;
-        private System.Windows.Forms.BindingSource fKFilmObsadaBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.ObsadaTableAdapter obsadaTableAdapter;
-        private System.Windows.Forms.BindingSource fKFilmProdukcjaBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.ProdukcjaTableAdapter produkcjaTableAdapter;
-        private System.Windows.Forms.BindingSource fKFilmDystrybucjaBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.DystrybucjaTableAdapter dystrybucjaTableAdapter;
-        private System.Windows.Forms.BindingSource fKFilmLokZdjBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.LokZdjTableAdapter lokZdjTableAdapter;
-        private System.Windows.Forms.BindingSource fKFilmWYPINBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.WYPINTableAdapter wYPINTableAdapter;
-        private System.Windows.Forms.BindingSource fKFilmWYPODINBindingSource;
-        private MK_Film_DB_NET.defaultDataSetTableAdapters.WYPODINTableAdapter wYPODINTableAdapter;
         private System.Windows.Forms.ToolStripMenuItem ustawieniaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem drukujToolStripMenuItem;
         private System.Windows.Forms.Button button_GetDataInt;
@@ -2524,6 +2507,23 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         protected System.Windows.Forms.TextBox textBox_Tytul;
+        public defaultDataSet defaultDataSet;
+        public System.Windows.Forms.BindingSource filmBindingSource;
+        public System.Windows.Forms.BindingSource fKFilmOcenaBindingSource;
+        public System.Windows.Forms.BindingSource fKFilmObsadaBindingSource;
+        public MK_Film_DB_NET.defaultDataSetTableAdapters.ObsadaTableAdapter obsadaTableAdapter;
+        public System.Windows.Forms.BindingSource fKFilmProdukcjaBindingSource;
+        public MK_Film_DB_NET.defaultDataSetTableAdapters.ProdukcjaTableAdapter produkcjaTableAdapter;
+        public System.Windows.Forms.BindingSource fKFilmDystrybucjaBindingSource;
+        public MK_Film_DB_NET.defaultDataSetTableAdapters.DystrybucjaTableAdapter dystrybucjaTableAdapter;
+        public System.Windows.Forms.BindingSource fKFilmLokZdjBindingSource;
+        public MK_Film_DB_NET.defaultDataSetTableAdapters.LokZdjTableAdapter lokZdjTableAdapter;
+        public System.Windows.Forms.BindingSource fKFilmWYPINBindingSource;
+        public MK_Film_DB_NET.defaultDataSetTableAdapters.WYPINTableAdapter wYPINTableAdapter;
+        public System.Windows.Forms.BindingSource fKFilmWYPODINBindingSource;
+        public MK_Film_DB_NET.defaultDataSetTableAdapters.WYPODINTableAdapter wYPODINTableAdapter;
+        public MK_Film_DB_NET.defaultDataSetTableAdapters.FilmTableAdapter filmTableAdapter;
+        public MK_Film_DB_NET.defaultDataSetTableAdapters.OcenaTableAdapter ocenaTableAdapter;
     }
 }
 

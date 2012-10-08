@@ -12,8 +12,10 @@ namespace MK_Film_DB_NET
 {
     public partial class IntWiz : Form
     {
-        public IntWiz()
+        Form1 frm1;
+        public IntWiz(Form1 frm1inst)
         {
+            frm1 = frm1inst;
             InitializeComponent();
         }
         public static String ctrl_uri, ctrl2_uri, ctrl3_uri;
@@ -45,7 +47,7 @@ namespace MK_Film_DB_NET
             Int32 beg_ind, end_ind;
             String szukane = "", Year = "", Month = "", Day = "";
             String res_title = "", res_details = "", res_uri = "";
-            Form1 frm1 = (Form1)Application.OpenForms["Form1"];
+            //Form1 frm1 = (Form1)Application.OpenForms["Form1"];
 
             if (this.comboBox_DataSRC.SelectedIndex == 0)
             {
@@ -120,8 +122,8 @@ namespace MK_Film_DB_NET
                 {
                     if (visited2 != true)
                     {
-                        this.filmBindingSource.AddNew();
-                        this.filmBindingSource.EndEdit();
+                        frm1.filmBindingSource.AddNew();
+                        frm1.filmBindingSource.EndEdit();
                         if (this.checkBox_OKLADKA.Checked == true)
                         {
                             foreach (HtmlElement ele in doc.GetElementsByTagName("A"))
@@ -133,7 +135,7 @@ namespace MK_Film_DB_NET
                                     WebClient WC = new WebClient();
                                     WC.DownloadFile(link, Form1.db_path + "\\covers\\" + file_name_okl);
 
-                                    this.defaultDataSet.Film[this.filmBindingSource.Position].pathtofront = Form1.db_path + "\\covers\\" + file_name_okl;
+                                    frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].pathtofront = Form1.db_path + "\\covers\\" + file_name_okl;
 
 
                                 }
@@ -149,26 +151,26 @@ namespace MK_Film_DB_NET
 
                                 if (ele.FirstChild.OuterHtml.Contains("czas trwania"))
                                 {
-                                    this.defaultDataSet.Film[this.filmBindingSource.Position].Tytul = this.textBox_FlmSrch.Text;
+                                    frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].Tytul = this.textBox_FlmSrch.Text;
 
                                     HtmlElement ele2 = ele.FirstChild.NextSibling;
                                     //frm1.Controls["textBox_IOF_CzasProj"].Text = ele2.OuterText;
-                                    this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_CzasProj = ele2.OuterText;
+                                    frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].IOF_CzasProj = ele2.OuterText;
 
                                     HtmlElement ele3 = ele.NextSibling;
                                     HtmlElement ele4 = ele3.FirstChild.NextSibling;
                                     //frm1.Controls["comboBox_Gatunek"].Text = ele2.OuterText;
-                                    this.defaultDataSet.Film[this.filmBindingSource.Position].Gatunek = ele4.OuterText;
+                                    frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].Gatunek = ele4.OuterText;
 
                                     HtmlElement ele5 = ele3.NextSibling;
                                     HtmlElement ele6 = ele5.FirstChild.NextSibling;
                                     //frm1.Controls["textBox_IOF_DataPrem"].Text = ele2.OuterText;
-                                    this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_DataPrem = ele6.OuterText;
+                                    frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].IOF_DataPrem = ele6.OuterText;
 
                                     HtmlElement ele7 = ele5.NextSibling;
                                     HtmlElement ele8 = ele7.FirstChild.NextSibling;
                                     //frm1.Controls["textBox_IOF_KrajProd"].Text = ele2.OuterText;
-                                    this.defaultDataSet.Film[this.filmBindingSource.Position].IOF_KrajProd = ele7.OuterText.TrimStart("produkcja:".ToCharArray());
+                                    frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].IOF_KrajProd = ele7.OuterText.TrimStart("produkcja:".ToCharArray());
                                 }
                             }
 
@@ -177,7 +179,7 @@ namespace MK_Film_DB_NET
                                 if (ele.OuterHtml.Contains("class=filmDescrBg"))
                                 {
                                     //frm1.Controls["textBox_OP_Opis"].Text = ele.OuterText;
-                                    this.defaultDataSet.Film[this.filmBindingSource.Position].Opis = ele.OuterText;
+                                    frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].Opis = ele.OuterText;
                                 }
 
                             }
@@ -192,6 +194,7 @@ namespace MK_Film_DB_NET
                                         stage4 = false;
                                         visited2 = true;
                                         stage5 = true;
+                                        SaveDS();
                                         break;
                                     }
 
@@ -215,6 +218,7 @@ namespace MK_Film_DB_NET
                 }
                 else if (stage5 == true && doc.Url.ToString().Contains("cast#role-actors"))
                 {
+                    frm1.filmBindingSource.MoveLast();
                     if (visited3 != true)
                     {
 
@@ -224,8 +228,13 @@ namespace MK_Film_DB_NET
                             {
                                 foreach (HtmlElement ele2 in ele.NextSibling.FirstChild.Children)
                                 {
-                                    this.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Reżyser", defaultDataSet.Film[this.filmBindingSource.Position]);
-                                    
+
+                                    frm1.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Reżyser", defaultDataSet.Film[frm1.filmBindingSource.Position]);
+                                    //defaultDataSet.ObsadaRow newObRow = defaultDataSet.Obsada.NewObsadaRow();
+                                    //newObRow.SetParentRow(frm1.defaultDataSet.Film.Rows[frm1.filmBindingSource.Count]);
+                                    //newObRow.ImieNazw = ele2.OuterText;
+                                    //newObRow.Rola = "Reżyser";
+                                    //frm1.defaultDataSet.Obsada.AddObsadaRow(newObRow);
                                 }
                             }
 
@@ -233,7 +242,7 @@ namespace MK_Film_DB_NET
                             {
                                 foreach (HtmlElement ele2 in ele.NextSibling.FirstChild.Children)
                                 {
-                                    this.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Scenariusz", defaultDataSet.Film[this.filmBindingSource.Position]);
+                                    frm1.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Scenariusz", defaultDataSet.Film[frm1.filmBindingSource.Position]);
 
                                 }
                             }
@@ -244,7 +253,7 @@ namespace MK_Film_DB_NET
                                 {
                                     if (ele2.TagName == "a")
                                     {
-                                        this.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, ele.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.OuterText, defaultDataSet.Film[this.filmBindingSource.Position]);
+                                        frm1.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, ele.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.OuterText, defaultDataSet.Film[frm1.filmBindingSource.Position]);
                                     }
 
 
@@ -281,55 +290,55 @@ namespace MK_Film_DB_NET
 
         private void IntWiz_Load(object sender, EventArgs e)
         {
-            this.wYPODINTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            this.wYPINTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            this.lokZdjTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            this.dystrybucjaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            this.produkcjaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            this.obsadaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            this.ocenaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            this.filmTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.wYPODINTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.wYPINTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.lokZdjTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.dystrybucjaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.produkcjaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.obsadaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.ocenaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.filmTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
 
-            this.wYPODINTableAdapter.Connection.Open();
-            this.wYPINTableAdapter.Connection.Open();
-            this.lokZdjTableAdapter.Connection.Open();
-            this.dystrybucjaTableAdapter.Connection.Open();
-            this.produkcjaTableAdapter.Connection.Open();
-            this.obsadaTableAdapter.Connection.Open();
-            this.ocenaTableAdapter.Connection.Open();
-            this.filmTableAdapter.Connection.Open();
+            //this.wYPODINTableAdapter.Connection.Open();
+            //this.wYPINTableAdapter.Connection.Open();
+            //this.lokZdjTableAdapter.Connection.Open();
+            //this.dystrybucjaTableAdapter.Connection.Open();
+            //this.produkcjaTableAdapter.Connection.Open();
+            //this.obsadaTableAdapter.Connection.Open();
+            //this.ocenaTableAdapter.Connection.Open();
+            //this.filmTableAdapter.Connection.Open();
 
-            this.wYPODINTableAdapter.Fill(this.defaultDataSet.WYPODIN);
-            this.wYPINTableAdapter.Fill(this.defaultDataSet.WYPIN);
-            this.lokZdjTableAdapter.Fill(this.defaultDataSet.LokZdj);
-            this.dystrybucjaTableAdapter.Fill(this.defaultDataSet.Dystrybucja);
-            this.produkcjaTableAdapter.Fill(this.defaultDataSet.Produkcja);
-            this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
-            this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
-            this.filmTableAdapter.Fill(this.defaultDataSet.Film);
+            //this.wYPODINTableAdapter.Fill(this.defaultDataSet.WYPODIN);
+            //this.wYPINTableAdapter.Fill(this.defaultDataSet.WYPIN);
+            //this.lokZdjTableAdapter.Fill(this.defaultDataSet.LokZdj);
+            //this.dystrybucjaTableAdapter.Fill(this.defaultDataSet.Dystrybucja);
+            //this.produkcjaTableAdapter.Fill(this.defaultDataSet.Produkcja);
+            //this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
+            //this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
+            //this.filmTableAdapter.Fill(this.defaultDataSet.Film);
         }
         private void SaveDS()
         {
-            this.fKFilmObsadaBindingSource.EndEdit();
-            this.filmBindingSource.EndEdit();
+            //frm1.fKFilmObsadaBindingSource.EndEdit();
+            frm1.filmBindingSource.EndEdit();
 
-            this.wYPODINTableAdapter.Update(this.defaultDataSet.WYPODIN);
-            this.wYPINTableAdapter.Update(this.defaultDataSet.WYPIN);
-            this.lokZdjTableAdapter.Update(this.defaultDataSet.LokZdj);
-            this.dystrybucjaTableAdapter.Update(this.defaultDataSet.Dystrybucja);
-            this.produkcjaTableAdapter.Update(this.defaultDataSet.Produkcja);
-            this.obsadaTableAdapter.Update(this.defaultDataSet.Obsada);
-            this.ocenaTableAdapter.Update(this.defaultDataSet.Ocena);
-            this.filmTableAdapter.Update(this.defaultDataSet.Film);
+            frm1.wYPODINTableAdapter.Update(frm1.defaultDataSet.WYPODIN);
+            frm1.wYPINTableAdapter.Update(frm1.defaultDataSet.WYPIN);
+            frm1.lokZdjTableAdapter.Update(frm1.defaultDataSet.LokZdj);
+            frm1.dystrybucjaTableAdapter.Update(frm1.defaultDataSet.Dystrybucja);
+            frm1.produkcjaTableAdapter.Update(frm1.defaultDataSet.Produkcja);
+            frm1.obsadaTableAdapter.Update(frm1.defaultDataSet.Obsada);
+            frm1.ocenaTableAdapter.Update(frm1.defaultDataSet.Ocena);
+            frm1.filmTableAdapter.Update(frm1.defaultDataSet.Film);
 
-            this.wYPODINTableAdapter.Fill(this.defaultDataSet.WYPODIN);
-            this.wYPINTableAdapter.Fill(this.defaultDataSet.WYPIN);
-            this.lokZdjTableAdapter.Fill(this.defaultDataSet.LokZdj);
-            this.dystrybucjaTableAdapter.Fill(this.defaultDataSet.Dystrybucja);
-            this.produkcjaTableAdapter.Fill(this.defaultDataSet.Produkcja);
-            this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
-            this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
-            this.filmTableAdapter.Fill(this.defaultDataSet.Film);
+            frm1.wYPODINTableAdapter.Fill(frm1.defaultDataSet.WYPODIN);
+            frm1.wYPINTableAdapter.Fill(frm1.defaultDataSet.WYPIN);
+            frm1.lokZdjTableAdapter.Fill(frm1.defaultDataSet.LokZdj);
+            frm1.dystrybucjaTableAdapter.Fill(frm1.defaultDataSet.Dystrybucja);
+            frm1.produkcjaTableAdapter.Fill(frm1.defaultDataSet.Produkcja);
+            frm1.obsadaTableAdapter.Fill(frm1.defaultDataSet.Obsada);
+            frm1.ocenaTableAdapter.Fill(frm1.defaultDataSet.Ocena);
+            frm1.filmTableAdapter.Fill(frm1.defaultDataSet.Film);
 
         }
 
