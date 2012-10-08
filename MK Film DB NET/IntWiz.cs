@@ -13,6 +13,7 @@ namespace MK_Film_DB_NET
     public partial class IntWiz : Form
     {
         Form1 frm1;
+        defaultDataSet.FilmRow flm_row;
         public IntWiz(Form1 frm1inst)
         {
             frm1 = frm1inst;
@@ -124,6 +125,7 @@ namespace MK_Film_DB_NET
                     {
                         frm1.filmBindingSource.AddNew();
                         frm1.filmBindingSource.EndEdit();
+                        //flm_row = frm1.defaultDataSet.Film.NewFilmRow();
                         if (this.checkBox_OKLADKA.Checked == true)
                         {
                             foreach (HtmlElement ele in doc.GetElementsByTagName("A"))
@@ -136,7 +138,7 @@ namespace MK_Film_DB_NET
                                     WC.DownloadFile(link, Form1.db_path + "\\covers\\" + file_name_okl);
 
                                     frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].pathtofront = Form1.db_path + "\\covers\\" + file_name_okl;
-
+                                    //flm_row.pathtofront = Form1.db_path + "\\covers\\" + file_name_okl;
 
                                 }
 
@@ -152,25 +154,30 @@ namespace MK_Film_DB_NET
                                 if (ele.FirstChild.OuterHtml.Contains("czas trwania"))
                                 {
                                     frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].Tytul = this.textBox_FlmSrch.Text;
+                                    //flm_row.Tytul = this.textBox_FlmSrch.Text;
 
                                     HtmlElement ele2 = ele.FirstChild.NextSibling;
                                     //frm1.Controls["textBox_IOF_CzasProj"].Text = ele2.OuterText;
                                     frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].IOF_CzasProj = ele2.OuterText;
+                                    //flm_row.IOF_CzasProj = ele2.OuterText;
 
                                     HtmlElement ele3 = ele.NextSibling;
                                     HtmlElement ele4 = ele3.FirstChild.NextSibling;
                                     //frm1.Controls["comboBox_Gatunek"].Text = ele2.OuterText;
                                     frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].Gatunek = ele4.OuterText;
+                                    //flm_row.Gatunek = ele4.OuterText;
 
                                     HtmlElement ele5 = ele3.NextSibling;
                                     HtmlElement ele6 = ele5.FirstChild.NextSibling;
                                     //frm1.Controls["textBox_IOF_DataPrem"].Text = ele2.OuterText;
                                     frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].IOF_DataPrem = ele6.OuterText;
+                                    //flm_row.IOF_DataPrem = ele6.OuterText;
 
                                     HtmlElement ele7 = ele5.NextSibling;
                                     HtmlElement ele8 = ele7.FirstChild.NextSibling;
                                     //frm1.Controls["textBox_IOF_KrajProd"].Text = ele2.OuterText;
                                     frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].IOF_KrajProd = ele7.OuterText.TrimStart("produkcja:".ToCharArray());
+                                    //flm_row.IOF_KrajProd = ele7.OuterText.TrimStart("produkcja:".ToCharArray());
                                 }
                             }
 
@@ -180,6 +187,7 @@ namespace MK_Film_DB_NET
                                 {
                                     //frm1.Controls["textBox_OP_Opis"].Text = ele.OuterText;
                                     frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].Opis = ele.OuterText;
+                                    //flm_row.Opis = ele.OuterText;
                                 }
 
                             }
@@ -194,6 +202,7 @@ namespace MK_Film_DB_NET
                                         stage4 = false;
                                         visited2 = true;
                                         stage5 = true;
+                                        //frm1.defaultDataSet.Film.Rows.Add(flm_row);
                                         SaveDS();
                                         break;
                                     }
@@ -203,6 +212,7 @@ namespace MK_Film_DB_NET
                             }
                             else
                             {
+                                //frm1.defaultDataSet.Film.Rows.Add(flm_row);
                                 SaveDS();
                                 MessageBox.Show("Rekord został dodany zgodnie z ustawieniami", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -218,7 +228,7 @@ namespace MK_Film_DB_NET
                 }
                 else if (stage5 == true && doc.Url.ToString().Contains("cast#role-actors"))
                 {
-                    frm1.filmBindingSource.MoveLast();
+                    //frm1.filmBindingSource.MoveLast();
                     if (visited3 != true)
                     {
 
@@ -229,12 +239,15 @@ namespace MK_Film_DB_NET
                                 foreach (HtmlElement ele2 in ele.NextSibling.FirstChild.Children)
                                 {
 
-                                    frm1.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Reżyser", defaultDataSet.Film[frm1.filmBindingSource.Position]);
+                                    //frm1.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Reżyser", defaultDataSet.Film[frm1.filmBindingSource.Position]);
+                                    
                                     //defaultDataSet.ObsadaRow newObRow = defaultDataSet.Obsada.NewObsadaRow();
                                     //newObRow.SetParentRow(frm1.defaultDataSet.Film.Rows[frm1.filmBindingSource.Count]);
                                     //newObRow.ImieNazw = ele2.OuterText;
                                     //newObRow.Rola = "Reżyser";
                                     //frm1.defaultDataSet.Obsada.AddObsadaRow(newObRow);
+
+                                    frm1.dataGridView_OB_Obsada.Rows.Add(null,ele2.OuterText, "Reżyser");
                                 }
                             }
 
@@ -242,8 +255,9 @@ namespace MK_Film_DB_NET
                             {
                                 foreach (HtmlElement ele2 in ele.NextSibling.FirstChild.Children)
                                 {
-                                    frm1.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Scenariusz", defaultDataSet.Film[frm1.filmBindingSource.Position]);
+                                    //frm1.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, "Scenariusz", defaultDataSet.Film[frm1.filmBindingSource.Position]);
 
+                                    frm1.dataGridView_OB_Obsada.Rows.Add(null,ele2.OuterText, "Scenariusz");
                                 }
                             }
 
@@ -253,7 +267,9 @@ namespace MK_Film_DB_NET
                                 {
                                     if (ele2.TagName == "a")
                                     {
-                                        frm1.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, ele.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.OuterText, defaultDataSet.Film[frm1.filmBindingSource.Position]);
+                                        //frm1.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, ele.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.OuterText, defaultDataSet.Film[frm1.filmBindingSource.Position]);
+
+                                        frm1.dataGridView_OB_Obsada.Rows.Add(null,ele2.OuterText, ele.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.OuterText);
                                     }
 
 

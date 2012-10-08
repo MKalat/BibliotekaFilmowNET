@@ -614,6 +614,7 @@ namespace MK_Film_DB_NET
             IntWiz frmInt = new IntWiz(this);
             frmInt.Show(this);
             button_SAVE_Click(null, null);
+            button_SAVE_Click(null, null);
         }
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)

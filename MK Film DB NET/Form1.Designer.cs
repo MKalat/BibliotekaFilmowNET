@@ -2354,7 +2354,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabPage tabPage_Obsada;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DataGridView dataGridView_OB_Obsada;
         private System.Windows.Forms.DataGridView dataGridView_PROD_Dystr;
         private System.Windows.Forms.DataGridView dataGridView_PROD_prod;
         private System.Windows.Forms.Label label15;
@@ -2524,6 +2523,7 @@
         public MK_Film_DB_NET.defaultDataSetTableAdapters.WYPODINTableAdapter wYPODINTableAdapter;
         public MK_Film_DB_NET.defaultDataSetTableAdapters.FilmTableAdapter filmTableAdapter;
         public MK_Film_DB_NET.defaultDataSetTableAdapters.OcenaTableAdapter ocenaTableAdapter;
+        public System.Windows.Forms.DataGridView dataGridView_OB_Obsada;
     }
 }
 
