@@ -11,9 +11,17 @@ namespace MK_Film_DB_NET
 {
     public partial class Wyszukaj : Form
     {
-        public Wyszukaj()
+        Form1 frm1;
+        public Wyszukaj(Form1 frm1_inst)
         {
+
             InitializeComponent();
+            frm1 = frm1_inst;
+            
+            for (Int32 i = 0; i < this.defaultDataSet.Film.Columns.Count ; i++)
+            {
+                this.comboBox_Field.Items.Add(frm1.defaultDataSet.Film.Columns[i].Caption);
+            }
 
             this.wYPODINTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
             this.wYPINTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
@@ -33,10 +41,7 @@ namespace MK_Film_DB_NET
             this.ocenaTableAdapter.Connection.Open();
             this.filmTableAdapter.Connection.Open();
 
-            for (Int32 i = 0; i < this.defaultDataSet.Film.Columns.Count ; i++)
-            {
-                this.comboBox_Field.Items.Add(this.defaultDataSet.Film.Columns[i].Caption);
-            }
+
         }
         Int32[] pos_arr = new Int32[1];
         private void button_Search_Click(object sender, EventArgs e)

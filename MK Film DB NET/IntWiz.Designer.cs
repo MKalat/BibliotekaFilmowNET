@@ -193,7 +193,7 @@
             this.webBrowser_GetDataInt.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser_GetDataInt.Name = "webBrowser_GetDataInt";
             this.webBrowser_GetDataInt.ScriptErrorsSuppressed = true;
-            this.webBrowser_GetDataInt.Size = new System.Drawing.Size(288, 648);
+            this.webBrowser_GetDataInt.Size = new System.Drawing.Size(36, 648);
             this.webBrowser_GetDataInt.TabIndex = 6;
             this.webBrowser_GetDataInt.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser_GetDataInt_DocumentCompleted);
             // 
@@ -268,7 +268,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 722);
+            this.ClientSize = new System.Drawing.Size(759, 722);
             this.Controls.Add(this.textBox_FlmSrch);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);

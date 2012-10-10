@@ -237,6 +237,8 @@ namespace MK_Film_DB_NET
                     bool rez_ad = false;
                     bool scen_ad = false;
                     bool act_ad = false;
+                    end_ind = 0;
+                    beg_ind = 0;
                     
 
                     if (visited3 != true)
@@ -290,9 +292,9 @@ namespace MK_Film_DB_NET
 
                             if (ele.OuterHtml.Contains("aktor"))
                             {
-                                foreach (HtmlElement ele2 in ele.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.Children)
+                                foreach (HtmlElement ele2 in ele.NextSibling.Children)
                                 {
-                                    if (ele2.TagName == "a")
+                                    if (ele2.TagName == "UL")
                                     {
                                         //frm1.fKFilmObsadaBindingSource.AddNew();
                                         //frm1.fKFilmObsadaBindingSource.EndEdit();
@@ -301,14 +303,28 @@ namespace MK_Film_DB_NET
                                         //frm1.defaultDataSet.Obsada[frm1.fKFilmObsadaBindingSource.Position].Rola = "Aktor";
                                         //frm1.fKFilmObsadaBindingSource.EndEdit();
 
-                                        defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
-                                        ob_row.IDPDB = Flm_id;
-                                        ob_row.ImieNazw = ele.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.OuterText;
-                                        ob_row.Rola = "Aktor";
-                                        frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
-                                        SaveDS();
-                                        //frm1.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, ele.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.OuterText, flm_row);
+                                        foreach (HtmlElement ele3 in ele2.Children)
+                                        {
+                                            if (ele3.TagName == "LI")
+                                            {
+                                                if (ele3.InnerHtml.Contains("BOTTOM"))
+                                                {
+                                                    defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
+                                                    ob_row.IDPDB = Flm_id;
 
+                                                    beg_ind = 0;
+                                                    end_ind = 0;
+                                                    beg_ind = ele3.OuterText.IndexOf("BOTTOM", end_ind) + 6;
+                                                    end_ind = ele3.OuterText.IndexOf("   ", beg_ind);
+
+                                                    ob_row.ImieNazw = ele3.OuterText.Substring(beg_ind, end_ind - beg_ind);
+                                                    ob_row.Rola = "Aktor"; //ele.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.OuterText
+                                                    frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
+                                                    SaveDS();
+                                                    //frm1.defaultDataSet.Obsada.AddObsadaRow(ele2.OuterText, ele.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.OuterText, flm_row);
+                                                }
+                                            }
+                                        }
                                         
                                     }
 

@@ -589,7 +589,7 @@ namespace MK_Film_DB_NET
 
         private void wyszukajToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Wyszukaj frm_wysz = new Wyszukaj();
+            Wyszukaj frm_wysz = new Wyszukaj(this);
             frm_wysz.Show(this);
         }
 
