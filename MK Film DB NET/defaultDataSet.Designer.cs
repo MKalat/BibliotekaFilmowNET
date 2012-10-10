@@ -41,19 +41,19 @@ namespace MK_Film_DB_NET {
         
         private WYPODINDataTable tableWYPODIN;
         
-        private global::System.Data.DataRelation relationFK_Film_Dystrybucja;
+        private global::System.Data.DataRelation relationFilm_Dystrybucja;
         
-        private global::System.Data.DataRelation relationFK_Film_WYPODIN;
+        private global::System.Data.DataRelation relationFilm_Obsada;
         
-        private global::System.Data.DataRelation relationFK_Film_WYPIN;
+        private global::System.Data.DataRelation relationFilm_Ocena;
         
-        private global::System.Data.DataRelation relationFK_Film_Produkcja;
+        private global::System.Data.DataRelation relationFilm_LokZdj;
         
-        private global::System.Data.DataRelation relationFK_Film_Ocena;
+        private global::System.Data.DataRelation relationFilm_Produkcja;
         
-        private global::System.Data.DataRelation relationFK_Film_LokZdj;
+        private global::System.Data.DataRelation relationFilm_WYPIN;
         
-        private global::System.Data.DataRelation relationFK_Film_Obsada;
+        private global::System.Data.DataRelation relationFilm_WYPODIN;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -356,13 +356,13 @@ namespace MK_Film_DB_NET {
                     this.tableWYPODIN.InitVars();
                 }
             }
-            this.relationFK_Film_Dystrybucja = this.Relations["FK_Film_Dystrybucja"];
-            this.relationFK_Film_WYPODIN = this.Relations["FK_Film_WYPODIN"];
-            this.relationFK_Film_WYPIN = this.Relations["FK_Film_WYPIN"];
-            this.relationFK_Film_Produkcja = this.Relations["FK_Film_Produkcja"];
-            this.relationFK_Film_Ocena = this.Relations["FK_Film_Ocena"];
-            this.relationFK_Film_LokZdj = this.Relations["FK_Film_LokZdj"];
-            this.relationFK_Film_Obsada = this.Relations["FK_Film_Obsada"];
+            this.relationFilm_Dystrybucja = this.Relations["Film_Dystrybucja"];
+            this.relationFilm_Obsada = this.Relations["Film_Obsada"];
+            this.relationFilm_Ocena = this.Relations["Film_Ocena"];
+            this.relationFilm_LokZdj = this.Relations["Film_LokZdj"];
+            this.relationFilm_Produkcja = this.Relations["Film_Produkcja"];
+            this.relationFilm_WYPIN = this.Relations["Film_WYPIN"];
+            this.relationFilm_WYPODIN = this.Relations["Film_WYPODIN"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -388,34 +388,34 @@ namespace MK_Film_DB_NET {
             base.Tables.Add(this.tableWYPIN);
             this.tableWYPODIN = new WYPODINDataTable();
             base.Tables.Add(this.tableWYPODIN);
-            this.relationFK_Film_Dystrybucja = new global::System.Data.DataRelation("FK_Film_Dystrybucja", new global::System.Data.DataColumn[] {
+            this.relationFilm_Dystrybucja = new global::System.Data.DataRelation("Film_Dystrybucja", new global::System.Data.DataColumn[] {
                         this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableDystrybucja.IDPDBColumn}, false);
-            this.Relations.Add(this.relationFK_Film_Dystrybucja);
-            this.relationFK_Film_WYPODIN = new global::System.Data.DataRelation("FK_Film_WYPODIN", new global::System.Data.DataColumn[] {
-                        this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableWYPODIN.IDPDBColumn}, false);
-            this.Relations.Add(this.relationFK_Film_WYPODIN);
-            this.relationFK_Film_WYPIN = new global::System.Data.DataRelation("FK_Film_WYPIN", new global::System.Data.DataColumn[] {
-                        this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableWYPIN.IDPDBColumn}, false);
-            this.Relations.Add(this.relationFK_Film_WYPIN);
-            this.relationFK_Film_Produkcja = new global::System.Data.DataRelation("FK_Film_Produkcja", new global::System.Data.DataColumn[] {
-                        this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableProdukcja.IDPDBColumn}, false);
-            this.Relations.Add(this.relationFK_Film_Produkcja);
-            this.relationFK_Film_Ocena = new global::System.Data.DataRelation("FK_Film_Ocena", new global::System.Data.DataColumn[] {
-                        this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableOcena.IDPDBColumn}, false);
-            this.Relations.Add(this.relationFK_Film_Ocena);
-            this.relationFK_Film_LokZdj = new global::System.Data.DataRelation("FK_Film_LokZdj", new global::System.Data.DataColumn[] {
-                        this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
-                        this.tableLokZdj.IDPDBColumn}, false);
-            this.Relations.Add(this.relationFK_Film_LokZdj);
-            this.relationFK_Film_Obsada = new global::System.Data.DataRelation("FK_Film_Obsada", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFilm_Dystrybucja);
+            this.relationFilm_Obsada = new global::System.Data.DataRelation("Film_Obsada", new global::System.Data.DataColumn[] {
                         this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
                         this.tableObsada.IDPDBColumn}, false);
-            this.Relations.Add(this.relationFK_Film_Obsada);
+            this.Relations.Add(this.relationFilm_Obsada);
+            this.relationFilm_Ocena = new global::System.Data.DataRelation("Film_Ocena", new global::System.Data.DataColumn[] {
+                        this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableOcena.IDPDBColumn}, false);
+            this.Relations.Add(this.relationFilm_Ocena);
+            this.relationFilm_LokZdj = new global::System.Data.DataRelation("Film_LokZdj", new global::System.Data.DataColumn[] {
+                        this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableLokZdj.IDPDBColumn}, false);
+            this.Relations.Add(this.relationFilm_LokZdj);
+            this.relationFilm_Produkcja = new global::System.Data.DataRelation("Film_Produkcja", new global::System.Data.DataColumn[] {
+                        this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableProdukcja.IDPDBColumn}, false);
+            this.Relations.Add(this.relationFilm_Produkcja);
+            this.relationFilm_WYPIN = new global::System.Data.DataRelation("Film_WYPIN", new global::System.Data.DataColumn[] {
+                        this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableWYPIN.IDPDBColumn}, false);
+            this.Relations.Add(this.relationFilm_WYPIN);
+            this.relationFilm_WYPODIN = new global::System.Data.DataRelation("Film_WYPODIN", new global::System.Data.DataColumn[] {
+                        this.tableFilm.IDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableWYPODIN.IDPDBColumn}, false);
+            this.Relations.Add(this.relationFilm_WYPODIN);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -675,7 +675,7 @@ namespace MK_Film_DB_NET {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public DystrybucjaRow AddDystrybucjaRow(FilmRow parentFilmRowByFK_Film_Dystrybucja, string Nazwa, string Adres, string Tel, string Fax, string Email, string WWW, string Narodowość) {
+            public DystrybucjaRow AddDystrybucjaRow(FilmRow parentFilmRowByFilm_Dystrybucja, string Nazwa, string Adres, string Tel, string Fax, string Email, string WWW, string Narodowość) {
                 DystrybucjaRow rowDystrybucjaRow = ((DystrybucjaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -687,8 +687,8 @@ namespace MK_Film_DB_NET {
                         Email,
                         WWW,
                         Narodowość};
-                if ((parentFilmRowByFK_Film_Dystrybucja != null)) {
-                    columnValuesArray[1] = parentFilmRowByFK_Film_Dystrybucja[0];
+                if ((parentFilmRowByFilm_Dystrybucja != null)) {
+                    columnValuesArray[1] = parentFilmRowByFilm_Dystrybucja[44];
                 }
                 rowDystrybucjaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDystrybucjaRow);
@@ -887,8 +887,6 @@ namespace MK_Film_DB_NET {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class FilmDataTable : global::System.Data.TypedTableBase<FilmRow> {
             
-            private global::System.Data.DataColumn columnID;
-            
             private global::System.Data.DataColumn columnTytul;
             
             private global::System.Data.DataColumn columnTytulOrig;
@@ -977,6 +975,8 @@ namespace MK_Film_DB_NET {
             
             private global::System.Data.DataColumn columnIOF_KrajProd;
             
+            private global::System.Data.DataColumn columnID;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public FilmDataTable() {
                 this.TableName = "Film";
@@ -1005,13 +1005,6 @@ namespace MK_Film_DB_NET {
             protected FilmDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public global::System.Data.DataColumn IDColumn {
-                get {
-                    return this.columnID;
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1323,6 +1316,13 @@ namespace MK_Film_DB_NET {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn IDColumn {
+                get {
+                    return this.columnID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1395,10 +1395,10 @@ namespace MK_Film_DB_NET {
                         string IOF_ZAB_Nazwa, 
                         string IOF_ZAB_Typ, 
                         string IOF_ZAB_Wersja, 
-                        string IOF_KrajProd) {
+                        string IOF_KrajProd, 
+                        int ID) {
                 FilmRow rowFilmRow = ((FilmRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        null,
                         Tytul,
                         TytulOrig,
                         Gatunek,
@@ -1442,7 +1442,8 @@ namespace MK_Film_DB_NET {
                         IOF_ZAB_Nazwa,
                         IOF_ZAB_Typ,
                         IOF_ZAB_Wersja,
-                        IOF_KrajProd};
+                        IOF_KrajProd,
+                        ID};
                 rowFilmRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowFilmRow);
                 return rowFilmRow;
@@ -1468,7 +1469,6 @@ namespace MK_Film_DB_NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             internal void InitVars() {
-                this.columnID = base.Columns["ID"];
                 this.columnTytul = base.Columns["Tytul"];
                 this.columnTytulOrig = base.Columns["TytulOrig"];
                 this.columnGatunek = base.Columns["Gatunek"];
@@ -1513,12 +1513,11 @@ namespace MK_Film_DB_NET {
                 this.columnIOF_ZAB_Typ = base.Columns["IOF_ZAB_Typ"];
                 this.columnIOF_ZAB_Wersja = base.Columns["IOF_ZAB_Wersja"];
                 this.columnIOF_KrajProd = base.Columns["IOF_KrajProd"];
+                this.columnID = base.Columns["ID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             private void InitClass() {
-                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnID);
                 this.columnTytul = new global::System.Data.DataColumn("Tytul", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTytul);
                 this.columnTytulOrig = new global::System.Data.DataColumn("TytulOrig", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1607,100 +1606,56 @@ namespace MK_Film_DB_NET {
                 base.Columns.Add(this.columnIOF_ZAB_Wersja);
                 this.columnIOF_KrajProd = new global::System.Data.DataColumn("IOF_KrajProd", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIOF_KrajProd);
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
-                this.columnID.AutoIncrement = true;
-                this.columnID.AutoIncrementSeed = -1;
-                this.columnID.AutoIncrementStep = -1;
-                this.columnID.AllowDBNull = false;
-                this.columnID.ReadOnly = true;
-                this.columnID.Unique = true;
-                this.columnTytul.Caption = "Tytuł";
                 this.columnTytul.MaxLength = 500;
-                this.columnTytulOrig.Caption = "Tytuł Orginału";
                 this.columnTytulOrig.MaxLength = 500;
                 this.columnGatunek.MaxLength = 100;
                 this.columnOpis.MaxLength = 4000;
-                this.columnpathtofront.Caption = "Ścieżka do przodu okładki";
                 this.columnpathtofront.MaxLength = 500;
-                this.columnpathtoback.Caption = "Ścieżka do tylniej okładki ";
                 this.columnpathtoback.MaxLength = 500;
-                this.columnOW_SD.Caption = "Ocena własna - ściezka dźwiękowa";
                 this.columnOW_SD.MaxLength = 100;
-                this.columnOW_Obs.Caption = "Ocena własna - Obsada";
                 this.columnOW_Obs.MaxLength = 100;
-                this.columnOW_Zdj.Caption = "Ocena własna - Zdjęcia";
                 this.columnOW_Zdj.MaxLength = 100;
-                this.columnOW_Wart.Caption = "Ocena własna - Wartośc artystyczna";
                 this.columnOW_Wart.MaxLength = 100;
-                this.columnOW_ALL.Caption = "Ocena własna - całość";
                 this.columnOW_ALL.MaxLength = 100;
-                this.columnDOE_Imie.Caption = "Dane o Egzemplarzu - Właściciel - Imię";
                 this.columnDOE_Imie.MaxLength = 100;
-                this.columnDOE_Nazw.Caption = "Dane o Egzemplarzu - Właściciel - Nazwisko";
                 this.columnDOE_Nazw.MaxLength = 100;
-                this.columnDOE_Adres.Caption = "Dane o Egzemplarzu - Właścieicl - Adres";
                 this.columnDOE_Adres.MaxLength = 100;
-                this.columnDOE_MN_Nazwa.Caption = "Dane o Egzemplarzu - Sklep - Nazwa";
                 this.columnDOE_MN_Nazwa.MaxLength = 500;
-                this.columnDOE_MN_Adres.Caption = "Dane o Egzemplarzu - Sklep - Adres";
                 this.columnDOE_MN_Adres.MaxLength = 500;
-                this.columnDOE_MN_WWW.Caption = "Dane o Egzemplarzu - Sklep - WWW";
                 this.columnDOE_MN_WWW.MaxLength = 500;
-                this.columnDOE_MN_Tel.Caption = "Dane o Egzemplarzu - Sklep - Telefon";
                 this.columnDOE_MN_Tel.MaxLength = 100;
-                this.columnDOE_MN_Fax.Caption = "Dane o Egzemplarzu - Sklep - Fax";
                 this.columnDOE_MN_Fax.MaxLength = 100;
-                this.columnDOE_MN_Email.Caption = "Dane o Egzemplarzu - Sklep -Email";
                 this.columnDOE_MN_Email.MaxLength = 500;
-                this.columnDOE_Cena.Caption = "Dane o Egzemplarzu - Cena";
                 this.columnDOE_Cena.MaxLength = 100;
-                this.columnDOE_DataSkat.Caption = "Dane o Egzemplarzu - Data Skatalogowania";
                 this.columnDOE_DataSkat.MaxLength = 100;
-                this.columnDOE_DataUtr.Caption = "Dane o Egzemplarzu - Data Utraty";
                 this.columnDOE_DataUtr.MaxLength = 100;
-                this.columnDOE_NrKat.Caption = "Dane o Egzemplarzu - Nr Katalogowy";
                 this.columnDOE_NrKat.MaxLength = 200;
-                this.columnDOE_WartAkt.Caption = "Dane o Egzemplarzu - Wartość Aktualna";
                 this.columnDOE_WartAkt.MaxLength = 100;
-                this.columnDOE_DataZak.Caption = "Dane o Egzemplarzu - Data Zakupu";
                 this.columnDOE_DataZak.MaxLength = 100;
-                this.columnDOE_Nośnik.Caption = "Dane o Egzemplarzu - Nośnik";
                 this.columnDOE_Nośnik.MaxLength = 100;
-                this.columnIOF_RokProd.Caption = "Info o Filmie - Rok Produkcji";
                 this.columnIOF_RokProd.MaxLength = 100;
-                this.columnIOF_DataPrem.Caption = "Info o Filmie - Data Premiery";
                 this.columnIOF_DataPrem.MaxLength = 100;
-                this.columnIOF_CzasProj.Caption = "Info o Filmie - Czas Projekcji";
                 this.columnIOF_CzasProj.MaxLength = 100;
-                this.columnIOF_FormWysw.Caption = "Info o Filmie - Format Wyświetlania";
                 this.columnIOF_FormWysw.MaxLength = 100;
-                this.columnIOF_SysKodObr.Caption = "Info o Filmie - System Kodowania Obrazu";
                 this.columnIOF_SysKodObr.MaxLength = 100;
-                this.columnIOF_JezykLekt.Caption = "Info o Filmie - Jezyk Lektora";
                 this.columnIOF_JezykLekt.MaxLength = 500;
-                this.columnIOF_JezykNap.Caption = "Info o Filmie - Jezyk Napisów";
                 this.columnIOF_JezykNap.MaxLength = 500;
-                this.columnIOF_KW_Nazwa.Caption = "Info o Filmie - Kodek Wideo - Nazwa";
                 this.columnIOF_KW_Nazwa.MaxLength = 100;
-                this.columnIOF_KW_Typ.Caption = "Info o Filmie - Kodek Wideo - Typ";
                 this.columnIOF_KW_Typ.MaxLength = 100;
-                this.columnIOF_KW_Wersja.Caption = "Info o Filmie - Kodek Wideo - Wersja";
                 this.columnIOF_KW_Wersja.MaxLength = 100;
-                this.columnIOF_KA_Nazwa.Caption = "Info o Filmie - Kodek Audio - Nazwa";
                 this.columnIOF_KA_Nazwa.MaxLength = 100;
-                this.columnIOF_KA_Typ.Caption = "Info o Filmie - Kodek Audio - Typ";
                 this.columnIOF_KA_Typ.MaxLength = 100;
-                this.columnIOF_KA_Wersja.Caption = "Info o Filmie - Kodek Audio - Wersja";
                 this.columnIOF_KA_Wersja.MaxLength = 100;
-                this.columnIOF_ZAB_Nazwa.Caption = "Info o Filmie - Zabezpieczenia - Nazwa";
                 this.columnIOF_ZAB_Nazwa.MaxLength = 100;
-                this.columnIOF_ZAB_Typ.Caption = "Info o Filmie - Zabezpieczenia - Typ";
                 this.columnIOF_ZAB_Typ.MaxLength = 100;
-                this.columnIOF_ZAB_Wersja.Caption = "Info o Filmie - Zabezpieczenia - Wersja";
                 this.columnIOF_ZAB_Wersja.MaxLength = 100;
-                this.columnIOF_KrajProd.Caption = "Info o Filmie - Kraj Produkcji";
                 this.columnIOF_KrajProd.MaxLength = 500;
+                this.columnID.AllowDBNull = false;
+                this.columnID.Unique = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1957,7 +1912,7 @@ namespace MK_Film_DB_NET {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public LokZdjRow AddLokZdjRow(FilmRow parentFilmRowByFK_Film_LokZdj, string NazwaObiektu, string Kraj, string Miejscowość, string Region, string Pora_roku, string Data) {
+            public LokZdjRow AddLokZdjRow(FilmRow parentFilmRowByFilm_LokZdj, string NazwaObiektu, string Kraj, string Miejscowość, string Region, string Pora_roku, string Data) {
                 LokZdjRow rowLokZdjRow = ((LokZdjRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1968,8 +1923,8 @@ namespace MK_Film_DB_NET {
                         Region,
                         Pora_roku,
                         Data};
-                if ((parentFilmRowByFK_Film_LokZdj != null)) {
-                    columnValuesArray[1] = parentFilmRowByFK_Film_LokZdj[0];
+                if ((parentFilmRowByFilm_LokZdj != null)) {
+                    columnValuesArray[1] = parentFilmRowByFilm_LokZdj[44];
                 }
                 rowLokZdjRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowLokZdjRow);
@@ -2033,7 +1988,6 @@ namespace MK_Film_DB_NET {
                 this.columnID.ReadOnly = true;
                 this.columnID.Unique = true;
                 this.columnIDPDB.AllowDBNull = false;
-                this.columnNazwaObiektu.Caption = "Nazwa Obiektu";
                 this.columnNazwaObiektu.MaxLength = 100;
                 this.columnKraj.MaxLength = 100;
                 this.columnMiejscowość.MaxLength = 100;
@@ -2260,15 +2214,15 @@ namespace MK_Film_DB_NET {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public ObsadaRow AddObsadaRow(string ImieNazw, string Rola, FilmRow parentFilmRowByFK_Film_Obsada) {
+            public ObsadaRow AddObsadaRow(string ImieNazw, string Rola, FilmRow parentFilmRowByFilm_Obsada) {
                 ObsadaRow rowObsadaRow = ((ObsadaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         ImieNazw,
                         Rola,
                         null};
-                if ((parentFilmRowByFK_Film_Obsada != null)) {
-                    columnValuesArray[3] = parentFilmRowByFK_Film_Obsada[0];
+                if ((parentFilmRowByFilm_Obsada != null)) {
+                    columnValuesArray[3] = parentFilmRowByFilm_Obsada[44];
                 }
                 rowObsadaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowObsadaRow);
@@ -2319,7 +2273,6 @@ namespace MK_Film_DB_NET {
                 this.columnID.AllowDBNull = false;
                 this.columnID.ReadOnly = true;
                 this.columnID.Unique = true;
-                this.columnImieNazw.Caption = "Imię i Nazwisko";
                 this.columnImieNazw.MaxLength = 200;
                 this.columnRola.MaxLength = 200;
                 this.columnIDPDB.AllowDBNull = false;
@@ -2570,7 +2523,7 @@ namespace MK_Film_DB_NET {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public OcenaRow AddOcenaRow(string Nazwa, string Tytul, string Autor, string WWW, string Ocena, FilmRow parentFilmRowByFK_Film_Ocena) {
+            public OcenaRow AddOcenaRow(string Nazwa, string Tytul, string Autor, string WWW, string Ocena, FilmRow parentFilmRowByFilm_Ocena) {
                 OcenaRow rowOcenaRow = ((OcenaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2580,8 +2533,8 @@ namespace MK_Film_DB_NET {
                         WWW,
                         Ocena,
                         null};
-                if ((parentFilmRowByFK_Film_Ocena != null)) {
-                    columnValuesArray[6] = parentFilmRowByFK_Film_Ocena[0];
+                if ((parentFilmRowByFilm_Ocena != null)) {
+                    columnValuesArray[6] = parentFilmRowByFilm_Ocena[44];
                 }
                 rowOcenaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowOcenaRow);
@@ -2912,7 +2865,7 @@ namespace MK_Film_DB_NET {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public ProdukcjaRow AddProdukcjaRow(FilmRow parentFilmRowByFK_Film_Produkcja, string Nazwa, string Adres, string Tel, string Fax, string Email, string WWW, string Narodowość) {
+            public ProdukcjaRow AddProdukcjaRow(FilmRow parentFilmRowByFilm_Produkcja, string Nazwa, string Adres, string Tel, string Fax, string Email, string WWW, string Narodowość) {
                 ProdukcjaRow rowProdukcjaRow = ((ProdukcjaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -2924,8 +2877,8 @@ namespace MK_Film_DB_NET {
                         Email,
                         WWW,
                         Narodowość};
-                if ((parentFilmRowByFK_Film_Produkcja != null)) {
-                    columnValuesArray[1] = parentFilmRowByFK_Film_Produkcja[0];
+                if ((parentFilmRowByFilm_Produkcja != null)) {
+                    columnValuesArray[1] = parentFilmRowByFilm_Produkcja[44];
                 }
                 rowProdukcjaRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowProdukcjaRow);
@@ -3246,7 +3199,7 @@ namespace MK_Film_DB_NET {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public WYPINRow AddWYPINRow(FilmRow parentFilmRowByFK_Film_WYPIN, string DataWyp, string DataOdd, string Osoba, string StanPWyp, string StanPOdd) {
+            public WYPINRow AddWYPINRow(FilmRow parentFilmRowByFilm_WYPIN, string DataWyp, string DataOdd, string Osoba, string StanPWyp, string StanPOdd) {
                 WYPINRow rowWYPINRow = ((WYPINRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -3256,8 +3209,8 @@ namespace MK_Film_DB_NET {
                         Osoba,
                         StanPWyp,
                         StanPOdd};
-                if ((parentFilmRowByFK_Film_WYPIN != null)) {
-                    columnValuesArray[1] = parentFilmRowByFK_Film_WYPIN[0];
+                if ((parentFilmRowByFilm_WYPIN != null)) {
+                    columnValuesArray[1] = parentFilmRowByFilm_WYPIN[44];
                 }
                 rowWYPINRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowWYPINRow);
@@ -3318,14 +3271,10 @@ namespace MK_Film_DB_NET {
                 this.columnID.ReadOnly = true;
                 this.columnID.Unique = true;
                 this.columnIDPDB.AllowDBNull = false;
-                this.columnDataWyp.Caption = "Data Wypożyczenia";
                 this.columnDataWyp.MaxLength = 100;
-                this.columnDataOdd.Caption = "Data Oddania";
                 this.columnDataOdd.MaxLength = 100;
                 this.columnOsoba.MaxLength = 100;
-                this.columnStanPWyp.Caption = "Stan przed wypożyczeniem";
                 this.columnStanPWyp.MaxLength = 100;
-                this.columnStanPOdd.Caption = "Stan po oddaniu";
                 this.columnStanPOdd.MaxLength = 100;
             }
             
@@ -3574,7 +3523,7 @@ namespace MK_Film_DB_NET {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public WYPODINRow AddWYPODINRow(FilmRow parentFilmRowByFK_Film_WYPODIN, string DataWyp, string DataOdd, string Osoba, string StanPWyp, string StanPOdd) {
+            public WYPODINRow AddWYPODINRow(FilmRow parentFilmRowByFilm_WYPODIN, string DataWyp, string DataOdd, string Osoba, string StanPWyp, string StanPOdd) {
                 WYPODINRow rowWYPODINRow = ((WYPODINRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -3584,8 +3533,8 @@ namespace MK_Film_DB_NET {
                         Osoba,
                         StanPWyp,
                         StanPOdd};
-                if ((parentFilmRowByFK_Film_WYPODIN != null)) {
-                    columnValuesArray[1] = parentFilmRowByFK_Film_WYPODIN[0];
+                if ((parentFilmRowByFilm_WYPODIN != null)) {
+                    columnValuesArray[1] = parentFilmRowByFilm_WYPODIN[44];
                 }
                 rowWYPODINRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowWYPODINRow);
@@ -3646,14 +3595,10 @@ namespace MK_Film_DB_NET {
                 this.columnID.ReadOnly = true;
                 this.columnID.Unique = true;
                 this.columnIDPDB.AllowDBNull = false;
-                this.columnDataWyp.Caption = "Data Wypożyczenia";
                 this.columnDataWyp.MaxLength = 100;
-                this.columnDataOdd.Caption = "Data oddania";
                 this.columnDataOdd.MaxLength = 100;
                 this.columnOsoba.MaxLength = 100;
-                this.columnStanPWyp.Caption = "Stan przed wypożyczeniem";
                 this.columnStanPWyp.MaxLength = 100;
-                this.columnStanPOdd.Caption = "Stan po oddaniu";
                 this.columnStanPOdd.MaxLength = 100;
             }
             
@@ -3914,10 +3859,10 @@ namespace MK_Film_DB_NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public FilmRow FilmRow {
                 get {
-                    return ((FilmRow)(this.GetParentRow(this.Table.ParentRelations["FK_Film_Dystrybucja"])));
+                    return ((FilmRow)(this.GetParentRow(this.Table.ParentRelations["Film_Dystrybucja"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Film_Dystrybucja"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["Film_Dystrybucja"]);
                 }
             }
             
@@ -4004,16 +3949,6 @@ namespace MK_Film_DB_NET {
             internal FilmRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
                 this.tableFilm = ((FilmDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public int ID {
-                get {
-                    return ((int)(this[this.tableFilm.IDColumn]));
-                }
-                set {
-                    this[this.tableFilm.IDColumn] = value;
-                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4677,6 +4612,16 @@ namespace MK_Film_DB_NET {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public int ID {
+                get {
+                    return ((int)(this[this.tableFilm.IDColumn]));
+                }
+                set {
+                    this[this.tableFilm.IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public bool IsTytulNull() {
                 return this.IsNull(this.tableFilm.TytulColumn);
             }
@@ -5118,71 +5063,71 @@ namespace MK_Film_DB_NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public DystrybucjaRow[] GetDystrybucjaRows() {
-                if ((this.Table.ChildRelations["FK_Film_Dystrybucja"] == null)) {
+                if ((this.Table.ChildRelations["Film_Dystrybucja"] == null)) {
                     return new DystrybucjaRow[0];
                 }
                 else {
-                    return ((DystrybucjaRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Film_Dystrybucja"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public WYPODINRow[] GetWYPODINRows() {
-                if ((this.Table.ChildRelations["FK_Film_WYPODIN"] == null)) {
-                    return new WYPODINRow[0];
-                }
-                else {
-                    return ((WYPODINRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Film_WYPODIN"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public WYPINRow[] GetWYPINRows() {
-                if ((this.Table.ChildRelations["FK_Film_WYPIN"] == null)) {
-                    return new WYPINRow[0];
-                }
-                else {
-                    return ((WYPINRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Film_WYPIN"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public ProdukcjaRow[] GetProdukcjaRows() {
-                if ((this.Table.ChildRelations["FK_Film_Produkcja"] == null)) {
-                    return new ProdukcjaRow[0];
-                }
-                else {
-                    return ((ProdukcjaRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Film_Produkcja"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public OcenaRow[] GetOcenaRows() {
-                if ((this.Table.ChildRelations["FK_Film_Ocena"] == null)) {
-                    return new OcenaRow[0];
-                }
-                else {
-                    return ((OcenaRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Film_Ocena"])));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public LokZdjRow[] GetLokZdjRows() {
-                if ((this.Table.ChildRelations["FK_Film_LokZdj"] == null)) {
-                    return new LokZdjRow[0];
-                }
-                else {
-                    return ((LokZdjRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Film_LokZdj"])));
+                    return ((DystrybucjaRow[])(base.GetChildRows(this.Table.ChildRelations["Film_Dystrybucja"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public ObsadaRow[] GetObsadaRows() {
-                if ((this.Table.ChildRelations["FK_Film_Obsada"] == null)) {
+                if ((this.Table.ChildRelations["Film_Obsada"] == null)) {
                     return new ObsadaRow[0];
                 }
                 else {
-                    return ((ObsadaRow[])(base.GetChildRows(this.Table.ChildRelations["FK_Film_Obsada"])));
+                    return ((ObsadaRow[])(base.GetChildRows(this.Table.ChildRelations["Film_Obsada"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public OcenaRow[] GetOcenaRows() {
+                if ((this.Table.ChildRelations["Film_Ocena"] == null)) {
+                    return new OcenaRow[0];
+                }
+                else {
+                    return ((OcenaRow[])(base.GetChildRows(this.Table.ChildRelations["Film_Ocena"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public LokZdjRow[] GetLokZdjRows() {
+                if ((this.Table.ChildRelations["Film_LokZdj"] == null)) {
+                    return new LokZdjRow[0];
+                }
+                else {
+                    return ((LokZdjRow[])(base.GetChildRows(this.Table.ChildRelations["Film_LokZdj"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public ProdukcjaRow[] GetProdukcjaRows() {
+                if ((this.Table.ChildRelations["Film_Produkcja"] == null)) {
+                    return new ProdukcjaRow[0];
+                }
+                else {
+                    return ((ProdukcjaRow[])(base.GetChildRows(this.Table.ChildRelations["Film_Produkcja"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public WYPINRow[] GetWYPINRows() {
+                if ((this.Table.ChildRelations["Film_WYPIN"] == null)) {
+                    return new WYPINRow[0];
+                }
+                else {
+                    return ((WYPINRow[])(base.GetChildRows(this.Table.ChildRelations["Film_WYPIN"])));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public WYPODINRow[] GetWYPODINRows() {
+                if ((this.Table.ChildRelations["Film_WYPODIN"] == null)) {
+                    return new WYPODINRow[0];
+                }
+                else {
+                    return ((WYPODINRow[])(base.GetChildRows(this.Table.ChildRelations["Film_WYPODIN"])));
                 }
             }
         }
@@ -5314,10 +5259,10 @@ namespace MK_Film_DB_NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public FilmRow FilmRow {
                 get {
-                    return ((FilmRow)(this.GetParentRow(this.Table.ParentRelations["FK_Film_LokZdj"])));
+                    return ((FilmRow)(this.GetParentRow(this.Table.ParentRelations["Film_LokZdj"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Film_LokZdj"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["Film_LokZdj"]);
                 }
             }
             
@@ -5449,10 +5394,10 @@ namespace MK_Film_DB_NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public FilmRow FilmRow {
                 get {
-                    return ((FilmRow)(this.GetParentRow(this.Table.ParentRelations["FK_Film_Obsada"])));
+                    return ((FilmRow)(this.GetParentRow(this.Table.ParentRelations["Film_Obsada"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Film_Obsada"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["Film_Obsada"]);
                 }
             }
             
@@ -5589,10 +5534,10 @@ namespace MK_Film_DB_NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public FilmRow FilmRow {
                 get {
-                    return ((FilmRow)(this.GetParentRow(this.Table.ParentRelations["FK_Film_Ocena"])));
+                    return ((FilmRow)(this.GetParentRow(this.Table.ParentRelations["Film_Ocena"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Film_Ocena"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["Film_Ocena"]);
                 }
             }
             
@@ -5789,10 +5734,10 @@ namespace MK_Film_DB_NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public FilmRow FilmRow {
                 get {
-                    return ((FilmRow)(this.GetParentRow(this.Table.ParentRelations["FK_Film_Produkcja"])));
+                    return ((FilmRow)(this.GetParentRow(this.Table.ParentRelations["Film_Produkcja"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Film_Produkcja"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["Film_Produkcja"]);
                 }
             }
             
@@ -5979,10 +5924,10 @@ namespace MK_Film_DB_NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public FilmRow FilmRow {
                 get {
-                    return ((FilmRow)(this.GetParentRow(this.Table.ParentRelations["FK_Film_WYPIN"])));
+                    return ((FilmRow)(this.GetParentRow(this.Table.ParentRelations["Film_WYPIN"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Film_WYPIN"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["Film_WYPIN"]);
                 }
             }
             
@@ -6149,10 +6094,10 @@ namespace MK_Film_DB_NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public FilmRow FilmRow {
                 get {
-                    return ((FilmRow)(this.GetParentRow(this.Table.ParentRelations["FK_Film_WYPODIN"])));
+                    return ((FilmRow)(this.GetParentRow(this.Table.ParentRelations["Film_WYPODIN"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Film_WYPODIN"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["Film_WYPODIN"]);
                 }
             }
             
@@ -6946,7 +6891,6 @@ namespace MK_Film_DB_NET.defaultDataSetTableAdapters {
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Film";
-            tableMapping.ColumnMappings.Add("ID", "ID");
             tableMapping.ColumnMappings.Add("Tytul", "Tytul");
             tableMapping.ColumnMappings.Add("TytulOrig", "TytulOrig");
             tableMapping.ColumnMappings.Add("Gatunek", "Gatunek");
@@ -6991,6 +6935,7 @@ namespace MK_Film_DB_NET.defaultDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("IOF_ZAB_Typ", "IOF_ZAB_Typ");
             tableMapping.ColumnMappings.Add("IOF_ZAB_Wersja", "IOF_ZAB_Wersja");
             tableMapping.ColumnMappings.Add("IOF_KrajProd", "IOF_KrajProd");
+            tableMapping.ColumnMappings.Add("ID", "ID");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlServerCe.SqlCeCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -6999,7 +6944,7 @@ namespace MK_Film_DB_NET.defaultDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p1", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "ID", global::System.Data.DataRowVersion.Original, null));
             this._adapter.InsertCommand = new global::System.Data.SqlServerCe.SqlCeCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Film] ([Tytul], [TytulOrig], [Gatunek], [Opis], [pathtofront], [pathtoback], [OW_SD], [OW_Obs], [OW_Zdj], [OW_Wart], [OW_ALL], [DOE_Imie], [DOE_Nazw], [DOE_Adres], [DOE_MN_Nazwa], [DOE_MN_Adres], [DOE_MN_WWW], [DOE_MN_Tel], [DOE_MN_Fax], [DOE_MN_Email], [DOE_Cena], [DOE_DataSkat], [DOE_DataUtr], [DOE_NrKat], [DOE_WartAkt], [DOE_DataZak], [DOE_Nośnik], [IOF_RokProd], [IOF_DataPrem], [IOF_CzasProj], [IOF_FormWysw], [IOF_SysKodObr], [IOF_JezykLekt], [IOF_JezykNap], [IOF_KW_Nazwa], [IOF_KW_Typ], [IOF_KW_Wersja], [IOF_KA_Nazwa], [IOF_KA_Typ], [IOF_KA_Wersja], [IOF_ZAB_Nazwa], [IOF_ZAB_Typ], [IOF_ZAB_Wersja], [IOF_KrajProd]) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39, @p40, @p41, @p42, @p43, @p44)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [Film] ([Tytul], [TytulOrig], [Gatunek], [Opis], [pathtofront], [pathtoback], [OW_SD], [OW_Obs], [OW_Zdj], [OW_Wart], [OW_ALL], [DOE_Imie], [DOE_Nazw], [DOE_Adres], [DOE_MN_Nazwa], [DOE_MN_Adres], [DOE_MN_WWW], [DOE_MN_Tel], [DOE_MN_Fax], [DOE_MN_Email], [DOE_Cena], [DOE_DataSkat], [DOE_DataUtr], [DOE_NrKat], [DOE_WartAkt], [DOE_DataZak], [DOE_Nośnik], [IOF_RokProd], [IOF_DataPrem], [IOF_CzasProj], [IOF_FormWysw], [IOF_SysKodObr], [IOF_JezykLekt], [IOF_JezykNap], [IOF_KW_Nazwa], [IOF_KW_Typ], [IOF_KW_Wersja], [IOF_KA_Nazwa], [IOF_KA_Typ], [IOF_KA_Wersja], [IOF_ZAB_Nazwa], [IOF_ZAB_Typ], [IOF_ZAB_Wersja], [IOF_KrajProd], [ID]) VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39, @p40, @p41, @p42, @p43, @p44, @p45)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p1", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Tytul", global::System.Data.DataRowVersion.Current, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "TytulOrig", global::System.Data.DataRowVersion.Current, null));
@@ -7045,9 +6990,10 @@ namespace MK_Film_DB_NET.defaultDataSetTableAdapters {
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p42", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "IOF_ZAB_Typ", global::System.Data.DataRowVersion.Current, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p43", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "IOF_ZAB_Wersja", global::System.Data.DataRowVersion.Current, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p44", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "IOF_KrajProd", global::System.Data.DataRowVersion.Current, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p45", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "ID", global::System.Data.DataRowVersion.Current, null));
             this._adapter.UpdateCommand = new global::System.Data.SqlServerCe.SqlCeCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [Film] SET [Tytul] = @p1, [TytulOrig] = @p2, [Gatunek] = @p3, [Opis] = @p4, [pathtofront] = @p5, [pathtoback] = @p6, [OW_SD] = @p7, [OW_Obs] = @p8, [OW_Zdj] = @p9, [OW_Wart] = @p10, [OW_ALL] = @p11, [DOE_Imie] = @p12, [DOE_Nazw] = @p13, [DOE_Adres] = @p14, [DOE_MN_Nazwa] = @p15, [DOE_MN_Adres] = @p16, [DOE_MN_WWW] = @p17, [DOE_MN_Tel] = @p18, [DOE_MN_Fax] = @p19, [DOE_MN_Email] = @p20, [DOE_Cena] = @p21, [DOE_DataSkat] = @p22, [DOE_DataUtr] = @p23, [DOE_NrKat] = @p24, [DOE_WartAkt] = @p25, [DOE_DataZak] = @p26, [DOE_Nośnik] = @p27, [IOF_RokProd] = @p28, [IOF_DataPrem] = @p29, [IOF_CzasProj] = @p30, [IOF_FormWysw] = @p31, [IOF_SysKodObr] = @p32, [IOF_JezykLekt] = @p33, [IOF_JezykNap] = @p34, [IOF_KW_Nazwa] = @p35, [IOF_KW_Typ] = @p36, [IOF_KW_Wersja] = @p37, [IOF_KA_Nazwa] = @p38, [IOF_KA_Typ] = @p39, [IOF_KA_Wersja] = @p40, [IOF_ZAB_Nazwa] = @p41, [IOF_ZAB_Typ] = @p42, [IOF_ZAB_Wersja] = @p43, [IOF_KrajProd] = @p44 WHERE (([ID] = @p45))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [Film] SET [Tytul] = @p1, [TytulOrig] = @p2, [Gatunek] = @p3, [Opis] = @p4, [pathtofront] = @p5, [pathtoback] = @p6, [OW_SD] = @p7, [OW_Obs] = @p8, [OW_Zdj] = @p9, [OW_Wart] = @p10, [OW_ALL] = @p11, [DOE_Imie] = @p12, [DOE_Nazw] = @p13, [DOE_Adres] = @p14, [DOE_MN_Nazwa] = @p15, [DOE_MN_Adres] = @p16, [DOE_MN_WWW] = @p17, [DOE_MN_Tel] = @p18, [DOE_MN_Fax] = @p19, [DOE_MN_Email] = @p20, [DOE_Cena] = @p21, [DOE_DataSkat] = @p22, [DOE_DataUtr] = @p23, [DOE_NrKat] = @p24, [DOE_WartAkt] = @p25, [DOE_DataZak] = @p26, [DOE_Nośnik] = @p27, [IOF_RokProd] = @p28, [IOF_DataPrem] = @p29, [IOF_CzasProj] = @p30, [IOF_FormWysw] = @p31, [IOF_SysKodObr] = @p32, [IOF_JezykLekt] = @p33, [IOF_JezykNap] = @p34, [IOF_KW_Nazwa] = @p35, [IOF_KW_Typ] = @p36, [IOF_KW_Wersja] = @p37, [IOF_KA_Nazwa] = @p38, [IOF_KA_Typ] = @p39, [IOF_KA_Wersja] = @p40, [IOF_ZAB_Nazwa] = @p41, [IOF_ZAB_Typ] = @p42, [IOF_ZAB_Wersja] = @p43, [IOF_KrajProd] = @p44, [ID] = @p45 WHERE (([ID] = @p46))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p1", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "Tytul", global::System.Data.DataRowVersion.Current, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p2", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "TytulOrig", global::System.Data.DataRowVersion.Current, null));
@@ -7093,7 +7039,8 @@ namespace MK_Film_DB_NET.defaultDataSetTableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p42", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "IOF_ZAB_Typ", global::System.Data.DataRowVersion.Current, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p43", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "IOF_ZAB_Wersja", global::System.Data.DataRowVersion.Current, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p44", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "IOF_KrajProd", global::System.Data.DataRowVersion.Current, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p45", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "ID", global::System.Data.DataRowVersion.Original, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p45", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "ID", global::System.Data.DataRowVersion.Current, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlServerCe.SqlCeParameter("@p46", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, true, 0, 0, "ID", global::System.Data.DataRowVersion.Original, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7107,7 +7054,7 @@ namespace MK_Film_DB_NET.defaultDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlServerCe.SqlCeCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlServerCe.SqlCeCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT [ID], [Tytul], [TytulOrig], [Gatunek], [Opis], [pathtofront], [pathtoback], [OW_SD], [OW_Obs], [OW_Zdj], [OW_Wart], [OW_ALL], [DOE_Imie], [DOE_Nazw], [DOE_Adres], [DOE_MN_Nazwa], [DOE_MN_Adres], [DOE_MN_WWW], [DOE_MN_Tel], [DOE_MN_Fax], [DOE_MN_Email], [DOE_Cena], [DOE_DataSkat], [DOE_DataUtr], [DOE_NrKat], [DOE_WartAkt], [DOE_DataZak], [DOE_Nośnik], [IOF_RokProd], [IOF_DataPrem], [IOF_CzasProj], [IOF_FormWysw], [IOF_SysKodObr], [IOF_JezykLekt], [IOF_JezykNap], [IOF_KW_Nazwa], [IOF_KW_Typ], [IOF_KW_Wersja], [IOF_KA_Nazwa], [IOF_KA_Typ], [IOF_KA_Wersja], [IOF_ZAB_Nazwa], [IOF_ZAB_Typ], [IOF_ZAB_Wersja], [IOF_KrajProd] FROM [Film]";
+            this._commandCollection[0].CommandText = @"SELECT [Tytul], [TytulOrig], [Gatunek], [Opis], [pathtofront], [pathtoback], [OW_SD], [OW_Obs], [OW_Zdj], [OW_Wart], [OW_ALL], [DOE_Imie], [DOE_Nazw], [DOE_Adres], [DOE_MN_Nazwa], [DOE_MN_Adres], [DOE_MN_WWW], [DOE_MN_Tel], [DOE_MN_Fax], [DOE_MN_Email], [DOE_Cena], [DOE_DataSkat], [DOE_DataUtr], [DOE_NrKat], [DOE_WartAkt], [DOE_DataZak], [DOE_Nośnik], [IOF_RokProd], [IOF_DataPrem], [IOF_CzasProj], [IOF_FormWysw], [IOF_SysKodObr], [IOF_JezykLekt], [IOF_JezykNap], [IOF_KW_Nazwa], [IOF_KW_Typ], [IOF_KW_Wersja], [IOF_KA_Nazwa], [IOF_KA_Typ], [IOF_KA_Wersja], [IOF_ZAB_Nazwa], [IOF_ZAB_Typ], [IOF_ZAB_Wersja], [IOF_KrajProd], [ID] FROM [Film]";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7226,7 +7173,8 @@ namespace MK_Film_DB_NET.defaultDataSetTableAdapters {
                     string p41, 
                     string p42, 
                     string p43, 
-                    string p44) {
+                    string p44, 
+                    int p45) {
             if ((p1 == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -7491,6 +7439,7 @@ namespace MK_Film_DB_NET.defaultDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[43].Value = ((string)(p44));
             }
+            this.Adapter.InsertCommand.Parameters[44].Value = ((int)(p45));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7555,7 +7504,8 @@ namespace MK_Film_DB_NET.defaultDataSetTableAdapters {
                     string p42, 
                     string p43, 
                     string p44, 
-                    int p45) {
+                    int p45, 
+                    int p46) {
             if ((p1 == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -7821,6 +7771,7 @@ namespace MK_Film_DB_NET.defaultDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[43].Value = ((string)(p44));
             }
             this.Adapter.UpdateCommand.Parameters[44].Value = ((int)(p45));
+            this.Adapter.UpdateCommand.Parameters[45].Value = ((int)(p46));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7835,6 +7786,58 @@ namespace MK_Film_DB_NET.defaultDataSetTableAdapters {
                     this.Adapter.UpdateCommand.Connection.Close();
                 }
             }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    string p1, 
+                    string p2, 
+                    string p3, 
+                    string p4, 
+                    string p5, 
+                    string p6, 
+                    string p7, 
+                    string p8, 
+                    string p9, 
+                    string p10, 
+                    string p11, 
+                    string p12, 
+                    string p13, 
+                    string p14, 
+                    string p15, 
+                    string p16, 
+                    string p17, 
+                    string p18, 
+                    string p19, 
+                    string p20, 
+                    string p21, 
+                    string p22, 
+                    string p23, 
+                    string p24, 
+                    string p25, 
+                    string p26, 
+                    string p27, 
+                    string p28, 
+                    string p29, 
+                    string p30, 
+                    string p31, 
+                    string p32, 
+                    string p33, 
+                    string p34, 
+                    string p35, 
+                    string p36, 
+                    string p37, 
+                    string p38, 
+                    string p39, 
+                    string p40, 
+                    string p41, 
+                    string p42, 
+                    string p43, 
+                    string p44, 
+                    int p46) {
+            return this.Update(p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34, p35, p36, p37, p38, p39, p40, p41, p42, p43, p44, p46, p46);
         }
     }
     

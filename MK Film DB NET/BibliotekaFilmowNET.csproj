@@ -79,10 +79,6 @@
     <Compile Include="AboutBox1.Designer.cs">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
-    <Compile Include="defaultDataSet.cs">
-      <DependentUpon>defaultDataSet.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="defaultDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -173,17 +169,6 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
-    <None Include="defaultDataSet.xsc">
-      <DependentUpon>defaultDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="defaultDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>defaultDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="defaultDataSet.xss">
-      <DependentUpon>defaultDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -211,6 +196,17 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="MK_LOGO.ico" />
+    <None Include="defaultDataSet.xsc">
+      <DependentUpon>defaultDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="defaultDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>defaultDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="defaultDataSet.xss">
+      <DependentUpon>defaultDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\upload_ico24x24.png" />
     <None Include="Resources\del_ico24x24-2.png" />
     <None Include="Resources\save_ico24x24.png" />

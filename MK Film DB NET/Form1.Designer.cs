@@ -708,7 +708,7 @@
             // 
             // fKFilmOcenaBindingSource
             // 
-            this.fKFilmOcenaBindingSource.DataMember = "FK_Film_Ocena";
+            this.fKFilmOcenaBindingSource.DataMember = "Film_Ocena";
             this.fKFilmOcenaBindingSource.DataSource = this.filmBindingSource;
             // 
             // label7
@@ -787,7 +787,7 @@
             // 
             // fKFilmObsadaBindingSource
             // 
-            this.fKFilmObsadaBindingSource.DataMember = "FK_Film_Obsada";
+            this.fKFilmObsadaBindingSource.DataMember = "Film_Obsada";
             this.fKFilmObsadaBindingSource.DataSource = this.filmBindingSource;
             // 
             // tabPage_Produkcja
@@ -884,7 +884,7 @@
             // 
             // fKFilmDystrybucjaBindingSource
             // 
-            this.fKFilmDystrybucjaBindingSource.DataMember = "FK_Film_Dystrybucja";
+            this.fKFilmDystrybucjaBindingSource.DataMember = "Film_Dystrybucja";
             this.fKFilmDystrybucjaBindingSource.DataSource = this.filmBindingSource;
             // 
             // dataGridView_PROD_prod
@@ -967,7 +967,7 @@
             // 
             // fKFilmProdukcjaBindingSource
             // 
-            this.fKFilmProdukcjaBindingSource.DataMember = "FK_Film_Produkcja";
+            this.fKFilmProdukcjaBindingSource.DataMember = "Film_Produkcja";
             this.fKFilmProdukcjaBindingSource.DataSource = this.filmBindingSource;
             // 
             // label15
@@ -1426,7 +1426,7 @@
             // 
             // fKFilmLokZdjBindingSource
             // 
-            this.fKFilmLokZdjBindingSource.DataMember = "FK_Film_LokZdj";
+            this.fKFilmLokZdjBindingSource.DataMember = "Film_LokZdj";
             this.fKFilmLokZdjBindingSource.DataSource = this.filmBindingSource;
             // 
             // label48
@@ -1873,7 +1873,7 @@
             // 
             // fKFilmWYPODINBindingSource
             // 
-            this.fKFilmWYPODINBindingSource.DataMember = "FK_Film_WYPODIN";
+            this.fKFilmWYPODINBindingSource.DataMember = "Film_WYPODIN";
             this.fKFilmWYPODINBindingSource.DataSource = this.filmBindingSource;
             // 
             // dataGridView_BIBLIO_WYPIN
@@ -1945,7 +1945,7 @@
             // 
             // fKFilmWYPINBindingSource
             // 
-            this.fKFilmWYPINBindingSource.DataMember = "FK_Film_WYPIN";
+            this.fKFilmWYPINBindingSource.DataMember = "Film_WYPIN";
             this.fKFilmWYPINBindingSource.DataSource = this.filmBindingSource;
             // 
             // label3
