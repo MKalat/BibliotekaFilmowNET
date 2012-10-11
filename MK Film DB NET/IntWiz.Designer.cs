@@ -195,6 +195,7 @@
             this.webBrowser_GetDataInt.ScriptErrorsSuppressed = true;
             this.webBrowser_GetDataInt.Size = new System.Drawing.Size(36, 648);
             this.webBrowser_GetDataInt.TabIndex = 6;
+            this.webBrowser_GetDataInt.Visible = false;
             this.webBrowser_GetDataInt.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser_GetDataInt_DocumentCompleted);
             // 
             // label2
