@@ -50,7 +50,7 @@ namespace MK_Film_DB_NET
             String path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             db_path = path;
             db_path = db_path + "\\BFNET\\";
-            cur_db_path = db_path + "BFDBv2.sdf";
+            cur_db_path = db_path + "BFDBv3.sdf";
 
             Read_settings();
             Start_AU();
@@ -176,12 +176,12 @@ namespace MK_Film_DB_NET
 
         private void button_NEW_Click(object sender, EventArgs e)
         {
-            //this.filmBindingSource.AddNew();
-            //this.filmBindingSource.EndEdit();
-            defaultDataSet.FilmRow flm_row = this.defaultDataSet.Film.NewFilmRow();
-            flm_row.ID = FindNewFilmID();
-            this.defaultDataSet.Film.Rows.Add(flm_row);
-            button_SAVE_Click(null, null);
+            this.filmBindingSource.AddNew();
+            this.filmBindingSource.EndEdit();
+            //defaultDataSet.FilmRow flm_row = this.defaultDataSet.Film.NewFilmRow();
+            //flm_row.ID = FindNewFilmID();
+            //this.defaultDataSet.Film.Rows.Add(flm_row);
+            //button_SAVE_Click(null, null);
             this.filmBindingSource.MoveLast();
             this.button_GetDataInt.Enabled = false;
             LiczRec();
@@ -531,7 +531,7 @@ namespace MK_Film_DB_NET
             DialogResult res = fbd.ShowDialog(this);
             if (res == DialogResult.OK)
             {
-                cur_db_path = fbd.SelectedPath + "\\BFDBv2.sdf";
+                cur_db_path = fbd.SelectedPath + "\\BFDBv3.sdf";
                 if (CheckDBExist(cur_db_path) == 0)
                 {
                     Utworz_DB(fbd.SelectedPath);

@@ -68,9 +68,9 @@ namespace MK_Film_DB_NET
                             {
 
                                 int flm_id = br.ReadInt32();
-                                Flm_id = frm1.FindNewFilmID();
+                                //Flm_id = frm1.FindNewFilmID();
                                 flm_row = frm1.defaultDataSet.Film.NewFilmRow();
-                                flm_row.ID = Flm_id;
+                                //flm_row.ID = Flm_id;
 
 
                                 flm_row.Tytul = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 501)));
@@ -150,6 +150,7 @@ namespace MK_Film_DB_NET
                                 {
                                     if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_OC.bf"))
                                     {
+                                        Flm_id = frm1.FindNewFilmID() - 1;
                                         FileStream fn_OC;
                                         fn_OC = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_OC.bf");
                                         BinaryReader br_oc = new BinaryReader(fn_OC, Encoding.Unicode);
@@ -189,6 +190,7 @@ namespace MK_Film_DB_NET
                                 {
                                     if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_OB.bf"))
                                     {
+                                        Flm_id = frm1.FindNewFilmID() - 1;
                                         FileStream fn_OB;
                                         fn_OB = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_OB.bf");
                                         BinaryReader br_ob = new BinaryReader(fn_OB, Encoding.Unicode);
@@ -227,6 +229,7 @@ namespace MK_Film_DB_NET
                                 {
                                     if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_PRP.bf"))
                                     {
+                                        Flm_id = frm1.FindNewFilmID() - 1;
                                         FileStream fn_PP;
                                         fn_PP = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_PRP.bf");
                                         BinaryReader br_pp = new BinaryReader(fn_PP, Encoding.Unicode);
@@ -267,6 +270,7 @@ namespace MK_Film_DB_NET
                                 {
                                     if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_PRD.bf"))
                                     {
+                                        Flm_id = frm1.FindNewFilmID() - 1;
                                         FileStream fn_PD;
                                         fn_PD = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_PRD.bf");
                                         BinaryReader br_pd = new BinaryReader(fn_PD, Encoding.Unicode);
@@ -307,6 +311,7 @@ namespace MK_Film_DB_NET
                                 {
                                     if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_LZ.bf"))
                                     {
+                                        Flm_id = frm1.FindNewFilmID() - 1;
                                         FileStream fn_LZ;
                                         fn_LZ = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_LZ.bf");
                                         BinaryReader br_lz = new BinaryReader(fn_LZ, Encoding.Unicode);
@@ -347,6 +352,7 @@ namespace MK_Film_DB_NET
                                 {
                                     if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_WI.bf"))
                                     {
+                                        Flm_id = frm1.FindNewFilmID() - 1;
                                         FileStream fn_WI;
                                         fn_WI = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_WI.bf");
                                         BinaryReader br_wi = new BinaryReader(fn_WI, Encoding.Unicode);
@@ -387,6 +393,7 @@ namespace MK_Film_DB_NET
                                 {
                                     if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_WO.bf"))
                                     {
+                                        Flm_id = frm1.FindNewFilmID() - 1;
                                         FileStream fn_WO;
                                         fn_WO = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_WO.bf");
                                         BinaryReader br_wo = new BinaryReader(fn_WO, Encoding.Unicode);

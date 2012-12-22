@@ -126,9 +126,10 @@ namespace MK_Film_DB_NET
                     {
                         //frm1.filmBindingSource.AddNew();
                         //frm1.filmBindingSource.EndEdit();
-                        Flm_id = frm1.FindNewFilmID();
+                        
                         flm_row = frm1.defaultDataSet.Film.NewFilmRow();
-                        flm_row.ID = Flm_id;
+                        //flm_row.ID = Flm_id;
+                        flm_row.Tytul = this.textBox_FlmSrch.Text;
                         //frm1.defaultDataSet.Film.Rows.Add(flm_row);
                         //SaveDS();
                         //frm1.filmBindingSource.MoveLast();
@@ -160,7 +161,7 @@ namespace MK_Film_DB_NET
                                 if (ele.FirstChild.OuterHtml.Contains("czas trwania"))
                                 {
                                     //frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].Tytul = this.textBox_FlmSrch.Text;
-                                    flm_row.Tytul = this.textBox_FlmSrch.Text;
+                                    
 
                                     HtmlElement ele2 = ele.FirstChild.NextSibling;
                                     //frm1.Controls["textBox_IOF_CzasProj"].Text = ele2.OuterText;
@@ -239,6 +240,7 @@ namespace MK_Film_DB_NET
                     bool act_ad = false;
                     end_ind = 0;
                     beg_ind = 0;
+                    Flm_id = frm1.FindNewFilmID() - 1;
                     
 
                     if (visited3 != true)
