@@ -629,7 +629,7 @@ namespace MK_Film_DB_NET
         {
             ImpNewBF frm_impNewbf = new ImpNewBF(this);
             frm_impNewbf.ShowDialog(this);
-            //button_SAVE_Click(null, null);
+            button_SAVE_Click(null, null);
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
@@ -662,6 +662,12 @@ namespace MK_Film_DB_NET
             return ret + 1;
 
 
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            ImpBFNET119 impwiz = new ImpBFNET119(this);
+            impwiz.ShowDialog(this);
         }
         
 

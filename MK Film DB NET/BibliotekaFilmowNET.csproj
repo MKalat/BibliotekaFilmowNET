@@ -108,6 +108,12 @@
     <Compile Include="FStartWiz.Designer.cs">
       <DependentUpon>FStartWiz.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImpBFNET119.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImpBFNET119.Designer.cs">
+      <DependentUpon>ImpBFNET119.cs</DependentUpon>
+    </Compile>
     <Compile Include="ImpNewBF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FStartWiz.resx">
       <DependentUpon>FStartWiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImpBFNET119.resx">
+      <DependentUpon>ImpBFNET119.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImpNewBF.resx">
       <DependentUpon>ImpNewBF.cs</DependentUpon>
