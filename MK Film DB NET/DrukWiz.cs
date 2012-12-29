@@ -12,8 +12,10 @@ namespace MK_Film_DB_NET
 {
     public partial class DrukWiz : Form
     {
-        public DrukWiz()
+        Form1 frm1;
+        public DrukWiz(Form1 frm1_inst)
         {
+            frm1 = frm1_inst;
             InitializeComponent();
 
         }
@@ -35,13 +37,13 @@ namespace MK_Film_DB_NET
                 {
                     fn_buff = "Podstawowe dane o Filmie : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < filmBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.filmBindingSource.Count; i++)
                     {
-                        filmBindingSource.Position = i;
-                        defaultDataSet.FilmRow flmrow = defaultDataSet.Film[filmBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.Film.Columns.Count; y++)
+                        frm1.filmBindingSource.Position = i;
+                        defaultDataSet.FilmRow flmrow = frm1.defaultDataSet.Film[frm1.filmBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.Film.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.Film.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.Film.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -52,13 +54,13 @@ namespace MK_Film_DB_NET
                 {
                     fn_buff = "Dane Tabeli Obsada : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < this.fKFilmObsadaBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.fKFilmObsadaBindingSource.Count; i++)
                     {
-                        fKFilmObsadaBindingSource.Position = i;
-                        defaultDataSet.ObsadaRow flmrow = defaultDataSet.Obsada[fKFilmObsadaBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.Obsada.Columns.Count; y++)
+                        frm1.fKFilmObsadaBindingSource.Position = i;
+                        defaultDataSet.ObsadaRow flmrow = frm1.defaultDataSet.Obsada[frm1.fKFilmObsadaBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.Obsada.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.Obsada.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.Obsada.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -69,13 +71,13 @@ namespace MK_Film_DB_NET
                 {
                     fn_buff = "Dane Tabeli Ocena : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < this.fKFilmOcenaBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.fKFilmOcenaBindingSource.Count; i++)
                     {
-                        fKFilmOcenaBindingSource.Position = i;
-                        defaultDataSet.OcenaRow flmrow = defaultDataSet.Ocena[fKFilmOcenaBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.Ocena.Columns.Count; y++)
+                        frm1.fKFilmOcenaBindingSource.Position = i;
+                        defaultDataSet.OcenaRow flmrow = frm1.defaultDataSet.Ocena[frm1.fKFilmOcenaBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.Ocena.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.Ocena.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.Ocena.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -86,13 +88,13 @@ namespace MK_Film_DB_NET
                 {
                     fn_buff = "Dane Tabeli Producenci : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < this.fKFilmProdukcjaBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.fKFilmProdukcjaBindingSource.Count; i++)
                     {
-                        fKFilmProdukcjaBindingSource.Position = i;
-                        defaultDataSet.ProdukcjaRow flmrow = defaultDataSet.Produkcja[fKFilmProdukcjaBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.Produkcja.Columns.Count; y++)
+                        frm1.fKFilmProdukcjaBindingSource.Position = i;
+                        defaultDataSet.ProdukcjaRow flmrow = frm1.defaultDataSet.Produkcja[frm1.fKFilmProdukcjaBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.Produkcja.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.Produkcja.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.Produkcja.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -103,13 +105,13 @@ namespace MK_Film_DB_NET
                 {
                     fn_buff = "Dane Tabeli Dystrybutorzy : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < this.fKFilmDystrybucjaBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.fKFilmDystrybucjaBindingSource.Count; i++)
                     {
-                        fKFilmDystrybucjaBindingSource.Position = i;
-                        defaultDataSet.DystrybucjaRow flmrow = defaultDataSet.Dystrybucja[fKFilmDystrybucjaBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.Dystrybucja.Columns.Count; y++)
+                        frm1.fKFilmDystrybucjaBindingSource.Position = i;
+                        defaultDataSet.DystrybucjaRow flmrow = frm1.defaultDataSet.Dystrybucja[frm1.fKFilmDystrybucjaBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.Dystrybucja.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.Dystrybucja.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.Dystrybucja.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -120,13 +122,13 @@ namespace MK_Film_DB_NET
                 {
                     fn_buff = "Dane Tabeli Lokalizacje Zdjęciowe : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < this.fKFilmLokZdjBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.fKFilmLokZdjBindingSource.Count; i++)
                     {
-                        fKFilmLokZdjBindingSource.Position = i;
-                        defaultDataSet.LokZdjRow flmrow = defaultDataSet.LokZdj[fKFilmLokZdjBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.LokZdj.Columns.Count; y++)
+                        frm1.fKFilmLokZdjBindingSource.Position = i;
+                        defaultDataSet.LokZdjRow flmrow = frm1.defaultDataSet.LokZdj[frm1.fKFilmLokZdjBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.LokZdj.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.LokZdj.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.LokZdj.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -137,13 +139,13 @@ namespace MK_Film_DB_NET
                 {
                     fn_buff = "Dane Tabeli Wypożyczenia Innym Osobom : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < this.fKFilmWYPINBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.fKFilmWYPINBindingSource.Count; i++)
                     {
-                        fKFilmWYPINBindingSource.Position = i;
-                        defaultDataSet.WYPINRow flmrow = defaultDataSet.WYPIN[fKFilmWYPINBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.WYPIN.Columns.Count; y++)
+                        frm1.fKFilmWYPINBindingSource.Position = i;
+                        defaultDataSet.WYPINRow flmrow = frm1.defaultDataSet.WYPIN[frm1.fKFilmWYPINBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.WYPIN.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.WYPIN.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.WYPIN.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -151,13 +153,13 @@ namespace MK_Film_DB_NET
                     }
                     fn_buff = "Dane Tabeli Wypożyczenia Od Innych Osób : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < this.fKFilmWYPODINBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.fKFilmWYPODINBindingSource.Count; i++)
                     {
-                        fKFilmWYPODINBindingSource.Position = i;
-                        defaultDataSet.WYPODINRow flmrow = defaultDataSet.WYPODIN[fKFilmWYPODINBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.WYPODIN.Columns.Count; y++)
+                        frm1.fKFilmWYPODINBindingSource.Position = i;
+                        defaultDataSet.WYPODINRow flmrow = frm1.defaultDataSet.WYPODIN[frm1.fKFilmWYPODINBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.WYPODIN.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.WYPODIN.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.WYPODIN.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -192,10 +194,10 @@ namespace MK_Film_DB_NET
                 {
                     fn_buff = "Podstawowe dane o Filmie : ";
                     sw.WriteLine(fn_buff);
-                    defaultDataSet.FilmRow flmrow = defaultDataSet.Film[filmBindingSource.Position];
-                    for (Int32 y = 0; y < defaultDataSet.Film.Columns.Count; y++)
+                    defaultDataSet.FilmRow flmrow = frm1.defaultDataSet.Film[frm1.filmBindingSource.Position];
+                    for (Int32 y = 0; y < frm1.defaultDataSet.Film.Columns.Count; y++)
                     {
-                        CVal = Convert.ToString(defaultDataSet.Film.Columns[y].Caption);
+                        CVal = Convert.ToString(frm1.defaultDataSet.Film.Columns[y].Caption);
                         FVal = Convert.ToString(flmrow[y]);
                         fn_buff = CVal + " : " + FVal;
                         sw.WriteLine(fn_buff);
@@ -206,13 +208,13 @@ namespace MK_Film_DB_NET
                 {
                     fn_buff = "Dane Tabeli Obsada : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < fKFilmObsadaBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.fKFilmObsadaBindingSource.Count; i++)
                     {
-                        fKFilmObsadaBindingSource.Position = i;
-                        defaultDataSet.ObsadaRow flmrow = defaultDataSet.Obsada[fKFilmObsadaBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.Obsada.Columns.Count; y++)
+                        frm1.fKFilmObsadaBindingSource.Position = i;
+                        defaultDataSet.ObsadaRow flmrow = frm1.defaultDataSet.Obsada[frm1.fKFilmObsadaBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.Obsada.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.Obsada.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.Obsada.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -223,13 +225,13 @@ namespace MK_Film_DB_NET
                 {
                     fn_buff = "Dane Tabeli Ocena : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < fKFilmOcenaBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.fKFilmOcenaBindingSource.Count; i++)
                     {
-                        fKFilmOcenaBindingSource.Position = i;
-                        defaultDataSet.OcenaRow flmrow = defaultDataSet.Ocena[fKFilmOcenaBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.Ocena.Columns.Count; y++)
+                        frm1.fKFilmOcenaBindingSource.Position = i;
+                        defaultDataSet.OcenaRow flmrow = frm1.defaultDataSet.Ocena[frm1.fKFilmOcenaBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.Ocena.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.Ocena.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.Ocena.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -240,13 +242,13 @@ namespace MK_Film_DB_NET
                 {
                     fn_buff = "Dane Tabeli Producenci : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < fKFilmProdukcjaBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.fKFilmProdukcjaBindingSource.Count; i++)
                     {
-                        fKFilmProdukcjaBindingSource.Position = i;
-                        defaultDataSet.ProdukcjaRow flmrow = defaultDataSet.Produkcja[fKFilmProdukcjaBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.Produkcja.Columns.Count; y++)
+                        frm1.fKFilmProdukcjaBindingSource.Position = i;
+                        defaultDataSet.ProdukcjaRow flmrow = frm1.defaultDataSet.Produkcja[frm1.fKFilmProdukcjaBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.Produkcja.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.Produkcja.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.Produkcja.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -257,13 +259,13 @@ namespace MK_Film_DB_NET
                 {
                     fn_buff = "Dane Tabeli Dystrybutorzy : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < fKFilmDystrybucjaBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.fKFilmDystrybucjaBindingSource.Count; i++)
                     {
-                        fKFilmDystrybucjaBindingSource.Position = i;
-                        defaultDataSet.DystrybucjaRow flmrow = defaultDataSet.Dystrybucja[fKFilmDystrybucjaBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.Dystrybucja.Columns.Count; y++)
+                        frm1.fKFilmDystrybucjaBindingSource.Position = i;
+                        defaultDataSet.DystrybucjaRow flmrow = frm1.defaultDataSet.Dystrybucja[frm1.fKFilmDystrybucjaBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.Dystrybucja.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.Dystrybucja.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.Dystrybucja.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -274,13 +276,13 @@ namespace MK_Film_DB_NET
                 {
                     fn_buff = "Dane Tabeli Lokalizacje Zdjęciowe : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < fKFilmLokZdjBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.fKFilmLokZdjBindingSource.Count; i++)
                     {
-                        fKFilmLokZdjBindingSource.Position = i;
-                        defaultDataSet.LokZdjRow flmrow = defaultDataSet.LokZdj[fKFilmLokZdjBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.LokZdj.Columns.Count; y++)
+                        frm1.fKFilmLokZdjBindingSource.Position = i;
+                        defaultDataSet.LokZdjRow flmrow = frm1.defaultDataSet.LokZdj[frm1.fKFilmLokZdjBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.LokZdj.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.LokZdj.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.LokZdj.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -291,13 +293,13 @@ namespace MK_Film_DB_NET
                 {
                     fn_buff = "Dane Tabeli Wypożyczenia Innym Osobom : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < fKFilmWYPINBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.fKFilmWYPINBindingSource.Count; i++)
                     {
-                        fKFilmWYPINBindingSource.Position = i;
-                        defaultDataSet.WYPINRow flmrow = defaultDataSet.WYPIN[fKFilmWYPINBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.WYPIN.Columns.Count; y++)
+                        frm1.fKFilmWYPINBindingSource.Position = i;
+                        defaultDataSet.WYPINRow flmrow = frm1.defaultDataSet.WYPIN[frm1.fKFilmWYPINBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.WYPIN.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.WYPIN.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.WYPIN.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -305,13 +307,13 @@ namespace MK_Film_DB_NET
                     }
                     fn_buff = "Dane Tabeli Wypożyczenia Od Innych Osób : ";
                     sw.WriteLine(fn_buff);
-                    for (Int32 i = 0; i < fKFilmWYPODINBindingSource.Count; i++)
+                    for (Int32 i = 0; i < frm1.fKFilmWYPODINBindingSource.Count; i++)
                     {
-                        fKFilmWYPODINBindingSource.Position = i;
-                        defaultDataSet.WYPODINRow flmrow = defaultDataSet.WYPODIN[fKFilmWYPODINBindingSource.Position];
-                        for (Int32 y = 0; y < defaultDataSet.WYPODIN.Columns.Count; y++)
+                        frm1.fKFilmWYPODINBindingSource.Position = i;
+                        defaultDataSet.WYPODINRow flmrow = frm1.defaultDataSet.WYPODIN[frm1.fKFilmWYPODINBindingSource.Position];
+                        for (Int32 y = 0; y < frm1.defaultDataSet.WYPODIN.Columns.Count; y++)
                         {
-                            CVal = Convert.ToString(defaultDataSet.WYPODIN.Columns[y].Caption);
+                            CVal = Convert.ToString(frm1.defaultDataSet.WYPODIN.Columns[y].Caption);
                             FVal = Convert.ToString(flmrow[y]);
                             fn_buff = CVal + " : " + FVal;
                             sw.WriteLine(fn_buff);
@@ -375,32 +377,7 @@ namespace MK_Film_DB_NET
 
         private void DrukWiz_Load(object sender, EventArgs e)
         {
-            this.wYPODINTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            this.wYPINTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            this.lokZdjTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            this.dystrybucjaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            this.produkcjaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            this.obsadaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            this.ocenaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            this.filmTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-
-            this.wYPODINTableAdapter.Connection.Open();
-            this.wYPINTableAdapter.Connection.Open();
-            this.lokZdjTableAdapter.Connection.Open();
-            this.dystrybucjaTableAdapter.Connection.Open();
-            this.produkcjaTableAdapter.Connection.Open();
-            this.obsadaTableAdapter.Connection.Open();
-            this.ocenaTableAdapter.Connection.Open();
-            this.filmTableAdapter.Connection.Open();
-
-            this.wYPODINTableAdapter.Fill(this.defaultDataSet.WYPODIN);
-            this.wYPINTableAdapter.Fill(this.defaultDataSet.WYPIN);
-            this.lokZdjTableAdapter.Fill(this.defaultDataSet.LokZdj);
-            this.dystrybucjaTableAdapter.Fill(this.defaultDataSet.Dystrybucja);
-            this.produkcjaTableAdapter.Fill(this.defaultDataSet.Produkcja);
-            this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
-            this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
-            this.filmTableAdapter.Fill(this.defaultDataSet.Film);
+            
         }
 
         private void button_Cancel_Click(object sender, EventArgs e)

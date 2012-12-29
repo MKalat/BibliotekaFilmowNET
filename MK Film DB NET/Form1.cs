@@ -595,8 +595,11 @@ namespace MK_Film_DB_NET
 
         private void eksportujToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            EkspWiz frm_Eksp = new EkspWiz();
-            frm_Eksp.Show(this);
+            if (this.defaultDataSet.Film.Rows.Count > 0)
+            {
+                EkspWiz frm_Eksp = new EkspWiz(this);
+                frm_Eksp.Show(this);
+            }
         }
 
         private void oProgramieToolStripMenuItem_Click(object sender, EventArgs e)
@@ -612,7 +615,7 @@ namespace MK_Film_DB_NET
 
         private void drukujToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DrukWiz frmdruk = new DrukWiz();
+            DrukWiz frmdruk = new DrukWiz(this);
             frmdruk.Show(this);
         }
 
@@ -664,12 +667,7 @@ namespace MK_Film_DB_NET
 
         }
 
-        private void toolStripMenuItem4_Click(object sender, EventArgs e)
-        {
-            ImpBFNET119 impwiz = new ImpBFNET119(this);
-            impwiz.ShowDialog(this);
-            button_SAVE_Click(null, null);
-        }
+        
         
 
 

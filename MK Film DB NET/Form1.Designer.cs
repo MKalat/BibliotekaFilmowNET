@@ -246,8 +246,6 @@
             this.wYPINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPINTableAdapter();
             this.wYPODINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPODINTableAdapter();
             this.button_GetDataInt = new System.Windows.Forms.Button();
-            this.bibliotekaFilmówNETToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Okl_Przod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).BeginInit();
@@ -2085,8 +2083,7 @@
             // importToolStripMenuItem
             // 
             this.importToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bibliotekaFilmówMKFilmDBToolStripMenuItem,
-            this.bibliotekaFilmówNETToolStripMenuItem});
+            this.bibliotekaFilmówMKFilmDBToolStripMenuItem});
             this.importToolStripMenuItem.Name = "importToolStripMenuItem";
             this.importToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.importToolStripMenuItem.Text = "Import";
@@ -2216,21 +2213,6 @@
             this.button_GetDataInt.Text = "Pobierz dane o filmie z Internetu";
             this.button_GetDataInt.UseVisualStyleBackColor = true;
             this.button_GetDataInt.Click += new System.EventHandler(this.button_GetDataInt_Click);
-            // 
-            // bibliotekaFilmówNETToolStripMenuItem
-            // 
-            this.bibliotekaFilmówNETToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem4});
-            this.bibliotekaFilmówNETToolStripMenuItem.Name = "bibliotekaFilmówNETToolStripMenuItem";
-            this.bibliotekaFilmówNETToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
-            this.bibliotekaFilmówNETToolStripMenuItem.Text = "Biblioteka Filmów NET";
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
-            this.toolStripMenuItem4.Text = "1.0.1.119";
-            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // Form1
             // 
@@ -2542,8 +2524,6 @@
         public MK_Film_DB_NET.defaultDataSetTableAdapters.FilmTableAdapter filmTableAdapter;
         public MK_Film_DB_NET.defaultDataSetTableAdapters.OcenaTableAdapter ocenaTableAdapter;
         public System.Windows.Forms.DataGridView dataGridView_OB_Obsada;
-        private System.Windows.Forms.ToolStripMenuItem bibliotekaFilmówNETToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
     }
 }
 
