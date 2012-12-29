@@ -173,11 +173,11 @@ namespace MK_Film_DB_NET
                                                     oc_row.Ocena = Strymuj(Encoding.Unicode.GetString(br_oc.ReadBytes(2 * 201)));
                                                     frm1.defaultDataSet.Ocena.Rows.Add(oc_row);
                                                     Save_DS();
-                                                    //br_oc.ReadBytes(2);
+                                                    br_oc.ReadBytes(2);
                                                 }
                                                 else
                                                 {
-                                                    br_oc.ReadBytes((2 * 501) + (2 * 201));
+                                                    br_oc.ReadBytes((2 * 501) + (2 * 201) + (2 * 201) + (2 * 201) + (2 * 201) + 2);
                                                 }
                                             } while (fn_OC.Position < fn_OC.Length);
                                         }
@@ -227,11 +227,11 @@ namespace MK_Film_DB_NET
 
                                 if (this.checkBox_PP.Checked == true)
                                 {
-                                    if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_PRP.bf"))
+                                    if (File.Exists(this.textBox_SelPath.Text + "\\" + "BF_PRB.bf"))
                                     {
                                         Flm_id = frm1.FindNewFilmID() - 1;
                                         FileStream fn_PP;
-                                        fn_PP = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_PRP.bf");
+                                        fn_PP = File.OpenRead(this.textBox_SelPath.Text + "\\" + "BF_PRB.bf");
                                         BinaryReader br_pp = new BinaryReader(fn_PP, Encoding.Unicode);
                                         if (fn_PP.Length > 0)
                                         {
@@ -253,11 +253,11 @@ namespace MK_Film_DB_NET
                                                     pp_row.Narodowość = Strymuj(Encoding.Unicode.GetString(br_pp.ReadBytes(2 * 201)));
                                                     frm1.defaultDataSet.Produkcja.Rows.Add(pp_row);
                                                     Save_DS();
-                                                    //br_pp.ReadBytes(2);
+                                                    br_pp.ReadBytes(2);
                                                 }
                                                 else
                                                 {
-                                                    br_pp.ReadBytes((2 * 501) + (2 * 201));
+                                                    br_pp.ReadBytes((3*(2 * 501)) + (2*(2 * 201)) + (2*(2* 31))+ 2);
                                                 }
                                             } while (fn_PP.Position < fn_PP.Length);
                                         }
@@ -294,11 +294,11 @@ namespace MK_Film_DB_NET
                                                     pd_row.Narodowość = Strymuj(Encoding.Unicode.GetString(br_pd.ReadBytes(2 * 201)));
                                                     frm1.defaultDataSet.Dystrybucja.Rows.Add(pd_row);
                                                     Save_DS();
-                                                    //br_pd.ReadBytes(2);
+                                                    br_pd.ReadBytes(2);
                                                 }
                                                 else
                                                 {
-                                                    br_pd.ReadBytes((2 * 501) + (2 * 201));
+                                                    br_pd.ReadBytes((3*(2 * 501)) + (2*(2 * 201)) + (2*(2*31)) + 2);
                                                 }
                                             } while (fn_PD.Position < fn_PD.Length);
                                         }
@@ -332,14 +332,15 @@ namespace MK_Film_DB_NET
                                                     lz_row.Region = Strymuj(Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 501)));
                                                     lz_row.Pora_roku = Strymuj(Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 501)));
                                                     lz_row.Data = Strymuj(Encoding.Unicode.GetString(br_lz.ReadBytes(2 * 21)));
-                                                    //br_lz.ReadBytes(2);
+                                                   
                                                     frm1.defaultDataSet.LokZdj.Rows.Add(lz_row);
                                                     Save_DS();
+                                                    //br_lz.ReadBytes(2);
 
                                                 }
                                                 else
                                                 {
-                                                    br_lz.ReadBytes((2 * 501) + (2 * 201));
+                                                    br_lz.ReadBytes((5*(2 * 501)) + (2 * 21));
                                                 }
                                             } while (fn_LZ.Position < fn_LZ.Length);
                                         }
@@ -373,14 +374,15 @@ namespace MK_Film_DB_NET
                                                     wi_row.StanPOdd = Strymuj(Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 501)));
                                                     wi_row.Osoba = Strymuj(Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 501)));
                                                     Encoding.Unicode.GetString(br_wi.ReadBytes(2 * 501));
-                                                    //br_wi.ReadBytes(2);
+                                                    
                                                     frm1.defaultDataSet.WYPIN.Rows.Add(wi_row);
                                                     Save_DS();
+                                                    //br_wi.ReadBytes(2);
 
                                                 }
                                                 else
                                                 {
-                                                    br_wi.ReadBytes((2 * 501) + (2 * 201));
+                                                    br_wi.ReadBytes((3*(2 * 501)) + (2*(2 * 21)));
                                                 }
                                             } while (fn_WI.Position < fn_WI.Length);
                                         }
@@ -421,7 +423,7 @@ namespace MK_Film_DB_NET
                                                 }
                                                 else
                                                 {
-                                                    br_wo.ReadBytes((2 * 501) + (2 * 201));
+                                                    br_wo.ReadBytes((3*(2 * 501)) + (2*(2 * 21)));
                                                 }
                                             } while (fn_WO.Position < fn_WO.Length);
                                         }

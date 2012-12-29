@@ -668,6 +668,7 @@ namespace MK_Film_DB_NET
         {
             ImpBFNET119 impwiz = new ImpBFNET119(this);
             impwiz.ShowDialog(this);
+            button_SAVE_Click(null, null);
         }
         
 

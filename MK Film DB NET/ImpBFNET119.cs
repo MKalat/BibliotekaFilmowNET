@@ -246,6 +246,9 @@ namespace MK_Film_DB_NET
                     }
 
                 }
+                Save_DS();
+                MessageBox.Show("Dane zostały zaimportowane zgodnie z ustawieniami", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
 
 
 
