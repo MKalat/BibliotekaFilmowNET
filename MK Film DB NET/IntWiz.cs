@@ -155,56 +155,60 @@ namespace MK_Film_DB_NET
                         }
                         if (this.checkBox_DL_FILM.Checked == true)
                         {
+                            
                             HtmlElement ele = doc.GetElementById("body");
-                            HtmlElement ele2 = ele.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild;
 
-                               
-                            flm_row.IOF_CzasProj = ele2.OuterText;
-
-                            HtmlElement ele3 = ele.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling;//.NextSibling;//.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling;
-
-                            if (ele3.OuterHtml.Contains("class=filmPlot"))
+                            foreach (HtmlElement ele2 in ele.All)
                             {
+                                if (ele2.TagName == "DIV")
+                                {
+                                    String attrib = ele2.GetAttribute("className");
+                                    if (attrib == "filmTime")
+                                    {
+                                        flm_row.IOF_CzasProj = ele2.OuterText;
+                                    }
+                                    if (attrib == "filmInfo")
+                                    {
+                                        flm_row.Gatunek = ele2.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.OuterText;
 
-                                flm_row.Gatunek = ele3.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.OuterText;
 
 
-                                HtmlElement ele4 = ele3.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling;
-                                flm_row.IOF_KrajProd = ele4.OuterText;
+                                        flm_row.IOF_KrajProd = ele2.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling.OuterText;
+                                        
 
-                                HtmlElement ele5 = ele3.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.NextSibling.FirstChild.NextSibling;
-                                flm_row.IOF_DataPrem = ele5.OuterText;
+
+                                        flm_row.IOF_DataPrem = ele2.FirstChild.FirstChild.FirstChild.NextSibling.NextSibling.FirstChild.NextSibling.OuterText;
+                                        
+                                    
+                                
+                                    }
+                                    HtmlElement ele6 = doc.GetElementById("filmDescription").NextSibling;
+                                    flm_row.Opis = ele6.OuterText;
+                                }
                             }
-                            else
-                            {
-                                flm_row.Gatunek = ele3.NextSibling.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.OuterText;
+                                
 
-
-                                HtmlElement ele4 = ele3.NextSibling.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling;
-                                flm_row.IOF_KrajProd = ele4.OuterText;
-
-                                HtmlElement ele5 = ele3.NextSibling.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.NextSibling.FirstChild.NextSibling;
-                                flm_row.IOF_DataPrem = ele5.OuterText;
-
-
-                            }
-
-                            HtmlElement ele6 = ele.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.FirstChild.NextSibling;     
-                            flm_row.Opis = ele6.OuterText;
+                            
                                 
 
                         }
                         if (this.checkBox_DL_OB.Checked == true)
                         {
-                            HtmlElement ele = doc.GetElementById("body");
-                            HtmlElement ele2 = ele.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling;
-                            ctrl3_uri = ele2.GetAttribute("href");
-                            ele2.InvokeMember("Click");
-                            stage4 = false;
-                            visited2 = true;
-                            stage5 = true;
-                            frm1.defaultDataSet.Film.Rows.Add(flm_row);
-                            SaveDS();
+                            //HtmlElement ele = doc.GetElementById("body");
+                            foreach (HtmlElement ele2 in doc.GetElementsByTagName("A"))
+                            {
+                                if (ele2.GetAttribute("href").Contains("/cast#role-actors"))
+                                {
+                                    ctrl3_uri = ele2.GetAttribute("href");
+                                    ele2.InvokeMember("Click");
+                                    stage4 = false;
+                                    visited2 = true;
+                                    stage5 = true;
+                                    frm1.defaultDataSet.Film.Rows.Add(flm_row);
+                                    SaveDS();
+                                    break;
+                                }
+                            }
 
 
 
