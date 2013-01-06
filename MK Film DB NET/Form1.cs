@@ -288,8 +288,9 @@ namespace MK_Film_DB_NET
             DialogResult res = ofd.ShowDialog(this);
             if (res == DialogResult.OK)
             {
-                this.pictureBox_Okl_Przod.ImageLocation = ofd.FileName;
-                defaultDataSet.Film[filmBindingSource.Position].pathtofront = ofd.FileName;
+                File.Copy(ofd.FileName, db_path + "covers\\" + ofd.SafeFileName,true);
+                this.pictureBox_Okl_Przod.ImageLocation = db_path + "covers\\" + ofd.SafeFileName;
+                defaultDataSet.Film[filmBindingSource.Position].pathtofront = db_path + "covers\\" + ofd.SafeFileName;
                 this.wYPODINTableAdapter.Update(this.defaultDataSet.WYPODIN);
                 this.wYPINTableAdapter.Update(this.defaultDataSet.WYPIN);
                 this.lokZdjTableAdapter.Update(this.defaultDataSet.LokZdj);
@@ -346,8 +347,9 @@ namespace MK_Film_DB_NET
             DialogResult res = ofd.ShowDialog(this);
             if (res == DialogResult.OK)
             {
-                this.pictureBox_Okl_Tyl.ImageLocation = ofd.FileName;
-                defaultDataSet.Film[filmBindingSource.Position].pathtoback = ofd.FileName;
+                File.Copy(ofd.FileName, db_path + "covers\\" + ofd.SafeFileName, true);
+                this.pictureBox_Okl_Tyl.ImageLocation = db_path + "covers\\" + ofd.SafeFileName;
+                defaultDataSet.Film[filmBindingSource.Position].pathtoback = db_path + "covers\\" + ofd.SafeFileName;
                 this.wYPODINTableAdapter.Update(this.defaultDataSet.WYPODIN);
                 this.wYPINTableAdapter.Update(this.defaultDataSet.WYPIN);
                 this.lokZdjTableAdapter.Update(this.defaultDataSet.LokZdj);
@@ -664,6 +666,13 @@ namespace MK_Film_DB_NET
             }
             return ret + 1;
 
+
+        }
+
+        private void pomocToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ShowHelp shw_hlp = new ShowHelp();
+            shw_hlp.ShowDialog();
 
         }
 

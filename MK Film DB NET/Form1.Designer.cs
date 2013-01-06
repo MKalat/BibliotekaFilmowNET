@@ -2100,14 +2100,14 @@
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(151, 22);
             this.toolStripMenuItem2.Text = "1.0.2.0 - 1.0.5.2";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(151, 22);
             this.toolStripMenuItem3.Text = "1.0 - 1.0.1.19";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
@@ -2154,6 +2154,7 @@
             this.pomocToolStripMenuItem1.Name = "pomocToolStripMenuItem1";
             this.pomocToolStripMenuItem1.Size = new System.Drawing.Size(182, 22);
             this.pomocToolStripMenuItem1.Text = "Pomoc";
+            this.pomocToolStripMenuItem1.Click += new System.EventHandler(this.pomocToolStripMenuItem1_Click);
             // 
             // sprzwdźAktualizacjeToolStripMenuItem
             // 

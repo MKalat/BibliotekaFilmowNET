@@ -14,6 +14,7 @@ namespace MK_Film_DB_NET
     {
         Form1 frm1;
         int Flm_id = 0;
+        String bfold_db_path;
         defaultDataSet.FilmRow flm_row;
         public ImpNewBF(Form1 frm1_inst)
         {
@@ -32,6 +33,7 @@ namespace MK_Film_DB_NET
             if (res == DialogResult.OK)
             {
                 this.textBox_SelPath.Text = sfd.SelectedPath;
+                bfold_db_path = sfd.SelectedPath;
 
 
             }
@@ -76,8 +78,31 @@ namespace MK_Film_DB_NET
                                 flm_row.Tytul = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 501)));
                                 flm_row.TytulOrig = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 501)));
                                 flm_row.Gatunek = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
-                                flm_row.pathtofront = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 241)));
-                                flm_row.pathtoback = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 241)));
+                                
+                                String path_pic = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 241)));
+                                if (this.checkBox_Okl.Checked == true)
+                                {
+                                    if (GetFileName(path_pic).Length > 0)
+                                    {
+                                        if (File.Exists(path_pic))
+                                        {
+                                            File.Copy(path_pic, Form1.db_path + "covers" + GetFileName(path_pic), true);
+                                            flm_row.pathtofront = Form1.db_path + "covers" + GetFileName(path_pic);
+                                        }
+                                    }
+                                }
+                                path_pic = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 241)));
+                                if (this.checkBox_Okl.Checked == true)
+                                {
+                                    if (GetFileName(path_pic).Length > 0)
+                                    {
+                                        if (File.Exists(path_pic))
+                                        {
+                                            File.Copy(path_pic, Form1.db_path + "covers" + GetFileName(path_pic), true);
+                                            flm_row.pathtoback = Form1.db_path + "covers" + GetFileName(path_pic);
+                                        }
+                                    }
+                                }
                                 flm_row.OW_SD = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
                                 flm_row.OW_Obs = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
                                 flm_row.OW_Zdj = Strymuj(Encoding.Unicode.GetString(br.ReadBytes(2 * 201)));
@@ -466,9 +491,14 @@ namespace MK_Film_DB_NET
 
         private String GetFileName(String fn)
         {
-            int beg = fn.LastIndexOf('\\');
-            int end = fn.Length;
-            return fn.Substring(beg, end - beg);
+            if (fn.Length > 0)
+            {
+                int beg = fn.LastIndexOf("\\");
+                int end = fn.Length;
+                return fn.Substring(beg, end - beg);
+            }
+            else 
+                return "";
 
         }
 

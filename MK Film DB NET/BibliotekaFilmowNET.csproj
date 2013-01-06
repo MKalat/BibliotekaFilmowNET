@@ -169,6 +169,9 @@
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShowHelp.resx">
+      <DependentUpon>ShowHelp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Wyszukaj.resx">
       <DependentUpon>Wyszukaj.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +195,12 @@
     </Compile>
     <Compile Include="Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowHelp.Designer.cs">
+      <DependentUpon>ShowHelp.cs</DependentUpon>
     </Compile>
     <Compile Include="Wyszukaj.cs">
       <SubType>Form</SubType>
