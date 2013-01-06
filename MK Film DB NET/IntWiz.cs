@@ -161,15 +161,33 @@ namespace MK_Film_DB_NET
                                
                             flm_row.IOF_CzasProj = ele2.OuterText;
 
-                            HtmlElement ele3 = ele.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling.NextSibling.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling;
-                                    
-                            flm_row.Gatunek = ele3.OuterText;
+                            HtmlElement ele3 = ele.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling;//.NextSibling;//.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling;
 
-                            HtmlElement ele4 = ele.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling.NextSibling.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling;
-                            flm_row.IOF_KrajProd = ele4.OuterText;
+                            if (ele3.OuterHtml.Contains("class=filmPlot"))
+                            {
 
-                            HtmlElement ele5 = ele.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling.NextSibling.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.NextSibling.FirstChild.NextSibling;
-                            flm_row.IOF_DataPrem = ele5.OuterText;
+                                flm_row.Gatunek = ele3.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.OuterText;
+
+
+                                HtmlElement ele4 = ele3.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling;
+                                flm_row.IOF_KrajProd = ele4.OuterText;
+
+                                HtmlElement ele5 = ele3.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.NextSibling.FirstChild.NextSibling;
+                                flm_row.IOF_DataPrem = ele5.OuterText;
+                            }
+                            else
+                            {
+                                flm_row.Gatunek = ele3.NextSibling.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.OuterText;
+
+
+                                HtmlElement ele4 = ele3.NextSibling.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling;
+                                flm_row.IOF_KrajProd = ele4.OuterText;
+
+                                HtmlElement ele5 = ele3.NextSibling.NextSibling.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.NextSibling.FirstChild.NextSibling;
+                                flm_row.IOF_DataPrem = ele5.OuterText;
+
+
+                            }
 
                             HtmlElement ele6 = ele.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.FirstChild.NextSibling;     
                             flm_row.Opis = ele6.OuterText;
