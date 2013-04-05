@@ -26,6 +26,8 @@ namespace MK_Film_DB_NET
         // definicje naz plików profili i baz danych
         String FN_PROF_REC = "settings.dat";
 
+        String OldGatunekText = "";
+
         private void Form1_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'defaultDataSet.WYPODIN' table. You can move, or remove it, as needed.
@@ -676,11 +678,28 @@ namespace MK_Film_DB_NET
 
         }
 
-        
+        private void comboBoxSelGatunek_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (textBox_Gatunek.Text == "")
+            {
+                this.textBox_Gatunek.Text = this.comboBoxSelGatunek.Text;
+            }
+            else
+            {
+                this.textBox_Gatunek.Text = this.textBox_Gatunek.Text + ", " + this.comboBoxSelGatunek.Text;
+            }
+        }
+
+        private void globalnyRejestrWypożyczeńToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GlobalBorReg rej_wyp = new GlobalBorReg(this);
+            rej_wyp.Show();
+        }
+
         
 
-
         
+               
 
     }
     public class SETT_REC // ustawienia profilu - w lokalizacji profili - po jednym na profil

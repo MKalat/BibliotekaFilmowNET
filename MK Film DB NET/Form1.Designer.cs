@@ -218,7 +218,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox_Tytul = new System.Windows.Forms.TextBox();
             this.textBox_TytulOrig = new System.Windows.Forms.TextBox();
-            this.comboBox_Gatunek = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox_ID = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -246,6 +245,9 @@
             this.wYPINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPINTableAdapter();
             this.wYPODINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPODINTableAdapter();
             this.button_GetDataInt = new System.Windows.Forms.Button();
+            this.textBox_Gatunek = new System.Windows.Forms.TextBox();
+            this.comboBoxSelGatunek = new System.Windows.Forms.ComboBox();
+            this.globalnyRejestrWypożyczeńToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Okl_Przod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).BeginInit();
@@ -1017,6 +1019,21 @@
             // 
             this.comboBox_DOE_Nosnik.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.filmBindingSource, "DOE_Nośnik", true));
             this.comboBox_DOE_Nosnik.FormattingEnabled = true;
+            this.comboBox_DOE_Nosnik.Items.AddRange(new object[] {
+            "DVD-ROM",
+            "VCD",
+            "SVCD",
+            "DVD+R",
+            "DVD-R",
+            "DVD+R DL",
+            "DVD-R DL",
+            "DVD-RW",
+            "DVD+RW",
+            "VHS",
+            "Szpula",
+            "CD-ROM",
+            "CD-R",
+            "CD-RW"});
             this.comboBox_DOE_Nosnik.Location = new System.Drawing.Point(552, 210);
             this.comboBox_DOE_Nosnik.Name = "comboBox_DOE_Nosnik";
             this.comboBox_DOE_Nosnik.Size = new System.Drawing.Size(144, 21);
@@ -1991,37 +2008,6 @@
             this.textBox_TytulOrig.Size = new System.Drawing.Size(396, 20);
             this.textBox_TytulOrig.TabIndex = 22;
             // 
-            // comboBox_Gatunek
-            // 
-            this.comboBox_Gatunek.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.filmBindingSource, "Gatunek", true));
-            this.comboBox_Gatunek.FormattingEnabled = true;
-            this.comboBox_Gatunek.Items.AddRange(new object[] {
-            "Dramat",
-            "Komedia",
-            "Akcja",
-            "Sensacyjny",
-            "Dokument",
-            "Paradokument",
-            "Fabularny",
-            "Horror",
-            "Thriller",
-            "Fantastyka",
-            "Science-Fiction",
-            "Kryminał",
-            "Serial",
-            "Musical",
-            "Bajka",
-            "Animowany",
-            "Reportaż",
-            "Kabaret",
-            "Porno",
-            "Erotyka",
-            "Amatorski"});
-            this.comboBox_Gatunek.Location = new System.Drawing.Point(270, 72);
-            this.comboBox_Gatunek.Name = "comboBox_Gatunek";
-            this.comboBox_Gatunek.Size = new System.Drawing.Size(288, 21);
-            this.comboBox_Gatunek.TabIndex = 23;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -2060,6 +2046,7 @@
             this.importToolStripMenuItem,
             this.drukujToolStripMenuItem,
             this.wyszukajToolStripMenuItem,
+            this.globalnyRejestrWypożyczeńToolStripMenuItem,
             this.ustawieniaToolStripMenuItem,
             this.koniecToolStripMenuItem});
             this.plikToolStripMenuItem.Name = "plikToolStripMenuItem";
@@ -2215,15 +2202,63 @@
             this.button_GetDataInt.UseVisualStyleBackColor = true;
             this.button_GetDataInt.Click += new System.EventHandler(this.button_GetDataInt_Click);
             // 
+            // textBox_Gatunek
+            // 
+            this.textBox_Gatunek.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.filmBindingSource, "Gatunek", true));
+            this.textBox_Gatunek.Location = new System.Drawing.Point(270, 72);
+            this.textBox_Gatunek.Name = "textBox_Gatunek";
+            this.textBox_Gatunek.Size = new System.Drawing.Size(294, 20);
+            this.textBox_Gatunek.TabIndex = 28;
+            // 
+            // comboBoxSelGatunek
+            // 
+            this.comboBoxSelGatunek.FormattingEnabled = true;
+            this.comboBoxSelGatunek.Items.AddRange(new object[] {
+            "Akcja",
+            "Thriller",
+            "Komedia",
+            "Horror",
+            "Dramat",
+            "Dokument",
+            "Paradokument",
+            "Fabularny",
+            "Bajka",
+            "Animowany",
+            "Krótkometrażowy",
+            "Porno",
+            "Erotyka",
+            "Amatorski",
+            "Wojenny",
+            "Serial",
+            "Instruktażowy",
+            "Edukacyjny",
+            "Manga",
+            "Kabaret",
+            "Niesklasyfikowany"});
+            this.comboBoxSelGatunek.Location = new System.Drawing.Point(576, 72);
+            this.comboBoxSelGatunek.Name = "comboBoxSelGatunek";
+            this.comboBoxSelGatunek.Size = new System.Drawing.Size(306, 21);
+            this.comboBoxSelGatunek.TabIndex = 29;
+            this.comboBoxSelGatunek.Text = "Wybierz gatunek filmu, aby dodać go to pola po lewej";
+            this.comboBoxSelGatunek.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelGatunek_SelectedIndexChanged);
+            // 
+            // globalnyRejestrWypożyczeńToolStripMenuItem
+            // 
+            this.globalnyRejestrWypożyczeńToolStripMenuItem.Name = "globalnyRejestrWypożyczeńToolStripMenuItem";
+            this.globalnyRejestrWypożyczeńToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.globalnyRejestrWypożyczeńToolStripMenuItem.Text = "Globalny rejestr wypożyczeń";
+            this.globalnyRejestrWypożyczeńToolStripMenuItem.Click += new System.EventHandler(this.globalnyRejestrWypożyczeńToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(909, 698);
+            this.Controls.Add(this.comboBoxSelGatunek);
+            this.Controls.Add(this.textBox_Gatunek);
             this.Controls.Add(this.button_GetDataInt);
             this.Controls.Add(this.textBox_ID);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox_Gatunek);
             this.Controls.Add(this.textBox_TytulOrig);
             this.Controls.Add(this.textBox_Tytul);
             this.Controls.Add(this.label5);
@@ -2333,7 +2368,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox_TytulOrig;
-        private System.Windows.Forms.ComboBox comboBox_Gatunek;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox_ID;
         private System.Windows.Forms.DataGridView dataGridView_OC_Ocena;
@@ -2525,6 +2559,9 @@
         public MK_Film_DB_NET.defaultDataSetTableAdapters.FilmTableAdapter filmTableAdapter;
         public MK_Film_DB_NET.defaultDataSetTableAdapters.OcenaTableAdapter ocenaTableAdapter;
         public System.Windows.Forms.DataGridView dataGridView_OB_Obsada;
+        private System.Windows.Forms.TextBox textBox_Gatunek;
+        private System.Windows.Forms.ComboBox comboBoxSelGatunek;
+        private System.Windows.Forms.ToolStripMenuItem globalnyRejestrWypożyczeńToolStripMenuItem;
     }
 }
 
