@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GlobalBorReg));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Film = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Osoba = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataWyp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataOdd = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +55,7 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Film,
             this.Osoba,
             this.DataWyp,
             this.DataOdd,
@@ -62,8 +64,14 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 24);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(546, 516);
+            this.dataGridView1.Size = new System.Drawing.Size(648, 516);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // Film
+            // 
+            this.Film.HeaderText = "Film";
+            this.Film.Name = "Film";
+            this.Film.ReadOnly = true;
             // 
             // Osoba
             // 
@@ -99,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(568, 566);
+            this.ClientSize = new System.Drawing.Size(667, 566);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -117,6 +125,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Film;
         private System.Windows.Forms.DataGridViewTextBoxColumn Osoba;
         private System.Windows.Forms.DataGridViewTextBoxColumn DataWyp;
         private System.Windows.Forms.DataGridViewTextBoxColumn DataOdd;

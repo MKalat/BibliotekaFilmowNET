@@ -23,7 +23,9 @@ namespace MK_Film_DB_NET
             // TODO: This line of code loads data into the 'defaultDataSet.WYPIN' table. You can move, or remove it, as needed.
             foreach (defaultDataSet.WYPINRow row in frm1_inst.defaultDataSet.WYPIN.Rows)
             {
-                dataGridView1.Rows.Add(row.Osoba, row.DataWyp, row.DataOdd, row.StanPWyp, row.StanPOdd);
+                defaultDataSet.FilmRow flm_row = (defaultDataSet.FilmRow)frm1_inst.defaultDataSet.Film.Rows.Find(row.IDPDB);
+
+                dataGridView1.Rows.Add(flm_row.Tytul,row.Osoba, row.DataWyp, row.DataOdd, row.StanPWyp, row.StanPOdd);
             }
 
 

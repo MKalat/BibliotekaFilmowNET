@@ -230,6 +230,7 @@
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.drukujToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wyszukajToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.globalnyRejestrWypożyczeńToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ustawieniaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.koniecToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pomocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -247,7 +248,6 @@
             this.button_GetDataInt = new System.Windows.Forms.Button();
             this.textBox_Gatunek = new System.Windows.Forms.TextBox();
             this.comboBoxSelGatunek = new System.Windows.Forms.ComboBox();
-            this.globalnyRejestrWypożyczeńToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Okl_Przod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).BeginInit();
@@ -2112,6 +2112,13 @@
             this.wyszukajToolStripMenuItem.Text = "Wyszukaj";
             this.wyszukajToolStripMenuItem.Click += new System.EventHandler(this.wyszukajToolStripMenuItem_Click);
             // 
+            // globalnyRejestrWypożyczeńToolStripMenuItem
+            // 
+            this.globalnyRejestrWypożyczeńToolStripMenuItem.Name = "globalnyRejestrWypożyczeńToolStripMenuItem";
+            this.globalnyRejestrWypożyczeńToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.globalnyRejestrWypożyczeńToolStripMenuItem.Text = "Globalny rejestr wypożyczeń";
+            this.globalnyRejestrWypożyczeńToolStripMenuItem.Click += new System.EventHandler(this.globalnyRejestrWypożyczeńToolStripMenuItem_Click);
+            // 
             // ustawieniaToolStripMenuItem
             // 
             this.ustawieniaToolStripMenuItem.Name = "ustawieniaToolStripMenuItem";
@@ -2239,15 +2246,8 @@
             this.comboBoxSelGatunek.Name = "comboBoxSelGatunek";
             this.comboBoxSelGatunek.Size = new System.Drawing.Size(306, 21);
             this.comboBoxSelGatunek.TabIndex = 29;
-            this.comboBoxSelGatunek.Text = "Wybierz gatunek filmu, aby dodać go to pola po lewej";
+            this.comboBoxSelGatunek.Text = "Wybierz gatunek filmu, aby dodać go do pola po lewej";
             this.comboBoxSelGatunek.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelGatunek_SelectedIndexChanged);
-            // 
-            // globalnyRejestrWypożyczeńToolStripMenuItem
-            // 
-            this.globalnyRejestrWypożyczeńToolStripMenuItem.Name = "globalnyRejestrWypożyczeńToolStripMenuItem";
-            this.globalnyRejestrWypożyczeńToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
-            this.globalnyRejestrWypożyczeńToolStripMenuItem.Text = "Globalny rejestr wypożyczeń";
-            this.globalnyRejestrWypożyczeńToolStripMenuItem.Click += new System.EventHandler(this.globalnyRejestrWypożyczeńToolStripMenuItem_Click);
             // 
             // Form1
             // 
