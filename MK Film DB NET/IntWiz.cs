@@ -14,6 +14,7 @@ namespace MK_Film_DB_NET
     {
         Form1 frm1;
         int Flm_id = 0;
+        
         defaultDataSet.FilmRow flm_row;
         public IntWiz(Form1 frm1inst)
         {
@@ -26,9 +27,9 @@ namespace MK_Film_DB_NET
         {
             if (this.comboBox_DataSRC.SelectedIndex == 0)
             {
-                this.listView_Results.Items.Clear();
                 visited = false;
                 visited2 = false;
+                stage5 = false;
                 this.webBrowser_GetDataInt.Navigate("http://www.filmweb.pl");
             }
             else
@@ -55,76 +56,170 @@ namespace MK_Film_DB_NET
             {
                 if (doc.Title.Contains("Filmweb - filmy takie jak Ty!"))
                 {
-                    element = doc.GetElementById("mainSearchInput");
-                    element.SetAttribute("value", this.textBox_FlmSrch.Text);
-                    foreach (HtmlElement ele in doc.GetElementsByTagName("input"))
-                    {
-                        if (ele.OuterHtml.Contains("type=submit"))
-                        {
-                            ele.InvokeMember("Click");
-                            break;
-
-                        }
-
-                    }
-
-
+                    visited = false;
+                    stage5 = false;
+                    String url_tokenized = ReplacePolLett(this.textBox_FlmSrch.Text);
+                    UriBuilder uri_text = new UriBuilder("http://filmweb.pl/search/film?q=" + this.textBox_FlmSrch.Text);
+                    //this.webBrowser_GetDataInt.Navigate("http://filmweb.pl/search/film?q=" + url_tokenized);
+                    this.webBrowser_GetDataInt.Navigate(uri_text.Uri.AbsoluteUri);
+                    this.button1.Enabled = true;
+                
                 }
-                else if (doc.Url.ToString().Contains("http://www.filmweb.pl/search?"))
+                else if (stage5 == true && doc.Url.ToString().Contains("cast#role-actors"))
                 {
-                    foreach (HtmlElement ele in doc.GetElementsByTagName("a"))
+                    bool rez_ad = false;
+                    bool scen_ad = false;
+                    bool act_ad = false;
+                    end_ind = 0;
+                    beg_ind = 0;
+                    Flm_id = frm1.FindNewFilmID() - 1;
+
+
+                    if (visited3 != true)
                     {
-                        if (ele.InnerText == "Filmy")
+
+                        HtmlElement ele = doc.GetElementById("body");
+                        HtmlElement ele2 = ele.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.NextSibling.NextSibling.FirstChild;
+
+                        foreach (HtmlElement ele3 in ele2.Children)
                         {
-                            ctrl_uri = ele.GetAttribute("href");
-                            ele.InvokeMember("Click");
-                            visited = false;
-                            stage3 = true;
-                            break;
-
-                        }
-
-                    }
-
-
-                }
-                else if (stage3 == true)
-                {
-                    if (visited != true)
-                    {
-                        foreach (HtmlElement ele in doc.GetElementsByTagName("H3"))
-                        {
-                            if (ele.FirstChild.OuterHtml.Contains("class=searchResultTitle"))
+                            if (ele3.Id == "role-director" && rez_ad == false)
                             {
-                                ctrl2_uri = ele.FirstChild.GetAttribute("href");
-                                res_uri = ctrl2_uri;
-                                res_title = ele.OuterText;
-                                HtmlElement ele2 = ele.NextSibling;
-                                HtmlElement ele3 = ele2.NextSibling;
-                                if (ele3.OuterHtml.Contains("class=searchResultDetails"))
+                                foreach (HtmlElement ele4 in ele3.NextSibling.FirstChild.Children)
                                 {
-                                    res_details = ele3.OuterText;
+                                    defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
+                                    ob_row.IDPDB = Flm_id;
+                                    ob_row.ImieNazw = ele4.OuterText;
+                                    ob_row.Rola = "Reżyser";
+                                    frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
+                                    SaveDS();
+
                                 }
-                                ListViewItem lvi = new ListViewItem(res_title);
-                                lvi.SubItems.Add(res_details);
-                                lvi.SubItems.Add(res_uri);
-                                this.listView_Results.Items.Add(lvi);
+                                rez_ad = true;
                             }
 
+                            if (ele3.Id == "role-screenwriter" && scen_ad == false)
+                            {
+                                foreach (HtmlElement ele4 in ele3.NextSibling.FirstChild.Children)
+                                {
+                                    defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
+                                    ob_row.IDPDB = Flm_id;
+                                    ob_row.ImieNazw = ele4.OuterText;
+                                    ob_row.Rola = "Scenariusz";
+                                    frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
+                                    SaveDS();
 
+                                }
+                                scen_ad = true;
+                            }
+
+                            if (ele3.Id == "role-actors" && act_ad == false)
+                            {
+                                foreach (HtmlElement ele4 in ele3.NextSibling.FirstChild.Children)
+                                {
+                                    defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
+                                    ob_row.IDPDB = Flm_id;
+
+                                    ob_row.ImieNazw = ele4.FirstChild.NextSibling.OuterText;
+                                    ob_row.Rola = ele4.FirstChild.NextSibling.NextSibling.OuterText;
+                                    frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
+                                    SaveDS();
+                                }
+                                act_ad = true;
+                            }
                         }
-                        visited = true;
-                        stage3 = false;
 
+                        MessageBox.Show("Rekord został dodany zgodnie z ustawieniami", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        SaveDS();
+                        visited3 = true;
+                        stage5 = false;
                     }
 
 
                 }
-                else if (stage4 == true)
-                {
-                    if (visited2 != true)
-                    {
-                        //frm1.filmBindingSource.AddNew();
+
+            }
+            
+        }
+
+        
+        private void IntWiz_Load(object sender, EventArgs e)
+        {
+            //this.wYPODINTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.wYPINTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.lokZdjTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.dystrybucjaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.produkcjaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.obsadaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.ocenaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+            //this.filmTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
+
+            //this.wYPODINTableAdapter.Connection.Open();
+            //this.wYPINTableAdapter.Connection.Open();
+            //this.lokZdjTableAdapter.Connection.Open();
+            //this.dystrybucjaTableAdapter.Connection.Open();
+            //this.produkcjaTableAdapter.Connection.Open();
+            //this.obsadaTableAdapter.Connection.Open();
+            //this.ocenaTableAdapter.Connection.Open();
+            //this.filmTableAdapter.Connection.Open();
+
+            //this.wYPODINTableAdapter.Fill(this.defaultDataSet.WYPODIN);
+            //this.wYPINTableAdapter.Fill(this.defaultDataSet.WYPIN);
+            //this.lokZdjTableAdapter.Fill(this.defaultDataSet.LokZdj);
+            //this.dystrybucjaTableAdapter.Fill(this.defaultDataSet.Dystrybucja);
+            //this.produkcjaTableAdapter.Fill(this.defaultDataSet.Produkcja);
+            //this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
+            //this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
+            //this.filmTableAdapter.Fill(this.defaultDataSet.Film);
+        }
+        private void SaveDS()
+        {
+            frm1.fKFilmObsadaBindingSource.EndEdit();
+            frm1.filmBindingSource.EndEdit();
+
+            frm1.wYPODINTableAdapter.Update(frm1.defaultDataSet.WYPODIN);
+            frm1.wYPINTableAdapter.Update(frm1.defaultDataSet.WYPIN);
+            frm1.lokZdjTableAdapter.Update(frm1.defaultDataSet.LokZdj);
+            frm1.dystrybucjaTableAdapter.Update(frm1.defaultDataSet.Dystrybucja);
+            frm1.produkcjaTableAdapter.Update(frm1.defaultDataSet.Produkcja);
+            frm1.obsadaTableAdapter.Update(frm1.defaultDataSet.Obsada);
+            frm1.ocenaTableAdapter.Update(frm1.defaultDataSet.Ocena);
+            frm1.filmTableAdapter.Update(frm1.defaultDataSet.Film);
+
+            frm1.wYPODINTableAdapter.Fill(frm1.defaultDataSet.WYPODIN);
+            frm1.wYPINTableAdapter.Fill(frm1.defaultDataSet.WYPIN);
+            frm1.lokZdjTableAdapter.Fill(frm1.defaultDataSet.LokZdj);
+            frm1.dystrybucjaTableAdapter.Fill(frm1.defaultDataSet.Dystrybucja);
+            frm1.produkcjaTableAdapter.Fill(frm1.defaultDataSet.Produkcja);
+            frm1.obsadaTableAdapter.Fill(frm1.defaultDataSet.Obsada);
+            frm1.ocenaTableAdapter.Fill(frm1.defaultDataSet.Ocena);
+            frm1.filmTableAdapter.Fill(frm1.defaultDataSet.Film);
+            
+            frm1.LiczRec();
+
+        }
+
+        private void comboBox_DataSRC_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.comboBox_DataSRC.SelectedIndex == 0)
+            {
+                this.checkBox_DL_FILM.Enabled = true;
+                this.checkBox_OKLADKA.Enabled = true;
+                this.checkBox_DL_OB.Enabled = true;
+                this.checkBox_DL_OC.Enabled = false;
+                this.checkBox_DL_LZ.Enabled = false;
+                this.checkBox_DL_D.Enabled = false;
+                this.checkBox_DL_P.Enabled = false;
+               
+
+            }
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            HtmlDocument doc = this.webBrowser_GetDataInt.Document.Window.Document;
+            //frm1.filmBindingSource.AddNew();
                         //frm1.filmBindingSource.EndEdit();
                         
                         flm_row = frm1.defaultDataSet.Film.NewFilmRow();
@@ -223,173 +318,68 @@ namespace MK_Film_DB_NET
                         }
                         
                     }
-
-
-
-                        
-                    
-
-                }
-                else if (stage5 == true && doc.Url.ToString().Contains("cast#role-actors"))
-                {
-                    bool rez_ad = false;
-                    bool scen_ad = false;
-                    bool act_ad = false;
-                    end_ind = 0;
-                    beg_ind = 0;
-                    Flm_id = frm1.FindNewFilmID() - 1;
-                    
-
-                    if (visited3 != true)
-                    {
-
-                        HtmlElement ele = doc.GetElementById("body");
-                        HtmlElement ele2 = ele.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.NextSibling.NextSibling.FirstChild;
-
-                        foreach (HtmlElement ele3 in ele2.Children)
-                        {
-                            if (ele3.Id == "role-director" && rez_ad == false)
-                            {
-                                foreach (HtmlElement ele4 in ele3.NextSibling.FirstChild.Children)
-                                {
-                                    defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
-                                    ob_row.IDPDB = Flm_id;
-                                    ob_row.ImieNazw = ele4.OuterText;
-                                    ob_row.Rola = "Reżyser";
-                                    frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
-                                    SaveDS();
-                                    
-                                }
-                                rez_ad = true;
-                            }
-
-                            if (ele3.Id == "role-screenwriter" && scen_ad == false)
-                            {
-                                foreach (HtmlElement ele4 in ele3.NextSibling.FirstChild.Children)
-                                {
-                                    defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
-                                    ob_row.IDPDB = Flm_id;
-                                    ob_row.ImieNazw = ele4.OuterText;
-                                    ob_row.Rola = "Scenariusz";
-                                    frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
-                                    SaveDS();
-                                    
-                                }
-                                scen_ad = true;
-                            }
-
-                            if (ele3.Id == "role-actors" && act_ad == false)
-                            {
-                                foreach (HtmlElement ele4 in ele3.NextSibling.FirstChild.Children)
-                                {
-                                    defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
-                                    ob_row.IDPDB = Flm_id;
-
-                                    ob_row.ImieNazw = ele4.FirstChild.NextSibling.OuterText;
-                                    ob_row.Rola = ele4.FirstChild.NextSibling.NextSibling.OuterText; 
-                                    frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
-                                    SaveDS();
-                                }
-                                act_ad = true;
-                            }
-                        }                           
-                        
-                        MessageBox.Show("Rekord został dodany zgodnie z ustawieniami", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        SaveDS();
-                        visited3 = true;
-                        stage5 = false;
-                    }
-                    
-                }
-                else
-                {
-                    //do nothing
-                }
-
-
-            }
-        }
-
-        private void listView_Results_SelectedIndexChanged(object sender, EventArgs e)
+        private String ReplacePolLett(String text_orig)
         {
-            visited2 = false;
-            visited3 = false;
-            stage4 = true;
-            ctrl2_uri = this.listView_Results.SelectedItems[0].SubItems[2].Text;
-            this.webBrowser_GetDataInt.Navigate(this.listView_Results.SelectedItems[0].SubItems[2].Text);
-        }
-
-        private void IntWiz_Load(object sender, EventArgs e)
-        {
-            //this.wYPODINTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            //this.wYPINTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            //this.lokZdjTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            //this.dystrybucjaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            //this.produkcjaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            //this.obsadaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            //this.ocenaTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-            //this.filmTableAdapter.Connection.ConnectionString = "Data Source=" + Form1.cur_db_path + ";Max Database Size=4091";
-
-            //this.wYPODINTableAdapter.Connection.Open();
-            //this.wYPINTableAdapter.Connection.Open();
-            //this.lokZdjTableAdapter.Connection.Open();
-            //this.dystrybucjaTableAdapter.Connection.Open();
-            //this.produkcjaTableAdapter.Connection.Open();
-            //this.obsadaTableAdapter.Connection.Open();
-            //this.ocenaTableAdapter.Connection.Open();
-            //this.filmTableAdapter.Connection.Open();
-
-            //this.wYPODINTableAdapter.Fill(this.defaultDataSet.WYPODIN);
-            //this.wYPINTableAdapter.Fill(this.defaultDataSet.WYPIN);
-            //this.lokZdjTableAdapter.Fill(this.defaultDataSet.LokZdj);
-            //this.dystrybucjaTableAdapter.Fill(this.defaultDataSet.Dystrybucja);
-            //this.produkcjaTableAdapter.Fill(this.defaultDataSet.Produkcja);
-            //this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
-            //this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
-            //this.filmTableAdapter.Fill(this.defaultDataSet.Film);
-        }
-        private void SaveDS()
-        {
-            frm1.fKFilmObsadaBindingSource.EndEdit();
-            frm1.filmBindingSource.EndEdit();
-
-            frm1.wYPODINTableAdapter.Update(frm1.defaultDataSet.WYPODIN);
-            frm1.wYPINTableAdapter.Update(frm1.defaultDataSet.WYPIN);
-            frm1.lokZdjTableAdapter.Update(frm1.defaultDataSet.LokZdj);
-            frm1.dystrybucjaTableAdapter.Update(frm1.defaultDataSet.Dystrybucja);
-            frm1.produkcjaTableAdapter.Update(frm1.defaultDataSet.Produkcja);
-            frm1.obsadaTableAdapter.Update(frm1.defaultDataSet.Obsada);
-            frm1.ocenaTableAdapter.Update(frm1.defaultDataSet.Ocena);
-            frm1.filmTableAdapter.Update(frm1.defaultDataSet.Film);
-
-            frm1.wYPODINTableAdapter.Fill(frm1.defaultDataSet.WYPODIN);
-            frm1.wYPINTableAdapter.Fill(frm1.defaultDataSet.WYPIN);
-            frm1.lokZdjTableAdapter.Fill(frm1.defaultDataSet.LokZdj);
-            frm1.dystrybucjaTableAdapter.Fill(frm1.defaultDataSet.Dystrybucja);
-            frm1.produkcjaTableAdapter.Fill(frm1.defaultDataSet.Produkcja);
-            frm1.obsadaTableAdapter.Fill(frm1.defaultDataSet.Obsada);
-            frm1.ocenaTableAdapter.Fill(frm1.defaultDataSet.Ocena);
-            frm1.filmTableAdapter.Fill(frm1.defaultDataSet.Film);
-            
-            frm1.LiczRec();
-
-        }
-
-        private void comboBox_DataSRC_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (this.comboBox_DataSRC.SelectedIndex == 0)
+            String text = text_orig;
+            if (text.Contains("ą") || text.Contains("Ą"))
             {
-                this.checkBox_DL_FILM.Enabled = true;
-                this.checkBox_OKLADKA.Enabled = true;
-                this.checkBox_DL_OB.Enabled = true;
-                this.checkBox_DL_OC.Enabled = false;
-                this.checkBox_DL_LZ.Enabled = false;
-                this.checkBox_DL_D.Enabled = false;
-                this.checkBox_DL_P.Enabled = false;
-               
+                text.Replace("ą", "a");
+                text.Replace("Ą", "a");
+            }
+            else if (text.Contains("ę") || text.Contains("Ę"))
+            {
+                text.Replace("ę", "e");
+                text.Replace("Ę", "e");
+            }
+            else if (text.Contains("ć") || text.Contains("Ć"))
+            {
+                text.Replace("ć", "c");
+                text.Replace("Ć", "c");
+            }
+            else if (text.Contains("ł") || text.Contains("Ł"))
+            {
+                text.Replace("ł", "l");
+                text.Replace("Ł", "l");
+            }
+            else if (text.Contains("ń") || text.Contains("Ń"))
+            {
+                text.Replace("ń", "n");
+                text.Replace("Ń", "n");
+            }
+            else if (text.Contains("ó") || text.Contains("Ó"))
+            {
+                text.Replace("ó", "o");
+                text.Replace("Ó", "o");
+            }
+            else if (text.Contains("ś") || text.Contains("Ś"))
+            {
+                text.Replace("ś", "s");
+                text.Replace("Ś", "s");
+            }
+            else if (text.Contains("ź") || text.Contains("Ź"))
+            {
+                text.Replace("ź", "z");
+                text.Replace("Ź", "z");
+            }
+            else if (text.Contains("ż") || text.Contains("Ż"))
+            {
+                text.Replace("ż", "z");
+                text.Replace("Ż", "z");
+            }
+            else
+            {
 
             }
-            
+            return text;
+
+
         }
+
+
+
+                        
+                    
+
+        
     }
 }
