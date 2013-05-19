@@ -221,103 +221,106 @@ namespace MK_Film_DB_NET
             HtmlDocument doc = this.webBrowser_GetDataInt.Document.Window.Document;
             //frm1.filmBindingSource.AddNew();
                         //frm1.filmBindingSource.EndEdit();
-                        
-                        flm_row = frm1.defaultDataSet.Film.NewFilmRow();
-                        //flm_row.ID = Flm_id;
-                        flm_row.Tytul = this.textBox_FlmSrch.Text;
-                        //frm1.defaultDataSet.Film.Rows.Add(flm_row);
-                        //SaveDS();
-                        //frm1.filmBindingSource.MoveLast();
-                        if (this.checkBox_OKLADKA.Checked == true)
+            if (this.webBrowser_GetDataInt.IsBusy == false)
+            {
+
+                flm_row = frm1.defaultDataSet.Film.NewFilmRow();
+                //flm_row.ID = Flm_id;
+                flm_row.Tytul = this.textBox_FlmSrch.Text;
+                //frm1.defaultDataSet.Film.Rows.Add(flm_row);
+                //SaveDS();
+                //frm1.filmBindingSource.MoveLast();
+                if (this.checkBox_OKLADKA.Checked == true)
+                {
+                    foreach (HtmlElement ele in doc.GetElementsByTagName("A"))
+                    {
+                        if (ele.OuterHtml.Contains("class=film_mini"))
                         {
-                            foreach (HtmlElement ele in doc.GetElementsByTagName("A"))
-                            {
-                                if (ele.OuterHtml.Contains("class=film_mini"))
-                                {
-                                    String link = ele.GetAttribute("href");
-                                    String file_name_okl = this.textBox_FlmSrch.Text + ".jpg";
-                                    WebClient WC = new WebClient();
-                                    WC.DownloadFile(link, Form1.db_path + "\\covers\\" + file_name_okl);
+                            String link = ele.GetAttribute("href");
+                            String file_name_okl = this.textBox_FlmSrch.Text + ".jpg";
+                            WebClient WC = new WebClient();
+                            WC.DownloadFile(link, Form1.db_path + "\\covers\\" + file_name_okl);
 
-                                    //frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].pathtofront = Form1.db_path + "\\covers\\" + file_name_okl;
-                                    flm_row.pathtofront = Form1.db_path + "\\covers\\" + file_name_okl;
-
-                                }
-
-                            }
-
+                            //frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].pathtofront = Form1.db_path + "\\covers\\" + file_name_okl;
+                            flm_row.pathtofront = Form1.db_path + "\\covers\\" + file_name_okl;
 
                         }
-                        if (this.checkBox_DL_FILM.Checked == true)
-                        {
-                            
-                            HtmlElement ele = doc.GetElementById("body");
 
-                            foreach (HtmlElement ele2 in ele.All)
+                    }
+
+
+                }
+                if (this.checkBox_DL_FILM.Checked == true)
+                {
+
+                    HtmlElement ele = doc.GetElementById("body");
+
+                    foreach (HtmlElement ele2 in ele.All)
+                    {
+                        if (ele2.TagName == "DIV")
+                        {
+                            String attrib = ele2.GetAttribute("className");
+                            if (attrib == "filmTime")
                             {
-                                if (ele2.TagName == "DIV")
-                                {
-                                    String attrib = ele2.GetAttribute("className");
-                                    if (attrib == "filmTime")
-                                    {
-                                        flm_row.IOF_CzasProj = ele2.OuterText;
-                                    }
-                                    if (attrib == "filmInfo")
-                                    {
-                                        flm_row.Gatunek = ele2.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.OuterText;
-
-
-
-                                        flm_row.IOF_KrajProd = ele2.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling.OuterText;
-                                        
-
-
-                                        flm_row.IOF_DataPrem = ele2.FirstChild.FirstChild.FirstChild.NextSibling.NextSibling.FirstChild.NextSibling.OuterText;
-                                        
-                                    
-                                
-                                    }
-                                    HtmlElement ele6 = doc.GetElementById("filmDescription").NextSibling;
-                                    flm_row.Opis = ele6.OuterText;
-                                }
+                                flm_row.IOF_CzasProj = ele2.OuterText;
                             }
-                                
-
-                            
-                                
-
-                        }
-                        if (this.checkBox_DL_OB.Checked == true)
-                        {
-                            //HtmlElement ele = doc.GetElementById("body");
-                            foreach (HtmlElement ele2 in doc.GetElementsByTagName("A"))
+                            if (attrib == "filmInfo")
                             {
-                                if (ele2.GetAttribute("href").Contains("/cast#role-actors"))
-                                {
-                                    ctrl3_uri = ele2.GetAttribute("href");
-                                    ele2.InvokeMember("Click");
-                                    stage4 = false;
-                                    visited2 = true;
-                                    stage5 = true;
-                                    frm1.defaultDataSet.Film.Rows.Add(flm_row);
-                                    SaveDS();
-                                    break;
-                                }
+                                flm_row.Gatunek = ele2.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.OuterText;
+
+
+
+                                flm_row.IOF_KrajProd = ele2.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling.OuterText;
+
+
+
+                                flm_row.IOF_DataPrem = ele2.FirstChild.FirstChild.FirstChild.NextSibling.NextSibling.FirstChild.NextSibling.OuterText;
+
+
+
                             }
-
-
-
+                            HtmlElement ele6 = doc.GetElementById("filmDescription").NextSibling;
+                            flm_row.Opis = ele6.OuterText;
                         }
-                        else
+                    }
+
+
+
+
+
+                }
+                if (this.checkBox_DL_OB.Checked == true)
+                {
+                    //HtmlElement ele = doc.GetElementById("body");
+                    foreach (HtmlElement ele2 in doc.GetElementsByTagName("A"))
+                    {
+                        if (ele2.GetAttribute("href").Contains("/cast#role-actors"))
                         {
-                            frm1.defaultDataSet.Film.Rows.Add(flm_row);
-                            SaveDS();
-                            MessageBox.Show("Rekord został dodany zgodnie z ustawieniami", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            ctrl3_uri = ele2.GetAttribute("href");
+                            ele2.InvokeMember("Click");
                             stage4 = false;
                             visited2 = true;
+                            stage5 = true;
+                            frm1.defaultDataSet.Film.Rows.Add(flm_row);
+                            SaveDS();
+                            break;
                         }
-                        
                     }
+
+
+
+                }
+                else
+                {
+                    frm1.defaultDataSet.Film.Rows.Add(flm_row);
+                    SaveDS();
+                    MessageBox.Show("Rekord został dodany zgodnie z ustawieniami", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    stage4 = false;
+                    visited2 = true;
+                }
+            }
+                        
+        }
         private String ReplacePolLett(String text_orig)
         {
             String text = text_orig;
