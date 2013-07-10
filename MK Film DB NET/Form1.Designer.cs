@@ -248,6 +248,7 @@
             this.button_GetDataInt = new System.Windows.Forms.Button();
             this.textBox_Gatunek = new System.Windows.Forms.TextBox();
             this.comboBoxSelGatunek = new System.Windows.Forms.ComboBox();
+            this.uzupelnijFilmZInternetuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Okl_Przod)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.filmBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).BeginInit();
@@ -2045,6 +2046,7 @@
             this.eksportujToolStripMenuItem,
             this.importToolStripMenuItem,
             this.drukujToolStripMenuItem,
+            this.uzupelnijFilmZInternetuToolStripMenuItem,
             this.wyszukajToolStripMenuItem,
             this.globalnyRejestrWypożyczeńToolStripMenuItem,
             this.ustawieniaToolStripMenuItem,
@@ -2205,7 +2207,7 @@
             this.button_GetDataInt.Name = "button_GetDataInt";
             this.button_GetDataInt.Size = new System.Drawing.Size(258, 36);
             this.button_GetDataInt.TabIndex = 27;
-            this.button_GetDataInt.Text = "Pobierz dane o filmie z Internetu";
+            this.button_GetDataInt.Text = "Dodaj Film z Internetu";
             this.button_GetDataInt.UseVisualStyleBackColor = true;
             this.button_GetDataInt.Click += new System.EventHandler(this.button_GetDataInt_Click);
             // 
@@ -2248,6 +2250,13 @@
             this.comboBoxSelGatunek.TabIndex = 29;
             this.comboBoxSelGatunek.Text = "Wybierz gatunek filmu, aby dodać go do pola po lewej";
             this.comboBoxSelGatunek.SelectedIndexChanged += new System.EventHandler(this.comboBoxSelGatunek_SelectedIndexChanged);
+            // 
+            // uzupelnijFilmZInternetuToolStripMenuItem
+            // 
+            this.uzupelnijFilmZInternetuToolStripMenuItem.Name = "uzupelnijFilmZInternetuToolStripMenuItem";
+            this.uzupelnijFilmZInternetuToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.uzupelnijFilmZInternetuToolStripMenuItem.Text = "Uzupelnij film z Internetu";
+            this.uzupelnijFilmZInternetuToolStripMenuItem.Click += new System.EventHandler(this.uzupelnijFilmZInternetuToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -2562,6 +2571,7 @@
         private System.Windows.Forms.TextBox textBox_Gatunek;
         private System.Windows.Forms.ComboBox comboBoxSelGatunek;
         private System.Windows.Forms.ToolStripMenuItem globalnyRejestrWypożyczeńToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uzupelnijFilmZInternetuToolStripMenuItem;
     }
 }
 

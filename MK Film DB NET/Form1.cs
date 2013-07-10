@@ -626,7 +626,7 @@ namespace MK_Film_DB_NET
         private void button_GetDataInt_Click(object sender, EventArgs e)
         {
             ctrl_Title = this.textBox_Tytul.Text;
-            IntWiz frmInt = new IntWiz(this);
+            IntWiz frmInt = new IntWiz(this, true);
             frmInt.Show(this);
             //button_SAVE_Click(null, null);
             //button_SAVE_Click(null, null);
@@ -694,6 +694,13 @@ namespace MK_Film_DB_NET
         {
             GlobalBorReg rej_wyp = new GlobalBorReg(this);
             rej_wyp.Show();
+        }
+
+        private void uzupelnijFilmZInternetuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ctrl_Title = this.textBox_Tytul.Text;
+            IntWiz frmInt = new IntWiz(this, false);
+            frmInt.Show(this);
         }
 
         

@@ -14,12 +14,21 @@ namespace MK_Film_DB_NET
     {
         Form1 frm1;
         int Flm_id = 0;
+        bool addnew = false;
         
         defaultDataSet.FilmRow flm_row;
-        public IntWiz(Form1 frm1inst)
+        public IntWiz(Form1 frm1inst, bool add)
         {
             frm1 = frm1inst;
+            addnew = add;
             InitializeComponent();
+            if (addnew == false)
+            {
+                flm_row = (defaultDataSet.FilmRow)frm1.defaultDataSet.Film.Rows[frm1.filmBindingSource.Position];
+                this.textBox_FlmSrch.Text = flm_row.Tytul;
+
+            }
+            
         }
         public static String ctrl_uri, ctrl2_uri, ctrl3_uri;
         public static Boolean visited = false, visited2 = false, visited3 = false, stage3 = false, stage4 = false, stage5 = false; 
@@ -72,7 +81,14 @@ namespace MK_Film_DB_NET
                     bool act_ad = false;
                     end_ind = 0;
                     beg_ind = 0;
-                    Flm_id = frm1.FindNewFilmID() - 1;
+                    if (addnew == true)
+                    {
+                        Flm_id = frm1.FindNewFilmID() - 1;
+                    }
+                    else
+                    {
+                        Flm_id = flm_row.ID;
+                    }
 
 
                     if (visited3 != true)
@@ -223,10 +239,12 @@ namespace MK_Film_DB_NET
                         //frm1.filmBindingSource.EndEdit();
             if (this.webBrowser_GetDataInt.IsBusy == false)
             {
-
-                flm_row = frm1.defaultDataSet.Film.NewFilmRow();
+                if (addnew == true)
+                {
+                    flm_row = frm1.defaultDataSet.Film.NewFilmRow();
+                    flm_row.Tytul = this.textBox_FlmSrch.Text;
+                }
                 //flm_row.ID = Flm_id;
-                flm_row.Tytul = this.textBox_FlmSrch.Text;
                 //frm1.defaultDataSet.Film.Rows.Add(flm_row);
                 //SaveDS();
                 //frm1.filmBindingSource.MoveLast();
@@ -301,7 +319,10 @@ namespace MK_Film_DB_NET
                             stage4 = false;
                             visited2 = true;
                             stage5 = true;
-                            frm1.defaultDataSet.Film.Rows.Add(flm_row);
+                            if (addnew == true)
+                            {
+                                frm1.defaultDataSet.Film.Rows.Add(flm_row);
+                            }
                             SaveDS();
                             break;
                         }
@@ -312,7 +333,10 @@ namespace MK_Film_DB_NET
                 }
                 else
                 {
-                    frm1.defaultDataSet.Film.Rows.Add(flm_row);
+                    if (addnew == true)
+                    {
+                        frm1.defaultDataSet.Film.Rows.Add(flm_row);
+                    }
                     SaveDS();
                     MessageBox.Show("Rekord został dodany zgodnie z ustawieniami", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     stage4 = false;
