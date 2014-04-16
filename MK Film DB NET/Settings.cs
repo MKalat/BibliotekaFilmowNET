@@ -28,10 +28,22 @@ namespace MK_Film_DB_NET
             this.Close();
 
         }
+        
 
         private void button_Cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Settings_Load(object sender, EventArgs e)
+        {
+            Program.Read_settings();
+            this.checkBox_AU.Checked = SETT_REC.enabled_au;
+            //this.comboBox_AUFreq.SelectedIndex = SETT_REC.days_to_au;
+            this.comboBox_Lang.SelectedIndex = SETT_REC.lang_path;
+            this.checkBox_SaveOnExit.Checked = SETT_REC.save_on_exit;
+            this.checkBox_AskOnExit.Checked = SETT_REC.ask_on_exit;
+
         }
     }
 }

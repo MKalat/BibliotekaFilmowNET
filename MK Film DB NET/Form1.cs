@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Globalization;
+using System.Threading;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +11,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
+using System.Net;
+
 
 namespace MK_Film_DB_NET
 {
@@ -54,7 +59,6 @@ namespace MK_Film_DB_NET
             db_path = db_path + "\\BFNET\\";
             cur_db_path = db_path + "BFDBv3.sdf";
 
-            Read_settings();
             Start_AU();
             if (CheckDBExist(cur_db_path) == 0)
             {

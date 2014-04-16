@@ -117,178 +117,226 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="checkBox_SaveOnExit.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Jezyk / Language</value>
-  </data>
-  <data name="&gt;&gt;checkBox_AskOnExit.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;checkBox_AU.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="checkBox_AU.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="&gt;&gt;button_Cancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="checkBox_AU.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 17</value>
-  </data>
-  <data name="&gt;&gt;comboBox_Lang.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;comboBox_Lang.Name" xml:space="preserve">
-    <value>comboBox_Lang</value>
-  </data>
-  <data name="checkBox_AskOnExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 84</value>
-  </data>
-  <data name="&gt;&gt;comboBox_Lang.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;checkBox_SaveOnExit.Name" xml:space="preserve">
-    <value>checkBox_SaveOnExit</value>
-  </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="button_Save.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 168</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;checkBox_AskOnExit.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="checkBox_SaveOnExit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 60</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 6</value>
-  </data>
-  <data name="&gt;&gt;button_Save.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Biblioteka Filmów NET - Ustawienia</value>
-  </data>
-  <data name="&gt;&gt;button_Save.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 36</value>
-  </data>
-  <data name="button_Save.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox_Lang.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;checkBox_AskOnExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="comboBox_Lang.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 21</value>
-  </data>
-  <data name="&gt;&gt;button_Cancel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="checkBox_SaveOnExit.Text" xml:space="preserve">
-    <value>Zapisywac baze danych przed wyjściem</value>
-  </data>
-  <data name="&gt;&gt;checkBox_AU.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 13</value>
   </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="checkBox_AU.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_AU.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="checkBox_AU.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 17</value>
+  </data>
+  <data name="checkBox_AU.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="checkBox_AU.Text" xml:space="preserve">
+    <value>Aktualizacje włączone</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AU.Name" xml:space="preserve">
+    <value>checkBox_AU</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AU.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AU.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AU.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 36</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Jezyk / Language</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox_Lang.Items" xml:space="preserve">
+    <value>PL</value>
+  </data>
+  <data name="comboBox_Lang.Items1" xml:space="preserve">
+    <value>EN</value>
+  </data>
+  <data name="comboBox_Lang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 30</value>
+  </data>
+  <data name="comboBox_Lang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 21</value>
+  </data>
+  <data name="comboBox_Lang.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Lang.Name" xml:space="preserve">
+    <value>comboBox_Lang</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Lang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Lang.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Lang.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="checkBox_SaveOnExit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_SaveOnExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 60</value>
+  </data>
+  <data name="checkBox_SaveOnExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 17</value>
+  </data>
+  <data name="checkBox_SaveOnExit.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="checkBox_SaveOnExit.Text" xml:space="preserve">
+    <value>Zapisywac baze danych przed wyjściem</value>
+  </data>
+  <data name="&gt;&gt;checkBox_SaveOnExit.Name" xml:space="preserve">
+    <value>checkBox_SaveOnExit</value>
+  </data>
+  <data name="&gt;&gt;checkBox_SaveOnExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_SaveOnExit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox_SaveOnExit.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkBox_AskOnExit.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox_AskOnExit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 84</value>
+  </data>
+  <data name="checkBox_AskOnExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 17</value>
+  </data>
+  <data name="checkBox_AskOnExit.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="checkBox_AskOnExit.Text" xml:space="preserve">
+    <value>Pytać przed zamknięciem</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AskOnExit.Name" xml:space="preserve">
+    <value>checkBox_AskOnExit</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AskOnExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AskOnExit.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox_AskOnExit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button_Save.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="button_Save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 168</value>
   </data>
   <data name="button_Save.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 30</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="button_Save.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="checkBox_AU.TabIndex" type="System.Int32, mscorlib">
+  <data name="button_Save.Text" xml:space="preserve">
+    <value>Zapisz</value>
+  </data>
+  <data name="&gt;&gt;button_Save.Name" xml:space="preserve">
+    <value>button_Save</value>
+  </data>
+  <data name="&gt;&gt;button_Save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_Save.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_Save.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="button_Cancel.Location" type="System.Drawing.Point, System.Drawing">
     <value>288, 168</value>
   </data>
-  <data name="&gt;&gt;button_Save.Name" xml:space="preserve">
-    <value>button_Save</value>
-  </data>
-  <data name="comboBox_Lang.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;checkBox_AU.Name" xml:space="preserve">
-    <value>checkBox_AU</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>372, 211</value>
-  </data>
-  <data name="&gt;&gt;checkBox_AskOnExit.Name" xml:space="preserve">
-    <value>checkBox_AskOnExit</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 13</value>
-  </data>
-  <data name="checkBox_AU.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox_AskOnExit.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="checkBox_SaveOnExit.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;checkBox_SaveOnExit.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;button_Cancel.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="button_Cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 30</value>
   </data>
   <data name="button_Cancel.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
+  <data name="button_Cancel.Text" xml:space="preserve">
+    <value>Anuluj</value>
+  </data>
   <data name="&gt;&gt;button_Cancel.Name" xml:space="preserve">
     <value>button_Cancel</value>
   </data>
-  <data name="button_Cancel.Text" xml:space="preserve">
-    <value>Anuluj</value>
+  <data name="&gt;&gt;button_Cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_Cancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_Cancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>372, 211</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -989,64 +1037,13 @@
         ///wAAAA////////////////8AAAAA==
 </value>
   </data>
-  <data name="comboBox_Lang.Items" xml:space="preserve">
-    <value>PL</value>
-  </data>
-  <data name="comboBox_Lang.Items1" xml:space="preserve">
-    <value>EN</value>
-  </data>
-  <data name="&gt;&gt;checkBox_SaveOnExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="button_Save.Text" xml:space="preserve">
-    <value>Zapisz</value>
-  </data>
-  <data name="&gt;&gt;checkBox_SaveOnExit.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;button_Save.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="comboBox_Lang.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 30</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="checkBox_AU.Text" xml:space="preserve">
-    <value>Aktualizacje włączone</value>
-  </data>
-  <data name="checkBox_AskOnExit.Text" xml:space="preserve">
-    <value>Pytać przed zamknięciem</value>
-  </data>
-  <data name="checkBox_AskOnExit.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="button_Save.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Biblioteka Filmów NET - Ustawienia</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="&gt;&gt;checkBox_AU.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button_Cancel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 30</value>
-  </data>
-  <data name="checkBox_AskOnExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 17</value>
-  </data>
-  <data name="checkBox_SaveOnExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 17</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>English</value>
-  </metadata>
 </root>
