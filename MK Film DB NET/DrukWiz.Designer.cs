@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DrukWiz));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.checkBox_PrintWYP = new System.Windows.Forms.CheckBox();
@@ -41,13 +40,15 @@
             this.checkBox_PrintALL = new System.Windows.Forms.CheckBox();
             this.button_PRINT = new System.Windows.Forms.Button();
             this.button_Cancel = new System.Windows.Forms.Button();
-           
             this.groupBox1.SuspendLayout();
-            
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.AccessibleDescription = null;
+            this.groupBox1.AccessibleName = null;
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.BackgroundImage = null;
             this.groupBox1.Controls.Add(this.checkBox_PrintWYP);
             this.groupBox1.Controls.Add(this.checkBox_PrintLZ);
             this.groupBox1.Controls.Add(this.checkBox_PrintD);
@@ -56,132 +57,128 @@
             this.groupBox1.Controls.Add(this.checkBox_PrintOB);
             this.groupBox1.Controls.Add(this.checkBox_PrintFilm);
             this.groupBox1.Controls.Add(this.checkBox_PrintALL);
-            this.groupBox1.Location = new System.Drawing.Point(12, 18);
+            this.groupBox1.Font = null;
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(222, 246);
-            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Opcje wydruku";
             // 
             // checkBox_PrintWYP
             // 
-            this.checkBox_PrintWYP.AutoSize = true;
-            this.checkBox_PrintWYP.Location = new System.Drawing.Point(18, 216);
+            this.checkBox_PrintWYP.AccessibleDescription = null;
+            this.checkBox_PrintWYP.AccessibleName = null;
+            resources.ApplyResources(this.checkBox_PrintWYP, "checkBox_PrintWYP");
+            this.checkBox_PrintWYP.BackgroundImage = null;
+            this.checkBox_PrintWYP.Font = null;
             this.checkBox_PrintWYP.Name = "checkBox_PrintWYP";
-            this.checkBox_PrintWYP.Size = new System.Drawing.Size(157, 17);
-            this.checkBox_PrintWYP.TabIndex = 7;
-            this.checkBox_PrintWYP.Text = "Drukuj Tabele Wypożyczeń";
             this.checkBox_PrintWYP.UseVisualStyleBackColor = true;
             // 
             // checkBox_PrintLZ
             // 
-            this.checkBox_PrintLZ.AutoSize = true;
-            this.checkBox_PrintLZ.Location = new System.Drawing.Point(18, 192);
+            this.checkBox_PrintLZ.AccessibleDescription = null;
+            this.checkBox_PrintLZ.AccessibleName = null;
+            resources.ApplyResources(this.checkBox_PrintLZ, "checkBox_PrintLZ");
+            this.checkBox_PrintLZ.BackgroundImage = null;
+            this.checkBox_PrintLZ.Font = null;
             this.checkBox_PrintLZ.Name = "checkBox_PrintLZ";
-            this.checkBox_PrintLZ.Size = new System.Drawing.Size(199, 17);
-            this.checkBox_PrintLZ.TabIndex = 6;
-            this.checkBox_PrintLZ.Text = "Drukuj Tabelę Lokalizacje zdjęciowe";
             this.checkBox_PrintLZ.UseVisualStyleBackColor = true;
             // 
             // checkBox_PrintD
             // 
-            this.checkBox_PrintD.AutoSize = true;
-            this.checkBox_PrintD.Location = new System.Drawing.Point(18, 168);
+            this.checkBox_PrintD.AccessibleDescription = null;
+            this.checkBox_PrintD.AccessibleName = null;
+            resources.ApplyResources(this.checkBox_PrintD, "checkBox_PrintD");
+            this.checkBox_PrintD.BackgroundImage = null;
+            this.checkBox_PrintD.Font = null;
             this.checkBox_PrintD.Name = "checkBox_PrintD";
-            this.checkBox_PrintD.Size = new System.Drawing.Size(159, 17);
-            this.checkBox_PrintD.TabIndex = 5;
-            this.checkBox_PrintD.Text = "Drukuj Tabelę Dystrybutorzy";
             this.checkBox_PrintD.UseVisualStyleBackColor = true;
             // 
             // checkBox_PrintP
             // 
-            this.checkBox_PrintP.AutoSize = true;
-            this.checkBox_PrintP.Location = new System.Drawing.Point(18, 144);
+            this.checkBox_PrintP.AccessibleDescription = null;
+            this.checkBox_PrintP.AccessibleName = null;
+            resources.ApplyResources(this.checkBox_PrintP, "checkBox_PrintP");
+            this.checkBox_PrintP.BackgroundImage = null;
+            this.checkBox_PrintP.Font = null;
             this.checkBox_PrintP.Name = "checkBox_PrintP";
-            this.checkBox_PrintP.Size = new System.Drawing.Size(150, 17);
-            this.checkBox_PrintP.TabIndex = 4;
-            this.checkBox_PrintP.Text = "Drukuj Tabelę Producenci";
             this.checkBox_PrintP.UseVisualStyleBackColor = true;
             // 
             // checkBox_PrintOC
             // 
-            this.checkBox_PrintOC.AutoSize = true;
-            this.checkBox_PrintOC.Location = new System.Drawing.Point(18, 120);
+            this.checkBox_PrintOC.AccessibleDescription = null;
+            this.checkBox_PrintOC.AccessibleName = null;
+            resources.ApplyResources(this.checkBox_PrintOC, "checkBox_PrintOC");
+            this.checkBox_PrintOC.BackgroundImage = null;
+            this.checkBox_PrintOC.Font = null;
             this.checkBox_PrintOC.Name = "checkBox_PrintOC";
-            this.checkBox_PrintOC.Size = new System.Drawing.Size(128, 17);
-            this.checkBox_PrintOC.TabIndex = 3;
-            this.checkBox_PrintOC.Text = "Drukuj Tabelę Ocena";
             this.checkBox_PrintOC.UseVisualStyleBackColor = true;
             // 
             // checkBox_PrintOB
             // 
-            this.checkBox_PrintOB.AutoSize = true;
-            this.checkBox_PrintOB.Location = new System.Drawing.Point(18, 96);
+            this.checkBox_PrintOB.AccessibleDescription = null;
+            this.checkBox_PrintOB.AccessibleName = null;
+            resources.ApplyResources(this.checkBox_PrintOB, "checkBox_PrintOB");
+            this.checkBox_PrintOB.BackgroundImage = null;
+            this.checkBox_PrintOB.Font = null;
             this.checkBox_PrintOB.Name = "checkBox_PrintOB";
-            this.checkBox_PrintOB.Size = new System.Drawing.Size(133, 17);
-            this.checkBox_PrintOB.TabIndex = 2;
-            this.checkBox_PrintOB.Text = "Drukuj Tabelę Obsada";
             this.checkBox_PrintOB.UseVisualStyleBackColor = true;
             // 
             // checkBox_PrintFilm
             // 
-            this.checkBox_PrintFilm.AutoSize = true;
-            this.checkBox_PrintFilm.Location = new System.Drawing.Point(18, 72);
+            this.checkBox_PrintFilm.AccessibleDescription = null;
+            this.checkBox_PrintFilm.AccessibleName = null;
+            resources.ApplyResources(this.checkBox_PrintFilm, "checkBox_PrintFilm");
+            this.checkBox_PrintFilm.BackgroundImage = null;
+            this.checkBox_PrintFilm.Font = null;
             this.checkBox_PrintFilm.Name = "checkBox_PrintFilm";
-            this.checkBox_PrintFilm.Size = new System.Drawing.Size(171, 17);
-            this.checkBox_PrintFilm.TabIndex = 1;
-            this.checkBox_PrintFilm.Text = "Drukuj podstawowe dane filmu";
             this.checkBox_PrintFilm.UseVisualStyleBackColor = true;
             // 
             // checkBox_PrintALL
             // 
-            this.checkBox_PrintALL.AutoSize = true;
-            this.checkBox_PrintALL.Location = new System.Drawing.Point(18, 30);
+            this.checkBox_PrintALL.AccessibleDescription = null;
+            this.checkBox_PrintALL.AccessibleName = null;
+            resources.ApplyResources(this.checkBox_PrintALL, "checkBox_PrintALL");
+            this.checkBox_PrintALL.BackgroundImage = null;
+            this.checkBox_PrintALL.Font = null;
             this.checkBox_PrintALL.Name = "checkBox_PrintALL";
-            this.checkBox_PrintALL.Size = new System.Drawing.Size(128, 17);
-            this.checkBox_PrintALL.TabIndex = 0;
-            this.checkBox_PrintALL.Text = "Drukuj wszystkie filmy";
             this.checkBox_PrintALL.UseVisualStyleBackColor = true;
             // 
             // button_PRINT
             // 
-            this.button_PRINT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_PRINT.Location = new System.Drawing.Point(138, 276);
+            this.button_PRINT.AccessibleDescription = null;
+            this.button_PRINT.AccessibleName = null;
+            resources.ApplyResources(this.button_PRINT, "button_PRINT");
+            this.button_PRINT.BackgroundImage = null;
             this.button_PRINT.Name = "button_PRINT";
-            this.button_PRINT.Size = new System.Drawing.Size(96, 30);
-            this.button_PRINT.TabIndex = 1;
-            this.button_PRINT.Text = "Drukuj";
             this.button_PRINT.UseVisualStyleBackColor = true;
             this.button_PRINT.Click += new System.EventHandler(this.button_PRINT_Click);
             // 
             // button_Cancel
             // 
-            this.button_Cancel.Location = new System.Drawing.Point(246, 276);
+            this.button_Cancel.AccessibleDescription = null;
+            this.button_Cancel.AccessibleName = null;
+            resources.ApplyResources(this.button_Cancel, "button_Cancel");
+            this.button_Cancel.BackgroundImage = null;
+            this.button_Cancel.Font = null;
             this.button_Cancel.Name = "button_Cancel";
-            this.button_Cancel.Size = new System.Drawing.Size(84, 30);
-            this.button_Cancel.TabIndex = 2;
-            this.button_Cancel.Text = "Anuluj";
             this.button_Cancel.UseVisualStyleBackColor = true;
             this.button_Cancel.Click += new System.EventHandler(this.button_Cancel_Click);
-            
             // 
             // DrukWiz
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AccessibleDescription = null;
+            this.AccessibleName = null;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(336, 315);
+            this.BackgroundImage = null;
             this.Controls.Add(this.button_Cancel);
             this.Controls.Add(this.button_PRINT);
             this.Controls.Add(this.groupBox1);
+            this.Font = null;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "DrukWiz";
-            this.Text = "Biblioteka Filmów NET - Kreator Wydruku";
             this.Load += new System.EventHandler(this.DrukWiz_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            
             this.ResumeLayout(false);
 
         }

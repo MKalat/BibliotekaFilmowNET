@@ -140,20 +140,50 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox1.en.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutBox1.pl.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AboutBox1.resx">
       <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrukWiz.en.resx">
+      <DependentUpon>DrukWiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrukWiz.pl.resx">
+      <DependentUpon>DrukWiz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DrukWiz.resx">
       <DependentUpon>DrukWiz.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EkspWiz.en.resx">
+      <DependentUpon>EkspWiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EkspWiz.pl.resx">
+      <DependentUpon>EkspWiz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EkspWiz.resx">
       <DependentUpon>EkspWiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.en.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.pl.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FStartWiz.resx">
       <DependentUpon>FStartWiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalBorReg.en.resx">
+      <DependentUpon>GlobalBorReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalBorReg.pl.resx">
+      <DependentUpon>GlobalBorReg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GlobalBorReg.resx">
       <DependentUpon>GlobalBorReg.cs</DependentUpon>
@@ -167,6 +197,12 @@
     <EmbeddedResource Include="ImpOldBF.resx">
       <DependentUpon>ImpOldBF.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IntWiz.en.resx">
+      <DependentUpon>IntWiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IntWiz.pl.resx">
+      <DependentUpon>IntWiz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IntWiz.resx">
       <DependentUpon>IntWiz.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,11 +211,23 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Settings.en.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.pl.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ShowHelp.resx">
       <DependentUpon>ShowHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wyszukaj.en.resx">
+      <DependentUpon>Wyszukaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wyszukaj.pl.resx">
+      <DependentUpon>Wyszukaj.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Wyszukaj.resx">
       <DependentUpon>Wyszukaj.cs</DependentUpon>

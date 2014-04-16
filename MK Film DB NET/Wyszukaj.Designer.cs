@@ -47,19 +47,19 @@
             this.defaultDataSet = new MK_Film_DB_NET.defaultDataSet();
             this.filmBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.filmTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.FilmTableAdapter();
-            this.fKFilmOcenaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ocenaTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.OcenaTableAdapter();
-            this.fKFilmDystrybucjaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.produkcjaTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.ProdukcjaTableAdapter();
-            this.fKFilmProdukcjaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.obsadaTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.ObsadaTableAdapter();
-            this.fKFilmObsadaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dystrybucjaTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.DystrybucjaTableAdapter();
-            this.fKFilmLokZdjBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lokZdjTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.LokZdjTableAdapter();
-            this.fKFilmWYPINBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.wYPINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPINTableAdapter();
             this.wYPODINTableAdapter = new MK_Film_DB_NET.defaultDataSetTableAdapters.WYPODINTableAdapter();
+            this.fKFilmOcenaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fKFilmDystrybucjaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fKFilmProdukcjaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fKFilmObsadaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fKFilmLokZdjBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.fKFilmWYPINBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fKFilmWYPODINBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).BeginInit();
@@ -75,131 +75,131 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 12);
+            this.label1.AccessibleDescription = null;
+            this.label1.AccessibleName = null;
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Font = null;
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Szukaj";
             // 
             // textBox_Pharse
             // 
-            this.textBox_Pharse.Location = new System.Drawing.Point(54, 6);
+            this.textBox_Pharse.AccessibleDescription = null;
+            this.textBox_Pharse.AccessibleName = null;
+            resources.ApplyResources(this.textBox_Pharse, "textBox_Pharse");
+            this.textBox_Pharse.BackgroundImage = null;
+            this.textBox_Pharse.Font = null;
             this.textBox_Pharse.Name = "textBox_Pharse";
-            this.textBox_Pharse.Size = new System.Drawing.Size(324, 20);
-            this.textBox_Pharse.TabIndex = 1;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 42);
+            this.label2.AccessibleDescription = null;
+            this.label2.AccessibleName = null;
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Font = null;
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "w polu";
             // 
             // button_Search
             // 
-            this.button_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button_Search.Location = new System.Drawing.Point(366, 132);
+            this.button_Search.AccessibleDescription = null;
+            this.button_Search.AccessibleName = null;
+            resources.ApplyResources(this.button_Search, "button_Search");
+            this.button_Search.BackgroundImage = null;
             this.button_Search.Name = "button_Search";
-            this.button_Search.Size = new System.Drawing.Size(114, 30);
-            this.button_Search.TabIndex = 4;
-            this.button_Search.Text = "Szukaj";
             this.button_Search.UseVisualStyleBackColor = true;
             this.button_Search.Click += new System.EventHandler(this.button_Search_Click);
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 162);
+            this.label3.AccessibleDescription = null;
+            this.label3.AccessibleName = null;
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Font = null;
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Wyniki";
             // 
             // listView_Results
             // 
+            this.listView_Results.AccessibleDescription = null;
+            this.listView_Results.AccessibleName = null;
+            resources.ApplyResources(this.listView_Results, "listView_Results");
+            this.listView_Results.BackgroundImage = null;
             this.listView_Results.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader_Tytul,
             this.columnHeader_Gatunek,
             this.columnHeader_Premiera});
-            this.listView_Results.Location = new System.Drawing.Point(12, 180);
+            this.listView_Results.Font = null;
             this.listView_Results.MultiSelect = false;
             this.listView_Results.Name = "listView_Results";
-            this.listView_Results.Size = new System.Drawing.Size(468, 390);
-            this.listView_Results.TabIndex = 6;
             this.listView_Results.UseCompatibleStateImageBehavior = false;
             this.listView_Results.View = System.Windows.Forms.View.Details;
             this.listView_Results.SelectedIndexChanged += new System.EventHandler(this.listView_Results_SelectedIndexChanged);
             // 
             // columnHeader_Tytul
             // 
-            this.columnHeader_Tytul.Text = "Tytuł";
-            this.columnHeader_Tytul.Width = 234;
+            resources.ApplyResources(this.columnHeader_Tytul, "columnHeader_Tytul");
             // 
             // columnHeader_Gatunek
             // 
-            this.columnHeader_Gatunek.Text = "Gatunek";
-            this.columnHeader_Gatunek.Width = 144;
+            resources.ApplyResources(this.columnHeader_Gatunek, "columnHeader_Gatunek");
             // 
             // columnHeader_Premiera
             // 
-            this.columnHeader_Premiera.Text = "Premiera";
-            this.columnHeader_Premiera.Width = 76;
+            resources.ApplyResources(this.columnHeader_Premiera, "columnHeader_Premiera");
             // 
             // groupBox1
             // 
+            this.groupBox1.AccessibleDescription = null;
+            this.groupBox1.AccessibleName = null;
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.BackgroundImage = null;
             this.groupBox1.Controls.Add(this.radioButton_Ends);
             this.groupBox1.Controls.Add(this.radioButton_IsTheSame);
             this.groupBox1.Controls.Add(this.radioButton_Begins);
-            this.groupBox1.Location = new System.Drawing.Point(12, 66);
+            this.groupBox1.Font = null;
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(468, 60);
-            this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Kryterium";
             // 
             // radioButton_Ends
             // 
-            this.radioButton_Ends.AutoSize = true;
-            this.radioButton_Ends.Location = new System.Drawing.Point(360, 24);
+            this.radioButton_Ends.AccessibleDescription = null;
+            this.radioButton_Ends.AccessibleName = null;
+            resources.ApplyResources(this.radioButton_Ends, "radioButton_Ends");
+            this.radioButton_Ends.BackgroundImage = null;
+            this.radioButton_Ends.Font = null;
             this.radioButton_Ends.Name = "radioButton_Ends";
-            this.radioButton_Ends.Size = new System.Drawing.Size(91, 17);
-            this.radioButton_Ends.TabIndex = 2;
             this.radioButton_Ends.TabStop = true;
-            this.radioButton_Ends.Text = "Kończy się na";
             this.radioButton_Ends.UseVisualStyleBackColor = true;
             // 
             // radioButton_IsTheSame
             // 
-            this.radioButton_IsTheSame.AutoSize = true;
-            this.radioButton_IsTheSame.Location = new System.Drawing.Point(180, 24);
+            this.radioButton_IsTheSame.AccessibleDescription = null;
+            this.radioButton_IsTheSame.AccessibleName = null;
+            resources.ApplyResources(this.radioButton_IsTheSame, "radioButton_IsTheSame");
+            this.radioButton_IsTheSame.BackgroundImage = null;
+            this.radioButton_IsTheSame.Font = null;
             this.radioButton_IsTheSame.Name = "radioButton_IsTheSame";
-            this.radioButton_IsTheSame.Size = new System.Drawing.Size(98, 17);
-            this.radioButton_IsTheSame.TabIndex = 1;
             this.radioButton_IsTheSame.TabStop = true;
-            this.radioButton_IsTheSame.Text = "Jest identyczne";
             this.radioButton_IsTheSame.UseVisualStyleBackColor = true;
             // 
             // radioButton_Begins
             // 
-            this.radioButton_Begins.AutoSize = true;
-            this.radioButton_Begins.Location = new System.Drawing.Point(18, 24);
+            this.radioButton_Begins.AccessibleDescription = null;
+            this.radioButton_Begins.AccessibleName = null;
+            resources.ApplyResources(this.radioButton_Begins, "radioButton_Begins");
+            this.radioButton_Begins.BackgroundImage = null;
+            this.radioButton_Begins.Font = null;
             this.radioButton_Begins.Name = "radioButton_Begins";
-            this.radioButton_Begins.Size = new System.Drawing.Size(97, 17);
-            this.radioButton_Begins.TabIndex = 0;
             this.radioButton_Begins.TabStop = true;
-            this.radioButton_Begins.Text = "Zaczyna się na";
             this.radioButton_Begins.UseVisualStyleBackColor = true;
             // 
             // comboBox_Field
             // 
+            this.comboBox_Field.AccessibleDescription = null;
+            this.comboBox_Field.AccessibleName = null;
+            resources.ApplyResources(this.comboBox_Field, "comboBox_Field");
+            this.comboBox_Field.BackgroundImage = null;
+            this.comboBox_Field.Font = null;
             this.comboBox_Field.FormattingEnabled = true;
-            this.comboBox_Field.Location = new System.Drawing.Point(54, 36);
             this.comboBox_Field.Name = "comboBox_Field";
-            this.comboBox_Field.Size = new System.Drawing.Size(300, 21);
-            this.comboBox_Field.TabIndex = 8;
             // 
             // defaultDataSet
             // 
@@ -215,55 +215,25 @@
             // 
             this.filmTableAdapter.ClearBeforeFill = true;
             // 
-            // fKFilmOcenaBindingSource
-            // 
-            this.fKFilmOcenaBindingSource.DataMember = "Film_Ocena";
-            this.fKFilmOcenaBindingSource.DataSource = this.filmBindingSource;
-            // 
             // ocenaTableAdapter
             // 
             this.ocenaTableAdapter.ClearBeforeFill = true;
-            // 
-            // fKFilmDystrybucjaBindingSource
-            // 
-            this.fKFilmDystrybucjaBindingSource.DataMember = "Film_Dystrybucja";
-            this.fKFilmDystrybucjaBindingSource.DataSource = this.filmBindingSource;
             // 
             // produkcjaTableAdapter
             // 
             this.produkcjaTableAdapter.ClearBeforeFill = true;
             // 
-            // fKFilmProdukcjaBindingSource
-            // 
-            this.fKFilmProdukcjaBindingSource.DataMember = "Film_Produkcja";
-            this.fKFilmProdukcjaBindingSource.DataSource = this.filmBindingSource;
-            // 
             // obsadaTableAdapter
             // 
             this.obsadaTableAdapter.ClearBeforeFill = true;
-            // 
-            // fKFilmObsadaBindingSource
-            // 
-            this.fKFilmObsadaBindingSource.DataMember = "Film_Obsada";
-            this.fKFilmObsadaBindingSource.DataSource = this.filmBindingSource;
             // 
             // dystrybucjaTableAdapter
             // 
             this.dystrybucjaTableAdapter.ClearBeforeFill = true;
             // 
-            // fKFilmLokZdjBindingSource
-            // 
-            this.fKFilmLokZdjBindingSource.DataMember = "Film_LokZdj";
-            this.fKFilmLokZdjBindingSource.DataSource = this.filmBindingSource;
-            // 
             // lokZdjTableAdapter
             // 
             this.lokZdjTableAdapter.ClearBeforeFill = true;
-            // 
-            // fKFilmWYPINBindingSource
-            // 
-            this.fKFilmWYPINBindingSource.DataMember = "Film_WYPIN";
-            this.fKFilmWYPINBindingSource.DataSource = this.filmBindingSource;
             // 
             // wYPINTableAdapter
             // 
@@ -273,6 +243,36 @@
             // 
             this.wYPODINTableAdapter.ClearBeforeFill = true;
             // 
+            // fKFilmOcenaBindingSource
+            // 
+            this.fKFilmOcenaBindingSource.DataMember = "Film_Ocena";
+            this.fKFilmOcenaBindingSource.DataSource = this.filmBindingSource;
+            // 
+            // fKFilmDystrybucjaBindingSource
+            // 
+            this.fKFilmDystrybucjaBindingSource.DataMember = "Film_Dystrybucja";
+            this.fKFilmDystrybucjaBindingSource.DataSource = this.filmBindingSource;
+            // 
+            // fKFilmProdukcjaBindingSource
+            // 
+            this.fKFilmProdukcjaBindingSource.DataMember = "Film_Produkcja";
+            this.fKFilmProdukcjaBindingSource.DataSource = this.filmBindingSource;
+            // 
+            // fKFilmObsadaBindingSource
+            // 
+            this.fKFilmObsadaBindingSource.DataMember = "Film_Obsada";
+            this.fKFilmObsadaBindingSource.DataSource = this.filmBindingSource;
+            // 
+            // fKFilmLokZdjBindingSource
+            // 
+            this.fKFilmLokZdjBindingSource.DataMember = "Film_LokZdj";
+            this.fKFilmLokZdjBindingSource.DataSource = this.filmBindingSource;
+            // 
+            // fKFilmWYPINBindingSource
+            // 
+            this.fKFilmWYPINBindingSource.DataMember = "Film_WYPIN";
+            this.fKFilmWYPINBindingSource.DataSource = this.filmBindingSource;
+            // 
             // fKFilmWYPODINBindingSource
             // 
             this.fKFilmWYPODINBindingSource.DataMember = "Film_WYPODIN";
@@ -280,9 +280,11 @@
             // 
             // Wyszukaj
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AccessibleDescription = null;
+            this.AccessibleName = null;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(488, 577);
+            this.BackgroundImage = null;
             this.Controls.Add(this.comboBox_Field);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listView_Results);
@@ -291,11 +293,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox_Pharse);
             this.Controls.Add(this.label1);
+            this.Font = null;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Wyszukaj";
-            this.Text = "Biblioteka Filmów NET - Wyszukaj";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.defaultDataSet)).EndInit();

@@ -117,61 +117,2613 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="filmBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>264, 17</value>
-  </metadata>
-  <metadata name="defaultDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>132, 17</value>
-  </metadata>
-  <metadata name="fKFilmOcenaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>560, 17</value>
-  </metadata>
-  <metadata name="fKFilmObsadaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
-  <metadata name="fKFilmDystrybucjaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>784, 56</value>
-  </metadata>
-  <metadata name="fKFilmProdukcjaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>387, 56</value>
-  </metadata>
-  <metadata name="fKFilmLokZdjBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>204, 95</value>
-  </metadata>
-  <metadata name="fKFilmWYPODINBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 134</value>
-  </metadata>
-  <metadata name="fKFilmWYPINBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>563, 95</value>
-  </metadata>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="filmTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>415, 17</value>
-  </metadata>
-  <metadata name="ocenaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>759, 17</value>
-  </metadata>
-  <metadata name="obsadaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>223, 56</value>
-  </metadata>
-  <metadata name="produkcjaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>605, 56</value>
-  </metadata>
-  <metadata name="dystrybucjaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 95</value>
-  </metadata>
-  <metadata name="lokZdjTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>405, 95</value>
-  </metadata>
-  <metadata name="wYPINTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>765, 95</value>
-  </metadata>
-  <metadata name="wYPODINTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>237, 134</value>
-  </metadata>
+  <data name="&gt;&gt;dataGridView_IOF_LokZdj.Name" xml:space="preserve">
+    <value>dataGridView_IOF_LokZdj</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_Okl_Przod.Name" xml:space="preserve">
+    <value>pictureBox_Okl_Przod</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KA_Nazwa.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_PROD_prod.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>Język(i) lektora</value>
+  </data>
+  <data name="stanPWypDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Stan przed wypożyczeniem</value>
+  </data>
+  <data name="&gt;&gt;label45.Name" xml:space="preserve">
+    <value>label45</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabPage_Ocena.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button_DelPicBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 24</value>
+  </data>
+  <data name="&gt;&gt;adresDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pomocToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_ALL.Name" xml:space="preserve">
+    <value>textBox_OC_OW_ALL</value>
+  </data>
+  <data name="&gt;&gt;regionDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Opis.Name" xml:space="preserve">
+    <value>tabPage_Opis</value>
+  </data>
+  <data name="&gt;&gt;label49.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label42.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="button_DEL.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label51.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 48</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_Z_Wersja.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_ID.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 20</value>
+  </data>
+  <data name="iDPDBDataGridViewTextBoxColumn5.HeaderText" xml:space="preserve">
+    <value>IDPDB</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="&gt;&gt;nazwaDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>nazwaDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="textBox_TytulOrig.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 48</value>
+  </data>
+  <data name="textBox_IOF_KA_Nazwa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 20</value>
+  </data>
+  <data name="&gt;&gt;button_First.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;label40.Name" xml:space="preserve">
+    <value>label40</value>
+  </data>
+  <data name="iDDataGridViewTextBoxColumn4.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IOF_WIDEO.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label28.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="&gt;&gt;button_SAVE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridView_PROD_Dystr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 246</value>
+  </data>
+  <data name="button_SAVE.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items16" xml:space="preserve">
+    <value>Instruktażowy</value>
+  </data>
+  <data name="nazwaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="label45.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="&gt;&gt;stanPWypDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 60</value>
+  </data>
+  <data name="&gt;&gt;osobaDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>osobaDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_O.Parent" xml:space="preserve">
+    <value>groupBox_OC_OW</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_DataPrem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_IOF_JezLekt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 20</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_SysKodObr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 13</value>
+  </data>
+  <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="&gt;&gt;textBox_RecNo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_Prev.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>System kodowania obrazu</value>
+  </data>
+  <data name="textBox_IOF_Z_Wersja.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tabPage_Produkcja.Text" xml:space="preserve">
+    <value>Produkcja</value>
+  </data>
+  <data name="button_Last.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 36</value>
+  </data>
+  <data name="textBox_OC_OW_ALL.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label46.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;dataDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dataDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="button_NEW.Text" xml:space="preserve">
+    <value>Nowy</value>
+  </data>
+  <data name="&gt;&gt;button_Last.Name" xml:space="preserve">
+    <value>button_Last</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>Data skatalogowania</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Zdjęcia</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="groupBox_IOF_WIDEO.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 84</value>
+  </data>
+  <data name="textBox_DOE_MN_WWW.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;stanPOddDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_W_Nazw.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_PROD_Dystr.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 54</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KW_Nazwa.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="emailDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="textBox_IOF_KA_Wersja.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 60</value>
+  </data>
+  <data name="&gt;&gt;label41.Name" xml:space="preserve">
+    <value>label41</value>
+  </data>
+  <data name="tabPage_Opis.Text" xml:space="preserve">
+    <value>Opis</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_O.Name" xml:space="preserve">
+    <value>textBox_OC_OW_O</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_DataPrem.Name" xml:space="preserve">
+    <value>textBox_IOF_DataPrem</value>
+  </data>
+  <data name="&gt;&gt;label50.Name" xml:space="preserve">
+    <value>label50</value>
+  </data>
+  <data name="&gt;&gt;autorDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="iDDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="textBox_OC_OW_ALL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 20</value>
+  </data>
+  <data name="label44.Text" xml:space="preserve">
+    <value>Nazwa</value>
+  </data>
+  <data name="&gt;&gt;iDDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>iDDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="textBox_IOF_SysKodObr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>600, 6</value>
+  </data>
+  <data name="&gt;&gt;button_DelPicBack.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox_IOF_KW_Wersja.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;dystrybucjaTableAdapter.Name" xml:space="preserve">
+    <value>dystrybucjaTableAdapter</value>
+  </data>
+  <data name="iDDataGridViewTextBoxColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="nazwaObiektuDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nazwa obiektu</value>
+  </data>
+  <data name="&gt;&gt;button_NEW.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;dataWypDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;faxDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label46.Name" xml:space="preserve">
+    <value>label46</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_Z_Nazwa.Name" xml:space="preserve">
+    <value>textBox_IOF_Z_Nazwa</value>
+  </data>
+  <data name="&gt;&gt;label51.Name" xml:space="preserve">
+    <value>label51</value>
+  </data>
+  <data name="narodowośćDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Narodowość</value>
+  </data>
+  <data name="textBox_TytulOrig.Size" type="System.Drawing.Size, System.Drawing">
+    <value>396, 20</value>
+  </data>
+  <data name="label43.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KA_Typ.Name" xml:space="preserve">
+    <value>textBox_IOF_KA_Typ</value>
+  </data>
+  <data name="dataGridView_PROD_prod.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="koniecToolStripMenuItem.Text" xml:space="preserve">
+    <value>Koniec</value>
+  </data>
+  <data name="tabPage_Obsada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 490</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_WartAkt.Name" xml:space="preserve">
+    <value>textBox_DOE_WartAkt</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_OB_Obsada.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IOF_AUDIO.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_DOE_MN.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="&gt;&gt;label47.Name" xml:space="preserve">
+    <value>label47</value>
+  </data>
+  <data name="dataDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="iDDataGridViewTextBoxColumn3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button_Last.Text" xml:space="preserve">
+    <value>&gt;|</value>
+  </data>
+  <data name="button_Next.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label_DOE_Cena.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="bibliotekaFilmówMKFilmDBToolStripMenuItem.Text" xml:space="preserve">
+    <value>Biblioteka filmów - MK Film DB</value>
+  </data>
+  <data name="button_GetDataInt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 630</value>
+  </data>
+  <data name="tabPage_IOF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 490</value>
+  </data>
+  <data name="textBox_OC_OW_SD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 18</value>
+  </data>
+  <data name="&gt;&gt;nazwaDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>nazwaDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="label42.Text" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="&gt;&gt;iDDataGridViewTextBoxColumn4.Name" xml:space="preserve">
+    <value>iDDataGridViewTextBoxColumn4</value>
+  </data>
+  <data name="&gt;&gt;iDDataGridViewTextBoxColumn5.Name" xml:space="preserve">
+    <value>iDDataGridViewTextBoxColumn5</value>
+  </data>
+  <data name="label_DOE_Cena.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 13</value>
+  </data>
+  <data name="&gt;&gt;button_LoadPicBack.Name" xml:space="preserve">
+    <value>button_LoadPicBack</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Produkcja.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_PROD_prod.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_DelPicBack.Name" xml:space="preserve">
+    <value>button_DelPicBack</value>
+  </data>
+  <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="&gt;&gt;uzupelnijFilmZInternetuToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label50.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 13</value>
+  </data>
+  <data name="&gt;&gt;label44.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_DOE_MN_WWW.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 60</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_BIBLIO_WYPIN.Parent" xml:space="preserve">
+    <value>tabPage_Biblio</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KA_Typ.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items17" xml:space="preserve">
+    <value>Edukacyjny</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KW_Typ.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;miejscowośćDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>miejscowośćDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="dataGridView_OB_Obsada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 30</value>
+  </data>
+  <data name="textBox_DOE_NrKat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 258</value>
+  </data>
+  <data name="label34.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_BIBLIO_WYPIN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictureBox_Okl_Przod.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_SD.Name" xml:space="preserve">
+    <value>textBox_OC_OW_SD</value>
+  </data>
+  <data name="&gt;&gt;wWWDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>wWWDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;label42.Name" xml:space="preserve">
+    <value>label42</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Biblio.Name" xml:space="preserve">
+    <value>tabPage_Biblio</value>
+  </data>
+  <data name="pomocToolStripMenuItem.Text" xml:space="preserve">
+    <value>Pomoc</value>
+  </data>
+  <data name="comboBoxSelGatunek.Text" xml:space="preserve">
+    <value>Wybierz gatunek filmu, aby dodać go do pola po lewej</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KW_Nazwa.Parent" xml:space="preserve">
+    <value>groupBox_IOF_WIDEO</value>
+  </data>
+  <data name="&gt;&gt;label45.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KA_Nazwa.Parent" xml:space="preserve">
+    <value>groupBox_IOF_AUDIO</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Adres.Parent" xml:space="preserve">
+    <value>groupBox_DOE_MN</value>
+  </data>
+  <data name="&gt;&gt;emailDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>emailDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;fKFilmLokZdjBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 66</value>
+  </data>
+  <data name="textBox_DOE_MN_Fax.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 20</value>
+  </data>
+  <data name="iDPDBDataGridViewTextBoxColumn6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_NrKat.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBox_TytulOrig.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Opis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>Rodzaj nośnika</value>
+  </data>
+  <data name="label47.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;fKFilmProdukcjaBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;plikToolStripMenuItem.Name" xml:space="preserve">
+    <value>plikToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;telDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label43.Name" xml:space="preserve">
+    <value>label43</value>
+  </data>
+  <data name="&gt;&gt;comboBox_DOE_Nosnik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_JezLekt.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;button_DEL.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tytulDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_DOE_W_Adres.Size" type="System.Drawing.Size, System.Drawing">
+    <value>426, 20</value>
+  </data>
+  <data name="label47.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="stanPWypDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="textBox_IOF_RokProd.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_Okl_Przod.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;filmBindingSource.Name" xml:space="preserve">
+    <value>filmBindingSource</value>
+  </data>
+  <data name="&gt;&gt;ocenaTableAdapter.Type" xml:space="preserve">
+    <value>MK_Film_DB_NET.defaultDataSetTableAdapters.OcenaTableAdapter, defaultDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="label18.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label48.Name" xml:space="preserve">
+    <value>label48</value>
+  </data>
+  <data name="&gt;&gt;importToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_IOF_SysKodObr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="label22.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label38.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_DEL.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IOF_ZAB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label28.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 24</value>
+  </data>
+  <data name="&gt;&gt;telDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>telDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="textBox_IOF_DataPrem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="stanPOddDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="label38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 18</value>
+  </data>
+  <data name="&gt;&gt;label49.Name" xml:space="preserve">
+    <value>label49</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_CzasProj.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_W_Imie.Name" xml:space="preserve">
+    <value>textBox_DOE_W_Imie</value>
+  </data>
+  <data name="label36.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="iDPDBDataGridViewTextBoxColumn4.HeaderText" xml:space="preserve">
+    <value>IDPDB</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSelGatunek.Name" xml:space="preserve">
+    <value>comboBoxSelGatunek</value>
+  </data>
+  <data name="&gt;&gt;telDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>telDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_IOF_LokZdj.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="autorDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+  <data name="label47.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 192</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_DataSkat.Name" xml:space="preserve">
+    <value>textBox_DOE_DataSkat</value>
+  </data>
+  <data name="&gt;&gt;label40.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_DOE_MN_Tel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 12</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KA_Wersja.Parent" xml:space="preserve">
+    <value>groupBox_IOF_AUDIO</value>
+  </data>
+  <data name="&gt;&gt;iDPDBDataGridViewTextBoxColumn6.Name" xml:space="preserve">
+    <value>iDPDBDataGridViewTextBoxColumn6</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_SysKodObr.Name" xml:space="preserve">
+    <value>textBox_IOF_SysKodObr</value>
+  </data>
+  <data name="&gt;&gt;dataOddDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dataOddDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;stanPOddDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_OC_OW.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 312</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 13</value>
+  </data>
+  <data name="bibliotekaFilmówMKFilmDBToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>239, 22</value>
+  </data>
+  <data name="label39.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nazwaObiektuDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_W_Nazw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label_DOE_Cena.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;wWWDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_RecNo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_LoadPicFront.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="koniecToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 22</value>
+  </data>
+  <data name="label48.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;label41.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_SD.Parent" xml:space="preserve">
+    <value>groupBox_OC_OW</value>
+  </data>
+  <data name="&gt;&gt;textBox_Tytul.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KA_Wersja.Name" xml:space="preserve">
+    <value>textBox_IOF_KA_Wersja</value>
+  </data>
+  <data name="&gt;&gt;button_DelPicFront.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_Gatunek.Name" xml:space="preserve">
+    <value>textBox_Gatunek</value>
+  </data>
+  <data name="&gt;&gt;iDPDBDataGridViewTextBoxColumn5.Name" xml:space="preserve">
+    <value>iDPDBDataGridViewTextBoxColumn5</value>
+  </data>
+  <data name="&gt;&gt;label26.Name" xml:space="preserve">
+    <value>label26</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 13</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_O.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rolaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>rolaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="label46.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 66</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_FormWysw.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tabPage_IOF.Name" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="&gt;&gt;telDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_NEW.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label37.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label46.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_IOF_ZAB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 84</value>
+  </data>
+  <data name="&gt;&gt;rolaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage_Produkcja.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 490</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_DataPrem.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="iDDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="textBox_DOE_DataZak.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_Z_Wersja.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSelGatunek.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;label27.Name" xml:space="preserve">
+    <value>label27</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items2" xml:space="preserve">
+    <value>Komedia</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items3" xml:space="preserve">
+    <value>Horror</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items1" xml:space="preserve">
+    <value>Thriller</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items6" xml:space="preserve">
+    <value>Paradokument</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_Okl_Przod.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox_IOF_KA_Wersja.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 20</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items14" xml:space="preserve">
+    <value>Wojenny</value>
+  </data>
+  <data name="&gt;&gt;wyszukajToolStripMenuItem.Name" xml:space="preserve">
+    <value>wyszukajToolStripMenuItem</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items8" xml:space="preserve">
+    <value>Bajka</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items9" xml:space="preserve">
+    <value>Animowany</value>
+  </data>
+  <data name="textBox_IOF_CzasProj.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>909, 24</value>
+  </data>
+  <data name="&gt;&gt;label47.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 216</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 24</value>
+  </data>
+  <data name="button_Last.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="nazwaDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Nazwa</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Rekord</value>
+  </data>
+  <data name="label_DOE_Cena.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>Nazwa</value>
+  </data>
+  <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 22</value>
+  </data>
+  <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 12</value>
+  </data>
+  <data name="textBox_IOF_JezLekt.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="button_DEL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 36</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_Okl_Przod.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="groupBox_DOE_W.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="button_Prev.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 36</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_DataUtr.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label39.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label51.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="uzupelnijFilmZInternetuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 22</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_W_Adres.Name" xml:space="preserve">
+    <value>textBox_DOE_W_Adres</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_OB_Obsada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_Z_Wersja.Parent" xml:space="preserve">
+    <value>groupBox_IOF_ZAB</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="&gt;&gt;label31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_LoadPicBack.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="textBox_DOE_Cena.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="button_Prev.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>Telefon</value>
+  </data>
+  <data name="button_DelPicFront.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 246</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_OC_Ocena.Parent" xml:space="preserve">
+    <value>tabPage_Ocena</value>
+  </data>
+  <data name="button_Next.Text" xml:space="preserve">
+    <value>&gt;</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_WA.Parent" xml:space="preserve">
+    <value>groupBox_OC_OW</value>
+  </data>
+  <data name="&gt;&gt;groupBox_DOE_MN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_SAVE.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Items2" xml:space="preserve">
+    <value>SVCD</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridView_OB_Obsada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 258</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_BIBLIO_WYPIN.Name" xml:space="preserve">
+    <value>dataGridView_BIBLIO_WYPIN</value>
+  </data>
+  <data name="&gt;&gt;label22.Name" xml:space="preserve">
+    <value>label22</value>
+  </data>
+  <data name="textBox_IOF_KrajProd.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="button_LoadPicFront.Text" xml:space="preserve">
+    <value>Załaduj</value>
+  </data>
+  <data name="&gt;&gt;label34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>Nazwa</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_DataUtr.Name" xml:space="preserve">
+    <value>textBox_DOE_DataUtr</value>
+  </data>
+  <data name="textBox_IOF_KW_Wersja.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 20</value>
+  </data>
+  <data name="textBox_DOE_MN_Adres.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 36</value>
+  </data>
+  <data name="textBox_IOF_KW_Typ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 20</value>
+  </data>
+  <data name="textBox_RecCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 13</value>
+  </data>
+  <data name="pomocToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 20</value>
+  </data>
+  <data name="&gt;&gt;groupBox_DOE_W.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Obsada</value>
+  </data>
+  <data name="dataGridView_BIBLIO_WYPODIN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 228</value>
+  </data>
+  <data name="wyszukajToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 22</value>
+  </data>
+  <data name="&gt;&gt;button_Prev.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label51.Parent" xml:space="preserve">
+    <value>tabPage_Opis</value>
+  </data>
+  <data name="&gt;&gt;label42.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_OC_OW_SD.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_DelPicFront.Name" xml:space="preserve">
+    <value>button_DelPicFront</value>
+  </data>
+  <data name="&gt;&gt;textBox_Gatunek.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="stanPOddDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Obsada.Name" xml:space="preserve">
+    <value>tabPage_Obsada</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IOF_AUDIO.Name" xml:space="preserve">
+    <value>groupBox_IOF_AUDIO</value>
+  </data>
+  <data name="&gt;&gt;button_SAVE.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="button_GetDataInt.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_Z_Nazwa.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="emailDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox_DOE_Nosnik.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="groupBox_IOF_WIDEO.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 90</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IOF_WIDEO.Name" xml:space="preserve">
+    <value>groupBox_IOF_WIDEO</value>
+  </data>
+  <data name="&gt;&gt;button_LoadPicFront.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IOF_ZAB.Name" xml:space="preserve">
+    <value>groupBox_IOF_ZAB</value>
+  </data>
+  <data name="label23.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;miejscowośćDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_ALL.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label34.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="label43.Text" xml:space="preserve">
+    <value>Wersja</value>
+  </data>
+  <data name="&gt;&gt;emailDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>emailDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 102</value>
+  </data>
+  <data name="nazwaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nazwa</value>
+  </data>
+  <data name="&gt;&gt;label24.Name" xml:space="preserve">
+    <value>label24</value>
+  </data>
+  <data name="&gt;&gt;iDPDBDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="stanPWypDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="&gt;&gt;filmTableAdapter.Name" xml:space="preserve">
+    <value>filmTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;button_GetDataInt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label17.Name" xml:space="preserve">
+    <value>label17</value>
+  </data>
+  <data name="textBox_IOF_Z_Typ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 20</value>
+  </data>
+  <data name="tabPage_IOF.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;iDPDBDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label29.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_First.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label44.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 18</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Fax.Parent" xml:space="preserve">
+    <value>groupBox_DOE_MN</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;adresDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>adresDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
+  </data>
+  <data name="&gt;&gt;uzupelnijFilmZInternetuToolStripMenuItem.Name" xml:space="preserve">
+    <value>uzupelnijFilmZInternetuToolStripMenuItem</value>
+  </data>
+  <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 13</value>
+  </data>
+  <data name="&gt;&gt;label35.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label48.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_DataSkat.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="groupBox_OC_OW.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fKFilmWYPINBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 6</value>
+  </data>
+  <data name="&gt;&gt;button_DelPicBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_IOF_Z_Nazwa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 20</value>
+  </data>
+  <data name="&gt;&gt;button_GetDataInt.Name" xml:space="preserve">
+    <value>button_GetDataInt</value>
+  </data>
+  <data name="label27.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="imieNazwDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Imię i Nazwisko</value>
+  </data>
+  <data name="button_First.Text" xml:space="preserve">
+    <value>|&lt;</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>groupBox_OC_OW</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items15" xml:space="preserve">
+    <value>Serial</value>
+  </data>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="osobaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Fax.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button_DEL.Text" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="tabPage_DOE.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Email.Parent" xml:space="preserve">
+    <value>groupBox_DOE_MN</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label44.Parent" xml:space="preserve">
+    <value>groupBox_IOF_ZAB</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;emailDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_DOE_W.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_Okl_Tyl.Name" xml:space="preserve">
+    <value>pictureBox_Okl_Tyl</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>678, 30</value>
+  </data>
+  <data name="iDDataGridViewTextBoxColumn6.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="rolaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Rola</value>
+  </data>
+  <data name="tabPage_IOF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_ALL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_WA.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;importToolStripMenuItem.Name" xml:space="preserve">
+    <value>importToolStripMenuItem</value>
+  </data>
+  <data name="label49.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;krajDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>krajDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>Numer katalogowy</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 606</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_Z.Parent" xml:space="preserve">
+    <value>groupBox_OC_OW</value>
+  </data>
+  <data name="&gt;&gt;pomocToolStripMenuItem1.Name" xml:space="preserve">
+    <value>pomocToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;label51.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage_Produkcja.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;label45.Parent" xml:space="preserve">
+    <value>groupBox_IOF_ZAB</value>
+  </data>
+  <data name="&gt;&gt;iDPDBDataGridViewTextBoxColumn6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label51.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items4" xml:space="preserve">
+    <value>Dramat</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items5" xml:space="preserve">
+    <value>Dokument</value>
+  </data>
+  <data name="rolaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <data name="label_DOE_Cena.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 216</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Tel.Parent" xml:space="preserve">
+    <value>groupBox_DOE_MN</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_JezNap.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_PROD_prod.Parent" xml:space="preserve">
+    <value>tabPage_Produkcja</value>
+  </data>
+  <data name="&gt;&gt;label36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_DOE_WartAkt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 20</value>
+  </data>
+  <data name="label21.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Items3" xml:space="preserve">
+    <value>DVD+R</value>
+  </data>
+  <data name="&gt;&gt;fKFilmOcenaBindingSource.Name" xml:space="preserve">
+    <value>fKFilmOcenaBindingSource</value>
+  </data>
+  <data name="label28.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label47.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;iDPDBDataGridViewTextBoxColumn5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_IOF_KA_Nazwa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 12</value>
+  </data>
+  <data name="iDPDBDataGridViewTextBoxColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox_OP_Opis.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_WWW.Parent" xml:space="preserve">
+    <value>groupBox_DOE_MN</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="tabPage_Opis.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;koniecToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_DataZak.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="dataGridView_IOF_LokZdj.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="label45.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Produkcja</value>
+  </data>
+  <data name="&gt;&gt;fKFilmDystrybucjaBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_Cena.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="textBox_DOE_W_Imie.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBox_DOE_MN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 108</value>
+  </data>
+  <data name="&gt;&gt;button_LoadPicBack.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;narodowośćDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_DataUtr.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Wartość aktualna</value>
+  </data>
+  <data name="&gt;&gt;pomocToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_OC_OW_Z.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 18</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_W_Imie.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label36.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="button_LoadPicBack.Text" xml:space="preserve">
+    <value>Załaduj</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_ALL.Parent" xml:space="preserve">
+    <value>groupBox_OC_OW</value>
+  </data>
+  <data name="&gt;&gt;label34.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_Z_Wersja.Name" xml:space="preserve">
+    <value>textBox_IOF_Z_Wersja</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_DataZak.Name" xml:space="preserve">
+    <value>textBox_DOE_DataZak</value>
+  </data>
+  <data name="&gt;&gt;ocenaTableAdapter.Name" xml:space="preserve">
+    <value>ocenaTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_OC_Ocena.Name" xml:space="preserve">
+    <value>dataGridView_OC_Ocena</value>
+  </data>
+  <data name="plikToolStripMenuItem.Text" xml:space="preserve">
+    <value>Plik</value>
+  </data>
+  <data name="&gt;&gt;label40.Parent" xml:space="preserve">
+    <value>groupBox_IOF_WIDEO</value>
+  </data>
+  <data name="textBox_DOE_NrKat.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label46.Text" xml:space="preserve">
+    <value>Wersja</value>
+  </data>
+  <data name="groupBox_DOE_W.Text" xml:space="preserve">
+    <value>Dane właściciela kopii filmu</value>
+  </data>
+  <data name="&gt;&gt;defaultDataSet.Type" xml:space="preserve">
+    <value>MK_Film_DB_NET.defaultDataSet, defaultDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label37.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="textBox_DOE_DataSkat.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;plikToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KA_Typ.Parent" xml:space="preserve">
+    <value>groupBox_IOF_AUDIO</value>
+  </data>
+  <data name="&gt;&gt;button_DEL.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_IOF_Z_Wersja.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 60</value>
+  </data>
+  <data name="textBox_DOE_Cena.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 210</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_PROD_Dystr.Parent" xml:space="preserve">
+    <value>tabPage_Produkcja</value>
+  </data>
+  <data name="&gt;&gt;fKFilmWYPODINBindingSource.Name" xml:space="preserve">
+    <value>fKFilmWYPODINBindingSource</value>
+  </data>
+  <data name="wWWDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="&gt;&gt;textBox_OP_Opis.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>tabPage_Ocena</value>
+  </data>
+  <data name="&gt;&gt;tabPage_DOE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="label50.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Wartośc artystyczna</value>
+  </data>
+  <data name="label50.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;globalnyRejestrWypożyczeńToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items" xml:space="preserve">
+    <value>Akcja</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_W_Nazw.Name" xml:space="preserve">
+    <value>textBox_DOE_W_Nazw</value>
+  </data>
+  <data name="&gt;&gt;label26.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_W_Nazw.Parent" xml:space="preserve">
+    <value>groupBox_DOE_W</value>
+  </data>
+  <data name="textBox_DOE_MN_Tel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Nazwa.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;button_Prev.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lokZdjTableAdapter.Type" xml:space="preserve">
+    <value>MK_Film_DB_NET.defaultDataSetTableAdapters.LokZdjTableAdapter, defaultDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_JezNap.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;eksportujToolStripMenuItem.Name" xml:space="preserve">
+    <value>eksportujToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;label33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_IOF.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label45.Text" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 13</value>
+  </data>
+  <data name="button_First.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 36</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="wWWDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>WWW</value>
+  </data>
+  <data name="button_SAVE.Text" xml:space="preserve">
+    <value>Zapisz</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 22</value>
+  </data>
+  <data name="&gt;&gt;label19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label47.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="label46.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBox_OP_Opis.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>z</value>
+  </data>
+  <data name="&gt;&gt;osobaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IOF_ZAB.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Opis.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Obsada.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_OC_Ocena.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="iDPDBDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>IDPDB</value>
+  </data>
+  <data name="telDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 240</value>
+  </data>
+  <data name="&gt;&gt;wYPINTableAdapter.Name" xml:space="preserve">
+    <value>wYPINTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="drukujToolStripMenuItem.Text" xml:space="preserve">
+    <value>Drukuj</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_W_Imie.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;produkcjaTableAdapter.Name" xml:space="preserve">
+    <value>produkcjaTableAdapter</value>
+  </data>
+  <data name="textBox_OC_OW_WA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 42</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 78</value>
+  </data>
+  <data name="&gt;&gt;label38.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="&gt;&gt;button_DelPicFront.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_JezLekt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 13</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_JezNap.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="tabPage_Ocena.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="button_DEL.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 48</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_PROD_Dystr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_CzasProj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;filmTableAdapter.Type" xml:space="preserve">
+    <value>MK_Film_DB_NET.defaultDataSetTableAdapters.FilmTableAdapter, defaultDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="iDPDBDataGridViewTextBoxColumn2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Items4" xml:space="preserve">
+    <value>DVD-R</value>
+  </data>
+  <data name="button_LoadPicBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 498</value>
+  </data>
+  <data name="&gt;&gt;button_DelPicBack.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="tabPage_Produkcja.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;ustawieniaToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_Gatunek.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 20</value>
+  </data>
+  <data name="&gt;&gt;pomocToolStripMenuItem.Name" xml:space="preserve">
+    <value>pomocToolStripMenuItem</value>
+  </data>
+  <data name="button_Prev.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 630</value>
+  </data>
+  <data name="&gt;&gt;label39.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_NrKat.Name" xml:space="preserve">
+    <value>textBox_DOE_NrKat</value>
+  </data>
+  <data name="poraRokuDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Pora roku</value>
+  </data>
+  <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 42</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KrajProd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oProgramieToolStripMenuItem.Name" xml:space="preserve">
+    <value>oProgramieToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;autorDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>autorDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="textBox_IOF_KA_Typ.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label42.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items7" xml:space="preserve">
+    <value>Fabularny</value>
+  </data>
+  <data name="textBox_IOF_KW_Typ.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="button_SAVE.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="textBox_OC_OW_SD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 20</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Adres.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label38.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>E - mail</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IOF_AUDIO.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KA_Wersja.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label36.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="&gt;&gt;iDDataGridViewTextBoxColumn3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="stanPWypDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Stan przed wypożyczeniem</value>
+  </data>
+  <data name="&gt;&gt;drukujToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_DOE_W_Nazw.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 42</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KA_Nazwa.Name" xml:space="preserve">
+    <value>textBox_IOF_KA_Nazwa</value>
+  </data>
+  <data name="&gt;&gt;label42.Parent" xml:space="preserve">
+    <value>groupBox_IOF_AUDIO</value>
+  </data>
+  <data name="globalnyRejestrWypożyczeńToolStripMenuItem.Text" xml:space="preserve">
+    <value>Globalny rejestr wypożyczeń</value>
+  </data>
+  <data name="&gt;&gt;stanPOddDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>stanPOddDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="pictureBox_Okl_Przod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 210</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_RokProd.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="textBox_DOE_MN_Adres.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="button_NEW.Location" type="System.Drawing.Point, System.Drawing">
+    <value>276, 630</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_DataZak.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 606</value>
+  </data>
+  <data name="&gt;&gt;groupBox_DOE_W.Name" xml:space="preserve">
+    <value>groupBox_DOE_W</value>
+  </data>
+  <data name="&gt;&gt;label37.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="textBox_IOF_DataPrem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 30</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label43.Parent" xml:space="preserve">
+    <value>groupBox_IOF_AUDIO</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_WWW.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="label49.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="textBox_IOF_Z_Typ.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_SD.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="button_NEW.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="groupBox_IOF_AUDIO.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;textBox_RecCount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KW_Typ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;button_DEL.Name" xml:space="preserve">
+    <value>button_DEL</value>
+  </data>
+  <data name="textBox_DOE_W_Nazw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 20</value>
+  </data>
+  <data name="&gt;&gt;iDDataGridViewTextBoxColumn3.Name" xml:space="preserve">
+    <value>iDDataGridViewTextBoxColumn3</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 30</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;imieNazwDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>imieNazwDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KW_Typ.Name" xml:space="preserve">
+    <value>textBox_IOF_KW_Typ</value>
+  </data>
+  <data name="&gt;&gt;iDDataGridViewTextBoxColumn6.Name" xml:space="preserve">
+    <value>iDDataGridViewTextBoxColumn6</value>
+  </data>
+  <data name="textBox_IOF_CzasProj.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 6</value>
+  </data>
+  <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 18</value>
+  </data>
+  <data name="textBox_ID.Location" type="System.Drawing.Point, System.Drawing">
+    <value>708, 24</value>
+  </data>
+  <data name="&gt;&gt;label48.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="label22.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBox_IOF_WIDEO.Text" xml:space="preserve">
+    <value>Kodek wideo</value>
+  </data>
+  <data name="&gt;&gt;groupBox_OC_OW.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KrajProd.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IOF_AUDIO.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="&gt;&gt;groupBox_DOE_MN.Name" xml:space="preserve">
+    <value>groupBox_DOE_MN</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 24</value>
+  </data>
+  <data name="button_Last.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 630</value>
+  </data>
+  <data name="textBox_DOE_MN_Tel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 20</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_OB_Obsada.Parent" xml:space="preserve">
+    <value>tabPage_Obsada</value>
+  </data>
+  <data name="textBox_DOE_W_Nazw.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="dataGridView_PROD_prod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 192</value>
+  </data>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBox_IOF_AUDIO.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 90</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_RokProd.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_JezLekt.Name" xml:space="preserve">
+    <value>textBox_IOF_JezLekt</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
+  </data>
+  <data name="&gt;&gt;button_LoadPicFront.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 42</value>
+  </data>
+  <data name="&gt;&gt;iDDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>iDDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="otwórzUtwórzBazęDanychToolStripMenuItem.Text" xml:space="preserve">
+    <value>Otwórz / Utwórz bazę danych</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="&gt;&gt;regionDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>regionDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;textBox_Tytul.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="&gt;&gt;textBox_ID.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_DataZak.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_Z_Typ.Parent" xml:space="preserve">
+    <value>groupBox_IOF_ZAB</value>
+  </data>
+  <data name="textBox_IOF_FormWysw.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="&gt;&gt;oProgramieToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_DOE_W.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBox_DOE_MN_Email.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 60</value>
+  </data>
+  <data name="label40.Text" xml:space="preserve">
+    <value>Wersja</value>
+  </data>
+  <data name="button_LoadPicFront.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 246</value>
+  </data>
+  <data name="&gt;&gt;label32.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="label50.Text" xml:space="preserve">
+    <value>Katalog wypożyczeń filmu od innych osób</value>
+  </data>
+  <data name="&gt;&gt;eksportujToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridView_IOF_LokZdj.Size" type="System.Drawing.Size, System.Drawing">
+    <value>672, 240</value>
+  </data>
+  <data name="&gt;&gt;label45.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="textBox_DOE_MN_Nazwa.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;globalnyRejestrWypożyczeńToolStripMenuItem.Name" xml:space="preserve">
+    <value>globalnyRejestrWypożyczeńToolStripMenuItem</value>
+  </data>
+  <data name="label24.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_FormWysw.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_DOE_DataUtr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 20</value>
+  </data>
+  <data name="iDPDBDataGridViewTextBoxColumn4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="pictureBox_Okl_Przod.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="label40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 66</value>
+  </data>
+  <data name="textBox_DOE_Cena.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 20</value>
+  </data>
+  <data name="button_LoadPicBack.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 24</value>
+  </data>
+  <data name="&gt;&gt;label33.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Items" xml:space="preserve">
+    <value>DVD-ROM</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Items5" xml:space="preserve">
+    <value>DVD+R DL</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label44.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="adresDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;nazwaDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;otwórzUtwórzBazęDanychToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_O.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabPage_Ocena.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Biblio.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tabPage_Opis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 490</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_BIBLIO_WYPODIN.Name" xml:space="preserve">
+    <value>dataGridView_BIBLIO_WYPODIN</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSelGatunek.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_DOE_W.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fKFilmObsadaBindingSource.Name" xml:space="preserve">
+    <value>fKFilmObsadaBindingSource</value>
+  </data>
+  <data name="dataGridView_BIBLIO_WYPODIN.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label38.Parent" xml:space="preserve">
+    <value>groupBox_IOF_WIDEO</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 240</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_OC_Ocena.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_Z_Typ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 42</value>
+  </data>
+  <data name="label47.Text" xml:space="preserve">
+    <value>Kraj(e) produkcji filmu</value>
+  </data>
+  <data name="textBox_DOE_W_Adres.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 66</value>
+  </data>
+  <data name="iDDataGridViewTextBoxColumn5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="textBox_IOF_DataPrem.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;comboBoxSelGatunek.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;fKFilmWYPINBindingSource.Name" xml:space="preserve">
+    <value>fKFilmWYPINBindingSource</value>
+  </data>
+  <data name="dataGridView_BIBLIO_WYPODIN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 252</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 48</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_Cena.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_PROD_prod.Name" xml:space="preserve">
+    <value>dataGridView_PROD_prod</value>
+  </data>
+  <data name="&gt;&gt;textBox_RecNo.Name" xml:space="preserve">
+    <value>textBox_RecNo</value>
+  </data>
+  <data name="&gt;&gt;label39.Parent" xml:space="preserve">
+    <value>groupBox_IOF_WIDEO</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="imieNazwDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <data name="textBox_OC_OW_ALL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 72</value>
+  </data>
+  <data name="label25.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KW_Nazwa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pomocToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Pomoc</value>
+  </data>
+  <data name="iDDataGridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="label41.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 42</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Ocena.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_Next.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 36</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KW_Wersja.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dataOddDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Data oddania</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;narodowośćDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>narodowośćDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_Okl_Tyl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridView_PROD_Dystr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 228</value>
+  </data>
+  <data name="plikToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 20</value>
+  </data>
+  <data name="oProgramieToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="button_First.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 630</value>
+  </data>
+  <data name="textBox_DOE_MN_Email.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="button_First.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Tel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBox_IOF_FormWysw.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 30</value>
+  </data>
+  <data name="&gt;&gt;krajDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_WartAkt.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label44.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="regionDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="iDDataGridViewTextBoxColumn4.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="iDDataGridViewTextBoxColumn5.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Ścieżka dźwiękowa</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="textBox_Gatunek.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 72</value>
+  </data>
+  <data name="iDPDBDataGridViewTextBoxColumn3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items18" xml:space="preserve">
+    <value>Manga</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_PROD_Dystr.Name" xml:space="preserve">
+    <value>dataGridView_PROD_Dystr</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Tytuł Oryginału</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;button_DelPicFront.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="pictureBox_Okl_Tyl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 282</value>
+  </data>
+  <data name="textBox_RecCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 600</value>
+  </data>
+  <data name="&gt;&gt;produkcjaTableAdapter.Type" xml:space="preserve">
+    <value>MK_Film_DB_NET.defaultDataSetTableAdapters.ProdukcjaTableAdapter, defaultDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="button_GetDataInt.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="dataGridView_OC_Ocena.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 282</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_W_Adres.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_WartAkt.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 72</value>
+  </data>
+  <data name="&gt;&gt;wyszukajToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridView_IOF_LokZdj.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 234</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;obsadaTableAdapter.Type" xml:space="preserve">
+    <value>MK_Film_DB_NET.defaultDataSetTableAdapters.ObsadaTableAdapter, defaultDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;button_Next.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>groupBox_OC_OW</value>
+  </data>
+  <data name="ustawieniaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 22</value>
+  </data>
+  <data name="textBox_TytulOrig.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;button_SAVE.Name" xml:space="preserve">
+    <value>button_SAVE</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Obsada.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;button_LoadPicBack.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_Z.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="button_NEW.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>714, 516</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KW_Typ.Parent" xml:space="preserve">
+    <value>groupBox_IOF_WIDEO</value>
+  </data>
+  <data name="dataGridView_OB_Obsada.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="narodowośćDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Narodowość</value>
+  </data>
+  <data name="&gt;&gt;iDPDBDataGridViewTextBoxColumn4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_DelPicFront.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;button_NEW.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label41.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lokZdjTableAdapter.Name" xml:space="preserve">
+    <value>lokZdjTableAdapter</value>
+  </data>
+  <data name="label34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 36</value>
+  </data>
+  <data name="textBox_DOE_MN_Adres.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 20</value>
+  </data>
+  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Items6" xml:space="preserve">
+    <value>DVD-R DL</value>
+  </data>
+  <data name="iDPDBDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;button_NEW.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dystrybucjaTableAdapter.Type" xml:space="preserve">
+    <value>MK_Film_DB_NET.defaultDataSetTableAdapters.DystrybucjaTableAdapter, defaultDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Produkcja.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="label29.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 21</value>
+  </data>
+  <data name="textBox_IOF_Z_Nazwa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 12</value>
+  </data>
+  <data name="groupBox_DOE_MN.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_WA.Name" xml:space="preserve">
+    <value>textBox_OC_OW_WA</value>
+  </data>
+  <data name="&gt;&gt;iDPDBDataGridViewTextBoxColumn3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_Prev.Text" xml:space="preserve">
+    <value>&lt;</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_FormWysw.Name" xml:space="preserve">
+    <value>textBox_IOF_FormWysw</value>
+  </data>
+  <data name="&gt;&gt;button_First.Name" xml:space="preserve">
+    <value>button_First</value>
+  </data>
+  <data name="tabPage_Biblio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 490</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_ID.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="textBox_DOE_MN_Nazwa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 20</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Email.Name" xml:space="preserve">
+    <value>textBox_DOE_MN_Email</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Dystrybucja</value>
+  </data>
+  <data name="&gt;&gt;wYPODINTableAdapter.Type" xml:space="preserve">
+    <value>MK_Film_DB_NET.defaultDataSetTableAdapters.WYPODINTableAdapter, defaultDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="drukujToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 22</value>
+  </data>
+  <data name="textBox_IOF_KA_Typ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 36</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_WA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_DOE.Name" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="dataWypDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Data wypożyczenia</value>
+  </data>
+  <data name="tabPage_Biblio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="iDPDBDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>IDPDB</value>
+  </data>
+  <data name="textBox_OC_OW_Z.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;textBox_RecCount.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;nazwaObiektuDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nazwaObiektuDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;label47.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBox_RecNo.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KA_Nazwa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_DOE_Cena.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oProgramieToolStripMenuItem.Text" xml:space="preserve">
+    <value>O programie</value>
+  </data>
+  <data name="&gt;&gt;button_Prev.Name" xml:space="preserve">
+    <value>button_Prev</value>
+  </data>
+  <data name="&gt;&gt;label42.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Tel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Items1" xml:space="preserve">
+    <value>VCD</value>
+  </data>
+  <data name="&gt;&gt;textBox_OP_Opis.Parent" xml:space="preserve">
+    <value>tabPage_Opis</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Email.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_RokProd.Name" xml:space="preserve">
+    <value>textBox_IOF_RokProd</value>
+  </data>
+  <data name="&gt;&gt;label50.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPage_Ocena.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 490</value>
+  </data>
+  <data name="groupBox_IOF_AUDIO.Location" type="System.Drawing.Point, System.Drawing">
+    <value>258, 84</value>
+  </data>
+  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 36</value>
+  </data>
+  <data name="tytulDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>tabPage_Produkcja</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_DataSkat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Obsada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Location" type="System.Drawing.Point, System.Drawing">
+    <value>552, 210</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="button_Next.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 630</value>
+  </data>
+  <data name="&gt;&gt;tabPage_IOF.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;label43.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabPage_Obsada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="&gt;&gt;dataWypDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dataWypDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;textBox_ID.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>Imię</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 6</value>
+  </data>
+  <data name="textBox_DOE_DataUtr.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="dataGridView_BIBLIO_WYPIN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 204</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="tabPage_Opis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="label43.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAZGQAAAEAIACoogAAFgAAACgAAABkAAAAyAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -871,4 +3423,1687 @@
         ///wAAAA////////////////8AAAAA==
 </value>
   </data>
+  <data name="button_LoadPicFront.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="iDDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_RecCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label36.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="stanPOddDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Stan po oddaniu</value>
+  </data>
+  <data name="label19.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="button_SAVE.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;textBox_Gatunek.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imieNazwDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="osobaDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="&gt;&gt;defaultDataSet.Name" xml:space="preserve">
+    <value>defaultDataSet</value>
+  </data>
+  <data name="&gt;&gt;label48.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;wWWDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Nazwa.Name" xml:space="preserve">
+    <value>textBox_DOE_MN_Nazwa</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>WWW</value>
+  </data>
+  <data name="&gt;&gt;ustawieniaToolStripMenuItem.Name" xml:space="preserve">
+    <value>ustawieniaToolStripMenuItem</value>
+  </data>
+  <data name="label26.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IOF_ZAB.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items19" xml:space="preserve">
+    <value>Kabaret</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items12" xml:space="preserve">
+    <value>Erotyka</value>
+  </data>
+  <data name="&gt;&gt;label40.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="textBox_IOF_JezNap.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;wYPODINTableAdapter.Name" xml:space="preserve">
+    <value>wYPODINTableAdapter</value>
+  </data>
+  <data name="globalnyRejestrWypożyczeńToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 22</value>
+  </data>
+  <data name="label_DOE_Cena.Text" xml:space="preserve">
+    <value>Cena</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="pictureBox_Okl_Przod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 30</value>
+  </data>
+  <data name="button_SAVE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 630</value>
+  </data>
+  <data name="label48.Text" xml:space="preserve">
+    <value>Lokalizacje zdjęciowe</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>groupBox_OC_OW</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_Z_Nazwa.Parent" xml:space="preserve">
+    <value>groupBox_IOF_ZAB</value>
+  </data>
+  <data name="&gt;&gt;label49.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>909, 698</value>
+  </data>
+  <data name="&gt;&gt;dataWypDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>dataWypDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;label35.Name" xml:space="preserve">
+    <value>label35</value>
+  </data>
+  <data name="textBox_IOF_KW_Nazwa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 20</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Email.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Fax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="textBox_DOE_DataUtr.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 210</value>
+  </data>
+  <data name="&gt;&gt;button_Next.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="iDPDBDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>IDPDB</value>
+  </data>
+  <data name="textBox_OP_Opis.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 24</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KA_Typ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Ocena.Name" xml:space="preserve">
+    <value>tabPage_Ocena</value>
+  </data>
+  <data name="&gt;&gt;textBox_TytulOrig.Name" xml:space="preserve">
+    <value>textBox_TytulOrig</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Biblio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_DOE_MN_Nazwa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 12</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Biblioteka Filmów NET</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_OB_Obsada.Name" xml:space="preserve">
+    <value>dataGridView_OB_Obsada</value>
+  </data>
+  <data name="&gt;&gt;button_LoadPicBack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Fax.Name" xml:space="preserve">
+    <value>textBox_DOE_MN_Fax</value>
+  </data>
+  <data name="&gt;&gt;osobaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>osobaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="textBox_DOE_W_Imie.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 18</value>
+  </data>
+  <data name="dataGridView_OC_Ocena.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 24</value>
+  </data>
+  <data name="label35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>462, 12</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;textBox_ID.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 18</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Items7" xml:space="preserve">
+    <value>DVD-RW</value>
+  </data>
+  <data name="wWWDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>WWW</value>
+  </data>
+  <data name="importToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 22</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Produkcja.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>groupBox_OC_OW</value>
+  </data>
+  <data name="nazwaDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Nazwa</value>
+  </data>
+  <data name="&gt;&gt;textBox_Gatunek.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="toolStripMenuItem2.Text" xml:space="preserve">
+    <value>1.0.2.0 - 1.0.5.2</value>
+  </data>
+  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
+    <value>groupBox_DOE_W</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Nazwa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Name" xml:space="preserve">
+    <value>toolStripMenuItem2</value>
+  </data>
+  <data name="textBox_IOF_CzasProj.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 20</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_BIBLIO_WYPODIN.Parent" xml:space="preserve">
+    <value>tabPage_Biblio</value>
+  </data>
+  <data name="&gt;&gt;fKFilmProdukcjaBindingSource.Name" xml:space="preserve">
+    <value>fKFilmProdukcjaBindingSource</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_BIBLIO_WYPODIN.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="textBox_IOF_KA_Nazwa.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="dataGridView_PROD_Dystr.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>Format wyświetlania</value>
+  </data>
+  <data name="&gt;&gt;otwórzUtwórzBazęDanychToolStripMenuItem.Name" xml:space="preserve">
+    <value>otwórzUtwórzBazęDanychToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;textBox_OP_Opis.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;groupBox_OC_OW.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Ocena.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;koniecToolStripMenuItem.Name" xml:space="preserve">
+    <value>koniecToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Produkcja.Name" xml:space="preserve">
+    <value>tabPage_Produkcja</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Tel.Name" xml:space="preserve">
+    <value>textBox_DOE_MN_Tel</value>
+  </data>
+  <data name="label26.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label_DOE_Cena.Name" xml:space="preserve">
+    <value>label_DOE_Cena</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 13</value>
+  </data>
+  <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>468, 216</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>tabPage_Produkcja</value>
+  </data>
+  <data name="pictureBox_Okl_Tyl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label30.Name" xml:space="preserve">
+    <value>label30</value>
+  </data>
+  <data name="&gt;&gt;poraRokuDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>poraRokuDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="eksportujToolStripMenuItem.Text" xml:space="preserve">
+    <value>Eksportuj</value>
+  </data>
+  <data name="&gt;&gt;iDPDBDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>iDPDBDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_Cena.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tabPage_DOE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 490</value>
+  </data>
+  <data name="textBox_Tytul.Size" type="System.Drawing.Size, System.Drawing">
+    <value>396, 20</value>
+  </data>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label50.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxSelGatunek.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="textBox_OC_OW_O.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="button_DelPicBack.Text" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="&gt;&gt;dataDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label31.Name" xml:space="preserve">
+    <value>label31</value>
+  </data>
+  <data name="&gt;&gt;bibliotekaFilmówMKFilmDBToolStripMenuItem.Name" xml:space="preserve">
+    <value>bibliotekaFilmówMKFilmDBToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_BIBLIO_WYPODIN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_OC_OW_WA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 20</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_W_Adres.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button_Last.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;iDPDBDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>iDPDBDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;textBox_OP_Opis.Name" xml:space="preserve">
+    <value>textBox_OP_Opis</value>
+  </data>
+  <data name="&gt;&gt;label46.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBox_DOE_DataSkat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 234</value>
+  </data>
+  <data name="&gt;&gt;fKFilmLokZdjBindingSource.Name" xml:space="preserve">
+    <value>fKFilmLokZdjBindingSource</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label50.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 234</value>
+  </data>
+  <data name="&gt;&gt;groupBox_OC_OW.Parent" xml:space="preserve">
+    <value>tabPage_Ocena</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label44.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_DataSkat.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_IOF_LokZdj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label36.Name" xml:space="preserve">
+    <value>label36</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="button_Prev.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_BIBLIO_WYPIN.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_Cena.Name" xml:space="preserve">
+    <value>textBox_DOE_Cena</value>
+  </data>
+  <data name="&gt;&gt;tabPage_DOE.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_CzasProj.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Items10" xml:space="preserve">
+    <value>Szpula</value>
+  </data>
+  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;filmBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;wWWDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fKFilmWYPODINBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_IOF_ZAB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 90</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="button_DelPicBack.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 498</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="tabPage_IOF.Text" xml:space="preserve">
+    <value>Info o Filmie</value>
+  </data>
+  <data name="textBox_Tytul.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Nazwa.Parent" xml:space="preserve">
+    <value>groupBox_DOE_MN</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Gatunek</value>
+  </data>
+  <data name="textBox_IOF_KrajProd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 186</value>
+  </data>
+  <data name="&gt;&gt;label18.Name" xml:space="preserve">
+    <value>label18</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;iDPDBDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_IOF_Z_Typ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 36</value>
+  </data>
+  <data name="button_GetDataInt.Text" xml:space="preserve">
+    <value>Dodaj Film z Internetu</value>
+  </data>
+  <data name="&gt;&gt;button_First.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBox_RecNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 600</value>
+  </data>
+  <data name="label20.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="dataOddDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Data oddania</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>Rok produkcji</value>
+  </data>
+  <data name="&gt;&gt;obsadaTableAdapter.Name" xml:space="preserve">
+    <value>obsadaTableAdapter</value>
+  </data>
+  <data name="label41.Text" xml:space="preserve">
+    <value>Nazwa</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="label51.Text" xml:space="preserve">
+    <value>Opis</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>groupBox_DOE_MN</value>
+  </data>
+  <data name="textBox_IOF_FormWysw.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="wyszukajToolStripMenuItem.Text" xml:space="preserve">
+    <value>Wyszukaj</value>
+  </data>
+  <data name="&gt;&gt;label19.Name" xml:space="preserve">
+    <value>label19</value>
+  </data>
+  <data name="tabPage_Biblio.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_W_Adres.Parent" xml:space="preserve">
+    <value>groupBox_DOE_W</value>
+  </data>
+  <data name="label32.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="textBox_IOF_SysKodObr.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_Last.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;textBox_RecNo.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_WartAkt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Całość</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_JezLekt.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="&gt;&gt;adresDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>adresDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;textBox_RecCount.Name" xml:space="preserve">
+    <value>textBox_RecCount</value>
+  </data>
+  <data name="groupBox_DOE_MN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>690, 96</value>
+  </data>
+  <data name="textBox_IOF_Z_Wersja.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 20</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Obsada</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_W_Imie.Parent" xml:space="preserve">
+    <value>groupBox_DOE_W</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Items8" xml:space="preserve">
+    <value>DVD+RW</value>
+  </data>
+  <data name="label41.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;faxDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>faxDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="&gt;&gt;wYPINTableAdapter.Type" xml:space="preserve">
+    <value>MK_Film_DB_NET.defaultDataSetTableAdapters.WYPINTableAdapter, defaultDataSet.Designer.cs, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="label37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>384, 60</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>Język(i) napisów</value>
+  </data>
+  <data name="textBox_RecCount.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_DataUtr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="adresDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="label30.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="telDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Tel</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;button_LoadPicFront.Name" xml:space="preserve">
+    <value>button_LoadPicFront</value>
+  </data>
+  <data name="&gt;&gt;groupBox_DOE_MN.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;textBox_TytulOrig.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label32.Name" xml:space="preserve">
+    <value>label32</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KW_Wersja.Name" xml:space="preserve">
+    <value>textBox_IOF_KW_Wersja</value>
+  </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="button_GetDataInt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_Z_Typ.Name" xml:space="preserve">
+    <value>textBox_IOF_Z_Typ</value>
+  </data>
+  <data name="&gt;&gt;iDPDBDataGridViewTextBoxColumn4.Name" xml:space="preserve">
+    <value>iDPDBDataGridViewTextBoxColumn4</value>
+  </data>
+  <data name="tabPage_Opis.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;iDDataGridViewTextBoxColumn5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>groupBox_DOE_W</value>
+  </data>
+  <data name="textBox_IOF_Z_Nazwa.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem3.Name" xml:space="preserve">
+    <value>toolStripMenuItem3</value>
+  </data>
+  <data name="&gt;&gt;button_Next.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_DOE_W.Size" type="System.Drawing.Size, System.Drawing">
+    <value>690, 96</value>
+  </data>
+  <data name="iDPDBDataGridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>IDPDB</value>
+  </data>
+  <data name="&gt;&gt;iDDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KrajProd.Name" xml:space="preserve">
+    <value>textBox_IOF_KrajProd</value>
+  </data>
+  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;iDDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>iDDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label33.Name" xml:space="preserve">
+    <value>label33</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Nazwisko</value>
+  </data>
+  <data name="textBox_DOE_WartAkt.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;fKFilmDystrybucjaBindingSource.Name" xml:space="preserve">
+    <value>fKFilmDystrybucjaBindingSource</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Items13" xml:space="preserve">
+    <value>CD-RW</value>
+  </data>
+  <data name="eksportujToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 22</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_WWW.Name" xml:space="preserve">
+    <value>textBox_DOE_MN_WWW</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;iDPDBDataGridViewTextBoxColumn3.Name" xml:space="preserve">
+    <value>iDPDBDataGridViewTextBoxColumn3</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button_DelPicBack.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="iDDataGridViewTextBoxColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;dataOddDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KW_Wersja.Parent" xml:space="preserve">
+    <value>groupBox_IOF_WIDEO</value>
+  </data>
+  <data name="dataGridView_BIBLIO_WYPIN.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label41.Parent" xml:space="preserve">
+    <value>groupBox_IOF_AUDIO</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="&gt;&gt;dataOddDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>dataOddDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="textBox_DOE_DataSkat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 20</value>
+  </data>
+  <data name="textBox_Gatunek.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;narodowośćDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>narodowośćDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;label19.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="iDDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="button_Next.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label27.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="otwórzUtwórzBazęDanychToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 22</value>
+  </data>
+  <data name="&gt;&gt;nazwaObiektuDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_OC_OW.Name" xml:space="preserve">
+    <value>groupBox_OC_OW</value>
+  </data>
+  <data name="tabPage_Obsada.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KA_Wersja.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label51.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_IOF_RokProd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 6</value>
+  </data>
+  <data name="pictureBox_Okl_Tyl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 210</value>
+  </data>
+  <data name="&gt;&gt;label35.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="&gt;&gt;label39.Name" xml:space="preserve">
+    <value>label39</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items13" xml:space="preserve">
+    <value>Amatorski</value>
+  </data>
+  <data name="&gt;&gt;label46.Parent" xml:space="preserve">
+    <value>groupBox_IOF_ZAB</value>
+  </data>
+  <data name="textBox_IOF_KrajProd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>558, 20</value>
+  </data>
+  <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_NrKat.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="textBox_DOE_DataZak.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 20</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;sprzwdźAktualizacjeToolStripMenuItem.Name" xml:space="preserve">
+    <value>sprzwdźAktualizacjeToolStripMenuItem</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Items11" xml:space="preserve">
+    <value>CD-ROM</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items20" xml:space="preserve">
+    <value>Niesklasyfikowany</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Zasoby poświęcone tytułowi</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items10" xml:space="preserve">
+    <value>Krótkometrażowy</value>
+  </data>
+  <data name="label30.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_DEL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>510, 630</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Biblio.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;iDDataGridViewTextBoxColumn4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
+    <value>groupBox_DOE_MN</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_NrKat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Tytuł</value>
+  </data>
+  <data name="&gt;&gt;label34.Name" xml:space="preserve">
+    <value>label34</value>
+  </data>
+  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_DataPrem.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Adres.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
+    <value>groupBox_DOE_MN</value>
+  </data>
+  <data name="label45.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 42</value>
+  </data>
+  <data name="&gt;&gt;label28.Name" xml:space="preserve">
+    <value>label28</value>
+  </data>
+  <data name="&gt;&gt;button_GetDataInt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IOF_WIDEO.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;stanPWypDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="&gt;&gt;label37.Name" xml:space="preserve">
+    <value>label37</value>
+  </data>
+  <data name="&gt;&gt;stanPOddDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>stanPOddDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="faxDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Items12" xml:space="preserve">
+    <value>CD-R</value>
+  </data>
+  <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 18</value>
+  </data>
+  <data name="&gt;&gt;comboBox_DOE_Nosnik.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Ocena.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="importToolStripMenuItem.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>groupBox_DOE_MN</value>
+  </data>
+  <data name="button_DelPicFront.Text" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 264</value>
+  </data>
+  <data name="iDPDBDataGridViewTextBoxColumn6.HeaderText" xml:space="preserve">
+    <value>IDPDB</value>
+  </data>
+  <data name="dataWypDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Data wypożyczenia</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_IOF_RokProd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="&gt;&gt;stanPWypDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>stanPWypDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="tytulDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Tytul</value>
+  </data>
+  <data name="label34.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tabPage_Biblio.Text" xml:space="preserve">
+    <value>Bibliotekarz</value>
+  </data>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_Okl_Tyl.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.Items9" xml:space="preserve">
+    <value>VHS</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>tabPage_Obsada</value>
+  </data>
+  <data name="textBox_IOF_KW_Wersja.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 60</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;emailDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_OC_OW_O.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 42</value>
+  </data>
+  <data name="comboBoxSelGatunek.Location" type="System.Drawing.Point, System.Drawing">
+    <value>576, 72</value>
+  </data>
+  <data name="groupBox_IOF_WIDEO.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="pictureBox_Okl_Tyl.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="textBox_DOE_NrKat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 20</value>
+  </data>
+  <data name="krajDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Kraj</value>
+  </data>
+  <data name="textBox_IOF_JezLekt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 54</value>
+  </data>
+  <data name="label33.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;iDPDBDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>iDPDBDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;stanPWypDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>stanPWypDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_SD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_DOE_MN_Fax.Location" type="System.Drawing.Point, System.Drawing">
+    <value>438, 36</value>
+  </data>
+  <data name="&gt;&gt;ocenaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>ocenaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="button_LoadPicFront.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;textBox_ID.Name" xml:space="preserve">
+    <value>textBox_ID</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_FormWysw.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="&gt;&gt;fKFilmOcenaBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_OC_OW_WA.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="pomocToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="dataGridView_OC_Ocena.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="textBox_IOF_KW_Nazwa.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;iDDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_Last.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;label29.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="&gt;&gt;button_Last.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 78</value>
+  </data>
+  <data name="textBox_IOF_JezNap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 20</value>
+  </data>
+  <data name="&gt;&gt;label39.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="miejscowośćDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Miejscowość</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_Z_Nazwa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button_GetDataInt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>258, 36</value>
+  </data>
+  <data name="textBox_IOF_KW_Nazwa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 12</value>
+  </data>
+  <data name="button_NEW.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 36</value>
+  </data>
+  <data name="label37.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;tabPage_IOF.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_DOE_MN_WWW.Size" type="System.Drawing.Size, System.Drawing">
+    <value>318, 20</value>
+  </data>
+  <data name="&gt;&gt;textBox_Tytul.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KrajProd.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 66</value>
+  </data>
+  <data name="label49.Text" xml:space="preserve">
+    <value>Katalog wypożyczeń filmu innym osobom</value>
+  </data>
+  <data name="&gt;&gt;button_GetDataInt.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>Data utraty</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>Czas projekcji</value>
+  </data>
+  <data name="&gt;&gt;label19.Parent" xml:space="preserve">
+    <value>groupBox_DOE_MN</value>
+  </data>
+  <data name="textBox_OP_Opis.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="label49.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 6</value>
+  </data>
+  <data name="textBox_DOE_W_Adres.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
+    <value>groupBox_DOE_W</value>
+  </data>
+  <data name="tabPage_Obsada.Text" xml:space="preserve">
+    <value>Obsada</value>
+  </data>
+  <data name="&gt;&gt;button_NEW.Name" xml:space="preserve">
+    <value>button_NEW</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;sprzwdźAktualizacjeToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage_Opis.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="&gt;&gt;comboBox_DOE_Nosnik.Name" xml:space="preserve">
+    <value>comboBox_DOE_Nosnik</value>
+  </data>
+  <data name="&gt;&gt;dataWypDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="toolStripMenuItem3.Text" xml:space="preserve">
+    <value>1.0 - 1.0.1.19</value>
+  </data>
+  <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 264</value>
+  </data>
+  <data name="&gt;&gt;poraRokuDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_SysKodObr.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KW_Nazwa.Name" xml:space="preserve">
+    <value>textBox_IOF_KW_Nazwa</value>
+  </data>
+  <data name="&gt;&gt;bibliotekaFilmówMKFilmDBToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>groupBox_DOE_MN</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 13</value>
+  </data>
+  <data name="&gt;&gt;label_DOE_Cena.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="textBox_OP_Opis.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 456</value>
+  </data>
+  <data name="&gt;&gt;label38.Name" xml:space="preserve">
+    <value>label38</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_CzasProj.Name" xml:space="preserve">
+    <value>textBox_IOF_CzasProj</value>
+  </data>
+  <data name="label35.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button_SAVE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 36</value>
+  </data>
+  <data name="&gt;&gt;ocenaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nazwaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPage_Produkcja.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
+    <value>tabPage_DOE</value>
+  </data>
+  <data name="iDDataGridViewTextBoxColumn6.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="wWWDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>WWW</value>
+  </data>
+  <data name="ocenaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Ocena</value>
+  </data>
+  <data name="groupBox_IOF_ZAB.Text" xml:space="preserve">
+    <value>Zabezpieczenia</value>
+  </data>
+  <data name="textBox_Tytul.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 24</value>
+  </data>
+  <data name="comboBox_DOE_Nosnik.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="groupBox_OC_OW.Text" xml:space="preserve">
+    <value>Ocane własna</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items11" xml:space="preserve">
+    <value>Porno</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>Data premiery</value>
+  </data>
+  <data name="label35.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;wWWDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>wWWDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;dataOddDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label49.Parent" xml:space="preserve">
+    <value>tabPage_Biblio</value>
+  </data>
+  <data name="label48.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>Data zakupu</value>
+  </data>
+  <data name="label33.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="groupBox_IOF_AUDIO.Text" xml:space="preserve">
+    <value>Kodek audio</value>
+  </data>
+  <data name="osobaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Osoba</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label50.Parent" xml:space="preserve">
+    <value>tabPage_Biblio</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label45.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 66</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_JezNap.Name" xml:space="preserve">
+    <value>textBox_IOF_JezNap</value>
+  </data>
+  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="&gt;&gt;drukujToolStripMenuItem.Name" xml:space="preserve">
+    <value>drukujToolStripMenuItem</value>
+  </data>
+  <data name="label31.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox_Okl_Tyl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_RokProd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_DOE_DataZak.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 258</value>
+  </data>
+  <data name="&gt;&gt;tytulDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>tytulDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nazwaDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_First.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;button_DEL.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="tabPage_DOE.Text" xml:space="preserve">
+    <value>Dane o Egzemplarzu</value>
+  </data>
+  <data name="textBox_IOF_KA_Typ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 20</value>
+  </data>
+  <data name="&gt;&gt;textBox_Tytul.Name" xml:space="preserve">
+    <value>textBox_Tytul</value>
+  </data>
+  <data name="dataGridView_PROD_prod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 24</value>
+  </data>
+  <data name="label48.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 216</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_KW_Wersja.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_IOF_KA_Wersja.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="textBox_OC_OW_O.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 20</value>
+  </data>
+  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="sprzwdźAktualizacjeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 22</value>
+  </data>
+  <data name="textBox_DOE_MN_Email.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 20</value>
+  </data>
+  <data name="label40.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="groupBox_DOE_MN.Text" xml:space="preserve">
+    <value>Miejsce nabycia</value>
+  </data>
+  <data name="textBox_OC_OW_Z.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 20</value>
+  </data>
+  <data name="faxDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="button_DelPicFront.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_Z.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;faxDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>faxDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="iDPDBDataGridViewTextBoxColumn5.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 228</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="uzupelnijFilmZInternetuToolStripMenuItem.Text" xml:space="preserve">
+    <value>Uzupelnij film z Internetu</value>
+  </data>
+  <data name="textBox_DOE_MN_Fax.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="stanPOddDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Stan po oddaniu</value>
+  </data>
+  <data name="tabPage_Ocena.Text" xml:space="preserve">
+    <value>Ocena</value>
+  </data>
+  <data name="osobaDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Osoba</value>
+  </data>
+  <data name="textBox_DOE_W_Imie.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 20</value>
+  </data>
+  <data name="textBox_IOF_JezNap.Location" type="System.Drawing.Point, System.Drawing">
+    <value>474, 54</value>
+  </data>
+  <data name="&gt;&gt;nazwaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nazwaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_WWW.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridView_BIBLIO_WYPIN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 24</value>
+  </data>
+  <data name="&gt;&gt;label43.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;adresDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button_Next.Name" xml:space="preserve">
+    <value>button_Next</value>
+  </data>
+  <data name="label40.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox_IOF_WIDEO.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="tabPage_DOE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="groupBox_IOF_ZAB.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="textBox_DOE_WartAkt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>114, 234</value>
+  </data>
+  <data name="&gt;&gt;textBox_OC_OW_Z.Name" xml:space="preserve">
+    <value>textBox_OC_OW_Z</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_SysKodObr.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="ustawieniaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="&gt;&gt;textBox_IOF_Z_Typ.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;fKFilmObsadaBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="sprzwdźAktualizacjeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sprawdź aktualizacje</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="groupBox_OC_OW.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 168</value>
+  </data>
+  <data name="&gt;&gt;osobaDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>groupBox_OC_OW</value>
+  </data>
+  <data name="&gt;&gt;toolStripMenuItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;iDDataGridViewTextBoxColumn6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label44.Name" xml:space="preserve">
+    <value>label44</value>
+  </data>
+  <data name="comboBoxSelGatunek.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 21</value>
+  </data>
+  <data name="label46.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="&gt;&gt;narodowośćDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;faxDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView_IOF_LokZdj.Parent" xml:space="preserve">
+    <value>tabPage_IOF</value>
+  </data>
+  <data name="&gt;&gt;textBox_DOE_MN_Adres.Name" xml:space="preserve">
+    <value>textBox_DOE_MN_Adres</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="&gt;&gt;tabPage_DOE.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;iDDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBox_RecNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 20</value>
+  </data>
+  <data name="textBox_IOF_KW_Typ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 36</value>
+  </data>
+  <data name="&gt;&gt;textBox_TytulOrig.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;wWWDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>wWWDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="label38.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <metadata name="fKFilmOcenaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>560, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="wYPINTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>765, 95</value>
+  </metadata>
+  <metadata name="fKFilmDystrybucjaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>784, 56</value>
+  </metadata>
+  <metadata name="filmTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>415, 17</value>
+  </metadata>
+  <metadata name="filmBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>264, 17</value>
+  </metadata>
+  <metadata name="ocenaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>759, 17</value>
+  </metadata>
+  <metadata name="defaultDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>132, 17</value>
+  </metadata>
+  <metadata name="produkcjaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>605, 56</value>
+  </metadata>
+  <metadata name="fKFilmWYPINBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>563, 95</value>
+  </metadata>
+  <metadata name="fKFilmLokZdjBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>204, 95</value>
+  </metadata>
+  <metadata name="dystrybucjaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <metadata name="fKFilmProdukcjaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>387, 56</value>
+  </metadata>
+  <metadata name="lokZdjTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>405, 95</value>
+  </metadata>
+  <metadata name="obsadaTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>223, 56</value>
+  </metadata>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>English</value>
+  </metadata>
+  <metadata name="fKFilmWYPODINBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
+  <metadata name="wYPODINTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>237, 134</value>
+  </metadata>
+  <metadata name="fKFilmObsadaBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
 </root>

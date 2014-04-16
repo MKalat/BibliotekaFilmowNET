@@ -118,40 +118,762 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="webBrowser1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="button_LoadPicFront.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_LoadPicFront.Text" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="button_DelPicFront.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_DelPicFront.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="button_LoadPicBack.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_LoadPicBack.Text" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="button_DelPicBack.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_DelPicBack.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="button_First.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_Prev.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_Next.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_Last.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Record</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="webBrowser1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 13</value>
   </data>
-  <data name="webBrowser1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 839</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>of</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="webBrowser1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="tabPage_Opis.Text" xml:space="preserve">
+    <value>Description</value>
   </data>
-  <data name="&gt;&gt;webBrowser1.Name" xml:space="preserve">
-    <value>webBrowser1</value>
+  <data name="label51.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;webBrowser1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.WebBrowser, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
   </data>
-  <data name="&gt;&gt;webBrowser1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label51.Text" xml:space="preserve">
+    <value>Description</value>
   </data>
-  <data name="&gt;&gt;webBrowser1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="tabPage_Ocena.Text" xml:space="preserve">
+    <value>Score</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="groupBox_OC_OW.Text" xml:space="preserve">
+    <value>My score</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 839</value>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Artistic value</value>
+  </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Photography</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 13</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 13</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Cast</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Sound / Music</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 13</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Media writing about movie</value>
+  </data>
+  <data name="tabPage_Obsada.Text" xml:space="preserve">
+    <value>Cast &amp; Staff</value>
+  </data>
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Cast &amp; Staff</value>
+  </data>
+  <data name="dataGridView_OB_Obsada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>684, 450</value>
+  </data>
+  <data name="tabPage_Produkcja.Text" xml:space="preserve">
+    <value>Producers</value>
+  </data>
+  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>Dystribution</value>
+  </data>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Production</value>
+  </data>
+  <data name="tabPage_DOE.Text" xml:space="preserve">
+    <value>Media data</value>
+  </data>
+  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>Media Type</value>
+  </data>
+  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>Cat. No.</value>
+  </data>
+  <data name="label28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>Date catalogued</value>
+  </data>
+  <data name="label27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>Date of loss</value>
+  </data>
+  <data name="label26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 13</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>Date of purchase</value>
+  </data>
+  <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Act. value</value>
+  </data>
+  <data name="label_DOE_Cena.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_DOE_Cena.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="label_DOE_Cena.Text" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="groupBox_DOE_MN.Text" xml:space="preserve">
+    <value>Shop data</value>
+  </data>
+  <data name="label24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="label21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 13</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Adress</value>
+  </data>
+  <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="groupBox_DOE_W.Text" xml:space="preserve">
+    <value>Data about owner of Film copy</value>
+  </data>
+  <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 13</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>Adress</value>
+  </data>
+  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>Lastname</value>
+  </data>
+  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="tabPage_IOF.Text" xml:space="preserve">
+    <value>Movie data</value>
+  </data>
+  <data name="label48.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 13</value>
+  </data>
+  <data name="label48.Text" xml:space="preserve">
+    <value>Places photographed</value>
+  </data>
+  <data name="label47.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label47.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="label47.Text" xml:space="preserve">
+    <value>Countries of prod.</value>
+  </data>
+  <data name="groupBox_IOF_ZAB.Text" xml:space="preserve">
+    <value>Copy protection</value>
+  </data>
+  <data name="label46.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label46.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="label46.Text" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="label45.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label45.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="label45.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="label44.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="label44.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="groupBox_IOF_AUDIO.Text" xml:space="preserve">
+    <value>Audio Codec</value>
+  </data>
+  <data name="label43.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="label43.Text" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="label42.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="label42.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="label41.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="label41.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="groupBox_IOF_WIDEO.Text" xml:space="preserve">
+    <value>Video Codec</value>
+  </data>
+  <data name="label40.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="label40.Text" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="label39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="label38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="label37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>Subtitles</value>
+  </data>
+  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>Lector</value>
+  </data>
+  <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>Video system</value>
+  </data>
+  <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>Proportions</value>
+  </data>
+  <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="label33.Text" xml:space="preserve">
+    <value>Duration time</value>
+  </data>
+  <data name="label32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>Premiere</value>
+  </data>
+  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="label31.Text" xml:space="preserve">
+    <value>Year of prod.</value>
+  </data>
+  <data name="tabPage_Biblio.Text" xml:space="preserve">
+    <value>Librarian</value>
+  </data>
+  <data name="label50.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label50.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 13</value>
+  </data>
+  <data name="label50.Text" xml:space="preserve">
+    <value>Catalogue of borrowed films from others</value>
+  </data>
+  <data name="label49.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 13</value>
+  </data>
+  <data name="label49.Text" xml:space="preserve">
+    <value>Catalogue of lended fims to others</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Orig. title</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Genre</value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="otwórzUtwórzBazęDanychToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="otwórzUtwórzBazęDanychToolStripMenuItem.Text" xml:space="preserve">
+    <value>Open / Create Database</value>
+  </data>
+  <data name="eksportujToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="eksportujToolStripMenuItem.Text" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="drukujToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="drukujToolStripMenuItem.Text" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="uzupelnijFilmZInternetuToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="uzupelnijFilmZInternetuToolStripMenuItem.Text" xml:space="preserve">
+    <value>Add data to already catalogued film</value>
+  </data>
+  <data name="wyszukajToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="wyszukajToolStripMenuItem.Text" xml:space="preserve">
+    <value>Search database</value>
+  </data>
+  <data name="globalnyRejestrWypożyczeńToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="globalnyRejestrWypożyczeńToolStripMenuItem.Text" xml:space="preserve">
+    <value>Global borrows / lends register</value>
+  </data>
+  <data name="ustawieniaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="ustawieniaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="koniecToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="koniecToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="plikToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="plikToolStripMenuItem.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="pomocToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 22</value>
+  </data>
+  <data name="pomocToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="sprzwdźAktualizacjeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 22</value>
+  </data>
+  <data name="sprzwdźAktualizacjeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Check Updates</value>
+  </data>
+  <data name="oProgramieToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 22</value>
+  </data>
+  <data name="oProgramieToolStripMenuItem.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="pomocToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="pomocToolStripMenuItem.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items2" xml:space="preserve">
+    <value>Comedy</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items4" xml:space="preserve">
+    <value>Drama</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items5" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items6" xml:space="preserve">
+    <value>Paradocument</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items7" xml:space="preserve">
+    <value>Fabular</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items8" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items9" xml:space="preserve">
+    <value>Animated</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items10" xml:space="preserve">
+    <value>Short form</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items12" xml:space="preserve">
+    <value>Erotics</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items13" xml:space="preserve">
+    <value>Amateur</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items14" xml:space="preserve">
+    <value>War</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items16" xml:space="preserve">
+    <value>Educational</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items17" xml:space="preserve">
+    <value>Manga</value>
+  </data>
+  <data name="comboBoxSelGatunek.Items18" xml:space="preserve">
+    <value>Undefined</value>
+  </data>
+  <data name="comboBoxSelGatunek.Text" xml:space="preserve">
+    <value>Select film genre to add it to field on left</value>
+  </data>
+  <data name="pictureBox_Okl_Przod.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox_Okl_Tyl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_NEW.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_NEW.Text" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="button_SAVE.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_SAVE.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="button_DEL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_DEL.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="button_GetDataInt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_GetDataInt.Text" xml:space="preserve">
+    <value>Add Film from Internet DB</value>
+  </data>
+  <data name="nazwaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="tytulDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="autorDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="ocenaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Score</value>
+  </data>
+  <data name="imieNazwDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Name and Lastname</value>
+  </data>
+  <data name="rolaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="nazwaDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="adresDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Adress</value>
+  </data>
+  <data name="telDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="narodowośćDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="nazwaDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="adresDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Adress</value>
+  </data>
+  <data name="telDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="narodowośćDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="nazwaObiektuDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Name of place</value>
+  </data>
+  <data name="krajDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="miejscowośćDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>City / Town</value>
+  </data>
+  <data name="poraRokuDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Quarter</value>
+  </data>
+  <data name="dataDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="dataWypDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Date of lend</value>
+  </data>
+  <data name="dataOddDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Date returned</value>
+  </data>
+  <data name="osobaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="stanPWypDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>State before lending</value>
+  </data>
+  <data name="stanPOddDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>State after return</value>
+  </data>
+  <data name="dataWypDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Date of borrow</value>
+  </data>
+  <data name="dataOddDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Date returned</value>
+  </data>
+  <data name="osobaDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Person</value>
+  </data>
+  <data name="stanPWypDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>State before borrow</value>
+  </data>
+  <data name="stanPOddDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>State after return</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -852,13 +1574,10 @@
         ///wAAAA////////////////8AAAAA==
 </value>
   </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Mk Film DB NET - ON-LINE HELP</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ShowHelp</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MK Film DB NET</value>
   </data>
 </root>

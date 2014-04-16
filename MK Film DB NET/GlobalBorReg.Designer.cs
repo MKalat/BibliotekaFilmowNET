@@ -42,17 +42,20 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 6);
+            this.label1.AccessibleDescription = null;
+            this.label1.AccessibleName = null;
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Font = null;
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Wypożyczenia filmów innym osobom";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AccessibleDescription = null;
+            this.dataGridView1.AccessibleName = null;
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
+            this.dataGridView1.BackgroundImage = null;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Film,
@@ -61,59 +64,58 @@
             this.DataOdd,
             this.StanPWyp,
             this.StanPOdd});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 24);
+            this.dataGridView1.Font = null;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(648, 516);
-            this.dataGridView1.TabIndex = 1;
             // 
             // Film
             // 
-            this.Film.HeaderText = "Film";
+            resources.ApplyResources(this.Film, "Film");
             this.Film.Name = "Film";
             this.Film.ReadOnly = true;
             // 
             // Osoba
             // 
-            this.Osoba.HeaderText = "Osoba";
+            resources.ApplyResources(this.Osoba, "Osoba");
             this.Osoba.Name = "Osoba";
             this.Osoba.ReadOnly = true;
             // 
             // DataWyp
             // 
-            this.DataWyp.HeaderText = "Data wypożyczenia";
+            resources.ApplyResources(this.DataWyp, "DataWyp");
             this.DataWyp.Name = "DataWyp";
             this.DataWyp.ReadOnly = true;
             // 
             // DataOdd
             // 
-            this.DataOdd.HeaderText = "Data oddania";
+            resources.ApplyResources(this.DataOdd, "DataOdd");
             this.DataOdd.Name = "DataOdd";
             this.DataOdd.ReadOnly = true;
             // 
             // StanPWyp
             // 
-            this.StanPWyp.HeaderText = "Stan przed wypożyczeniem";
+            resources.ApplyResources(this.StanPWyp, "StanPWyp");
             this.StanPWyp.Name = "StanPWyp";
             this.StanPWyp.ReadOnly = true;
             // 
             // StanPOdd
             // 
-            this.StanPOdd.HeaderText = "Stan po oddaniu";
+            resources.ApplyResources(this.StanPOdd, "StanPOdd");
             this.StanPOdd.Name = "StanPOdd";
             this.StanPOdd.ReadOnly = true;
             // 
             // GlobalBorReg
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AccessibleDescription = null;
+            this.AccessibleName = null;
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(667, 566);
+            this.BackgroundImage = null;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+            this.Font = null;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GlobalBorReg";
-            this.Text = "BiBlioteka Filmów NET - Globalny Rejestr Wypożyczeń";
             this.Load += new System.EventHandler(this.GlobalBorReg_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

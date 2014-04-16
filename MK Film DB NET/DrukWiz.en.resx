@@ -117,41 +117,63 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="webBrowser1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="webBrowser1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="checkBox_PrintWYP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 17</value>
   </data>
-  <data name="webBrowser1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 839</value>
+  <data name="checkBox_PrintWYP.Text" xml:space="preserve">
+    <value>Print lends and borrows tables</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="webBrowser1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="checkBox_PrintLZ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 17</value>
   </data>
-  <data name="&gt;&gt;webBrowser1.Name" xml:space="preserve">
-    <value>webBrowser1</value>
+  <data name="checkBox_PrintLZ.Text" xml:space="preserve">
+    <value>Print photographed places table</value>
   </data>
-  <data name="&gt;&gt;webBrowser1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.WebBrowser, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="checkBox_PrintD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 17</value>
   </data>
-  <data name="&gt;&gt;webBrowser1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="checkBox_PrintD.Text" xml:space="preserve">
+    <value>Print distributors table</value>
   </data>
-  <data name="&gt;&gt;webBrowser1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="checkBox_PrintP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 17</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="checkBox_PrintP.Text" xml:space="preserve">
+    <value>Print producers table</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1095, 839</value>
+  <data name="checkBox_PrintOC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 17</value>
+  </data>
+  <data name="checkBox_PrintOC.Text" xml:space="preserve">
+    <value>Print score table</value>
+  </data>
+  <data name="checkBox_PrintOB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 17</value>
+  </data>
+  <data name="checkBox_PrintOB.Text" xml:space="preserve">
+    <value>Print cast &amp; staff table</value>
+  </data>
+  <data name="checkBox_PrintFilm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 17</value>
+  </data>
+  <data name="checkBox_PrintFilm.Text" xml:space="preserve">
+    <value>Print basic film data</value>
+  </data>
+  <data name="checkBox_PrintALL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 17</value>
+  </data>
+  <data name="checkBox_PrintALL.Text" xml:space="preserve">
+    <value>Print all film records</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Print options</value>
+  </data>
+  <data name="button_PRINT.Text" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="button_Cancel.Text" xml:space="preserve">
+    <value>Cancel</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -853,12 +875,6 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Mk Film DB NET - ON-LINE HELP</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ShowHelp</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>MK Film  DB NET - Print Wizard</value>
   </data>
 </root>
