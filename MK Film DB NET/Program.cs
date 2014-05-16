@@ -42,7 +42,11 @@ namespace MK_Film_DB_NET
         }
         public static void Read_settings()
         {
-            if (!File.Exists("settings.dat"))
+            String path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            String sett_path = path;
+            sett_path = sett_path + "\\BFNET\\";
+            sett_path = sett_path + "settings.dat";
+            if (!File.Exists(sett_path))
             {
                 SETT_REC.enabled_au = true;
                 SETT_REC.ask_on_exit = false;
@@ -51,7 +55,7 @@ namespace MK_Film_DB_NET
                 SETT_REC.save_on_exit = false;
 
                 FileStream fs;
-                fs = File.Open("settings.dat", FileMode.Create, FileAccess.Write);
+                fs = File.Open(sett_path, FileMode.Create, FileAccess.Write);
                 BinaryWriter bw = new BinaryWriter(fs);
                 bw.Write(SETT_REC.enabled_au);
                 bw.Write(SETT_REC.days_to_au);
@@ -63,7 +67,7 @@ namespace MK_Film_DB_NET
             else
             {
                 FileStream fs;
-                fs = File.Open("settings.dat", FileMode.Open, FileAccess.Read);
+                fs = File.Open(sett_path, FileMode.Open, FileAccess.Read);
                 BinaryReader br = new BinaryReader(fs);
 
                 SETT_REC.enabled_au = br.ReadBoolean();

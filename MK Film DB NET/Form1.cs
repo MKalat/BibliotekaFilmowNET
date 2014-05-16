@@ -196,7 +196,9 @@ namespace MK_Film_DB_NET
 
         private void button_SAVE_Click(object sender, EventArgs e)
         {
-            //int pos = this.filmBindingSource.Position;
+            defaultDataSet.FilmRow flm_row;
+            flm_row = (defaultDataSet.FilmRow)this.defaultDataSet.Film.Rows[this.filmBindingSource.Position];
+            int saved_id = flm_row.ID;
             this.filmBindingSource.EndEdit();
 
             this.wYPODINTableAdapter.Update(this.defaultDataSet.WYPODIN);
@@ -222,6 +224,8 @@ namespace MK_Film_DB_NET
                 this.button_GetDataInt.Enabled = true;
             }
             
+            
+            this.filmBindingSource.Position = this.filmBindingSource.Find("ID", saved_id);
             LiczRec();
         }
 
@@ -401,8 +405,12 @@ namespace MK_Film_DB_NET
         }
         public static void SaveSettings()
         {
+            String path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            String sett_path = path;
+            sett_path = sett_path + "\\BFNET\\";
+            sett_path = sett_path + "settings.dat";
             FileStream fs;
-            fs = File.Open("settings.dat", FileMode.Create, FileAccess.Write);
+            fs = File.Open(sett_path, FileMode.Create, FileAccess.Write);
             BinaryWriter bw = new BinaryWriter(fs);
             bw.Write(SETT_REC.enabled_au);
             bw.Write(SETT_REC.days_to_au);

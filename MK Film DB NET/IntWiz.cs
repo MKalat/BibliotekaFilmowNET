@@ -15,6 +15,7 @@ namespace MK_Film_DB_NET
         Form1 frm1;
         int Flm_id = 0;
         bool addnew = false;
+        int saved_id = 0;
         
         defaultDataSet.FilmRow flm_row;
         public IntWiz(Form1 frm1inst, bool add)
@@ -26,6 +27,7 @@ namespace MK_Film_DB_NET
             {
                 flm_row = (defaultDataSet.FilmRow)frm1.defaultDataSet.Film.Rows[frm1.filmBindingSource.Position];
                 this.textBox_FlmSrch.Text = flm_row.Tytul;
+                saved_id = flm_row.ID;
 
             }
             
@@ -76,82 +78,85 @@ namespace MK_Film_DB_NET
                 }
                 else if (stage5 == true && doc.Url.ToString().Contains("cast#role-actors"))
                 {
-                    bool rez_ad = false;
-                    bool scen_ad = false;
-                    bool act_ad = false;
-                    end_ind = 0;
-                    beg_ind = 0;
-                    if (addnew == true)
+                    if (this.webBrowser_GetDataInt.IsBusy == false)
                     {
-                        Flm_id = frm1.FindNewFilmID() - 1;
-                    }
-                    else
-                    {
-                        Flm_id = flm_row.ID;
-                    }
-
-
-                    if (visited3 != true)
-                    {
-
-                        HtmlElement ele = doc.GetElementById("body");
-                        HtmlElement ele2 = ele.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.NextSibling.NextSibling.FirstChild;
-
-                        foreach (HtmlElement ele3 in ele2.Children)
+                        bool rez_ad = false;
+                        bool scen_ad = false;
+                        bool act_ad = false;
+                        end_ind = 0;
+                        beg_ind = 0;
+                        if (addnew == true)
                         {
-                            if (ele3.Id == "role-director" && rez_ad == false)
-                            {
-                                foreach (HtmlElement ele4 in ele3.NextSibling.FirstChild.Children)
-                                {
-                                    defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
-                                    ob_row.IDPDB = Flm_id;
-                                    ob_row.ImieNazw = ele4.OuterText;
-                                    ob_row.Rola = "Reżyser";
-                                    frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
-                                    SaveDS();
-
-                                }
-                                rez_ad = true;
-                            }
-
-                            if (ele3.Id == "role-screenwriter" && scen_ad == false)
-                            {
-                                foreach (HtmlElement ele4 in ele3.NextSibling.FirstChild.Children)
-                                {
-                                    defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
-                                    ob_row.IDPDB = Flm_id;
-                                    ob_row.ImieNazw = ele4.OuterText;
-                                    ob_row.Rola = "Scenariusz";
-                                    frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
-                                    SaveDS();
-
-                                }
-                                scen_ad = true;
-                            }
-
-                            if (ele3.Id == "role-actors" && act_ad == false)
-                            {
-                                foreach (HtmlElement ele4 in ele3.NextSibling.FirstChild.Children)
-                                {
-                                    defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
-                                    ob_row.IDPDB = Flm_id;
-
-                                    ob_row.ImieNazw = ele4.FirstChild.NextSibling.OuterText;
-                                    ob_row.Rola = ele4.FirstChild.NextSibling.NextSibling.OuterText;
-                                    frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
-                                    SaveDS();
-                                }
-                                act_ad = true;
-                            }
+                            Flm_id = frm1.FindNewFilmID() - 1;
+                        }
+                        else
+                        {
+                            Flm_id = saved_id;
                         }
 
-                        MessageBox.Show("Rekord został dodany zgodnie z ustawieniami", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        SaveDS();
-                        visited3 = true;
-                        stage5 = false;
+
+                        if (visited3 != true)
+                        {
+
+                            HtmlElement ele = doc.GetElementById("body");
+                            HtmlElement ele2 = ele.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.NextSibling.FirstChild.FirstChild.NextSibling.NextSibling.FirstChild;
+
+                            foreach (HtmlElement ele3 in ele2.Children)
+                            {
+                                if (ele3.Id == "role-director" && rez_ad == false)
+                                {
+                                    foreach (HtmlElement ele4 in ele3.NextSibling.FirstChild.Children)
+                                    {
+                                        defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
+                                        ob_row.IDPDB = Flm_id;
+                                        ob_row.ImieNazw = ele4.OuterText;
+                                        ob_row.Rola = "Reżyser";
+                                        frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
+                                        SaveDS();
+
+                                    }
+                                    rez_ad = true;
+                                }
+
+                                if (ele3.Id == "role-screenwriter" && scen_ad == false)
+                                {
+                                    foreach (HtmlElement ele4 in ele3.NextSibling.FirstChild.Children)
+                                    {
+                                        defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
+                                        ob_row.IDPDB = Flm_id;
+                                        ob_row.ImieNazw = ele4.OuterText;
+                                        ob_row.Rola = "Scenariusz";
+                                        frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
+                                        SaveDS();
+
+                                    }
+                                    scen_ad = true;
+                                }
+
+                                if (ele3.Id == "role-actors" && act_ad == false)
+                                {
+                                    foreach (HtmlElement ele4 in ele3.NextSibling.FirstChild.Children)
+                                    {
+                                        defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
+                                        ob_row.IDPDB = Flm_id;
+
+                                        ob_row.ImieNazw = ele4.FirstChild.NextSibling.OuterText;
+                                        ob_row.Rola = ele4.FirstChild.NextSibling.NextSibling.OuterText;
+                                        frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
+                                        SaveDS();
+                                    }
+                                    act_ad = true;
+                                }
+                            }
+
+                            MessageBox.Show("Rekord został dodany zgodnie z ustawieniami", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            SaveDS();
+                            visited3 = true;
+                            stage5 = false;
+                        }
+
+
                     }
-
-
                 }
 
             }
@@ -210,7 +215,11 @@ namespace MK_Film_DB_NET
             frm1.obsadaTableAdapter.Fill(frm1.defaultDataSet.Obsada);
             frm1.ocenaTableAdapter.Fill(frm1.defaultDataSet.Ocena);
             frm1.filmTableAdapter.Fill(frm1.defaultDataSet.Film);
-            
+
+            if (addnew == false)
+            {
+                frm1.filmBindingSource.Position = frm1.filmBindingSource.Find("ID", saved_id);
+            }
             frm1.LiczRec();
 
         }
