@@ -67,7 +67,8 @@
             this.comboBox_DataSRC.Font = null;
             this.comboBox_DataSRC.FormattingEnabled = true;
             this.comboBox_DataSRC.Items.AddRange(new object[] {
-            resources.GetString("comboBox_DataSRC.Items")});
+            resources.GetString("comboBox_DataSRC.Items"),
+            resources.GetString("comboBox_DataSRC.Items1")});
             this.comboBox_DataSRC.Name = "comboBox_DataSRC";
             this.comboBox_DataSRC.SelectedIndexChanged += new System.EventHandler(this.comboBox_DataSRC_SelectedIndexChanged);
             // 

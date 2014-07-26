@@ -43,6 +43,14 @@ namespace MK_Film_DB_NET
                 stage5 = false;
                 this.webBrowser_GetDataInt.Navigate("http://www.filmweb.pl");
             }
+            else if (this.comboBox_DataSRC.SelectedIndex == 1)
+            {
+                visited = false;
+                visited2 = false;
+                stage5 = false;
+                this.webBrowser_GetDataInt.Navigate("http://imdb.com");
+
+            }
             else
             {
                 MessageBox.Show("Wybierz źródło danych do pobrania.", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -160,6 +168,23 @@ namespace MK_Film_DB_NET
                 }
 
             }
+            else if (this.comboBox_DataSRC.SelectedIndex == 1)
+            {
+                if (doc.Title.Contains("Movies, TV"))
+                {
+                    visited = false;
+                    stage5 = false;
+                    String url_tokenized = ReplacePolLett(this.textBox_FlmSrch.Text);
+                    UriBuilder uri_text = new UriBuilder("http://imdb.com/find?q=" + this.textBox_FlmSrch.Text + "&s=all");
+                    this.webBrowser_GetDataInt.Navigate(uri_text.Uri.AbsoluteUri);
+                    this.button1.Enabled = true;
+
+                }
+            }
+            else
+            {
+                // do nothing
+            }
             
         }
 
@@ -238,6 +263,17 @@ namespace MK_Film_DB_NET
                
 
             }
+            else if (this.comboBox_DataSRC.SelectedIndex == 1)
+            {
+                this.checkBox_DL_FILM.Enabled = true;
+                this.checkBox_OKLADKA.Enabled = true;
+                this.checkBox_DL_OB.Enabled = true;
+                this.checkBox_DL_OC.Enabled = false;
+                this.checkBox_DL_LZ.Enabled = false;
+                this.checkBox_DL_D.Enabled = false;
+                this.checkBox_DL_P.Enabled = false;
+
+            }
             
         }
 
@@ -245,114 +281,237 @@ namespace MK_Film_DB_NET
         {
             HtmlDocument doc = this.webBrowser_GetDataInt.Document.Window.Document;
             //frm1.filmBindingSource.AddNew();
-                        //frm1.filmBindingSource.EndEdit();
+            //frm1.filmBindingSource.EndEdit();
             if (this.webBrowser_GetDataInt.IsBusy == false)
+            {
+                if (this.comboBox_DataSRC.SelectedIndex == 0)
+                {
+                    if (addnew == true)
+                    {
+                        flm_row = frm1.defaultDataSet.Film.NewFilmRow();
+                        flm_row.Tytul = this.textBox_FlmSrch.Text;
+                    }
+                    //flm_row.ID = Flm_id;
+                    //frm1.defaultDataSet.Film.Rows.Add(flm_row);
+                    //SaveDS();
+                    //frm1.filmBindingSource.MoveLast();
+                    if (this.checkBox_OKLADKA.Checked == true)
+                    {
+                        foreach (HtmlElement ele in doc.GetElementsByTagName("A"))
+                        {
+                            if (ele.OuterHtml.Contains("class=film_mini"))
+                            {
+                                String link = ele.GetAttribute("href");
+                                String file_name_okl = this.textBox_FlmSrch.Text + ".jpg";
+                                WebClient WC = new WebClient();
+                                WC.DownloadFile(link, Form1.db_path + "\\covers\\" + file_name_okl);
+
+                                //frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].pathtofront = Form1.db_path + "\\covers\\" + file_name_okl;
+                                flm_row.pathtofront = Form1.db_path + "\\covers\\" + file_name_okl;
+
+                            }
+
+                        }
+
+
+                    }
+                    if (this.checkBox_DL_FILM.Checked == true)
+                    {
+
+                        HtmlElement ele = doc.GetElementById("body");
+
+                        foreach (HtmlElement ele2 in ele.All)
+                        {
+                            if (ele2.TagName == "DIV")
+                            {
+                                String attrib = ele2.GetAttribute("className");
+                                if (attrib == "filmTime")
+                                {
+                                    flm_row.IOF_CzasProj = ele2.OuterText;
+                                }
+                                if (attrib == "filmInfo")
+                                {
+                                    flm_row.Gatunek = ele2.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.OuterText;
+
+
+
+                                    flm_row.IOF_KrajProd = ele2.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling.OuterText;
+
+
+
+                                    flm_row.IOF_DataPrem = ele2.FirstChild.FirstChild.FirstChild.NextSibling.NextSibling.FirstChild.NextSibling.OuterText;
+
+
+
+                                }
+                                HtmlElement ele6 = doc.GetElementById("filmDescription").NextSibling;
+                                flm_row.Opis = ele6.OuterText;
+                            }
+                        }
+
+
+
+
+
+                    }
+                    if (this.checkBox_DL_OB.Checked == true)
+                    {
+                        //HtmlElement ele = doc.GetElementById("body");
+                        foreach (HtmlElement ele2 in doc.GetElementsByTagName("A"))
+                        {
+                            if (ele2.GetAttribute("href").Contains("/cast#role-actors"))
+                            {
+                                ctrl3_uri = ele2.GetAttribute("href");
+                                ele2.InvokeMember("Click");
+                                stage4 = false;
+                                visited2 = true;
+                                stage5 = true;
+                                if (addnew == true)
+                                {
+                                    frm1.defaultDataSet.Film.Rows.Add(flm_row);
+                                }
+                                SaveDS();
+                                break;
+                            }
+                        }
+
+
+
+                    }                        
+                    else
+                    {
+                        if (addnew == true)
+                        {
+                            frm1.defaultDataSet.Film.Rows.Add(flm_row);
+                        }
+                        SaveDS();
+                        MessageBox.Show("Rekord został dodany zgodnie z ustawieniami", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        stage4 = false;
+                        visited2 = true;
+                    }
+                }
+
+            }
+            else if (this.comboBox_DataSRC.SelectedIndex == 1) // IMDB.COM
             {
                 if (addnew == true)
                 {
                     flm_row = frm1.defaultDataSet.Film.NewFilmRow();
                     flm_row.Tytul = this.textBox_FlmSrch.Text;
                 }
-                //flm_row.ID = Flm_id;
-                //frm1.defaultDataSet.Film.Rows.Add(flm_row);
-                //SaveDS();
-                //frm1.filmBindingSource.MoveLast();
                 if (this.checkBox_OKLADKA.Checked == true)
-                {
-                    foreach (HtmlElement ele in doc.GetElementsByTagName("A"))
                     {
-                        if (ele.OuterHtml.Contains("class=film_mini"))
-                        {
-                            String link = ele.GetAttribute("href");
-                            String file_name_okl = this.textBox_FlmSrch.Text + ".jpg";
-                            WebClient WC = new WebClient();
-                            WC.DownloadFile(link, Form1.db_path + "\\covers\\" + file_name_okl);
+                        HtmlElement ele = doc.GetElementById("img_primary");
+                        HtmlElement ele_img = ele.FirstChild.FirstChild.FirstChild;
+                        String link = ele_img.GetAttribute("src");
+                        String file_name_okl = this.textBox_FlmSrch.Text + ".jpg";
+                        WebClient WC = new WebClient();
+                        WC.DownloadFile(link, Form1.db_path + "\\covers\\" + file_name_okl);
 
-                            //frm1.defaultDataSet.Film[frm1.filmBindingSource.Position].pathtofront = Form1.db_path + "\\covers\\" + file_name_okl;
-                            flm_row.pathtofront = Form1.db_path + "\\covers\\" + file_name_okl;
+                        flm_row.pathtofront = Form1.db_path + "\\covers\\" + file_name_okl;
 
-                        }
+                            
+
+                       
+
 
                     }
-
-
-                }
-                if (this.checkBox_DL_FILM.Checked == true)
-                {
-
-                    HtmlElement ele = doc.GetElementById("body");
-
-                    foreach (HtmlElement ele2 in ele.All)
+                    if (this.checkBox_DL_FILM.Checked == true)
                     {
-                        if (ele2.TagName == "DIV")
+
+                        HtmlElement ele = doc.GetElementById("overview-top");
+                        HtmlElement ele_time = ele.FirstChild.NextSibling.NextSibling;
+                        flm_row.IOF_CzasProj = ele_time.FirstChild.OuterText;
+                        HtmlElement ele_gatunek = ele_time.NextSibling;
+                        flm_row.Gatunek = ele_gatunek.FirstChild.OuterText;
+                        HtmlElementCollection ele_date_ctry_col = ele.Children.GetElementsByName("SPAN");
+                        foreach (HtmlElement ele_date_ctry_e in ele_date_ctry_col)
                         {
-                            String attrib = ele2.GetAttribute("className");
-                            if (attrib == "filmTime")
+                            if (ele_date_ctry_e.GetAttribute("className") == "nobr")
                             {
-                                flm_row.IOF_CzasProj = ele2.OuterText;
+                                flm_row.IOF_DataPrem = ele_date_ctry_e.FirstChild.OuterText;
+                                flm_row.IOF_KrajProd = ele_date_ctry_e.FirstChild.FirstChild.OuterText;
                             }
-                            if (attrib == "filmInfo")
-                            {
-                                flm_row.Gatunek = ele2.FirstChild.FirstChild.FirstChild.FirstChild.NextSibling.OuterText;
 
-
-
-                                flm_row.IOF_KrajProd = ele2.FirstChild.FirstChild.FirstChild.NextSibling.FirstChild.NextSibling.OuterText;
-
-
-
-                                flm_row.IOF_DataPrem = ele2.FirstChild.FirstChild.FirstChild.NextSibling.NextSibling.FirstChild.NextSibling.OuterText;
-
-
-
-                            }
-                            HtmlElement ele6 = doc.GetElementById("filmDescription").NextSibling;
-                            flm_row.Opis = ele6.OuterText;
                         }
+                        HtmlElement ele2 = doc.GetElementById("titleStoryLine");
+                        HtmlElement ele_opis = ele2.FirstChild.NextSibling.NextSibling;
+                        flm_row.Opis = ele_opis.OuterText;       
+
                     }
-
-
-
-
-
-                }
-                if (this.checkBox_DL_OB.Checked == true)
-                {
-                    //HtmlElement ele = doc.GetElementById("body");
-                    foreach (HtmlElement ele2 in doc.GetElementsByTagName("A"))
+                    if (this.checkBox_DL_OB.Checked == true)
                     {
-                        if (ele2.GetAttribute("href").Contains("/cast#role-actors"))
+                        //HtmlElement ele = doc.GetElementById("body");
+                        HtmlElement ele3 = doc.GetElementById("titleCast");
+                        if (addnew == true)
                         {
-                            ctrl3_uri = ele2.GetAttribute("href");
-                            ele2.InvokeMember("Click");
-                            stage4 = false;
-                            visited2 = true;
-                            stage5 = true;
-                            if (addnew == true)
-                            {
-                                frm1.defaultDataSet.Film.Rows.Add(flm_row);
-                            }
-                            SaveDS();
-                            break;
+                            frm1.defaultDataSet.Film.Rows.Add(flm_row);
                         }
+                        SaveDS();
+                        if (addnew == true)
+                        {
+                            Flm_id = frm1.FindNewFilmID() - 1;
+                            addnew = false;
+                        }
+                        else
+                        {
+                            Flm_id = saved_id;
+                        }
+                        HtmlElementCollection ele3_col = ele3.FirstChild.NextSibling.NextSibling.FirstChild.Children;
+                        foreach (HtmlElement ele3_act in ele3_col)
+                        {
+                            if (ele3_act.GetAttribute("className") == "odd" || ele3_act.GetAttribute("className") == "even")
+                            {
+                                
+                                defaultDataSet.ObsadaRow ob_row = frm1.defaultDataSet.Obsada.NewObsadaRow();
+                                ob_row.IDPDB = Flm_id;
+                                ob_row.ImieNazw = ele3_act.FirstChild.NextSibling.OuterText;
+                                ob_row.Rola = ele3_act.FirstChild.NextSibling.NextSibling.NextSibling.OuterText;
+                                frm1.defaultDataSet.Obsada.Rows.Add(ob_row);
+                                SaveDS();
+                                
+
+
+
+                            }
+                        }
+
+
+
                     }
+                    if (this.checkBox_DL_LZ.Checked == true)
+                    {
+                        HtmlElement ele4 = doc.GetElementById("titleDetails");
+                        if (addnew == true)
+                        {
+                            frm1.defaultDataSet.Film.Rows.Add(flm_row);
+                        }
+                        SaveDS();
+                        if (addnew == true)
+                        {
+                            Flm_id = frm1.FindNewFilmID() - 1;
+                            addnew = false;
+                        }
+                        else
+                        {
+                            Flm_id = saved_id;
+                        }
+                        HtmlElement ele4_loc = ele4.FirstChild.NextSibling.NextSibling.NextSibling.NextSibling.NextSibling.FirstChild.NextSibling;
 
 
-
-                }
-                else
-                {
+                    }
                     if (addnew == true)
                     {
-                        frm1.defaultDataSet.Film.Rows.Add(flm_row);
+                            frm1.defaultDataSet.Film.Rows.Add(flm_row);
                     }
                     SaveDS();
                     MessageBox.Show("Rekord został dodany zgodnie z ustawieniami", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     stage4 = false;
                     visited2 = true;
+                    
                 }
-            }
-                        
+
+            
         }
         private String ReplacePolLett(String text_orig)
         {
