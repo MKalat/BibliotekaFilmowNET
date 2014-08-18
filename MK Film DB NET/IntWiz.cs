@@ -70,7 +70,8 @@ namespace MK_Film_DB_NET
             String szukane = "", Year = "", Month = "", Day = "";
             String res_title = "", res_details = "", res_uri = "";
             //Form1 frm1 = (Form1)Application.OpenForms["Form1"];
-
+            if (e.Url.AbsolutePath != (sender as WebBrowser).Url.AbsolutePath)
+                return; 
             if (this.comboBox_DataSRC.SelectedIndex == 0)
             {
                 if (doc.Title.Contains("Filmweb - filmy takie jak Ty!"))
