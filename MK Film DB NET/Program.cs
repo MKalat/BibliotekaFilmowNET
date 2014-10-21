@@ -19,23 +19,29 @@ namespace MK_Film_DB_NET
     static class Program
     {
         static int default_lang;
+        static bool already_run = false;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            if (Thread.CurrentThread.CurrentCulture.Name != "pl" || Thread.CurrentThread.CurrentCulture.Name != "pl-PL")
-            {
-                default_lang = 1;
-            }
-            else
-            {
-                default_lang = 0;
-            }
-            Read_settings();
-            UpdateLanguageSett();
+            
 
+            if (!already_run)
+            {
+                if (Thread.CurrentThread.CurrentCulture.Name != "pl" || Thread.CurrentThread.CurrentCulture.Name != "pl-PL")
+                {
+                    default_lang = 1;
+                }
+                else
+                {
+                    default_lang = 0;
+                }
+                Read_settings();
+                UpdateLanguageSett();
+                already_run = true;
+            }
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

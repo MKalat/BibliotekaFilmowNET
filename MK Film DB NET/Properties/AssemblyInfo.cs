@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Marcin Kałat")]
 [assembly: AssemblyProduct("Biblioteka Filmów NET")]
-[assembly: AssemblyCopyright("Copyright ©  Marcin Kałat 2005 - 2013")]
+[assembly: AssemblyCopyright("Copyright ©  Marcin Kałat 2005 - 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

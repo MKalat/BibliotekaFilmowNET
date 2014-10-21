@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Globalization;
-using System.Threading;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -301,23 +300,7 @@ namespace MK_Film_DB_NET
                 File.Copy(ofd.FileName, db_path + "covers\\" + ofd.SafeFileName,true);
                 this.pictureBox_Okl_Przod.ImageLocation = db_path + "covers\\" + ofd.SafeFileName;
                 defaultDataSet.Film[filmBindingSource.Position].pathtofront = db_path + "covers\\" + ofd.SafeFileName;
-                this.wYPODINTableAdapter.Update(this.defaultDataSet.WYPODIN);
-                this.wYPINTableAdapter.Update(this.defaultDataSet.WYPIN);
-                this.lokZdjTableAdapter.Update(this.defaultDataSet.LokZdj);
-                this.dystrybucjaTableAdapter.Update(this.defaultDataSet.Dystrybucja);
-                this.produkcjaTableAdapter.Update(this.defaultDataSet.Produkcja);
-                this.obsadaTableAdapter.Update(this.defaultDataSet.Obsada);
-                this.ocenaTableAdapter.Update(this.defaultDataSet.Ocena);
-                this.filmTableAdapter.Update(this.defaultDataSet.Film);
-
-                this.wYPODINTableAdapter.Fill(this.defaultDataSet.WYPODIN);
-                this.wYPINTableAdapter.Fill(this.defaultDataSet.WYPIN);
-                this.lokZdjTableAdapter.Fill(this.defaultDataSet.LokZdj);
-                this.dystrybucjaTableAdapter.Fill(this.defaultDataSet.Dystrybucja);
-                this.produkcjaTableAdapter.Fill(this.defaultDataSet.Produkcja);
-                this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
-                this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
-                this.filmTableAdapter.Fill(this.defaultDataSet.Film);
+                button_SAVE_Click(null, null);
 
             }
 
@@ -327,23 +310,7 @@ namespace MK_Film_DB_NET
         {
             this.pictureBox_Okl_Przod.ImageLocation = "";
             defaultDataSet.Film[filmBindingSource.Position].pathtofront = "";
-            this.wYPODINTableAdapter.Update(this.defaultDataSet.WYPODIN);
-            this.wYPINTableAdapter.Update(this.defaultDataSet.WYPIN);
-            this.lokZdjTableAdapter.Update(this.defaultDataSet.LokZdj);
-            this.dystrybucjaTableAdapter.Update(this.defaultDataSet.Dystrybucja);
-            this.produkcjaTableAdapter.Update(this.defaultDataSet.Produkcja);
-            this.obsadaTableAdapter.Update(this.defaultDataSet.Obsada);
-            this.ocenaTableAdapter.Update(this.defaultDataSet.Ocena);
-            this.filmTableAdapter.Update(this.defaultDataSet.Film);
-
-            this.wYPODINTableAdapter.Fill(this.defaultDataSet.WYPODIN);
-            this.wYPINTableAdapter.Fill(this.defaultDataSet.WYPIN);
-            this.lokZdjTableAdapter.Fill(this.defaultDataSet.LokZdj);
-            this.dystrybucjaTableAdapter.Fill(this.defaultDataSet.Dystrybucja);
-            this.produkcjaTableAdapter.Fill(this.defaultDataSet.Produkcja);
-            this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
-            this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
-            this.filmTableAdapter.Fill(this.defaultDataSet.Film);
+            button_SAVE_Click(null, null);
 
         }
 
@@ -360,23 +327,7 @@ namespace MK_Film_DB_NET
                 File.Copy(ofd.FileName, db_path + "covers\\" + ofd.SafeFileName, true);
                 this.pictureBox_Okl_Tyl.ImageLocation = db_path + "covers\\" + ofd.SafeFileName;
                 defaultDataSet.Film[filmBindingSource.Position].pathtoback = db_path + "covers\\" + ofd.SafeFileName;
-                this.wYPODINTableAdapter.Update(this.defaultDataSet.WYPODIN);
-                this.wYPINTableAdapter.Update(this.defaultDataSet.WYPIN);
-                this.lokZdjTableAdapter.Update(this.defaultDataSet.LokZdj);
-                this.dystrybucjaTableAdapter.Update(this.defaultDataSet.Dystrybucja);
-                this.produkcjaTableAdapter.Update(this.defaultDataSet.Produkcja);
-                this.obsadaTableAdapter.Update(this.defaultDataSet.Obsada);
-                this.ocenaTableAdapter.Update(this.defaultDataSet.Ocena);
-                this.filmTableAdapter.Update(this.defaultDataSet.Film);
-
-                this.wYPODINTableAdapter.Fill(this.defaultDataSet.WYPODIN);
-                this.wYPINTableAdapter.Fill(this.defaultDataSet.WYPIN);
-                this.lokZdjTableAdapter.Fill(this.defaultDataSet.LokZdj);
-                this.dystrybucjaTableAdapter.Fill(this.defaultDataSet.Dystrybucja);
-                this.produkcjaTableAdapter.Fill(this.defaultDataSet.Produkcja);
-                this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
-                this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
-                this.filmTableAdapter.Fill(this.defaultDataSet.Film);
+                button_SAVE_Click(null, null);
 
             }
         }
@@ -385,23 +336,8 @@ namespace MK_Film_DB_NET
         {
             this.pictureBox_Okl_Tyl.ImageLocation = "";
             defaultDataSet.Film[filmBindingSource.Position].pathtoback = "";
-            this.wYPODINTableAdapter.Update(this.defaultDataSet.WYPODIN);
-            this.wYPINTableAdapter.Update(this.defaultDataSet.WYPIN);
-            this.lokZdjTableAdapter.Update(this.defaultDataSet.LokZdj);
-            this.dystrybucjaTableAdapter.Update(this.defaultDataSet.Dystrybucja);
-            this.produkcjaTableAdapter.Update(this.defaultDataSet.Produkcja);
-            this.obsadaTableAdapter.Update(this.defaultDataSet.Obsada);
-            this.ocenaTableAdapter.Update(this.defaultDataSet.Ocena);
-            this.filmTableAdapter.Update(this.defaultDataSet.Film);
-
-            this.wYPODINTableAdapter.Fill(this.defaultDataSet.WYPODIN);
-            this.wYPINTableAdapter.Fill(this.defaultDataSet.WYPIN);
-            this.lokZdjTableAdapter.Fill(this.defaultDataSet.LokZdj);
-            this.dystrybucjaTableAdapter.Fill(this.defaultDataSet.Dystrybucja);
-            this.produkcjaTableAdapter.Fill(this.defaultDataSet.Produkcja);
-            this.obsadaTableAdapter.Fill(this.defaultDataSet.Obsada);
-            this.ocenaTableAdapter.Fill(this.defaultDataSet.Ocena);
-            this.filmTableAdapter.Fill(this.defaultDataSet.Film);
+            button_SAVE_Click(null,null);
+            
         }
         public static void SaveSettings()
         {
@@ -637,7 +573,7 @@ namespace MK_Film_DB_NET
 
         private void button_GetDataInt_Click(object sender, EventArgs e)
         {
-            ctrl_Title = this.textBox_Tytul.Text;
+            //ctrl_Title = this.textBox_Tytul.Text;
             IntWiz frmInt = new IntWiz(this, true);
             frmInt.Show(this);
             //button_SAVE_Click(null, null);

@@ -53,6 +53,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.Film.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n"," ");
+                            FVal.Replace("\r"," ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -78,6 +80,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.Obsada.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n", " ");
+                            FVal.Replace("\r", " ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -102,6 +106,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.Ocena.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n", " ");
+                            FVal.Replace("\r", " ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -126,6 +132,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.LokZdj.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n", " ");
+                            FVal.Replace("\r", " ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -150,6 +158,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.Produkcja.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n", " ");
+                            FVal.Replace("\r", " ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -171,6 +181,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.Dystrybucja.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n", " ");
+                            FVal.Replace("\r", " ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -196,6 +208,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.WYPIN.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n", " ");
+                            FVal.Replace("\r", " ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -217,6 +231,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.WYPODIN.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n", " ");
+                            FVal.Replace("\r", " ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -254,6 +270,8 @@ namespace MK_Film_DB_NET
                     for (Int32 y = 0; y < frm1.defaultDataSet.Film.Columns.Count; y++)
                     {
                         FVal = Convert.ToString(flmrow[y]);
+                        FVal.Replace("\n", " ");
+                        FVal.Replace("\r", " ");
                         fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                         
                     }
@@ -280,6 +298,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.Obsada.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n", " ");
+                            FVal.Replace("\r", " ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -305,6 +325,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.Ocena.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n", " ");
+                            FVal.Replace("\r", " ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -330,6 +352,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.LokZdj.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n", " ");
+                            FVal.Replace("\r", " ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -355,6 +379,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.Produkcja.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n", " ");
+                            FVal.Replace("\r", " ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -377,6 +403,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.Dystrybucja.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n", " ");
+                            FVal.Replace("\r", " ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -403,6 +431,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.WYPIN.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n", " ");
+                            FVal.Replace("\r", " ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -425,6 +455,8 @@ namespace MK_Film_DB_NET
                         for (Int32 y = 0; y < frm1.defaultDataSet.WYPODIN.Columns.Count; y++)
                         {
                             FVal = Convert.ToString(flmrow[y]);
+                            FVal.Replace("\n", " ");
+                            FVal.Replace("\r", " ");
                             fn_buff = fn_buff + "\"" + FVal + "\"" + ",";
                             
                         }
@@ -438,6 +470,7 @@ namespace MK_Film_DB_NET
 
 
             }
+            MessageBox.Show("Dane zostały wyeksportowane", "Biblioteka Filmów NET", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         
 

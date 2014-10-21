@@ -124,44 +124,14 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Data source</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Which data to download</value>
+  <data name="checkBox_OKLADKA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 44</value>
   </data>
   <data name="checkBox_OKLADKA.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 17</value>
   </data>
   <data name="checkBox_OKLADKA.Text" xml:space="preserve">
     <value>Cover</value>
-  </data>
-  <data name="checkBox_DL_LZ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 17</value>
-  </data>
-  <data name="checkBox_DL_LZ.Text" xml:space="preserve">
-    <value>Photographed places table</value>
-  </data>
-  <data name="checkBox_DL_D.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 17</value>
-  </data>
-  <data name="checkBox_DL_D.Text" xml:space="preserve">
-    <value>Distributors table</value>
-  </data>
-  <data name="checkBox_DL_P.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 17</value>
-  </data>
-  <data name="checkBox_DL_P.Text" xml:space="preserve">
-    <value>Producers table</value>
-  </data>
-  <data name="checkBox_DL_OB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 17</value>
-  </data>
-  <data name="checkBox_DL_OB.Text" xml:space="preserve">
-    <value>Cast table</value>
-  </data>
-  <data name="checkBox_DL_OC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 17</value>
-  </data>
-  <data name="checkBox_DL_OC.Text" xml:space="preserve">
-    <value>Score table</value>
   </data>
   <data name="checkBox_DL_FILM.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 17</value>
@@ -192,6 +162,15 @@
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Download</value>
+  </data>
+  <data name="checkBox_OB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 44</value>
+  </data>
+  <data name="checkBox_OB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 17</value>
+  </data>
+  <data name="checkBox_OB.Text" xml:space="preserve">
+    <value>Cast</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
